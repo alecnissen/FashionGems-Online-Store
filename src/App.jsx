@@ -1,11 +1,14 @@
-
 import './App.css'
+import react from "react"
+import Header from './Header'
+import MainComponent from './MainComponent'
 
 function App() {
 
   return (
     <>
-  <h1>Hello world</h1>
+  <Header></Header>
+  <MainComponent></MainComponent>
     </>
   )
 }

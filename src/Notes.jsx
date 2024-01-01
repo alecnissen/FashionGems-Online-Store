@@ -14,3 +14,6 @@
 
 // *** Header Component, 
 // title and navbar with links so user can navigate to different pages, 
+
+// ** main component 
+// try to print all 20 images to the screen, 

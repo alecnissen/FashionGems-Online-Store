@@ -37,4 +37,21 @@
 
 .featured-items-main-header { 
   text-align: center;
+} 
+
+/* .main-img { 
+  width: 100px;
+} */
+
+.product-img-styles { 
+  width: 30px;
+  /* flex-basis: 33.33333%; */
+  /* flex-basis: 30%; */
+  width: calc(20% - 10px);
+}
+
+.product-img-container-styles { 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

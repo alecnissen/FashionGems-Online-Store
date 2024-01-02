@@ -6,19 +6,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: purple;
+  /* background-color: rgb(97, 35, 97); */
+  background-color: rgb(14, 27, 87);
   padding: 40px;
   color: white;
   font-family: 'Nunito', sans-serif;
 }  
 
 
+
 .header-style-container > h1 { 
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 .header-navbar-styles > button { 
-  background-color: rgb(9, 9, 82);
+  background-color: rgb(41, 41, 145);
   border: none;
   font-size: 1rem;
 }
@@ -54,4 +56,87 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+} 
+
+.img1-slider, 
+.img2-slider,
+.img3-slider { 
+  width: 370px;
+} 
+
+.img1-container,
+.img2-container,
+.img3-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-component-container { 
+  
+/* background: rgb(4,1,1); */
+/* background: linear-gradient(90deg, rgb(100, 30, 30) 0%, rgba(122,123,172,1) 45%, rgba(6,11,14,1) 100%, rgba(0,255,81,1) 100%); */
+
+  
+  /* background: linear-gradient(90deg, rgba(12,108,112,1) 0%, rgba(30,35,193,1) 32%, rgba(2,140,239,1) 100%, rgba(0,255,81,1) 100%);  */
+
+  background-color: indigo;
+  font-family: 'Nunito', sans-serif;
+  padding: 30px;
+  /* font-size: 5rem; */
+}
+
+.main-component-container > h3 { 
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+} 
+
+.main-component-container > h4 { 
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+} 
+
+.main-btn-container { 
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* .img-slider-container { 
+  background-color: rgb(115, 115, 211);
+} */
+
+/* .footer-contact-us-container { 
+  border-right: 2px solid black;
+  width: 30rem; 
+} */
+
+.footer-container { 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(14, 27, 87);
+  color: white;
+  padding: 30px;
+  border-bottom: 2px solid white;
+  /* background: rgb(12,108,112);
+  background: linear-gradient(90deg, rgba(12,108,112,1) 0%, rgba(30,35,193,1) 32%, rgba(2,140,239,1) 100%, rgba(0,255,81,1) 100%); */
+} 
+
+.subscribe-btn-container { 
+  display: flex;
+}
+
+.footer-company-brand-help-container { 
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* background-color: blue; */
+  background-color: rgb(14, 27, 87);
+  color: white;
+  padding: 30px;
 }

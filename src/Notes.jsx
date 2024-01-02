@@ -17,3 +17,8 @@
 
 // ** main component 
 // try to print all 20 images to the screen, 
+
+// I printed the 20 items, 
+// now I have an img slider up and working, 
+// I want to see if I can get rid of the captions, 
+// might just place text below it 

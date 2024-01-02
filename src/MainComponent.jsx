@@ -8,12 +8,6 @@ import Button from 'react-bootstrap/Button';
 
 export default function MainComponent({ data, img1, img2, img3, img4, img5 }) { 
 
-    console.log(data);
-    // propTypes.data; {
-        // console.log(data);
-
-    // }
-
     return ( 
         <> 
         <div className="main-component-container">
@@ -82,4 +76,7 @@ export default function MainComponent({ data, img1, img2, img3, img4, img5 }) {
 
 MainComponent.propTypes = { 
     data: PropTypes.array,
+    img1: PropTypes.string,
+    img2: PropTypes.string,
+    img3: PropTypes.string,
 }

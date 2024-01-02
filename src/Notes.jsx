@@ -22,3 +22,6 @@
 // now I have an img slider up and working, 
 // I want to see if I can get rid of the captions, 
 // might just place text below it 
+
+
+// *** PUT HEADER, MAIN AND FOOTER COMPS INTO ONE BIG COMPONENT AND RENDER IT FROM THERE, 

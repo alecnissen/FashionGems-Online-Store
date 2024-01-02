@@ -2,6 +2,7 @@ import react from "react"
 import Button from 'react-bootstrap/Button';
 import searchIcon from "../Icons/search-svgrepo-com.svg"
 import cartIcon from "../Icons/cart-shopping-svgrepo-com.svg"
+import { Link, Outlet, useSearchParams } from "react-router-dom"
 
 export default function Header() { 
     return ( 
@@ -15,7 +16,8 @@ export default function Header() {
     
     
     <nav className="header-navbar-styles"> 
-    <Button variant="primary">Shop Now</Button>{' '}
+    {/* <Link> <Button variant="primary">Shop Now</Button>{' '} </Link> */}
+    <Button variant="primary"> <Link to="/ShoppingComponent">Shop Now</Link> </Button>
     <Button variant="primary">About Us</Button>{' '}
     </nav> 
 

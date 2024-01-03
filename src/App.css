@@ -84,6 +84,15 @@
   font-family: 'Nunito', sans-serif;
   padding: 30px;
   /* font-size: 5rem; */
+} 
+
+.store-img-container { 
+  display: flex;
+  justify-content: center;
+}
+
+.store-img-main { 
+  width: 900px;
 }
 
 .main-component-container > h3 { 
@@ -139,4 +148,18 @@
   background-color: rgb(14, 27, 87);
   color: white;
   padding: 30px;
+} 
+
+.shopping-component-products-container { 
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.shopping-component-card-container { 
+  display: flex;
+  /* flex-basis: 33.3333%; */
+  width: calc(20% - 10px);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+} 

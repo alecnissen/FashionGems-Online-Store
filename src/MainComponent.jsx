@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
+import storeImg from "../Images/nguyen-dang-hoang-nhu-Nne2TxFHPyQ-unsplash.jpg";
 
 
 export default function MainComponent({ data, img1, img2, img3, img4, img5 }) { 
@@ -12,6 +13,12 @@ export default function MainComponent({ data, img1, img2, img3, img4, img5 }) {
         <> 
         <div className="main-component-container">
             <h3>Welcome to our Store, browse our wonderful selection! We are family owned and carry on the tradition of helping you find the best products for the best prices! <br></br> <br></br>Let us help you!</h3>
+            
+
+            <div className="store-img-container"> 
+            <img src={storeImg} className="store-img-main" alt="inside a clothing store"></img>
+            </div>
+        
         <h4 className="featured-items-main-header">Featured Items</h4>
 
         {/* <div className="product-img-container-styles"> 

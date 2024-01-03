@@ -9,6 +9,7 @@ import ShoppingComponent from './ShoppingComponent';
 import NotFound from './NotFound';
 import HomePage from './HomePage';
 import { Route, Routes } from 'react-router-dom'
+import ProductPage from './ProductPage';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
     <Routes> 
       <Route path='/' element={<HomePage></HomePage>}></Route>
       <Route path='/ShoppingComponent' element={<ShoppingComponent></ShoppingComponent>}></Route>
+      <Route path='/ProductPage/:id' element={<ProductPage></ProductPage>}></Route>
       <Route path='*' element={<NotFound></NotFound>}></Route>
     </Routes>
   

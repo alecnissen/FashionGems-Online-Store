@@ -15,7 +15,7 @@ export default function HomePage() {
     const [img4, setImg4] = useState('');
     const [img5, setImg5] = useState('');
   
-  useEffect(() => { 
+  useEffect(() => {
     const getData = async () => { 
       try { 
         const response = await axios.get('https://fakestoreapi.com/products')

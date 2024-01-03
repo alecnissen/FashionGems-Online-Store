@@ -1,0 +1,8 @@
+
+About Component Photo 1
+Photo by <a href="https://unsplash.com/@mercantile?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Clark Street Mercantile</a> on <a href="https://unsplash.com/photos/clothes-store-interior-P3pI6xzovu0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+About Component Photo 2 
+
+Photo by MART  PRODUCTION: https://www.pexels.com/photo/a-woman-looking-at-clothes-hanging-in-the-rack-7679453/
+

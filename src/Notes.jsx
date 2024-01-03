@@ -50,3 +50,6 @@
 
 // now I have figured out a way to display the cicked on product within its own component, 
 // now I will commit and save, then begin to append the title, description, price, and all the other details, and apply some base styling. 
+
+// now I will build the about component, 
+// before that let me make a home btn, that when pressed routes the user back home, 

@@ -17,8 +17,9 @@ export default function Header() {
     
     <nav className="header-navbar-styles"> 
     {/* <Link> <Button variant="primary">Shop Now</Button>{' '} </Link> */}
-    <Button variant="primary"> <Link to="/ShoppingComponent">Shop Now</Link> </Button>
-    <Button variant="primary">About Us</Button>{' '}
+    <Button variant="primary"><Link to="/">Home</Link></Button>
+    <Button variant="primary"><Link to="/ShoppingComponent">Shop Now</Link></Button>
+    <Button variant="primary"><Link to="/About">About Us</Link></Button>
     </nav> 
 
     <br></br>

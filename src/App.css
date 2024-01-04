@@ -31,6 +31,14 @@
  color: white;
 } 
 
+.badge-icon-for-shopping-cart { 
+  position: absolute;
+  left: 62.5em;
+  top: 12em;
+  background-color: red;
+  border-radius: 20%;
+}
+
 
 .search-icon-header,
 .cart-icon-header { 
@@ -164,6 +172,11 @@
   padding: 20px;
 }  
 
+.shopping-component-header-text { 
+  text-align: center;
+  text-decoration: underline;
+}
+
 .product-page-item-container { 
   display: flex;
   justify-content: center;
@@ -179,4 +192,12 @@
   display: flex;
   justify-content: center;
   gap: 3em;
-}
+} 
+
+/* .cart-items-badge { 
+  position: absolute;
+  left: 62.5em;
+  top: 12em;
+  background-color: red;
+  border-radius: 20%;
+} */

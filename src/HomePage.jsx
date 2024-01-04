@@ -5,6 +5,7 @@ import Footer from "./Footer"
 import PropTypes from "prop-types"
 import { useEffect, useState } from 'react';
 import axios from 'axios'; 
+import CheckoutComponent from "./CheckoutComponent"
 
 export default function HomePage() { 
 
@@ -14,6 +15,7 @@ export default function HomePage() {
     const [img3, setImg3] = useState('');
     const [img4, setImg4] = useState('');
     const [img5, setImg5] = useState('');
+    // const [cart, setCart] = useState([]);
   
   useEffect(() => {
     const getData = async () => { 
@@ -39,6 +41,7 @@ export default function HomePage() {
         <Header></Header>
         <MainComponent data={data} img1={img1} img2={img2} img3={img3} img4={img4} img5={img5}></MainComponent>
         <Footer></Footer>
+        {/* <CheckoutComponent cart={cart} setCart={setCart}></CheckoutComponent> */}
         </>
     )
 } 

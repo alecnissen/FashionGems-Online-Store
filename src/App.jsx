@@ -11,6 +11,7 @@ import HomePage from './HomePage';
 import { Route, Routes } from 'react-router-dom'
 import ProductPage from './ProductPage';
 import About from './About';
+import CheckoutComponent from './CheckoutComponent';
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
       <Route path='/ShoppingComponent' element={<ShoppingComponent></ShoppingComponent>}></Route>
       <Route path='/ProductPage/:id' element={<ProductPage></ProductPage>}></Route>
       <Route path='/About' element={<About></About>}></Route>
+      <Route path='/CheckoutComponent' element={<CheckoutComponent></CheckoutComponent>}></Route>
       <Route path='*' element={<NotFound></NotFound>}></Route>
     </Routes>
   

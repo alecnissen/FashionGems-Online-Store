@@ -6,11 +6,19 @@ import { useEffect, useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link, Outlet, useSearchParams } from "react-router-dom"
+// import Checkout from "./CheckoutComponent"
+import CheckoutComponent from "./CheckoutComponent"
 
 
 export default function ShoppingComponent() { 
 
     const [data, setData] = useState([]);
+
+    const [cartCount, setCartCount] = useState([]);
+
+    const newCartCount = cartCount.length;
+
+    console.log(cartCount);
 
     useEffect(() => { 
   const getData = async () => { 
@@ -18,11 +26,6 @@ export default function ShoppingComponent() {
       const response = await axios.get('https://fakestoreapi.com/products')
       console.log(response.data);
       setData(response.data);
-    //   setImg1(response.data[0].image);
-    //   setImg2(response.data[1].image);
-    //   setImg3(response.data[2].image);
-    //   setImg4(response.data[3].image);
-    //   setImg5(response.data[4].image);
     } catch (error) { 
       console.log(error);
     }
@@ -32,17 +35,13 @@ export default function ShoppingComponent() {
 
     return ( 
         <> 
-        <Header></Header>
-        <h1>Our Collection</h1>
+        <Header newCartCount={newCartCount}></Header>
+        <h1 className="shopping-component-header-text">Our Collection</h1>
 
         <div className="shopping-component-products-container"> 
             {data.map((item) => { 
                  return ( 
-                    // <img src={item.image} key={item.id} className="product-img-styles" alt="product-images"></img>
                     <div className="shopping-component-card-container" key={item.id}> 
-
-
-                    {/* <Link to={`/ProductPage/${item.id}`}>  */}
 
                     <Card style={{ width: '18rem' }}>
                       <Link to={`/ProductPage/${item.id}`}> 
@@ -50,23 +49,26 @@ export default function ShoppingComponent() {
                     </Link>
                     <Card.Body>
                       <Card.Title>{item.title}</Card.Title>
-                      {/* <Card.Text>
-                        {item.description}
-                      </Card.Text> */}
                       <p>Select Quanity</p>
                       <input type="number" min="0" max="10"></input>
-                      {/* <button>-</button>
-                      <input></input>
-                      <button>+</button> */}
                       <p>${item.price}</p>
-                      <Button variant="primary">Add to Cart</Button>
+                      <Button variant="primary" onClick={(e) => { 
+                        
+                        setCartCount([...cartCount, item]);
+                        console.log(cartCount);
+
+                      
+
+                        // <CheckoutComponent cartCount={cartCount}></CheckoutComponent>
+
+                        CheckoutComponent(cartCount);
+
+                        // how do I pass this data, to header? I cannot pass it as props 
+                        // I have tried calling a function, 
+
+                      }}>Add to Cart</Button>
                     </Card.Body>
                   </Card>
-
-
-                  {/* </Link> */}
-
-                    
                     </div>
                 )
             })}

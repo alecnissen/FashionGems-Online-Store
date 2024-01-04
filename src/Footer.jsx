@@ -59,17 +59,6 @@ export default function Footer() {
 
             </div>
 
-
-
-        {/* <div className="footer-contact-us-container"> 
-        <h3>Contact Us</h3>
-        <p>Phone: 555-555-5555</p>
-        <p>Location: 1234 Roadside Way, PA</p>
-        </div>
-
-        <div className="footer-sign-up-input-field"> 
-        <h6>Sign up for exclusive offers and sales!</h6>
-        </div> */}
         </>
     )
 }

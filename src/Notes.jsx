@@ -111,3 +111,6 @@
 // The Problem: I can keep track of how many items are added to the shopping cart by setting a state variable and logging the data within another function, the problem I have is passing this data to the header component, so it can be displayed. 
 
 // What I've tried: I am trying to pass the data as props, but I don't want to render the component again, I've tried just calling a function and passing in the cartCount variable but that won't render anything either with no errors. 
+
+// Go through and check over code, and replace variable names, 
+// then figure out cart displaying issue, 

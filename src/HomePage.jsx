@@ -35,13 +35,13 @@ export default function HomePage() {
     getData();
   }, [])
 
+// can I pass the variable here as props too ? That way it will keep the score when user changes pages
 
     return ( 
         <> 
         <Header></Header>
         <MainComponent data={data} img1={img1} img2={img2} img3={img3} img4={img4} img5={img5}></MainComponent>
         <Footer></Footer>
-        {/* <CheckoutComponent cart={cart} setCart={setCart}></CheckoutComponent> */}
         </>
     )
 } 

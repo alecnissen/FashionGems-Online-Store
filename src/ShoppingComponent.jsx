@@ -14,11 +14,14 @@ export default function ShoppingComponent() {
 
     const [data, setData] = useState([]);
 
-    const [cartCount, setCartCount] = useState([]);
+    const [cartItems, setCartItems] = useState([]);
 
-    const newCartCount = cartCount.length;
+    // const [itemQuantity, setItemQuantity] = useState([]);
 
-    console.log(cartCount);
+    const newCartCount = cartItems.length;
+
+    console.log(cartItems);
+
 
     useEffect(() => { 
   const getData = async () => { 
@@ -50,21 +53,15 @@ export default function ShoppingComponent() {
                     <Card.Body>
                       <Card.Title>{item.title}</Card.Title>
                       <p>Select Quanity</p>
-                      <input type="number" min="0" max="10"></input>
+                      <input type="number" min="0" max="10" onChange={(e) => { 
+                       
+                      }}></input>
                       <p>${item.price}</p>
                       <Button variant="primary" onClick={(e) => { 
                         
-                        setCartCount([...cartCount, item]);
-                        console.log(cartCount);
+                        setCartItems([...cartItems, item]);
+                        console.log(cartItems);
 
-                      
-
-                        // <CheckoutComponent cartCount={cartCount}></CheckoutComponent>
-
-                        CheckoutComponent(cartCount);
-
-                        // how do I pass this data, to header? I cannot pass it as props 
-                        // I have tried calling a function, 
 
                       }}>Add to Cart</Button>
                     </Card.Body>

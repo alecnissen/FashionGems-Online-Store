@@ -21,18 +21,6 @@ export default function MainComponent({ data, img1, img2, img3, img4, img5 }) {
         
         <h4 className="featured-items-main-header">Featured Items</h4>
 
-        {/* <div className="product-img-container-styles"> 
-       {data.map((item) => { 
-        // console.log(item);
-        return ( 
-            <img src={item.image} key={item.id} className="product-img-styles" alt="product-images"></img>
-            
-            
-        )
-       })}
-
-            </div> */}
-
         
 <Carousel className="img-slider-container">
       <Carousel.Item >

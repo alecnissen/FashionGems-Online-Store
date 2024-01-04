@@ -5,8 +5,10 @@ import cartIcon from "../Icons/cart-shopping-svgrepo-com.svg"
 import { Link, Outlet, useSearchParams } from "react-router-dom"
 import PropTypes from "prop-types"
 
-export default function Header( {newCartCount} ) { 
+export default function Header( {newCartCount, newItemQuantity } ) { 
     console.log(typeof newCartCount);
+    console.log(typeof newItemQuantity);
+
     return ( 
     <> 
     <div className="header-style-container">
@@ -34,5 +36,6 @@ export default function Header( {newCartCount} ) {
 } 
 
 Header.propTypes = { 
-    newCartCount: PropTypes.number
+    newCartCount: PropTypes.number,
+    newItemQuantity: PropTypes.number
 }

@@ -7,18 +7,8 @@ import HomePage from "./HomePage";
 // this function is called which adds items to the state, 
 // then we loop thru the variable, and display its total items using .length
 
-export default function CheckoutComponent(cartCount) { 
-    console.log(cartCount);
-    // console.log(setCartCount);
-    // console.log(item);
-
-    // console.log(cartCount.length);
-
-    return ( 
-        <> 
-        <h1>{cartCount}</h1>
-        </>
-    )
+export default function CheckoutComponent() { 
+   
 
 
 }

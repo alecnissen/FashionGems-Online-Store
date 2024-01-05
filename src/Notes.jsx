@@ -114,3 +114,32 @@
 
 // Go through and check over code, and replace variable names, 
 // then figure out cart displaying issue, 
+
+// ok how can I still get the card icon to display even when I switch back to the home page? 
+
+// it will render cart item count within shopping component, because I am setting the state and updating state within that component, then passing the props 
+// to header component within the return but if I switch pages to home or about, the cart count disappears. 
+
+// I want to keep the count the same whenever user changes pages, 
+// I am getting really stuck on how to make this work with props, I cannot pass props to the shopping component from header, 
+// shopping component and the other pages are accessed with react router and btn clicks. 
+// 
+
+
+// Ahh the cart logic for shopping cart is pretty tough. I am running into another problem, that I have been stuck on, 
+
+// Goal: When user changes pages the cart icon will still display the total items in the cart. 
+
+// The Problem: Right now I can only see how many items are in the cart when I am within the ShoppingComponent, if I switch pages the cart items icon will disappear. I know this could be occurring because in my return statement within the ShoppingComponent I am passing the cartItems variable into the header component as props. Outside of the ShoppingComponent, the Header component is not receiving anymore props. 
+
+// What I've tried: I've tried setting my cartItems state variable within App.jsx then passing it the components when I declare my routes but this is wrong because cartItems only gets updated and set within the ShoppingComponent, so its value will never be updated within App.jsx. I was doing this but this is not correct. I've been looking through my code trying to figure out some way to make this work but I am really drawing a blank. 
+
+
+// Try to hook up the product page, add to cart btn, should be the same process. 
+
+// How can I add the items quantity to the total cost? 
+// can I just make another state variable then add the item plus the quantity when I reset the state? 
+
+// how can I set the quantity of items in state, 
+// when user presses the add to cart btn, it will add that number of items depending on what was entered in the input field.
+//  

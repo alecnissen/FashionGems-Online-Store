@@ -7,7 +7,8 @@ import { useEffect, useState } from 'react';
 import axios from 'axios'; 
 import CheckoutComponent from "./CheckoutComponent"
 
-export default function HomePage() { 
+export default function HomePage( { newCartItems }) { 
+
 
     const [data, setData] = useState([]);
     const [img1, setImg1] = useState('');
@@ -35,11 +36,9 @@ export default function HomePage() {
     getData();
   }, [])
 
-// can I pass the variable here as props too ? That way it will keep the score when user changes pages
-
     return ( 
         <> 
-        <Header></Header>
+        <Header newCartItems={newCartItems}></Header>
         <MainComponent data={data} img1={img1} img2={img2} img3={img3} img4={img4} img5={img5}></MainComponent>
         <Footer></Footer>
         </>

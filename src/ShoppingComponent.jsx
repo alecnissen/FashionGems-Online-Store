@@ -10,17 +10,20 @@ import { Link, Outlet, useSearchParams } from "react-router-dom"
 import CheckoutComponent from "./CheckoutComponent"
 
 
-export default function ShoppingComponent() { 
+export default function ShoppingComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity}) { 
+
+  // console.log('this is from app.jsx passed as props', test);
 
     const [data, setData] = useState([]);
 
-    const [cartItems, setCartItems] = useState([]);
+    // const [cartItems, setCartItems] = useState([]);
 
+    // const newCartCount = cartItems.length;
+    
     // const [itemQuantity, setItemQuantity] = useState([]);
+    // console.log(cartItems);
 
-    const newCartCount = cartItems.length;
-
-    console.log(cartItems);
+    // console.log(newCartCount)
 
 
     useEffect(() => { 
@@ -38,7 +41,7 @@ export default function ShoppingComponent() {
 
     return ( 
         <> 
-        <Header newCartCount={newCartCount}></Header>
+        <Header newCartItems={newCartItems}></Header>
         <h1 className="shopping-component-header-text">Our Collection</h1>
 
         <div className="shopping-component-products-container"> 
@@ -53,13 +56,14 @@ export default function ShoppingComponent() {
                     <Card.Body>
                       <Card.Title>{item.title}</Card.Title>
                       <p>Select Quanity</p>
-                      <input type="number" min="0" max="10" onChange={(e) => { 
-                       
+                      <input type="number" min="0" max="10" placeholder="1" onChange={(e) => { 
+                        setItemQuantity(e.target.value);
+                        console.log(itemQuantity);
                       }}></input>
                       <p>${item.price}</p>
                       <Button variant="primary" onClick={(e) => { 
+                          setCartItems([...cartItems, item]);
                         
-                        setCartItems([...cartItems, item]);
                         console.log(cartItems);
 
 

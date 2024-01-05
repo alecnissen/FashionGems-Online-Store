@@ -4,10 +4,10 @@ import Footer from "./Footer"
 import aboutPhoto1 from "../Images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg"
 import aboutPhoto2 from "../Images/pexels-mart-production-7679453.jpg"
 
-export default function About() { 
+export default function About( { newCartItems }) { 
     return ( 
         <> 
-        <Header></Header>
+        <Header newCartItems={newCartItems}></Header>
         <div className="about-component-content-container">
         <h1>Our Story</h1>
         <h4>We Are Committed to Excellence!</h4>

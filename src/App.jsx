@@ -14,7 +14,15 @@ import About from './About';
 import CheckoutComponent from './CheckoutComponent';
 
 
-function App() {
+function App() { 
+
+  // const [test, setTest] = useState([]);
+
+  const [cartItems, setCartItems] = useState([]);
+
+  const newCartItems = cartItems.length;
+
+  const [itemQuantity, setItemQuantity] = useState([]);
 
   return (
     <>
@@ -23,10 +31,10 @@ function App() {
   <Footer></Footer>  */}
 
     <Routes> 
-      <Route path='/' element={<HomePage></HomePage>}></Route>
-      <Route path='/ShoppingComponent' element={<ShoppingComponent></ShoppingComponent>}></Route>
-      <Route path='/ProductPage/:id' element={<ProductPage></ProductPage>}></Route>
-      <Route path='/About' element={<About></About>}></Route>
+      <Route path='/' element={<HomePage newCartItems={newCartItems}></HomePage>}></Route>
+      <Route path='/ShoppingComponent' element={<ShoppingComponent cartItems={cartItems} setCartItems={setCartItems} newCartItems={newCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} ></ShoppingComponent>}></Route>
+      <Route path='/ProductPage/:id' element={<ProductPage newCartItems={newCartItems} setCartItems={setCartItems} cartItems={cartItems}></ProductPage>}></Route>
+      <Route path='/About' element={<About newCartItems={newCartItems}></About>}></Route>
       <Route path='/CheckoutComponent' element={<CheckoutComponent></CheckoutComponent>}></Route>
       <Route path='*' element={<NotFound></NotFound>}></Route>
     </Routes>

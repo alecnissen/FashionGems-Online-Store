@@ -19,8 +19,8 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
   const [itemQuantity, setItemQuantity] = useState([]);
 
-  console.log(typeof cartItems);
-  console.log(typeof itemQuantity);
+  console.log(cartItems);
+  // console.log(itemQuantity);
   // console.log(typeof newCartItems);
 
 
@@ -35,7 +35,7 @@ function App() {
       <Route path='/' element={<HomePage newCartItems={newCartItems}></HomePage>}></Route>
 
       <Route path='/ShoppingComponent' element={<ShoppingComponent cartItems={cartItems} setCartItems={setCartItems} newCartItems={newCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity}></ShoppingComponent>}></Route>
-      <Route path='/ProductPage/:id' element={<ProductPage newCartItems={newCartItems} setCartItems={setCartItems} cartItems={cartItems}></ProductPage>}></Route>
+      <Route path='/ProductPage/:id' element={<ProductPage newCartItems={newCartItems} setCartItems={setCartItems} cartItems={cartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity}></ProductPage>}></Route>
       <Route path='/About' element={<About newCartItems={newCartItems}></About>}></Route>
       <Route path='/CheckoutComponent' element={<CheckoutComponent></CheckoutComponent>}></Route>
       <Route path='*' element={<NotFound></NotFound>}></Route>

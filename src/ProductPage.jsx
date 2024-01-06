@@ -9,7 +9,7 @@ import Footer from "./Footer";
 
 
 
-export default function ProductPage( { cartItems, setCartItems, newCartItems }) { 
+export default function ProductPage( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity }) { 
 
     const { id } = useParams();
     const [data, setData] = useState([]);
@@ -25,7 +25,25 @@ export default function ProductPage( { cartItems, setCartItems, newCartItems }) 
           }
         }
         getData();
-      }, [id])
+      }, [id]) 
+
+
+  function changeAmount(item, itemQuantity) {
+  
+    const newItem = { 
+      title: item.title,
+      description: item.description,
+      price: item.price,
+      quantity: itemQuantity,
+  }
+
+    setCartItems([...cartItems, newItem]);
+
+    console.log(cartItems);
+  
+}
+
+
 
     return ( 
         <> 
@@ -48,13 +66,19 @@ export default function ProductPage( { cartItems, setCartItems, newCartItems }) 
                     {data.description}
                   </Card.Text>
                   <p>Select Quanity</p>
-                  <input type="number" min="0" max="10"></input>
+                  <input type="number" min="0" max="10" onChange={(e) => { 
+                    setItemQuantity(e.target.value);
+                  }}>
+                    
+
+                  </input>
                   {/* <button>-</button>
                   <input></input>
                   <button>+</button> */}
                   <p>${data.price}</p>
                   <Button variant="primary" onClick={((e) => { 
-                    setCartItems([...cartItems, data]);
+                    // setCartItems([...cartItems, data]);
+                    changeAmount(data, itemQuantity);
                   })}>Add to Cart</Button>
                 </Card.Body>
               </Card>

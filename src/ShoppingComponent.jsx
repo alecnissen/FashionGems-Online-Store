@@ -8,23 +8,12 @@ import Card from 'react-bootstrap/Card';
 import { Link, Outlet, useSearchParams } from "react-router-dom"
 // import Checkout from "./CheckoutComponent"
 import CheckoutComponent from "./CheckoutComponent"
+import PropTypes from "prop-types"
 
 
-export default function ShoppingComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity}) { 
-
-  // console.log('this is from app.jsx passed as props', test);
+export default function ShoppingComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity }) { 
 
     const [data, setData] = useState([]);
-
-    // const [cartItems, setCartItems] = useState([]);
-
-    // const newCartCount = cartItems.length;
-    
-    // const [itemQuantity, setItemQuantity] = useState([]);
-    // console.log(cartItems);
-
-    // console.log(newCartCount)
-
 
     useEffect(() => { 
   const getData = async () => { 
@@ -38,6 +27,21 @@ export default function ShoppingComponent( { cartItems, setCartItems, newCartIte
   }
   getData();
 }, [])
+
+function changeAmount(item, itemQuantity) {
+  
+  const newItem = { 
+    title: item.title,
+    description: item.description,
+    price: item.price,
+    quantity: itemQuantity,
+  }
+
+  setCartItems([...cartItems, newItem]);
+
+  console.log(cartItems);
+  
+}
 
     return ( 
         <> 
@@ -62,10 +66,8 @@ export default function ShoppingComponent( { cartItems, setCartItems, newCartIte
                       }}></input>
                       <p>${item.price}</p>
                       <Button variant="primary" onClick={(e) => { 
-                          setCartItems([...cartItems, item]);
-                        
-                        console.log(cartItems);
 
+                        changeAmount(item, itemQuantity);
 
                       }}>Add to Cart</Button>
                     </Card.Body>
@@ -79,3 +81,11 @@ export default function ShoppingComponent( { cartItems, setCartItems, newCartIte
         </>
     )
 }
+
+// ShoppingComponent.propTypes = { 
+//   cartItems: PropTypes.array,
+//   // setCartItems: PropTypes.array,
+//   newCartItems: PropTypes.number,
+//   itemQuantity: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object, PropTypes.number]))
+//   // setItemQuantity: PropTypes.array,
+// }

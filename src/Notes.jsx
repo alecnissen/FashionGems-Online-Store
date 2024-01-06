@@ -143,3 +143,22 @@
 // how can I set the quantity of items in state, 
 // when user presses the add to cart btn, it will add that number of items depending on what was entered in the input field.
 //  
+
+
+
+// *** make a state variable called item quantity, 
+// make another variable which will hold all the items in the cart, it will be an array of objects, 
+// pass them as props, 
+
+// when input field changes, we update the itemQuantity state, 
+// when the user presses the add to cart btn, we call a function which makes a copy of the cart items, 
+/// adds the item quantity depending on index and sets the state. 
+
+
+
+
+// when using an object the problem I run into is where do I make the object, when the add to cart btn is pressed? 
+// 
+
+// next I will add propTypes to the shopping component file, 
+// then apply the same logic with the add and quantity buttons for ProductPage 

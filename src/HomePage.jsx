@@ -48,3 +48,7 @@ export default function HomePage( { newCartItems }) {
 // HomePage.propTypes = { 
 //     data: PropTypes.array,
 // }
+
+HomePage.propTypes = { 
+  newCartItems: PropTypes.number
+}

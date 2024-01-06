@@ -16,23 +16,25 @@ import CheckoutComponent from './CheckoutComponent';
 
 function App() { 
 
-  // const [test, setTest] = useState([]);
-
   const [cartItems, setCartItems] = useState([]);
+  const [itemQuantity, setItemQuantity] = useState([]);
+
+  console.log(typeof cartItems);
+  console.log(typeof itemQuantity);
+  // console.log(typeof newCartItems);
+
 
   const newCartItems = cartItems.length;
 
-  const [itemQuantity, setItemQuantity] = useState([]);
+
 
   return (
     <>
-  {/* <Header></Header>
-  <MainComponent data={data} img1={img1} img2={img2} img3={img3} img4={img4} img5={img5} ></MainComponent>
-  <Footer></Footer>  */}
 
     <Routes> 
       <Route path='/' element={<HomePage newCartItems={newCartItems}></HomePage>}></Route>
-      <Route path='/ShoppingComponent' element={<ShoppingComponent cartItems={cartItems} setCartItems={setCartItems} newCartItems={newCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} ></ShoppingComponent>}></Route>
+
+      <Route path='/ShoppingComponent' element={<ShoppingComponent cartItems={cartItems} setCartItems={setCartItems} newCartItems={newCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity}></ShoppingComponent>}></Route>
       <Route path='/ProductPage/:id' element={<ProductPage newCartItems={newCartItems} setCartItems={setCartItems} cartItems={cartItems}></ProductPage>}></Route>
       <Route path='/About' element={<About newCartItems={newCartItems}></About>}></Route>
       <Route path='/CheckoutComponent' element={<CheckoutComponent></CheckoutComponent>}></Route>

@@ -13,7 +13,7 @@ export default function Header( { newCartItems } ) {
     <> 
     <div className="header-style-container">
 
-    <h1>Shopping Cart</h1>
+    <h1>Shopping Cart</h1> 
     
     <nav className="header-navbar-styles"> 
     <Button variant="primary"><Link to="/">Home</Link></Button>
@@ -26,7 +26,19 @@ export default function Header( { newCartItems } ) {
 <div className="header-icon-container"> 
 <img src={searchIcon} className="search-icon-header"></img>
 <div className="badge-icon-for-shopping-cart">{newCartItems}</div>
-<img src={cartIcon} className="cart-icon-header"></img>
+{/* <img src={cartIcon} className="cart-icon-header" onClick={(e) => { 
+    <Link to="/CheckoutComponent"></Link>
+}} >
+
+</img> */}
+
+{/* <Link to="/CheckoutComponent">Checkout</Link> */}
+
+{/* <a href="/CheckoutComponent">Checkout</a> */}
+
+<Button variant="primary"><Link to="/CheckoutComponent">Checkout</Link></Button>
+
+
 
 </div>
    

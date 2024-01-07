@@ -162,3 +162,15 @@
 
 // next I will add propTypes to the shopping component file, 
 // then apply the same logic with the add and quantity buttons for ProductPage 
+
+
+// access cartItems within CheckoutComponent 
+
+// its not console logging any of the values, 
+// we are passing it as props, 
+// thevalue is being updated in App.jsx
+
+
+// we can access cart items within Checkout now, 
+// now just print a picture, quantity and price, 
+// then next we will make a function which adds up a price and prints it to the screen, 

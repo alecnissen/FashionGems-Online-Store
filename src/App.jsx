@@ -20,13 +20,8 @@ function App() {
   const [itemQuantity, setItemQuantity] = useState([]);
 
   console.log(cartItems);
-  // console.log(itemQuantity);
-  // console.log(typeof newCartItems);
-
 
   const newCartItems = cartItems.length;
-
-
 
   return (
     <>
@@ -37,7 +32,7 @@ function App() {
       <Route path='/ShoppingComponent' element={<ShoppingComponent cartItems={cartItems} setCartItems={setCartItems} newCartItems={newCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity}></ShoppingComponent>}></Route>
       <Route path='/ProductPage/:id' element={<ProductPage newCartItems={newCartItems} setCartItems={setCartItems} cartItems={cartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity}></ProductPage>}></Route>
       <Route path='/About' element={<About newCartItems={newCartItems}></About>}></Route>
-      <Route path='/CheckoutComponent' element={<CheckoutComponent></CheckoutComponent>}></Route>
+      <Route path='/CheckoutComponent' element={<CheckoutComponent cartItems={cartItems} newCartItems={newCartItems}></CheckoutComponent>}></Route>
       <Route path='*' element={<NotFound></NotFound>}></Route>
     </Routes>
   

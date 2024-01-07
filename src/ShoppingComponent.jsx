@@ -35,6 +35,7 @@ function changeAmount(item, itemQuantity) {
     description: item.description,
     price: item.price,
     quantity: itemQuantity,
+    image: item.image
   }
 
   setCartItems([...cartItems, newItem]);

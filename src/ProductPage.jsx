@@ -34,6 +34,7 @@ export default function ProductPage( { cartItems, setCartItems, newCartItems, it
       title: item.title,
       description: item.description,
       price: item.price,
+      image: item.image,
       quantity: itemQuantity,
   }
 

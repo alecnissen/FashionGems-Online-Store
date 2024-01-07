@@ -174,3 +174,40 @@
 // we can access cart items within Checkout now, 
 // now just print a picture, quantity and price, 
 // then next we will make a function which adds up a price and prints it to the screen, 
+
+
+// can you change the items quantity and have it reflect the price change? 
+
+// how can I display this new value, it calculates the change, 
+// make the variable in app, then pass it to checkout? 
+
+
+// you can add to the total but what about subtract from the total by adjusing the quantity. 
+
+// now thinking about the btns for the input field on the shopping page, 
+
+// how can I incorporate the btn logic with what I have now? 
+
+// maybe for now just leave it and just work on the logic in the checkout page, 
+
+// inplement the increment and decrement btns, if I can get it in checkout page, I can fix it up in shopping cart, 
+
+// same logic applies, 
+
+// add two btns, 
+
+// when increment is pressed it calls a function which takes the item 
+
+// I'm just getting really confused on how to use the increment btns with the input field 
+// could I just use an input field? 
+// 
+// the increment or decrement btns increase the QUANTITY of the items
+// when + is pressed, takes the items quantity and adds one, 
+// when - is pressed, takes the items quantity and reduces it by one 
+
+// then in the return the total 
+
+// total = item.price * item.quantity 
+
+// could not figure out how the add or subtract btns and how that will influence the total cost 
+// why is the remove btn deleting all the items, not the selected one. 

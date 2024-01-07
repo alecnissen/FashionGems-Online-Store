@@ -45,7 +45,6 @@ export default function ProductPage( { cartItems, setCartItems, newCartItems, it
 }
 
 
-
     return ( 
         <> 
         <Header newCartItems={newCartItems}></Header>

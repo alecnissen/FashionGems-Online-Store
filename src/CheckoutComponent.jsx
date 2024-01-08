@@ -11,7 +11,7 @@ import Header from "./Header";
 export default function CheckoutComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity }) { 
 
     let total = 0;
-    let addValue = 0
+    // let productPrice = 0
 
 
     function handleDelete(item) { 
@@ -42,11 +42,22 @@ export default function CheckoutComponent( { cartItems, setCartItems, newCartIte
        
         {cartItems.map((item) => { 
 
-            total += item.price * item.quantity
+            // previous code used to calculate grand total 
+            // total += item.price * item.quantity
 
-            // console.log('item quantity before change', item.quantity)
+            let productPrice = 0
+            
+            productPrice += item.price * item.quantity
+            
+            total += productPrice
 
-            console.log(total);
+            console.log('productPrice value', productPrice);
+
+            console.log('total value', total);
+
+            console.log(itemQuantity);
+
+            console.log(cartItems.length);
 
             return ( 
             <> 
@@ -71,10 +82,14 @@ export default function CheckoutComponent( { cartItems, setCartItems, newCartIte
             <button onClick={((e) => { 
                 handleDelete(item)
             })}>Remove</button>
+
+
+            <p>product price</p>
+            <h1>{productPrice}</h1>
             </>
             )
         })}
-
+        <p>total price</p>
         {<h1>{total}</h1>}
        
         </>

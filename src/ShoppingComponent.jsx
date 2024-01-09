@@ -11,9 +11,11 @@ import CheckoutComponent from "./CheckoutComponent"
 import PropTypes from "prop-types"
 
 
-export default function ShoppingComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity }) { 
+export default function ShoppingComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity, selectedProduct, setSelectedProduct }) { 
 
     const [data, setData] = useState([]);
+
+    console.log(itemQuantity);
 
     useEffect(() => { 
   const getData = async () => { 
@@ -54,14 +56,17 @@ function changeAmount(item, itemQuantity) {
                  return ( 
                     <div className="shopping-component-card-container" key={item.id}> 
 
-                    <Card style={{ width: '18rem' }}>
+                    <Card style={{ width: '18rem' }} onClick={(e) => { 
+                      // console.log(item);
+                      setSelectedProduct(item);
+                    }}>
                       <Link to={`/ProductPage/${item.id}`}> 
                     <Card.Img variant="top" src={item.image} style={{ width: '10em' }} className="shopping-component-card-img" />
                     </Link>
                     <Card.Body>
                       <Card.Title>{item.title}</Card.Title>
                       <p>Select Quanity</p>
-                      <input type="number" min="0" max="10" placeholder="1" onChange={(e) => { 
+                      <input type="number" min="0" max="10" placeholder="0" onChange={(e) => { 
                         setItemQuantity(e.target.value);
                         console.log(itemQuantity);
                       }}></input>

@@ -3,13 +3,12 @@ import ShoppingComponent from "./ShoppingComponent";
 import { useEffect, useState } from 'react';
 import HomePage from "./HomePage";
 import Header from "./Header";
-
-// use .length to show how many items are in the cart, 
-// this function is called which adds items to the state, 
-// then we loop thru the variable, and display its total items using .length
+// import { useEffect } from "react";
 
 export default function CheckoutComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity }) { 
 
+
+    
     let total = 0;
     // let productPrice = 0
 
@@ -19,19 +18,25 @@ export default function CheckoutComponent( { cartItems, setCartItems, newCartIte
     } 
 
     function changeQuantityIncrement(item) {
-    console.log(item);
+    console.log('item before incrementing', item);
 
-    setItemQuantity(item.quantity++)
+    console.log('itemQuanity before incrementing', itemQuantity);
+
+    // itemQuantity++
+
+    setItemQuantity(++item.quantity);
+
+    console.log('itemQuanity after incrementing', itemQuantity);
    
 
     console.log('item after incrementing', item);
-      
     } 
 
 
     function changeQuantityDecrement(item) { 
-        setItemQuantity(item.quantity--);
-    }
+        setItemQuantity(--item.quantity);
+    } 
+
    
     return ( 
         <> 
@@ -42,22 +47,22 @@ export default function CheckoutComponent( { cartItems, setCartItems, newCartIte
        
         {cartItems.map((item) => { 
 
-            // previous code used to calculate grand total 
-            // total += item.price * item.quantity
-
             let productPrice = 0
-            
+
             productPrice += item.price * item.quantity
-            
+
             total += productPrice
 
-            console.log('productPrice value', productPrice);
 
-            console.log('total value', total);
+                // setProductPrice(productPrice += item.price * item.quantity);
+    
+                // setCartTotal(cartTotal += productPrice);
 
-            console.log(itemQuantity);
+                // setProductPriceFn(productPrice, item);
 
-            console.log(cartItems.length);
+                // setCartTotalFn(productPrice, item)
+
+
 
             return ( 
             <> 
@@ -70,7 +75,7 @@ export default function CheckoutComponent( { cartItems, setCartItems, newCartIte
                 changeQuantityIncrement(item);
 
             })}>+</button>
-            <input type="number" min="0" max="10" placeholder="1" value={item.quantity} onChange={((e) => { 
+            <input type="number" min="0" max="10" placeholder="0" value={item.quantity} onChange={((e) => { 
         
 
             })}> 
@@ -94,5 +99,7 @@ export default function CheckoutComponent( { cartItems, setCartItems, newCartIte
        
         </>
     )
+
+
 }
 

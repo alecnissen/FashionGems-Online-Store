@@ -211,3 +211,31 @@
 
 // could not figure out how the add or subtract btns and how that will influence the total cost 
 // why is the remove btn deleting all the items, not the selected one. 
+
+
+
+// tomorrow I will try using the selectedProduct in place of the id in the api call, 
+// then fixing the rest to replace data with selectedProduct, 
+
+// I can grab the clicked on product,
+
+// const { id } = useParams(); ??? this, replace with selected product 
+
+// the problem is I cannot change the quantity on the product, because 
+
+// I cannot change the items quantity, I get NaN if I try the same approach, 
+
+// lets look at how we are setting the quantity. 
+
+// check to see if the quantity still works after changing the state value to 0. 
+// test it 
+
+// get the counter working 
+
+// counter is working but when I get to checkout component, and I increment, it takes two clicks to get it to increment, 
+
+// it is incrementing but rendering properly, try setting to a variable, 
+
+// why is the input value take two clicks to change??? 
+
+// the quantity is being updated, why is the input field not reflecting that change. 

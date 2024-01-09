@@ -18,8 +18,11 @@ function App() {
 
   const [cartItems, setCartItems] = useState([]);
   const [itemQuantity, setItemQuantity] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState([]);
 
-  console.log(cartItems);
+  // console.log(cartItems); 
+
+  console.log(itemQuantity);
 
   const newCartItems = cartItems.length;
 
@@ -29,8 +32,8 @@ function App() {
     <Routes> 
       <Route path='/' element={<HomePage newCartItems={newCartItems}></HomePage>}></Route>
 
-      <Route path='/ShoppingComponent' element={<ShoppingComponent cartItems={cartItems} setCartItems={setCartItems} newCartItems={newCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity}></ShoppingComponent>}></Route>
-      <Route path='/ProductPage/:id' element={<ProductPage newCartItems={newCartItems} setCartItems={setCartItems} cartItems={cartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity}></ProductPage>}></Route>
+      <Route path='/ShoppingComponent' element={<ShoppingComponent cartItems={cartItems} setCartItems={setCartItems} newCartItems={newCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} selectedProduct={selectedProduct} setSelectedProduct={setSelectedProduct} ></ShoppingComponent>}></Route>
+      <Route path='/ProductPage/:id' element={<ProductPage newCartItems={newCartItems} setCartItems={setCartItems} cartItems={cartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} selectedProduct={selectedProduct} setSelectedProduct={setSelectedProduct} ></ProductPage>}></Route>
       <Route path='/About' element={<About newCartItems={newCartItems}></About>}></Route>
       <Route path='/CheckoutComponent' element={<CheckoutComponent cartItems={cartItems} setCartItems={setCartItems} newCartItems={newCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity}></CheckoutComponent>}></Route>
       <Route path='*' element={<NotFound></NotFound>}></Route>

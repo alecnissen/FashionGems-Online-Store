@@ -8,11 +8,23 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 
+let count = 0;
 
-export default function ProductPage( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity }) { 
+export default function ProductPage( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity, selectedProduct, setSelectedProduct }) { 
 
     const { id } = useParams();
     const [data, setData] = useState([]);
+
+    let x 
+
+
+    // let count = 0;
+
+    console.log(id);
+
+    console.log(selectedProduct);
+
+    console.log(itemQuantity);
 
     useEffect(() => { 
         const getData = async () => { 
@@ -28,21 +40,49 @@ export default function ProductPage( { cartItems, setCartItems, newCartItems, it
       }, [id]) 
 
 
-  function changeAmount(item, itemQuantity) {
+  function changeAmount(data, itemQuantity) {
   
     const newItem = { 
-      title: item.title,
-      description: item.description,
-      price: item.price,
-      image: item.image,
+      title: data.title,
+      description: data.description,
+      price: data.price,
+      image: data.image,
       quantity: itemQuantity,
   }
 
+  console.log(data);
+
+  // console.log(itemQuantity);
+
     setCartItems([...cartItems, newItem]);
+
+    console.log(newItem);
 
     console.log(cartItems);
   
-}
+} 
+
+
+function changeQuantityIncrement(count) {
+
+  console.log(data.quantity);
+
+  console.log(count)
+
+  setItemQuantity(count)
+
+  console.log(itemQuantity);
+ 
+
+  // console.log('item after incrementing', data);
+  } 
+
+
+
+
+  function changeQuantityDecrement(data) { 
+      setItemQuantity(data.quantity--);
+  } 
 
 
     return ( 
@@ -66,12 +106,27 @@ export default function ProductPage( { cartItems, setCartItems, newCartItems, it
                     {data.description}
                   </Card.Text>
                   <p>Select Quanity</p>
-                  <input type="number" min="0" max="10" onChange={(e) => { 
-                    setItemQuantity(e.target.value);
+                  <button onClick={(e) => { 
+                    // count here, increment count, then pass to function 
+                    
+                    count += 1
+                    console.log(count);
+                    changeQuantityIncrement(count);
+                  }}>+</button>
+                  <input type="number" min="0" max="10" value={count} onChange={(e) => { 
+                    // setItemQuantity(e.target.value);
+
+                    // x = e.target.value
                   }}>
                     
 
                   </input>
+
+                  <button onClick={(e) => { 
+                    changeQuantityDecrement(data);
+                  }}>-</button>
+
+
                   {/* <button>-</button>
                   <input></input>
                   <button>+</button> */}
@@ -79,6 +134,7 @@ export default function ProductPage( { cartItems, setCartItems, newCartItems, it
                   <Button variant="primary" onClick={((e) => { 
                     // setCartItems([...cartItems, data]);
                     changeAmount(data, itemQuantity);
+                    count = 0;
                   })}>Add to Cart</Button>
                 </Card.Body>
               </Card>

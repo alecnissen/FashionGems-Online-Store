@@ -238,4 +238,13 @@
 
 // why is the input value take two clicks to change??? 
 
-// the quantity is being updated, why is the input field not reflecting that change. 
+// the quantity is being updated, why is the input field not reflecting that change.
+
+// *** 
+// implement local storage, 
+// propTypes for each component, 
+// keys for each component, 
+// implement the decrement for product page!!! dont forget that, 
+
+// within app make another useEffect hook that will set the items in local storage. 
+// then console log them, 

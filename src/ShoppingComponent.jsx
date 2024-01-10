@@ -58,7 +58,7 @@ function changeAmount(item, itemQuantity) {
 
                     <Card style={{ width: '18rem' }} onClick={(e) => { 
                       // console.log(item);
-                      setSelectedProduct(item);
+                      // setSelectedProduct(item);
                     }}>
                       <Link to={`/ProductPage/${item.id}`}> 
                     <Card.Img variant="top" src={item.image} style={{ width: '10em' }} className="shopping-component-card-img" />

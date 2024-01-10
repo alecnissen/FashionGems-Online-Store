@@ -15,9 +15,6 @@ export default function ProductPage( { cartItems, setCartItems, newCartItems, it
     const { id } = useParams();
     const [data, setData] = useState([]);
 
-    let x 
-
-
     // let count = 0;
 
     console.log(id);

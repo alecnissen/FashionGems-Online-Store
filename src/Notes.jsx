@@ -247,4 +247,4 @@
 // implement the decrement for product page!!! dont forget that, 
 
 // within app make another useEffect hook that will set the items in local storage. 
-// then console log them, 
+// then console log them,

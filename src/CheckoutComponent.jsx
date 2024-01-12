@@ -4,12 +4,16 @@ import { useEffect, useState } from 'react';
 import HomePage from "./HomePage";
 import Header from "./Header";
 // import { useEffect } from "react";
+import crypto from 'crypto';
+
 
 export default function CheckoutComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity }) { 
 
 
     
     let total = 0;
+
+    console.log(cartItems);
     // let productPrice = 0
 
 
@@ -39,13 +43,17 @@ export default function CheckoutComponent( { cartItems, setCartItems, newCartIte
 
    
     return ( 
+        // <div id={crypto.randomUUID()}>
         <> 
-        
         <Header newCartItems={newCartItems} ></Header>
-        <h1>Hello from checkout page</h1>
+        {/* <h1>Hello from checkout page</h1> */}
+
 
        
         {cartItems.map((item) => { 
+
+            
+            
 
             let productPrice = 0
 
@@ -54,18 +62,20 @@ export default function CheckoutComponent( { cartItems, setCartItems, newCartIte
             total += productPrice
 
 
-                // setProductPrice(productPrice += item.price * item.quantity);
+                {/* // setProductPrice(productPrice += item.price * item.quantity);
     
                 // setCartTotal(cartTotal += productPrice);
 
                 // setProductPriceFn(productPrice, item);
 
-                // setCartTotalFn(productPrice, item)
+                // setCartTotalFn(productPrice, item) */}
 
 
 
             return ( 
             <> 
+
+            
             <h5>{item.title}</h5>
             <img src={item.image} />
             <h5>{item.quantity}</h5>
@@ -91,13 +101,23 @@ export default function CheckoutComponent( { cartItems, setCartItems, newCartIte
 
             <p>product price</p>
             <h1>{productPrice}</h1>
+
+
             </>
+            
+            
             )
         })}
+
+
+
         <p>total price</p>
         {<h1>{total}</h1>}
+
        
         </>
+
+
     )
 
 

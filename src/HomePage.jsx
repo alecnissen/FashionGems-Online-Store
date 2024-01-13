@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios'; 
 import CheckoutComponent from "./CheckoutComponent"
 
-export default function HomePage( { newCartItems }) { 
+export default function HomePage( { newCartItems, isOpen, setIsOpen }) { 
 
 
     const [data, setData] = useState([]);
@@ -38,7 +38,7 @@ export default function HomePage( { newCartItems }) {
 
     return ( 
         <> 
-        <Header newCartItems={newCartItems}></Header>
+        <Header newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen} ></Header>
         <MainComponent data={data} img1={img1} img2={img2} img3={img3} img4={img4} img5={img5}></MainComponent>
         <Footer></Footer>
         </>

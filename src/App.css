@@ -200,4 +200,15 @@
   top: 12em;
   background-color: red;
   border-radius: 20%;
-} */
+} */ 
+
+/* modal styles experiment */ 
+
+.modal-header-styles { 
+  color: black;
+}
+
+.filteredItems-styles { 
+  color: black;
+  font-size: 0.5rem;
+}

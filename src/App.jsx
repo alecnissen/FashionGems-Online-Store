@@ -12,6 +12,7 @@ import { Route, Routes } from 'react-router-dom'
 import ProductPage from './ProductPage';
 import About from './About';
 import CheckoutComponent from './CheckoutComponent';
+import Modal from './Modal';
 
 
 function App() { 
@@ -21,7 +22,8 @@ function App() {
   const storedItems = JSON.parse(localStorage.getItem('items'));
   const [items, setItems] = useState(storedItems || []);
 
-  // const initialCartItems = storedItems || [];
+  const [isOpen, setIsOpen] = useState(false);
+  // pass these to header component as props 
 
   useEffect(() => { 
       if (cartItems !== null) { 
@@ -40,13 +42,17 @@ function App() {
 
   // console.log('logging useEffect within App.jsx', x);
 
-  const newCartItems = cartItems.length;
+  const newCartItems = cartItems.length; 
+
+  // <Modal isOpen={isOpen}> 
+  //   Fancy Modal
+  // </Modal>
 
   return (
     <>
 
     <Routes> 
-      <Route path='/' element={<HomePage newCartItems={newCartItems}></HomePage>}></Route>
+      <Route path='/' element={<HomePage newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></HomePage>}></Route>
 
       <Route path='/ShoppingComponent' element={<ShoppingComponent cartItems={cartItems} setCartItems={setCartItems} newCartItems={newCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} ></ShoppingComponent>}></Route>
       <Route path='/ProductPage/:id' element={<ProductPage newCartItems={newCartItems} setCartItems={setCartItems} cartItems={cartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} ></ProductPage>}></Route>

@@ -4,8 +4,10 @@ import searchIcon from "../Icons/search-svgrepo-com.svg"
 import cartIcon from "../Icons/cart-shopping-svgrepo-com.svg"
 import { Link, Outlet, useSearchParams } from "react-router-dom"
 import PropTypes from "prop-types"
+import ShoppingComponent from "./ShoppingComponent";
+import Modal from "./Modal";
 
-export default function Header( { newCartItems } ) { 
+export default function Header( { newCartItems, isOpen, setIsOpen } ) { 
     // console.log(typeof newCartCount);
     // console.log(typeof newItemQuantity);
 
@@ -24,7 +26,22 @@ export default function Header( { newCartItems } ) {
     <br></br>
 
 <div className="header-icon-container"> 
-<img src={searchIcon} className="search-icon-header"></img>
+
+{/* <img src={searchIcon} className="search-icon-header"> 
+
+
+</img> */} 
+
+<button onClick={() => { 
+    console.log('modal test')
+    setIsOpen(true)
+}}>Search</button>
+
+<Modal isOpen={isOpen} onClose={() => setIsOpen(false)}> 
+    Fancy Modal
+</Modal>
+
+
 <div className="badge-icon-for-shopping-cart">{newCartItems}</div>
 {/* <img src={cartIcon} className="cart-icon-header" onClick={(e) => { 
     <Link to="/CheckoutComponent"></Link>

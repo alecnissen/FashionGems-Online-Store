@@ -248,3 +248,13 @@
 
 // within app make another useEffect hook that will set the items in local storage. 
 // then console log them,
+
+// first lets get the icon, working 
+// if I click the icon, can I print a simple message to the console 
+
+// we have created a basic modal, 
+// now lets grab the input field text and log it, 
+// to ensure that we can capture the input fields value, 
+
+// next I will need to get all the products, so I must use an effect 
+// within the modal component 

@@ -13,7 +13,7 @@ const MODAL_STYLES = {
     zIndex: 1000,
     height: "720px",
     width: "700px",
-    overflow: "scroll"
+    overflow: "scroll",
 }
 
 const OVERLAY_STYLES = { 
@@ -32,7 +32,9 @@ export default function Modal( { isOpen, children, onClose }) {
 
     const filteredItems = data.filter(item => { 
         return item.title.toString().toLowerCase().includes(query.toLowerCase())
-    })
+    }) 
+
+    console.log(filteredItems); 
 
 
 useEffect(() => { 
@@ -67,17 +69,16 @@ useEffect(() => {
     <button onClick={onClose}>X</button>
   
 
-      {filteredItems.map((item) => { 
+      {query !== "" && filteredItems.map((item) => { 
            return ( 
             <> 
-            <div className='filteredItems-styles'>{item.title}
+            <div className='filteredItems-styles' key={item.key}>{item.title}
             <img src={item.image} style={{ width: '4em' }}></img>
             <div>{item.price}</div>
             </div>
             </>
         )
       })}
-
 
 
       

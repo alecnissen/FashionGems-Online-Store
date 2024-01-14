@@ -240,13 +240,22 @@
 
 // the quantity is being updated, why is the input field not reflecting that change.
 
-// *** 
+// *** TODO'S ***********************************************
 // implement local storage, 
 // propTypes for each component, 
 // keys for each component, 
 // implement the decrement for product page!!! dont forget that, 
+// ERROR AND LOADING SCREENS 
+
+
+
+
+
+
+
 
 // within app make another useEffect hook that will set the items in local storage. 
+
 // then console log them,
 
 // first lets get the icon, working 
@@ -268,4 +277,9 @@
 
 // I want it so when I type it will begin to show products based on search results. 
 
+
 // I believe I have to use filter over top of map, 
+
+
+// can I console log whichever option was selected, 
+// then can we set that into state, 

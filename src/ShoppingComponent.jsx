@@ -15,6 +15,8 @@ export default function ShoppingComponent( { cartItems, setCartItems, newCartIte
 
     const [data, setData] = useState([]);
 
+    const [sortBy, setSortBy] = useState(null);
+
     console.log(itemQuantity);
 
     useEffect(() => { 
@@ -44,12 +46,33 @@ function changeAmount(item, itemQuantity) {
 
   console.log(cartItems);
   
-}
+} 
+
+// function selectOption(e) { 
+//   console.log(e);
+// }
+
 
     return ( 
         <> 
         <Header newCartItems={newCartItems}></Header>
         <h1 className="shopping-component-header-text">Our Collection</h1>
+        
+        <div className="sort-by-div"> 
+        Sort By:
+          <select>
+            <option onClick={(e) => { 
+              // selectOption(e.target);
+
+            }}>Recommended</option>
+            <option onChange={(e) => { 
+              // selectOption(e.target);
+            }}>Price: High to low</option>
+            <option>Price: Low to high</option>
+            <option>Alphabetical: A-Z</option>
+            <option>Alphabetical: Z-A</option>
+          </select>
+        </div>
 
         <div className="shopping-component-products-container"> 
             {data.map((item) => { 

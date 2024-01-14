@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'; 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import { Link } from "react-router-dom"
 
 
 const MODAL_STYLES = { 
@@ -51,6 +52,30 @@ useEffect(() => {
   }, [])
 
 
+
+  
+    // const ref = useRef()
+    // useEffect(() => {
+    //   const checkIfClickedOutside = e => {
+    //     if (ref.current && !ref.current.contains(e.target)) {
+    //       onClose
+    //     }
+    //   }
+    //   document.addEventListener("click", checkIfClickedOutside)
+    //   return () => {
+    //     document.removeEventListener("click", checkIfClickedOutside)
+    //   }
+    // }, [onClose])
+
+
+ 
+
+
+
+
+
+
+
   console.log('logging data within Modal component', data);
 
   if (!isOpen) return null
@@ -72,10 +97,14 @@ useEffect(() => {
       {query !== "" && filteredItems.map((item) => { 
            return ( 
             <> 
+            <Link to={`/ProductPage/${item.id}`} onClick={onClose}>
             <div className='filteredItems-styles' key={item.key}>{item.title}
+
             <img src={item.image} style={{ width: '4em' }}></img>
+
             <div>{item.price}</div>
             </div>
+            </Link>
             </>
         )
       })}

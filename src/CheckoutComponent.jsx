@@ -7,7 +7,7 @@ import Header from "./Header";
 import crypto from 'crypto';
 
 
-export default function CheckoutComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity }) { 
+export default function CheckoutComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen }) { 
 
 
     
@@ -43,13 +43,9 @@ export default function CheckoutComponent( { cartItems, setCartItems, newCartIte
 
    
     return ( 
-        // <div id={crypto.randomUUID()}>
         <> 
-        <Header newCartItems={newCartItems} ></Header>
-        {/* <h1>Hello from checkout page</h1> */}
+        <Header newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
 
-
-       
         {cartItems.map((item) => { 
 
             

@@ -241,11 +241,12 @@
 // the quantity is being updated, why is the input field not reflecting that change.
 
 // *** TODO'S ***********************************************
-// implement local storage, 
+// implement local storage, / 
 // propTypes for each component, 
 // keys for each component, 
 // implement the decrement for product page!!! dont forget that, 
 // ERROR AND LOADING SCREENS 
+
 
 
 
@@ -283,3 +284,12 @@
 
 // can I console log whichever option was selected, 
 // then can we set that into state, 
+
+
+// Now on the search modal, you should click on a product and it should go to the page, 
+// wrap the img tag in a link tag just like in shopping component. 
+
+// GET THE SEARCH BTN WORKING IN ALL COMPONENTS, 
+// MAKE SURE YOU CAN DECREMENT IN THE PRODUCT PAGE FOR ITEMS QUANTITY. 
+
+// 

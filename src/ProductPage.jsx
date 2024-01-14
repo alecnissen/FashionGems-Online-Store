@@ -10,7 +10,7 @@ import Footer from "./Footer";
 
 let count = 0;
 
-export default function ProductPage( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity, selectedProduct, setSelectedProduct }) { 
+export default function ProductPage( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen }) { 
 
     const { id } = useParams();
     const [data, setData] = useState([]);
@@ -19,7 +19,7 @@ export default function ProductPage( { cartItems, setCartItems, newCartItems, it
 
     console.log(id);
 
-    console.log(selectedProduct);
+    // console.log(selectedProduct);
 
     console.log(itemQuantity);
 
@@ -84,7 +84,7 @@ function changeQuantityIncrement(count) {
 
     return ( 
         <> 
-        <Header newCartItems={newCartItems}></Header>
+        <Header newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
         {/* <h3>{data.title}</h3>
         <img src={data.image} alt="displays clicked on product" />
         <h5>{data.description}</h5>

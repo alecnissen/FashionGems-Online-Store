@@ -11,7 +11,7 @@ import CheckoutComponent from "./CheckoutComponent"
 import PropTypes from "prop-types"
 
 
-export default function ShoppingComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity, selectedProduct, setSelectedProduct }) { 
+export default function ShoppingComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen }) { 
 
     const [data, setData] = useState([]);
 
@@ -55,7 +55,7 @@ function changeAmount(item, itemQuantity) {
 
     return ( 
         <> 
-        <Header newCartItems={newCartItems}></Header>
+        <Header newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
         <h1 className="shopping-component-header-text">Our Collection</h1>
         
         <div className="sort-by-div"> 

@@ -31,8 +31,6 @@ export default function Modal( { isOpen, children, onClose }) {
     const [query, setQuery] = useState("");
 
     const filteredItems = data.filter(item => { 
-        // console.log(typeof item);
-        // let stringValue = item.toString();
         return item.title.toString().toLowerCase().includes(query.toLowerCase())
     })
 
@@ -59,22 +57,19 @@ useEffect(() => {
     <> 
     <div style={OVERLAY_STYLES} />
     <div style={MODAL_STYLES}>
-        {/* <h5>Search for Products:</h5> */}
         <h6 className='modal-header-styles'>Search for Items</h6>
         <input value={query} onChange={(e) => { 
             // console.log(e.target.value);
             setQuery(e.target.value)
+            console.log(query);
         }}></input>
         <button>Go</button>
     <button onClick={onClose}>X</button>
-      {/* {children} */}
-      {filteredItems.map((item) => { 
-        console.log(typeof item.title)
+  
 
-        return ( 
+      {filteredItems.map((item) => { 
+           return ( 
             <> 
-            {/* <img src={item.title}></img> */}
-            {/* <h6>{item.title}</h6> */}
             <div className='filteredItems-styles'>{item.title}
             <img src={item.image} style={{ width: '4em' }}></img>
             <div>{item.price}</div>
@@ -82,7 +77,29 @@ useEffect(() => {
             </>
         )
       })}
+
+
+
+      
     </div>
     </>
   )
 }
+
+
+
+
+
+
+        // return ( 
+        //     <> 
+        //     {/* <img src={item.title}></img> */}
+        //     {/* <h6>{item.title}</h6> */}
+        //     <div className='filteredItems-styles'>{item.title}
+        //     <img src={item.image} style={{ width: '4em' }}></img>
+        //     <div>{item.price}</div>
+        //     </div>
+        //     </>
+        // )
+
+

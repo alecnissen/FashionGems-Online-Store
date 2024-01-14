@@ -258,3 +258,14 @@
 
 // next I will need to get all the products, so I must use an effect 
 // within the modal component 
+
+// I want it so products will render based on search, 
+// not render all products from the API call 
+
+// I have the products, I just want it so when I start typing it will suggest products based off input, 
+
+// before I had it so it would show all the products then as I type it would begin to filter down the products based on search input. 
+
+// I want it so when I type it will begin to show products based on search results. 
+
+// I believe I have to use filter over top of map, 

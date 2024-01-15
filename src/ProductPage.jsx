@@ -77,8 +77,8 @@ function changeQuantityIncrement(count) {
 
 
 
-  function changeQuantityDecrement(data) { 
-      setItemQuantity(data.quantity--);
+  function changeQuantityDecrement(count) { 
+    setItemQuantity(count)
   } 
 
 
@@ -104,10 +104,7 @@ function changeQuantityIncrement(count) {
                   </Card.Text>
                   <p>Select Quanity</p>
                   <button onClick={(e) => { 
-                    // count here, increment count, then pass to function 
-                    
                     count += 1
-                    console.log(count);
                     changeQuantityIncrement(count);
                   }}>+</button>
                   <input type="number" min="0" max="10" value={count} onChange={(e) => { 
@@ -120,7 +117,8 @@ function changeQuantityIncrement(count) {
                   </input>
 
                   <button onClick={(e) => { 
-                    changeQuantityDecrement(data);
+                     count -= 1
+                    changeQuantityDecrement(count);
                   }}>-</button>
 
 

@@ -27,7 +27,7 @@ const OVERLAY_STYLES = {
     zIndex: 1000
 }
 
-export default function Modal( { isOpen, children, onClose }) {
+export default function Modal( { isOpen, setIsOpen, children, onClose }) {
     const [data, setData] = useState([]);
     const [query, setQuery] = useState("");
 
@@ -49,7 +49,17 @@ useEffect(() => {
       }
     }
     getData();
-  }, [])
+  }, []) 
+
+
+
+//   useEffect(() => { 
+//   const closeModal = (e) => { 
+//     setIsOpen(false);
+//   }
+
+//   document.body.addEventListener('click', closeModal);
+// }, [])
 
 
 
@@ -73,7 +83,7 @@ useEffect(() => {
 
 
 
-
+  // document.body.addEventListener('click', onClose);
 
 
   console.log('logging data within Modal component', data);
@@ -82,7 +92,7 @@ useEffect(() => {
 
   return (
     <> 
-    <div style={OVERLAY_STYLES} />
+    <div style={OVERLAY_STYLES} onClick={onClose} />
     <div style={MODAL_STYLES}>
         <h6 className='modal-header-styles'>Search for Items</h6>
         <input value={query} onChange={(e) => { 

@@ -10,13 +10,22 @@ import { Link, Outlet, useSearchParams } from "react-router-dom"
 import CheckoutComponent from "./CheckoutComponent"
 import PropTypes from "prop-types"
 
+import Select from 'react-select';
 
-export default function ShoppingComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen }) { 
 
-    const [data, setData] = useState([]);
+export default function ShoppingComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen, category, setCategory }) { 
+
+    const [data, setData] = useState([]); 
 
     const [sortBy, setSortBy] = useState(null);
 
+    const getInitialState = () => { 
+      const value = "All Products"
+      return value;
+    }; 
+
+    const [value, setValue] = useState(getInitialState)
+    
     console.log(itemQuantity);
 
     useEffect(() => { 
@@ -25,6 +34,7 @@ export default function ShoppingComponent( { cartItems, setCartItems, newCartIte
       const response = await axios.get('https://fakestoreapi.com/products')
       console.log(response.data);
       setData(response.data);
+
     } catch (error) { 
       console.log(error);
     }
@@ -48,9 +58,24 @@ function changeAmount(item, itemQuantity) {
   
 } 
 
-// function selectOption(e) { 
-//   console.log(e);
-// }
+
+data.map((item) => { 
+  console.log(item.category);
+})
+
+// const getInitialState = () => { 
+//   const value = "Mens Clothing"
+//   return value;
+// }; 
+
+const handleChange = (e) => { 
+  setValue(e.target.value);
+};
+
+
+console.log('logging category state value', value);
+
+
 
 
     return ( 
@@ -60,19 +85,17 @@ function changeAmount(item, itemQuantity) {
         
         <div className="sort-by-div"> 
         Sort By:
-          <select>
-            <option onClick={(e) => { 
-              // selectOption(e.target);
-
-            }}>Recommended</option>
-            <option onChange={(e) => { 
-              // selectOption(e.target);
-            }}>Price: High to low</option>
-            <option>Price: Low to high</option>
-            <option>Alphabetical: A-Z</option>
-            <option>Alphabetical: Z-A</option>
+          <select value={value} onChange={handleChange}>
+            <option value={"All Products"}>All Products</option>
+            <option value={"Mens Clothing"}>Mens Clothing</option>
+            <option value={"Women Clothing"}>Womens clothing</option>
+            <option value={"Electronics"}>Electronics</option>
+            <option value={"Jewelery"}>Jewelery</option>
+            <option value={"Price: High to Low"}>Price: High to Low</option>
+            <option value={"Price: Low to High"}>Price: Low to High</option>
           </select>
         </div>
+
 
         <div className="shopping-component-products-container"> 
             {data.map((item) => { 
@@ -81,7 +104,6 @@ function changeAmount(item, itemQuantity) {
 
                     <Card style={{ width: '18rem' }} onClick={(e) => { 
                       // console.log(item);
-                      // setSelectedProduct(item);
                     }}>
                       <Link to={`/ProductPage/${item.id}`}> 
                     <Card.Img variant="top" src={item.image} style={{ width: '10em' }} className="shopping-component-card-img" />

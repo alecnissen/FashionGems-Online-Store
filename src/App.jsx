@@ -21,6 +21,7 @@ function App() {
   const [itemQuantity, setItemQuantity] = useState([]);
   const storedItems = JSON.parse(localStorage.getItem('items'));
   const [items, setItems] = useState(storedItems || []);
+  const [category, setCategory] = useState(null);
 
   const [isOpen, setIsOpen] = useState(false);
   // pass these to header component as props 
@@ -40,23 +41,12 @@ function App() {
     }
 }, []);
 
-// useEffect(() => { 
-//   const closeModal = (e) => { 
-//     setIsOpen(false);
-//   }
 
-//   document.body.addEventListener('click', closeModal);
-// }, [])
+
 
   console.log(storedItems) 
 
-  // console.log('logging useEffect within App.jsx', x);
-
   const newCartItems = cartItems.length; 
-
-  // <Modal isOpen={isOpen}> 
-  //   Fancy Modal
-  // </Modal>
 
   return (
     <>
@@ -64,7 +54,7 @@ function App() {
     <Routes> 
       <Route path='/' element={<HomePage newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></HomePage>}></Route>
 
-      <Route path='/ShoppingComponent' element={<ShoppingComponent cartItems={cartItems} setCartItems={setCartItems} newCartItems={newCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} isOpen={isOpen} setIsOpen={setIsOpen} ></ShoppingComponent>}></Route>
+      <Route path='/ShoppingComponent' element={<ShoppingComponent cartItems={cartItems} setCartItems={setCartItems} newCartItems={newCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} isOpen={isOpen} setIsOpen={setIsOpen} category={category} setCategory={setCategory} ></ShoppingComponent>}></Route>
       <Route path='/ProductPage/:id' element={<ProductPage newCartItems={newCartItems} setCartItems={setCartItems} cartItems={cartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} isOpen={isOpen} setIsOpen={setIsOpen} ></ProductPage>}></Route>
       <Route path='/About' element={<About newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></About>}></Route>
       <Route path='/CheckoutComponent' element={<CheckoutComponent cartItems={cartItems} setCartItems={setCartItems} newCartItems={newCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} isOpen={isOpen} setIsOpen={setIsOpen}></CheckoutComponent>}></Route>

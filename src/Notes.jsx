@@ -292,4 +292,31 @@
 // GET THE SEARCH BTN WORKING IN ALL COMPONENTS, 
 // MAKE SURE YOU CAN DECREMENT IN THE PRODUCT PAGE FOR ITEMS QUANTITY. 
 
+// **** GOAL 
+
+// make the sort by category working. 
+// how can I make this work  ? 
+
+// I would not use the youtube approach, I am getting confused with his code, 
+
+
+// use help channels then if all fails go back to video or ask some one, 
+
+// first see if you can make a function which gets all the categories. 
+// get a single category. 
+
+// I can get the categories from data, 
+
+// but how can I log back the value from the select option? 
+
+
+// if value === mens clothing, 
+
+// make a variable which grabs mens clothing items from the api call
+
+// can we make a state variables for each value, 
+// add those items to the state array using filter functions? 
 // 
+
+// next can we make a function which just returns mens clothing from the API call, 
+

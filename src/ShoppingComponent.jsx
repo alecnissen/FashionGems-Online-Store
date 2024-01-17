@@ -17,7 +17,9 @@ export default function ShoppingComponent( { cartItems, setCartItems, newCartIte
 
     const [data, setData] = useState([]); 
 
-    const [sortBy, setSortBy] = useState(null);
+    // const [sortBy, setSortBy] = useState(null);
+
+    const [sortedData, setSortedData] = useState(data);
 
     const getInitialState = () => { 
       const value = "All Products"
@@ -40,7 +42,48 @@ export default function ShoppingComponent( { cartItems, setCartItems, newCartIte
     }
   }
   getData();
-}, [])
+}, []) 
+
+useEffect(() => { 
+  if (value === "Men's Clothing") { 
+   setSortedData(data.filter((item) => { 
+      return item.category === "men's clothing"
+    }))
+  } else if (value === "Women's Clothing") { 
+    setSortedData(data.filter((item) => { 
+      return item.category === "women's clothing"
+    }))
+  } else if (value === "Electronics") { 
+    setSortedData(data.filter((item) => { 
+      return item.category === "electronics"
+    }))
+  } else if (value === "Jewelery") { 
+    setSortedData(data.filter((item) => { 
+      return item.category === "jewelery"
+    }))
+  } 
+  else if (value === "Price: High to Low") { 
+    // const sortedProducts = data.sort((a, b) => a.price - b.price);
+    // setSortedData(sortedProducts);
+    return setSortedData([...data].sort((a, b) => b.price - a.price))
+  } else if (value === "Price: Low to High") { 
+    return setSortedData([...data].sort((a, b) => a.price - b.price))
+  }
+  
+  else { 
+    setSortedData(data);
+  }
+}, [value, data])
+
+
+// useEffect(() => {
+//   if (value === "Price: High to Low") {
+//     setSortedData((prevData) => [...prevData].sort((a, b) => b.price - a.price));
+//   } else if (value === "Price: Low to High") {
+//     setSortedData((prevData) => [...prevData].sort((a, b) => a.price - b.price));
+//   }
+// }, [value]);
+
 
 function changeAmount(item, itemQuantity) {
   
@@ -87,8 +130,8 @@ console.log('logging category state value', value);
         Sort By:
           <select value={value} onChange={handleChange}>
             <option value={"All Products"}>All Products</option>
-            <option value={"Mens Clothing"}>Mens Clothing</option>
-            <option value={"Women Clothing"}>Womens clothing</option>
+            <option value={"Men's Clothing"}>Mens Clothing</option>
+            <option value={"Women's Clothing"}>Womens clothing</option>
             <option value={"Electronics"}>Electronics</option>
             <option value={"Jewelery"}>Jewelery</option>
             <option value={"Price: High to Low"}>Price: High to Low</option>
@@ -98,7 +141,7 @@ console.log('logging category state value', value);
 
 
         <div className="shopping-component-products-container"> 
-            {data.map((item) => { 
+            {sortedData.map((item) => { 
                  return ( 
                     <div className="shopping-component-card-container" key={item.id}> 
 

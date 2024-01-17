@@ -320,3 +320,16 @@
 
 // next can we make a function which just returns mens clothing from the API call, 
 
+
+
+// you will need a loading screen for each section, whenever the api call is made, 
+// handle the errors just like you did in memory card
+
+// It is working ok in shopping component I will do the same in product page, and checkout 
+
+// error component only displays when I mess up something after /products 
+// or the https request, 
+// If I mess with the url at all, it will crash the page but will show error in console
+
+// next I will do keys, 
+// find out where a key could be used, 

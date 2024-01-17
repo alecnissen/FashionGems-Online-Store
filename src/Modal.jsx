@@ -31,6 +31,9 @@ export default function Modal( { isOpen, setIsOpen, children, onClose }) {
     const [data, setData] = useState([]);
     const [query, setQuery] = useState("");
 
+    const [error, setError] = useState(null);
+    const [loading, setLoading] = useState(false);
+
     const filteredItems = data.filter(item => { 
         return item.title.toString().toLowerCase().includes(query.toLowerCase())
     }) 
@@ -40,12 +43,34 @@ export default function Modal( { isOpen, setIsOpen, children, onClose }) {
 
 useEffect(() => { 
     const getData = async () => { 
+      setLoading(true);
       try { 
         const response = await axios.get('https://fakestoreapi.com/products')
         console.log(response.data);
         setData(response.data);
       } catch (error) { 
         console.log(error);
+        if (error.response) {
+          // The request was made and the server responded with a status code
+          // that falls out of the range of 2xx
+          console.log(error.response.data);
+          console.log(error.response.status);
+          console.log(error.response.headers);
+          setError('Server responded with ' + ' ' + error.response.status + ' ' + 'error');
+        } else if (error.request) {
+          // The request was made but no response was received
+          // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+          // http.ClientRequest in node.js
+          console.log(error.request);
+          setError(error.request);
+        } else {
+          // Something happened in setting up the request that triggered an Error
+          console.log('Error', error.message);
+          setError(error.message);
+        }
+        console.log(error.config);
+      } finally { 
+        setLoading(false);
       }
     }
     getData();
@@ -94,6 +119,11 @@ useEffect(() => {
     <> 
     <div style={OVERLAY_STYLES} onClick={onClose} />
     <div style={MODAL_STYLES}>
+      {/* <h1 className='error-msg-search-modal-styles'>{error}</h1> */}
+
+      {error && <h1 className='error-msg-search-modal-styles'>{error}</h1>}
+      {loading && <h1 className='error-msg-search-modal-styles'>Loading...</h1>}
+
         <h6 className='modal-header-styles'>Search for Items</h6>
         <input value={query} onChange={(e) => { 
             // console.log(e.target.value);

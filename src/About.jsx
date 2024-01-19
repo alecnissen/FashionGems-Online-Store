@@ -3,8 +3,14 @@ import Header from "./Header"
 import Footer from "./Footer"
 import aboutPhoto1 from "../Images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg"
 import aboutPhoto2 from "../Images/pexels-mart-production-7679453.jpg"
+import { propTypes } from "react-bootstrap/esm/Image"
+import PropTypes from "prop-types"
 
 export default function About( { newCartItems, isOpen, setIsOpen }) { 
+    console.log(typeof newCartItems);
+    console.log(typeof isOpen);
+    console.log(typeof setIsOpen);
+
     return ( 
         <> 
         <Header newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
@@ -28,4 +34,24 @@ export default function About( { newCartItems, isOpen, setIsOpen }) {
         <Footer></Footer>
         </>
     )
+} 
+
+About.propTypes = { 
+   
+        newCartItems: PropTypes.number,
+        isOpen: PropTypes.bool,
+        setIsOpen: PropTypes.func,
+
 }
+
+
+
+
+
+// MainComponent.propTypes = { 
+//     data: PropTypes.array,
+//     img1: PropTypes.string,
+//     img2: PropTypes.string,
+//     img3: PropTypes.string,
+// } 
+

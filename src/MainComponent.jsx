@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import storeImg from "../Images/nguyen-dang-hoang-nhu-Nne2TxFHPyQ-unsplash.jpg";
 
 
-export default function MainComponent({ data, img1, img2, img3, img4, img5 }) { 
+export default function MainComponent({ img1, img2, img3 }) { 
 
     return ( 
         <> 
@@ -70,7 +70,6 @@ export default function MainComponent({ data, img1, img2, img3, img4, img5 }) {
 }
 
 MainComponent.propTypes = { 
-    data: PropTypes.array,
     img1: PropTypes.string,
     img2: PropTypes.string,
     img3: PropTypes.string,

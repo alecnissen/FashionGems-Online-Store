@@ -122,7 +122,7 @@ function changeQuantityIncrement(count) {
          {error && <ErrorComponent error={error}></ErrorComponent>}
          {loading && <LoadingComponent></LoadingComponent>}
 
-                {!error && <div className="product-page-item-container">
+                {!error && <div className="product-page-item-container" key={data.id}>
                   <Card style={{ width: '18rem' }}>
                 <h4>{data.title}</h4>
                   {/* <Link to={`/ProductPage/${item.id}`}>  */}

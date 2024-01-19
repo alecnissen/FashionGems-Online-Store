@@ -333,3 +333,7 @@
 
 // next I will do keys, 
 // find out where a key could be used, 
+
+// *** 1/18 goal
+// Finish prop types 
+// Begin variable renaming, and cleanup, take one page at a time, 

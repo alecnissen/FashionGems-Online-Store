@@ -5,6 +5,7 @@ import HomePage from "./HomePage";
 import Header from "./Header";
 // import { useEffect } from "react";
 import crypto from 'crypto';
+import PropTypes from "prop-types"
 
 
 // export default function CheckoutComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen }) { 
@@ -73,6 +74,14 @@ export default function CheckoutComponent({ cartItems, setCartItems, newCartItem
     let total = 0;
     // let productPrice = 0;
 
+    console.log(typeof cartItems)
+    console.log(typeof setCartItems)
+    console.log(typeof newCartItems)
+    console.log(typeof itemQuantity)
+    console.log(typeof setItemQuantity)
+    console.log(typeof isOpen)
+    console.log(typeof setIsOpen)
+
     function handleDelete(item) {
         setCartItems(cartItems.filter(selectedItem => selectedItem.title !== item.title));
     }
@@ -128,3 +137,32 @@ export default function CheckoutComponent({ cartItems, setCartItems, newCartItem
         </>
     )
 }
+
+
+CheckoutComponent.propTypes = { 
+    cartItems: PropTypes.array,
+    setCartItems: PropTypes.func,
+    newCartItems: PropTypes.number,
+    itemQuantity: PropTypes.array,
+    setItemQuantity: PropTypes.func,
+    isOpen: PropTypes.bool,
+    setIsOpen: PropTypes.func,
+}
+
+
+
+// About.propTypes = { 
+   
+//     newCartItems: PropTypes.number,
+//     isOpen: PropTypes.bool,
+//     setIsOpen: PropTypes.func,
+
+// object 
+// function 
+// number 
+// object 
+// function 
+// boolean 
+// function 
+
+// }

@@ -37,9 +37,7 @@ export default function Header( { newCartItems, isOpen, setIsOpen } ) {
     setIsOpen(true)
 }}>Search</button>
 
-<Modal isOpen={isOpen} onClose={() => setIsOpen(false)}> 
-    Fancy Modal
-</Modal>
+<Modal isOpen={isOpen} onClose={() => setIsOpen(false)}></Modal>
 
 
 <div className="badge-icon-for-shopping-cart">{newCartItems}</div>
@@ -66,5 +64,7 @@ export default function Header( { newCartItems, isOpen, setIsOpen } ) {
 
 Header.propTypes = { 
     newCartItems: PropTypes.number,
-    newItemQuantity: PropTypes.number
+    newItemQuantity: PropTypes.number,
+    isOpen: PropTypes.bool,
+    setIsOpen: PropTypes.func
 }

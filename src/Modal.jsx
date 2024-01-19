@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'; 
 import { useEffect, useState, useRef } from 'react';
 import { Link } from "react-router-dom"
+import PropTypes from "prop-types"
 
 
 const MODAL_STYLES = { 
@@ -27,7 +28,7 @@ const OVERLAY_STYLES = {
     zIndex: 1000
 }
 
-export default function Modal( { isOpen, setIsOpen, children, onClose }) {
+export default function Modal( { isOpen, setIsOpen, onClose }) {
     const [data, setData] = useState([]);
     const [query, setQuery] = useState("");
 
@@ -156,7 +157,11 @@ useEffect(() => {
   )
 }
 
-
+Modal.propTypes = { 
+  isOpen: PropTypes.bool,
+  setIsOpen: PropTypes.func,
+  onClose: PropTypes.func,
+}
 
 
 

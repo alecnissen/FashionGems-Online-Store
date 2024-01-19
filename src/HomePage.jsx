@@ -50,5 +50,7 @@ export default function HomePage( { newCartItems, isOpen, setIsOpen }) {
 // }
 
 HomePage.propTypes = { 
-  newCartItems: PropTypes.number
+  newCartItems: PropTypes.number,
+  isOpen: PropTypes.bool,
+  setIsOpen: PropTypes.func,
 }

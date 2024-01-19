@@ -7,7 +7,6 @@ import { propTypes } from "react-bootstrap/esm/Image"
 import PropTypes from "prop-types"
 
 export default function About( { numberOfCartItems, isOpen, setIsOpen }) { 
-    // console.log(typeof newCartItems);
     console.log(typeof isOpen);
     console.log(typeof setIsOpen);
 

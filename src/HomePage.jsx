@@ -8,7 +8,7 @@ import CheckoutComponent from './CheckoutComponent';
 import ImageCarouselComponent from './ImageCarouselComponent';
 
 export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
-  const [data, setData] = useState([]);
+  const [productData, setProductData] = useState([]);
   const [img1, setImg1] = useState('');
   const [img2, setImg2] = useState('');
   const [img3, setImg3] = useState('');
@@ -20,7 +20,7 @@ export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
       try {
         const response = await axios.get('https://fakestoreapi.com/products');
         console.log(response.data);
-        setData(response.data);
+        setProductData(response.data);
         setImg1(response.data[0].image);
         setImg2(response.data[1].image);
         setImg3(response.data[2].image);
@@ -36,7 +36,7 @@ export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
   return (
     <>
       <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
-      <ImageCarouselComponent data={data} img1={img1} img2={img2} img3={img3} img4={img4} img5={img5}></ImageCarouselComponent>
+      <ImageCarouselComponent productData={productData} img1={img1} img2={img2} img3={img3} img4={img4} img5={img5}></ImageCarouselComponent>
       <Footer></Footer>
     </>
   );

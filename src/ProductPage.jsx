@@ -16,7 +16,7 @@ let count = 0;
 export default function ProductPage( { cartItems, setCartItems, numberOfCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen }) { 
 
     const { id } = useParams();
-    const [data, setData] = useState([]);
+    const [singleProductData, setSingleProductData] = useState([]);
 
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
@@ -35,7 +35,7 @@ export default function ProductPage( { cartItems, setCartItems, numberOfCartItem
           try { 
             const response = await axios.get(`https://fakestoreapi.com/products/${id}`)
             console.log(response.data);
-            setData(response.data);
+            setSingleProductData(response.data);
           } catch (error) { 
             console.log(error);
              if (error.response) {
@@ -65,17 +65,17 @@ export default function ProductPage( { cartItems, setCartItems, numberOfCartItem
       }, [id]) 
 
 
-  function changeAmount(data, itemQuantity) {
+  function changeAmount(singleProductData, itemQuantity) {
   
     const newItem = { 
-      title: data.title,
-      description: data.description,
-      price: data.price,
-      image: data.image,
+      title: singleProductData.title,
+      description: singleProductData.description,
+      price: singleProductData.price,
+      image: singleProductData.image,
       quantity: itemQuantity,
   }
 
-  console.log(data);
+  console.log(singleProductData);
 
   // console.log(itemQuantity);
 
@@ -90,7 +90,7 @@ export default function ProductPage( { cartItems, setCartItems, numberOfCartItem
 
 function changeQuantityIncrement(count) {
 
-  console.log(data.quantity);
+  console.log(singleProductData.quantity);
 
   console.log(count)
 
@@ -123,16 +123,16 @@ function changeQuantityIncrement(count) {
          {error && <ErrorComponent error={error}></ErrorComponent>}
          {loading && <LoadingComponent></LoadingComponent>}
 
-                {!error && <div className="product-page-item-container" key={data.id}>
+                {!error && <div className="product-page-item-container" key={singleProductData.id}>
                   <Card style={{ width: '18rem' }}>
-                <h4>{data.title}</h4>
+                <h4>{singleProductData.title}</h4>
                   {/* <Link to={`/ProductPage/${item.id}`}>  */}
-                <Card.Img variant="top" src={data.image} style={{ width: '10em' }} className="shopping-component-card-img" />
+                <Card.Img variant="top" src={singleProductData.image} style={{ width: '10em' }} className="shopping-component-card-img" />
                 {/* </Link> */}
                 <Card.Body>
-                  <Card.Title>{data.title}</Card.Title>
+                  <Card.Title>{singleProductData.title}</Card.Title>
                   <Card.Text>
-                    {data.description}
+                    {singleProductData.description}
                   </Card.Text>
                   <p>Select Quanity</p>
                   <button onClick={(e) => { 
@@ -157,10 +157,10 @@ function changeQuantityIncrement(count) {
                   {/* <button>-</button>
                   <input></input>
                   <button>+</button> */}
-                  <p>${data.price}</p>
+                  <p>${singleProductData.price}</p>
                   <Button variant="primary" onClick={((e) => { 
                     // setCartItems([...cartItems, data]);
-                    changeAmount(data, itemQuantity);
+                    changeAmount(singleProductData, itemQuantity);
                     count = 0;
                   })}>Add to Cart</Button>
                 </Card.Body>

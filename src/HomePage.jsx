@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios'; 
 import CheckoutComponent from "./CheckoutComponent"
 
-export default function HomePage( { newCartItems, isOpen, setIsOpen }) { 
+export default function HomePage( { numberOfCartItems, isOpen, setIsOpen }) { 
 
 
     const [data, setData] = useState([]);
@@ -38,7 +38,7 @@ export default function HomePage( { newCartItems, isOpen, setIsOpen }) {
 
     return ( 
         <> 
-        <Header newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen} ></Header>
+        <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen} ></Header>
         <MainComponent data={data} img1={img1} img2={img2} img3={img3} img4={img4} img5={img5}></MainComponent>
         <Footer></Footer>
         </>
@@ -50,7 +50,7 @@ export default function HomePage( { newCartItems, isOpen, setIsOpen }) {
 // }
 
 HomePage.propTypes = { 
-  newCartItems: PropTypes.number,
+  numberOfCartItems: PropTypes.number,
   isOpen: PropTypes.bool,
   setIsOpen: PropTypes.func,
 }

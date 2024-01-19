@@ -20,9 +20,8 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
   const [itemQuantity, setItemQuantity] = useState([]);
   const storedItems = JSON.parse(localStorage.getItem('items'));
-  const [items, setItems] = useState(storedItems || []);
+  const [localStorageItems, setLocalStorageItems] = useState(storedItems || []);
   const [category, setCategory] = useState(null);
-
   const [isOpen, setIsOpen] = useState(false);
   // pass these to header component as props 
 
@@ -31,7 +30,7 @@ function App() {
   useEffect(() => { 
       if (cartItems !== null) { 
           localStorage.setItem('items', JSON.stringify(cartItems));
-          setItems(cartItems);
+          setLocalStorageItems(cartItems);
     }
   }, [cartItems]) 
 
@@ -46,18 +45,20 @@ function App() {
 
   console.log(storedItems) 
 
-  const newCartItems = cartItems.length; 
+  // const newCartItems = cartItems.length; 
+
+  const numberOfCartItems = cartItems.length; 
 
   return (
     <>
 
     <Routes> 
-      <Route path='/' element={<HomePage newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></HomePage>}></Route>
+      <Route path='/' element={<HomePage numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></HomePage>}></Route>
 
-      <Route path='/ShoppingComponent' element={<ShoppingComponent cartItems={cartItems} setCartItems={setCartItems} newCartItems={newCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} isOpen={isOpen} setIsOpen={setIsOpen} category={category} setCategory={setCategory} ></ShoppingComponent>}></Route>
-      <Route path='/ProductPage/:id' element={<ProductPage newCartItems={newCartItems} setCartItems={setCartItems} cartItems={cartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} isOpen={isOpen} setIsOpen={setIsOpen} ></ProductPage>}></Route>
-      <Route path='/About' element={<About newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></About>}></Route>
-      <Route path='/CheckoutComponent' element={<CheckoutComponent cartItems={cartItems} setCartItems={setCartItems} newCartItems={newCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} isOpen={isOpen} setIsOpen={setIsOpen}></CheckoutComponent>}></Route>
+      <Route path='/ShoppingComponent' element={<ShoppingComponent cartItems={cartItems} setCartItems={setCartItems} numberOfCartItems={numberOfCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} isOpen={isOpen} setIsOpen={setIsOpen} category={category} setCategory={setCategory} ></ShoppingComponent>}></Route>
+      <Route path='/ProductPage/:id' element={<ProductPage numberOfCartItems={numberOfCartItems} setCartItems={setCartItems} cartItems={cartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} isOpen={isOpen} setIsOpen={setIsOpen} ></ProductPage>}></Route>
+      <Route path='/About' element={<About numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></About>}></Route>
+      <Route path='/CheckoutComponent' element={<CheckoutComponent cartItems={cartItems} setCartItems={setCartItems} numberOfCartItems={numberOfCartItems} itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} isOpen={isOpen} setIsOpen={setIsOpen}></CheckoutComponent>}></Route>
       <Route path='*' element={<NotFound></NotFound>}></Route>
     </Routes>
   

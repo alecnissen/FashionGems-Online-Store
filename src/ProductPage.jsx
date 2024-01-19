@@ -8,11 +8,12 @@ import Header from "./Header";
 import Footer from "./Footer";
 import ErrorComponent from "./ErrorComponent";
 import LoadingComponent from "./LoadingComponent";
+import PropTypes from "prop-types"
 
 
 let count = 0;
 
-export default function ProductPage( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen }) { 
+export default function ProductPage( { cartItems, setCartItems, numberOfCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen }) { 
 
     const { id } = useParams();
     const [data, setData] = useState([]);
@@ -111,7 +112,7 @@ function changeQuantityIncrement(count) {
 
     return ( 
         <> 
-        <Header newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
+        <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
         {/* <h3>{data.title}</h3>
         <img src={data.image} alt="displays clicked on product" />
         <h5>{data.description}</h5>
@@ -170,4 +171,14 @@ function changeQuantityIncrement(count) {
           <Footer></Footer>
         </>
     )
+}
+
+ProductPage.propTypes = { 
+  cartItems: PropTypes.array,
+  setCartItems: PropTypes.func,
+  numberOfCartItems: PropTypes.number,
+  itemQuantity: PropTypes.array,
+  setItemQuantity: PropTypes.func, 
+  isOpen: PropTypes.bool,
+  setIsOpen: PropTypes.func,
 }

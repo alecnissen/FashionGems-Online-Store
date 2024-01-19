@@ -70,13 +70,13 @@ import PropTypes from "prop-types"
 // }
 
 
-export default function CheckoutComponent({ cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen }) {
+export default function CheckoutComponent({ cartItems, setCartItems, numberOfCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen }) {
     let total = 0;
     // let productPrice = 0;
 
     console.log(typeof cartItems)
     console.log(typeof setCartItems)
-    console.log(typeof newCartItems)
+    // console.log(typeof newCartItems)
     console.log(typeof itemQuantity)
     console.log(typeof setItemQuantity)
     console.log(typeof isOpen)
@@ -96,7 +96,7 @@ export default function CheckoutComponent({ cartItems, setCartItems, newCartItem
 
     return (
         <>
-            <Header newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
+            <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
             {cartItems.map((item) => {
                 let productPrice = item.price * item.quantity; 
                 total += productPrice;
@@ -142,7 +142,7 @@ export default function CheckoutComponent({ cartItems, setCartItems, newCartItem
 CheckoutComponent.propTypes = { 
     cartItems: PropTypes.array,
     setCartItems: PropTypes.func,
-    newCartItems: PropTypes.number,
+    numberOfCartItems: PropTypes.number,
     itemQuantity: PropTypes.array,
     setItemQuantity: PropTypes.func,
     isOpen: PropTypes.bool,

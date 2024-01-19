@@ -242,10 +242,10 @@
 
 // *** TODO'S ***********************************************
 // implement local storage, / 
-// propTypes for each component, 
-// keys for each component, 
-// implement the decrement for product page!!! dont forget that, 
-// ERROR AND LOADING SCREENS 
+// propTypes for each component, /
+// keys for each component, /
+// implement the decrement for product page!!! dont forget that, /
+// ERROR AND LOADING SCREENS /
 
 
 
@@ -335,5 +335,7 @@
 // find out where a key could be used, 
 
 // *** 1/18 goal
-// Finish prop types 
+// Finish prop types /
 // Begin variable renaming, and cleanup, take one page at a time, 
+
+// I will being variable renaming, starting at the top, one file at a time. 

@@ -16,7 +16,7 @@ import ErrorComponent from "./ErrorComponent"
 import LoadingComponent from "./LoadingComponent"
 
 
-export default function ShoppingComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen, category, setCategory }) { 
+export default function ShoppingComponent( { cartItems, setCartItems, numberOfCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen, category, setCategory }) { 
 
     const [data, setData] = useState([]); 
 
@@ -150,7 +150,7 @@ console.log('logging category state value', value);
 
     return ( 
         <> 
-        <Header newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
+        <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
         <h1 className="shopping-component-header-text">Our Collection</h1>
         
         <div className="sort-by-div"> 
@@ -205,6 +205,22 @@ console.log('logging category state value', value);
         </>
     )
 }
+
+
+ShoppingComponent.propTypes = { 
+  cartItems: PropTypes.array,
+  setCartItems: PropTypes.func,
+  numberOfCartItems: PropTypes.number,
+  itemQuantity: PropTypes.array,
+  setItemQuantity: PropTypes.func, 
+  isOpen: PropTypes.bool,
+  setIsOpen: PropTypes.func,
+  category: PropTypes.string,
+  setCategory: PropTypes.func,
+}
+
+
+
 
 // ShoppingComponent.propTypes = { 
 //   cartItems: PropTypes.array,

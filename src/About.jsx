@@ -6,14 +6,14 @@ import aboutPhoto2 from "../Images/pexels-mart-production-7679453.jpg"
 import { propTypes } from "react-bootstrap/esm/Image"
 import PropTypes from "prop-types"
 
-export default function About( { newCartItems, isOpen, setIsOpen }) { 
-    console.log(typeof newCartItems);
+export default function About( { numberOfCartItems, isOpen, setIsOpen }) { 
+    // console.log(typeof newCartItems);
     console.log(typeof isOpen);
     console.log(typeof setIsOpen);
 
     return ( 
         <> 
-        <Header newCartItems={newCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
+        <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
         <div className="about-component-content-container">
         <h1>Our Story</h1>
         <h4>We Are Committed to Excellence!</h4>
@@ -38,7 +38,7 @@ export default function About( { newCartItems, isOpen, setIsOpen }) {
 
 About.propTypes = { 
    
-        newCartItems: PropTypes.number,
+        numberOfCartItems: PropTypes.number,
         isOpen: PropTypes.bool,
         setIsOpen: PropTypes.func,
 

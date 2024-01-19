@@ -7,7 +7,7 @@ import PropTypes from "prop-types"
 import ShoppingComponent from "./ShoppingComponent";
 import Modal from "./Modal";
 
-export default function Header( { newCartItems, isOpen, setIsOpen } ) { 
+export default function Header( { numberOfCartItems, isOpen, setIsOpen } ) { 
     // console.log(typeof newCartCount);
     // console.log(typeof newItemQuantity);
 
@@ -40,7 +40,7 @@ export default function Header( { newCartItems, isOpen, setIsOpen } ) {
 <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}></Modal>
 
 
-<div className="badge-icon-for-shopping-cart">{newCartItems}</div>
+<div className="badge-icon-for-shopping-cart">{numberOfCartItems}</div>
 {/* <img src={cartIcon} className="cart-icon-header" onClick={(e) => { 
     <Link to="/CheckoutComponent"></Link>
 }} >
@@ -63,7 +63,7 @@ export default function Header( { newCartItems, isOpen, setIsOpen } ) {
 } 
 
 Header.propTypes = { 
-    newCartItems: PropTypes.number,
+    numberOfCartItems: PropTypes.number,
     newItemQuantity: PropTypes.number,
     isOpen: PropTypes.bool,
     setIsOpen: PropTypes.func

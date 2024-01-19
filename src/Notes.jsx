@@ -339,3 +339,8 @@
 // Begin variable renaming, and cleanup, take one page at a time, 
 
 // I will being variable renaming, starting at the top, one file at a time. 
+
+// go through and check variable names for each page, 
+// start with the api calls
+
+// PROP TYPES ERROR

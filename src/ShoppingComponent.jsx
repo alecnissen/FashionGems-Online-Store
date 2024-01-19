@@ -18,9 +18,9 @@ import LoadingComponent from "./LoadingComponent"
 
 export default function ShoppingComponent( { cartItems, setCartItems, numberOfCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen, category, setCategory }) { 
 
-    const [data, setData] = useState([]); 
+    const [productData, setProductData] = useState([]); 
 
-    const [sortedData, setSortedData] = useState(data);
+    const [sortedData, setSortedData] = useState(productData);
 
     const [error, setError] = useState(null);
 
@@ -41,7 +41,7 @@ export default function ShoppingComponent( { cartItems, setCartItems, numberOfCa
     try { 
       const response = await axios.get('https://fakestoreapi.com/products')
       console.log(response.data);
-      setData(response.data);
+      setProductData(response.data);
 
     } catch (error) { 
       console.log(error);
@@ -73,34 +73,34 @@ export default function ShoppingComponent( { cartItems, setCartItems, numberOfCa
 
 useEffect(() => { 
   if (value === "Men's Clothing") { 
-   setSortedData(data.filter((item) => { 
+   setSortedData(productData.filter((item) => { 
       return item.category === "men's clothing"
     }))
   } else if (value === "Women's Clothing") { 
-    setSortedData(data.filter((item) => { 
+    setSortedData(productData.filter((item) => { 
       return item.category === "women's clothing"
     }))
   } else if (value === "Electronics") { 
-    setSortedData(data.filter((item) => { 
+    setSortedData(productData.filter((item) => { 
       return item.category === "electronics"
     }))
   } else if (value === "Jewelery") { 
-    setSortedData(data.filter((item) => { 
+    setSortedData(productData.filter((item) => { 
       return item.category === "jewelery"
     }))
   } 
   else if (value === "Price: High to Low") { 
     // const sortedProducts = data.sort((a, b) => a.price - b.price);
     // setSortedData(sortedProducts);
-    return setSortedData([...data].sort((a, b) => b.price - a.price))
+    return setSortedData([...productData].sort((a, b) => b.price - a.price))
   } else if (value === "Price: Low to High") { 
-    return setSortedData([...data].sort((a, b) => a.price - b.price))
+    return setSortedData([...productData].sort((a, b) => a.price - b.price))
   }
   
   else { 
-    setSortedData(data);
+    setSortedData(productData);
   }
-}, [value, data])
+}, [value, productData])
 
 
 // useEffect(() => {
@@ -129,7 +129,7 @@ function changeAmount(item, itemQuantity) {
 } 
 
 
-data.map((item) => { 
+productData.map((item) => { 
   console.log(item.category);
 })
 

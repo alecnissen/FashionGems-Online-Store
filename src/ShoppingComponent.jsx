@@ -18,6 +18,9 @@ import LoadingComponent from "./LoadingComponent"
 
 export default function ShoppingComponent( { cartItems, setCartItems, numberOfCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen, category, setCategory }) { 
 
+    console.log('typeof itemQuantity from shopping component', typeof itemQuantity);
+    // console.log('array check for itemQuantity in shopping', Array.isArray(itemQuantity));
+
     const [productData, setProductData] = useState([]); 
 
     const [sortedData, setSortedData] = useState(productData);
@@ -146,6 +149,9 @@ const handleChange = (e) => {
 console.log('logging category state value', value);
 
 
+console.log('typeof itemQuantity check in shopping component, before return', typeof itemQuantity);
+
+console.log('array check for itemQuantity in product', Array.isArray(itemQuantity));
 
 
     return ( 
@@ -205,6 +211,8 @@ console.log('logging category state value', value);
         </>
     )
 }
+
+// console.log('typeof itemQuantity check in shopping component, after function', typeof itemQuantity);
 
 
 ShoppingComponent.propTypes = { 

@@ -29,6 +29,9 @@ export default function ProductPage( { cartItems, setCartItems, numberOfCartItem
 
     console.log(itemQuantity);
 
+    console.log('typeof itemQuantity check', typeof itemQuantity);
+    // console.log('array check for itemQuantity in product', Array.isArray(itemQuantity));
+
     useEffect(() => { 
         const getData = async () => { 
            setLoading(true);
@@ -109,6 +112,8 @@ function changeQuantityIncrement(count) {
     setItemQuantity(count)
   } 
 
+  console.log('typeof itemQuantity check in product component, before return', typeof itemQuantity);
+  console.log('array check for itemQuantity in product', Array.isArray(itemQuantity));
 
     return ( 
         <> 
@@ -172,6 +177,8 @@ function changeQuantityIncrement(count) {
         </>
     )
 }
+
+// console.log('typeof itemQuantity check in product component, after function', typeof itemQuantity);
 
 ProductPage.propTypes = { 
   cartItems: PropTypes.array,

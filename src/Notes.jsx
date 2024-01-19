@@ -344,3 +344,19 @@
 // start with the api calls
 
 // PROP TYPES ERROR
+
+// fix the prop error, lint error, 
+// commit, 
+// then begin the process of folder,
+
+// prop error 
+// 56 72 90
+
+// I will test again but I saw this error pop up when I added an item to the cart 
+
+// the prop types error pops up when I add an item to the cart. 
+// 
+// itemQuantity is an array, 
+// does its value change at all? Put console logs after the function because it probably changes to a number 
+
+// 

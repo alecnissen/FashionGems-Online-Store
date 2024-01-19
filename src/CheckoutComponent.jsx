@@ -77,7 +77,8 @@ export default function CheckoutComponent({ cartItems, setCartItems, numberOfCar
     console.log(typeof cartItems)
     console.log(typeof setCartItems)
     // console.log(typeof newCartItems)
-    console.log(typeof itemQuantity)
+    console.log('typeof itemQuantity check in checkout component', typeof itemQuantity);
+    // console.log('array check for itemQuantity in checkout', Array.isArray(itemQuantity));
     console.log(typeof setItemQuantity)
     console.log(typeof isOpen)
     console.log(typeof setIsOpen)
@@ -93,6 +94,9 @@ export default function CheckoutComponent({ cartItems, setCartItems, numberOfCar
     function changeQuantityDecrement(item) {
         setItemQuantity(--item.quantity);
     }
+
+    console.log('typeof itemQuantity check in checkout component, before return', typeof itemQuantity);
+    console.log('array check for itemQuantity in checkout', Array.isArray(itemQuantity));
 
     return (
         <>
@@ -137,6 +141,8 @@ export default function CheckoutComponent({ cartItems, setCartItems, numberOfCar
         </>
     )
 }
+
+// console.log('typeof itemQuantity check in checkout component, after function', typeof itemQuantity);
 
 
 CheckoutComponent.propTypes = { 

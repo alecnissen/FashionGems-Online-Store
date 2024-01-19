@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import storeImg from "../Images/nguyen-dang-hoang-nhu-Nne2TxFHPyQ-unsplash.jpg";
 
 
-export default function MainComponent({ img1, img2, img3 }) { 
+export default function ImageCarouselComponent({ img1, img2, img3 }) { 
 
     return ( 
         <> 
@@ -69,7 +69,7 @@ export default function MainComponent({ img1, img2, img3 }) {
     )
 }
 
-MainComponent.propTypes = { 
+ImageCarouselComponent.propTypes = { 
     img1: PropTypes.string,
     img2: PropTypes.string,
     img3: PropTypes.string,

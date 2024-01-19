@@ -46,12 +46,3 @@ About.propTypes = {
 
 
 
-
-
-// MainComponent.propTypes = { 
-//     data: PropTypes.array,
-//     img1: PropTypes.string,
-//     img2: PropTypes.string,
-//     img3: PropTypes.string,
-// } 
-

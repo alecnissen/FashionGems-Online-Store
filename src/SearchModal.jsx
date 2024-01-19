@@ -29,13 +29,13 @@ const OVERLAY_STYLES = {
 }
 
 export default function Modal( { isOpen, setIsOpen, onClose }) {
-    const [data, setData] = useState([]);
+    const [modalData, setModalData] = useState([]);
     const [query, setQuery] = useState("");
 
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
 
-    const filteredItems = data.filter(item => { 
+    const filteredItems = modalData.filter(item => { 
         return item.title.toString().toLowerCase().includes(query.toLowerCase())
     }) 
 
@@ -48,7 +48,7 @@ useEffect(() => {
       try { 
         const response = await axios.get('https://fakestoreapi.com/products')
         console.log(response.data);
-        setData(response.data);
+        setModalData(response.data);
       } catch (error) { 
         console.log(error);
         if (error.response) {
@@ -112,7 +112,7 @@ useEffect(() => {
   // document.body.addEventListener('click', onClose);
 
 
-  console.log('logging data within Modal component', data);
+  console.log('logging data within Modal component', modalData);
 
   if (!isOpen) return null
 

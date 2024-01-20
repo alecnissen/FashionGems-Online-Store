@@ -1,18 +1,18 @@
 import './App.css';
 import react from 'react';
-import Header from './Header';
+import Header from './Components/HomePage/Header';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import Footer from './Footer';
+import Footer from './Components/HomePage/Footer';
 import ShoppingComponent from './ShoppingComponent';
 import NotFound from './NotFound';
-import HomePage from './HomePage';
+import HomePage from './Components/HomePage/HomePage';
 import { Route, Routes } from 'react-router-dom';
 import ProductPage from './ProductPage';
 import About from './About';
 import CheckoutComponent from './CheckoutComponent';
 import Modal from './SearchModal';
-import ImageCarouselComponent from './ImageCarouselComponent';
+import ImageCarouselComponent from './Components/HomePage/ImageCarouselComponent';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);

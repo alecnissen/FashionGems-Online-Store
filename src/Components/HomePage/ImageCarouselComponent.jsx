@@ -4,8 +4,8 @@ import PropTypes from "prop-types"
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
-import storeImg from "../Images/nguyen-dang-hoang-nhu-Nne2TxFHPyQ-unsplash.jpg";
-
+// import storeImg from "../Images/nguyen-dang-hoang-nhu-Nne2TxFHPyQ-unsplash.jpg";
+import storeImg from "../../../Images/nguyen-dang-hoang-nhu-Nne2TxFHPyQ-unsplash.jpg";
 
 export default function ImageCarouselComponent({ img1, img2, img3 }) { 
 

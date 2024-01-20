@@ -4,7 +4,7 @@ import Footer from './Footer';
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import CheckoutComponent from './CheckoutComponent';
+import CheckoutComponent from '../../CheckoutComponent';
 import ImageCarouselComponent from './ImageCarouselComponent';
 
 export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
@@ -36,7 +36,14 @@ export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
   return (
     <>
       <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
-      <ImageCarouselComponent productData={productData} img1={img1} img2={img2} img3={img3} img4={img4} img5={img5}></ImageCarouselComponent>
+      <ImageCarouselComponent
+        productData={productData}
+        img1={img1}
+        img2={img2}
+        img3={img3}
+        img4={img4}
+        img5={img5}
+      ></ImageCarouselComponent>
       <Footer></Footer>
     </>
   );

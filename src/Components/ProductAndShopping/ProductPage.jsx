@@ -6,8 +6,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Header from '../HomePage/Header';
 import Footer from '../HomePage/Footer';
-import ErrorComponent from '../../ErrorComponent';
-import LoadingComponent from '../../LoadingComponent';
+import ErrorComponent from '../LoadingAndError/ErrorComponent';
+import LoadingComponent from '../LoadingAndError/LoadingComponent';
 import PropTypes from 'prop-types';
 
 let count = 0;

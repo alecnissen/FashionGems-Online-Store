@@ -12,8 +12,8 @@ import PropTypes from 'prop-types';
 
 import Select from 'react-select';
 
-import ErrorComponent from '../../ErrorComponent';
-import LoadingComponent from '../../LoadingComponent';
+import ErrorComponent from '../LoadingAndError/ErrorComponent';
+import LoadingComponent from '../LoadingAndError/LoadingComponent';
 
 export default function ShoppingComponent({
   cartItems,

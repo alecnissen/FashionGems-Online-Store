@@ -1,8 +1,8 @@
 import react from 'react';
-import Header from './Components/HomePage/Header';
-import Footer from './Components/HomePage/Footer';
-import aboutPhoto1 from '../Images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg';
-import aboutPhoto2 from '../Images/pexels-mart-production-7679453.jpg';
+import Header from './Header';
+import Footer from './Footer';
+import aboutPhoto1 from '../../../Images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg';
+import aboutPhoto2 from '../../../Images/pexels-mart-production-7679453.jpg';
 import { propTypes } from 'react-bootstrap/esm/Image';
 import PropTypes from 'prop-types';
 

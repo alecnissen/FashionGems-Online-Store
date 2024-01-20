@@ -4,10 +4,10 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Header from './Components/HomePage/Header';
-import Footer from './Components/HomePage/Footer';
-import ErrorComponent from './ErrorComponent';
-import LoadingComponent from './LoadingComponent';
+import Header from '../HomePage/Header';
+import Footer from '../HomePage/Footer';
+import ErrorComponent from '../../ErrorComponent';
+import LoadingComponent from '../../LoadingComponent';
 import PropTypes from 'prop-types';
 
 let count = 0;

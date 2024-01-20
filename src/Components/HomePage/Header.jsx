@@ -4,8 +4,8 @@ import Button from 'react-bootstrap/Button';
 // import cartIcon from '../Icons/cart-shopping-svgrepo-com.svg';
 import { Link, Outlet, useSearchParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import ShoppingComponent from '../../ShoppingComponent';
-import Modal from '../../SearchModal';
+import ShoppingComponent from '../ProductAndShopping/ShoppingComponent';
+import Modal from '../ProductAndShopping/SearchModal';
 
 export default function Header({ numberOfCartItems, isOpen, setIsOpen }) {
   // console.log(typeof newCartCount);

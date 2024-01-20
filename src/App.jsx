@@ -4,14 +4,14 @@ import Header from './Components/HomePage/Header';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Footer from './Components/HomePage/Footer';
-import ShoppingComponent from './ShoppingComponent';
+import ShoppingComponent from './Components/ProductAndShopping/ShoppingComponent';
 import NotFound from './NotFound';
 import HomePage from './Components/HomePage/HomePage';
 import { Route, Routes } from 'react-router-dom';
-import ProductPage from './ProductPage';
+import ProductPage from './Components/ProductAndShopping/ProductPage';
 import About from './About';
-import CheckoutComponent from './CheckoutComponent';
-import Modal from './SearchModal';
+import CheckoutComponent from './Components/ProductAndShopping/CheckoutComponent';
+import Modal from './Components/ProductAndShopping/SearchModal';
 import ImageCarouselComponent from './Components/HomePage/ImageCarouselComponent';
 
 function App() {

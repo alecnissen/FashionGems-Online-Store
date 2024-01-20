@@ -1,6 +1,6 @@
 import react from 'react';
-import Header from './Components/HomePage/Header';
-import Footer from './Components/HomePage/Footer';
+import Header from '../HomePage/Header';
+import Footer from '../HomePage/Footer';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -12,8 +12,8 @@ import PropTypes from 'prop-types';
 
 import Select from 'react-select';
 
-import ErrorComponent from './ErrorComponent';
-import LoadingComponent from './LoadingComponent';
+import ErrorComponent from '../../ErrorComponent';
+import LoadingComponent from '../../LoadingComponent';
 
 export default function ShoppingComponent({
   cartItems,

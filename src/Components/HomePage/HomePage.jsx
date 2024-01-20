@@ -4,7 +4,7 @@ import Footer from './Footer';
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import CheckoutComponent from '../../CheckoutComponent';
+import CheckoutComponent from '../ProductAndShopping/CheckoutComponent';
 import ImageCarouselComponent from './ImageCarouselComponent';
 
 export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {

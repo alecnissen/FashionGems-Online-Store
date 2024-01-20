@@ -1,8 +1,8 @@
 import react from 'react';
 import ShoppingComponent from './ShoppingComponent';
 import { useEffect, useState } from 'react';
-import HomePage from './Components/HomePage/HomePage';
-import Header from './Components/HomePage/Header';
+import HomePage from '../HomePage/HomePage';
+import Header from '../HomePage/Header';
 // import { useEffect } from "react";
 import crypto from 'crypto';
 import PropTypes from 'prop-types';

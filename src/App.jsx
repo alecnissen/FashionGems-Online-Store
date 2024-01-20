@@ -1,4 +1,5 @@
-import './App.css';
+// import './App.css';
+import './Styles/App.css';
 import react from 'react';
 import Header from './Components/HomePage/Header';
 import axios from 'axios';
@@ -13,6 +14,8 @@ import About from './Components/HomePage/About';
 import CheckoutComponent from './Components/ProductAndShopping/CheckoutComponent';
 import Modal from './Components/ProductAndShopping/SearchModal';
 import ImageCarouselComponent from './Components/HomePage/ImageCarouselComponent';
+import apiRequest from './Components/API-CALLS/apiRequest';
+
 
 function App() {
   const [cartItems, setCartItems] = useState([]);

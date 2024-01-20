@@ -359,4 +359,10 @@
 // itemQuantity is an array, 
 // does its value change at all? Put console logs after the function because it probably changes to a number 
 
-// 
+// *** next I will implement what my brother said about the API call, 
+// I will put it, within its own folder, 
+
+// a function that returns the response from the API. 
+// call that function within your useEffect 
+
+// I think you should create a small example in repl then apply the same concept in your regular code 

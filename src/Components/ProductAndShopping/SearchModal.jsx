@@ -1,55 +1,66 @@
-import React from 'react'
-import axios from 'axios'; 
+import React from 'react';
+import axios from 'axios';
 import { useEffect, useState, useRef } from 'react';
-import { Link } from "react-router-dom"
-import PropTypes from "prop-types"
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import apiRequest from '../../API-CALLS/apiRequest';
 
+const MODAL_STYLES = {
+  position: 'fixed',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  backgroundColor: '#FFF',
+  padding: '50px',
+  zIndex: 1000,
+  height: '720px',
+  width: '700px',
+  overflow: 'scroll',
+};
 
-const MODAL_STYLES = { 
-    position: 'fixed',
-    top: '50%', 
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    backgroundColor: '#FFF',
-    padding: '50px',
-    zIndex: 1000,
-    height: "720px",
-    width: "700px",
-    overflow: "scroll",
-}
+const OVERLAY_STYLES = {
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  right: 0,
+  bottom: 0,
+  backgroundColor: 'rgba(0, 0, 0, .7)',
+  zIndex: 1000,
+};
 
-const OVERLAY_STYLES = { 
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: 'rgba(0, 0, 0, .7)',
-    zIndex: 1000
-}
+export default function Modal({ isOpen, setIsOpen, onClose }) {
+  const [modalData, setModalData] = useState([]);
+  const [query, setQuery] = useState('');
 
-export default function Modal( { isOpen, setIsOpen, onClose }) {
-    const [modalData, setModalData] = useState([]);
-    const [query, setQuery] = useState("");
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
-    const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(false);
+  const filteredItems = modalData.filter((item) => {
+    return item.title.toString().toLowerCase().includes(query.toLowerCase());
+  });
 
-    const filteredItems = modalData.filter(item => { 
-        return item.title.toString().toLowerCase().includes(query.toLowerCase())
-    }) 
+  console.log(filteredItems);
 
-    console.log(filteredItems); 
-
-
-useEffect(() => { 
-    const getData = async () => { 
+  useEffect(() => {
+    const getData = async () => {
       setLoading(true);
-      try { 
-        const response = await axios.get('https://fakestoreapi.com/products')
-        console.log(response.data);
-        setModalData(response.data);
-      } catch (error) { 
+      try {
+        // const response = await axios.get('https://fakestoreapi.com/products')
+        // console.log(response.data);
+
+        // apiRequest().then((data) => {
+        //   console.log('LOGGING DATA FROM API CALL WITHIN apiRequest file', data);
+        //   setProductData(data);
+        // })
+
+        apiRequest().then((data) => {
+          //   console.log('LOGGING DATA FROM API CALL WITHIN apiRequest file WITHIN SEARCH MODAL', data);
+          setModalData(data);
+        });
+
+        // original setting modal data
+        // setModalData(response.data);
+      } catch (error) {
         console.log(error);
         if (error.response) {
           // The request was made and the server responded with a status code
@@ -70,111 +81,95 @@ useEffect(() => {
           setError(error.message);
         }
         console.log(error.config);
-      } finally { 
+      } finally {
         setLoading(false);
       }
-    }
+    };
     getData();
-  }, []) 
+  }, []);
 
+  //   useEffect(() => {
+  //   const closeModal = (e) => {
+  //     setIsOpen(false);
+  //   }
 
+  //   document.body.addEventListener('click', closeModal);
+  // }, [])
 
-//   useEffect(() => { 
-//   const closeModal = (e) => { 
-//     setIsOpen(false);
-//   }
-
-//   document.body.addEventListener('click', closeModal);
-// }, [])
-
-
-
-  
-    // const ref = useRef()
-    // useEffect(() => {
-    //   const checkIfClickedOutside = e => {
-    //     if (ref.current && !ref.current.contains(e.target)) {
-    //       onClose
-    //     }
-    //   }
-    //   document.addEventListener("click", checkIfClickedOutside)
-    //   return () => {
-    //     document.removeEventListener("click", checkIfClickedOutside)
-    //   }
-    // }, [onClose])
-
-
- 
-
-
-
+  // const ref = useRef()
+  // useEffect(() => {
+  //   const checkIfClickedOutside = e => {
+  //     if (ref.current && !ref.current.contains(e.target)) {
+  //       onClose
+  //     }
+  //   }
+  //   document.addEventListener("click", checkIfClickedOutside)
+  //   return () => {
+  //     document.removeEventListener("click", checkIfClickedOutside)
+  //   }
+  // }, [onClose])
 
   // document.body.addEventListener('click', onClose);
 
-
   console.log('logging data within Modal component', modalData);
 
-  if (!isOpen) return null
+  if (!isOpen) return null;
 
   return (
-    <> 
-    <div style={OVERLAY_STYLES} onClick={onClose} />
-    <div style={MODAL_STYLES}>
-      {/* <h1 className='error-msg-search-modal-styles'>{error}</h1> */}
+    <>
+      <div style={OVERLAY_STYLES} onClick={onClose} />
+      <div style={MODAL_STYLES}>
+        {/* <h1 className='error-msg-search-modal-styles'>{error}</h1> */}
 
-      {error && <h1 className='error-msg-search-modal-styles'>{error}</h1>}
-      {loading && <h1 className='error-msg-search-modal-styles'>Loading...</h1>}
+        {error && <h1 className="error-msg-search-modal-styles">{error}</h1>}
+        {loading && <h1 className="error-msg-search-modal-styles">Loading...</h1>}
 
-        <h6 className='modal-header-styles'>Search for Items</h6>
-        <input value={query} onChange={(e) => { 
+        <h6 className="modal-header-styles">Search for Items</h6>
+        <input
+          value={query}
+          onChange={(e) => {
             // console.log(e.target.value);
-            setQuery(e.target.value)
+            setQuery(e.target.value);
             console.log(query);
-        }}></input>
+          }}
+        ></input>
         <button>Go</button>
-    <button onClick={onClose}>X</button>
-  
+        <button onClick={onClose}>X</button>
 
-      {query !== "" && filteredItems.map((item) => { 
-           return ( 
-            <> 
-            <Link to={`/ProductPage/${item.id}`} onClick={onClose}>
-            <div className='filteredItems-styles' key={item.key}>{item.title}
+        {query !== '' &&
+          filteredItems.map((item) => {
+            return (
+              <>
+                <Link to={`/ProductPage/${item.id}`} onClick={onClose}>
+                  <div className="filteredItems-styles" key={item.key}>
+                    {item.title}
 
-            <img src={item.image} style={{ width: '4em' }}></img>
+                    <img src={item.image} style={{ width: '4em' }}></img>
 
-            <div>{item.price}</div>
-            </div>
-            </Link>
-            </>
-        )
-      })}
-
-
-      
-    </div>
+                    <div>{item.price}</div>
+                  </div>
+                </Link>
+              </>
+            );
+          })}
+      </div>
     </>
-  )
+  );
 }
 
-Modal.propTypes = { 
+Modal.propTypes = {
   isOpen: PropTypes.bool,
   setIsOpen: PropTypes.func,
   onClose: PropTypes.func,
-}
+};
 
-
-
-
-        // return ( 
-        //     <> 
-        //     {/* <img src={item.title}></img> */}
-        //     {/* <h6>{item.title}</h6> */}
-        //     <div className='filteredItems-styles'>{item.title}
-        //     <img src={item.image} style={{ width: '4em' }}></img>
-        //     <div>{item.price}</div>
-        //     </div>
-        //     </>
-        // )
-
-
+// return (
+//     <>
+//     {/* <img src={item.title}></img> */}
+//     {/* <h6>{item.title}</h6> */}
+//     <div className='filteredItems-styles'>{item.title}
+//     <img src={item.image} style={{ width: '4em' }}></img>
+//     <div>{item.price}</div>
+//     </div>
+//     </>
+// )

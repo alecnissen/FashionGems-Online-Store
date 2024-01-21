@@ -14,7 +14,7 @@ import Select from 'react-select';
 
 import ErrorComponent from '../LoadingAndError/ErrorComponent';
 import LoadingComponent from '../LoadingAndError/LoadingComponent';
-import apiRequest from '../API-CALLS/apiRequest';
+import apiRequest from '../../API-CALLS/apiRequest';
 
 export default function ShoppingComponent({
   cartItems,
@@ -51,10 +51,18 @@ export default function ShoppingComponent({
     const getData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('https://fakestoreapi.com/products');
-        console.log(response.data);
+        // const response = await axios.get('https://fakestoreapi.com/products');
+        // console.log(response.data);
+
         console.log('logging and getting the products from apiRequest function', apiRequest());
-        setProductData(response.data);
+
+        apiRequest().then((data) => {
+          console.log('LOGGING DATA FROM API CALL WITHIN apiRequest file', data);
+          setProductData(data);
+        });
+
+        // original setting product data
+        // setProductData(response.data);
       } catch (error) {
         console.log(error);
         if (error.response) {

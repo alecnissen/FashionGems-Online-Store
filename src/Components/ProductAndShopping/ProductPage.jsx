@@ -9,6 +9,7 @@ import Footer from '../HomePage/Footer';
 import ErrorComponent from '../LoadingAndError/ErrorComponent';
 import LoadingComponent from '../LoadingAndError/LoadingComponent';
 import PropTypes from 'prop-types';
+import apiRequest from '../../API-CALLS/apiRequest';
 
 let count = 0;
 
@@ -42,9 +43,14 @@ export default function ProductPage({
     const getData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`https://fakestoreapi.com/products/${id}`);
-        console.log(response.data);
-        setSingleProductData(response.data);
+        // const response = await axios.get(`https://fakestoreapi.com/products/${id}`);
+        // console.log(response.data);
+
+        apiRequest(id).then((data) => {
+          setSingleProductData(data);
+        });
+
+        // setSingleProductData(response.data);
       } catch (error) {
         console.log(error);
         if (error.response) {

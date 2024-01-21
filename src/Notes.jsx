@@ -366,3 +366,27 @@
 // call that function within your useEffect 
 
 // I think you should create a small example in repl then apply the same concept in your regular code 
+
+// Next I have to think on how I can handle errors and loading screens within apiRequest 
+
+// what I can think of so far is to have the loading and error variables within app 
+
+// then pass them as props to the right components, 
+
+// its state will get updated within apiRequest .
+
+
+
+
+// **** 
+
+// I want to think of a way to keep the loading and error screens, I used to have them within my useEffect in my components, 
+// they ran in a try catch block, their state was set within there. 
+
+// now I tried a way to set the state in apiRequest, and then pass them as props to App, then app passes them as props to the other compononents, 
+// that does not seem like the right approach, 
+// the only way I can pass props is through the routes 
+
+
+// I need to set the state within apiRequest both loading and error states since now the api requests are being made in one file, then somehow pass to the correct components for rendering, 
+ // pass to components without rendering them,  

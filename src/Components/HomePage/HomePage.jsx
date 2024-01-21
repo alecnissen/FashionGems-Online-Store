@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import CheckoutComponent from '../ProductAndShopping/CheckoutComponent';
 import ImageCarouselComponent from './ImageCarouselComponent';
+import apiRequest from '../../API-CALLS/apiRequest';
 
 export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
   const [productData, setProductData] = useState([]);
@@ -16,21 +17,37 @@ export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
   const [img5, setImg5] = useState('');
 
   useEffect(() => {
-    const getData = async () => {
-      try {
-        const response = await axios.get('https://fakestoreapi.com/products');
-        console.log(response.data);
-        setProductData(response.data);
-        setImg1(response.data[0].image);
-        setImg2(response.data[1].image);
-        setImg3(response.data[2].image);
-        setImg4(response.data[3].image);
-        setImg5(response.data[4].image);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    getData();
+
+    apiRequest().then((data) => {
+      setProductData(data);
+
+
+      setImg1(data[0].image);
+      setImg2(data[1].image);
+      setImg3(data[2].image);
+      setImg4(data[3].image);
+      setImg5(data[4].image);
+
+
+    });
+
+
+
+    // const getData = async () => {
+    //   try {
+    //     const response = await axios.get('https://fakestoreapi.com/products');
+    //     console.log(response.data);
+    //     setProductData(response.data);
+    //     setImg1(response.data[0].image);
+    //     setImg2(response.data[1].image);
+    //     setImg3(response.data[2].image);
+    //     setImg4(response.data[3].image);
+    //     setImg5(response.data[4].image);
+    //   } catch (error) {
+    //     console.log(error);
+    //   }
+    // };
+    // getData();
   }, []);
 
   return (

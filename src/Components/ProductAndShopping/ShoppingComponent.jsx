@@ -47,48 +47,58 @@ export default function ShoppingComponent({
 
   console.log(itemQuantity);
 
-  useEffect(() => {
-    const getData = async () => {
-      setLoading(true);
-      try {
-        // const response = await axios.get('https://fakestoreapi.com/products');
-        // console.log(response.data);
+  useEffect(() => { 
 
-        console.log('logging and getting the products from apiRequest function', apiRequest());
 
-        apiRequest().then((data) => {
-          console.log('LOGGING DATA FROM API CALL WITHIN apiRequest file', data);
-          setProductData(data);
-        });
+    apiRequest().then((data) => {
+        // setLoading(true);
+      console.log('LOGGING DATA FROM API CALL WITHIN apiRequest file', data);
+      setProductData(data);
+      // setLoading(false);
+    });
 
-        // original setting product data
-        // setProductData(response.data);
-      } catch (error) {
-        console.log(error);
-        if (error.response) {
-          // The request was made and the server responded with a status code
-          // that falls out of the range of 2xx
-          console.log(error.response.data);
-          console.log(error.response.status);
-          console.log(error.response.headers);
-          setError('Server responded with ' + ' ' + error.response.status + ' ' + 'error');
-        } else if (error.request) {
-          // The request was made but no response was received
-          // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-          // http.ClientRequest in node.js
-          console.log(error.request);
-          setError(error.request);
-        } else {
-          // Something happened in setting up the request that triggered an Error
-          console.log('Error', error.message);
-          setError(error.message);
-        }
-        console.log(error.config);
-      } finally {
-        setLoading(false);
-      }
-    };
-    getData();
+    // const getData = async () => {
+    //   setLoading(true);
+    //   try {
+    //     // const response = await axios.get('https://fakestoreapi.com/products');
+    //     // console.log(response.data);
+
+    //     console.log('logging and getting the products from apiRequest function', apiRequest());
+
+    //     // apiRequest().then((data) => {
+    //     //   console.log('LOGGING DATA FROM API CALL WITHIN apiRequest file', data);
+    //     //   setProductData(data);
+    //     // });
+
+    //     // original setting product data
+    //     // setProductData(response.data);
+    //   } catch (error) {
+    //     console.log(error);
+    //     if (error.response) {
+    //       // The request was made and the server responded with a status code
+    //       // that falls out of the range of 2xx
+    //       console.log(error.response.data);
+    //       console.log(error.response.status);
+    //       console.log(error.response.headers);
+    //       setError('Server responded with ' + ' ' + error.response.status + ' ' + 'error');
+    //     } else if (error.request) {
+    //       // The request was made but no response was received
+    //       // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+    //       // http.ClientRequest in node.js
+    //       console.log(error.request);
+    //       setError(error.request);
+    //     } else {
+    //       // Something happened in setting up the request that triggered an Error
+    //       console.log('Error', error.message);
+    //       setError(error.message);
+    //     }
+    //     console.log(error.config);
+    //   } finally {
+    //     setLoading(false);
+    //   }
+    // };
+    // getData();
+    // setLoading(false);
   }, []);
 
   useEffect(() => {

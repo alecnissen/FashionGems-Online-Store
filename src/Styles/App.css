@@ -2,10 +2,10 @@
 
 
 .header-style-container { 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   /* background-color: rgb(97, 35, 97); */
   background-color: rgb(14, 27, 87);
   padding: 40px;
@@ -16,14 +16,82 @@
 
 
 .header-style-container > h1 { 
-  font-size: 4.5rem;
+  font-size: 5.5rem;
+} 
+
+
+
+/* .search-experiment-styles { 
+  margin-left: 90em;
+} */
+
+.search-bar-exp-style { 
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: flex-start; */
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  gap: 1em;
+} 
+
+.flex-container-h1 { 
+  display: flex;
+  justify-content: center;
+} 
+
+.flex-container-h1 > h1 { 
+  font-size: 5.5rem;
 }
 
-.header-navbar-styles > button { 
-  background-color: rgb(41, 41, 145);
-  border: none;
-  font-size: 1rem;
+
+.header-navbar-styles { 
+  display: flex;
+  justify-content: center;
+  /* text-decoration: none; */
+} 
+
+.header-navbar-styles a { 
+  text-decoration: none;
 }
+
+
+.header-navbar-styles > button { 
+  /* background-color: rgb(41, 41, 145); */
+  background-color: rgb(11, 11, 126);
+  border: none;
+  font-size: 1.5rem;
+  /* text-decoration: underline; */
+  font-family:Arial, Helvetica, sans-serif;
+  /* color: white; */
+  /* color: inherit; */
+  margin: 20px;
+  border-radius: 10px;
+  /* padding: 10px; */
+  color: white;
+  text-decoration: none;
+} 
+
+.header-navbar-styles > button:hover { 
+  background-color: white;
+  /* font-size: 1.5rem; */
+}
+
+/* .home-btn-styles { 
+  color: white;
+} */ 
+
+
+
+
+/* .home-link-styles { 
+  text-decoration: none;
+} */
+
+
+
+
+
 
 .header-icon-container { 
  display: flex;
@@ -32,11 +100,16 @@
 } 
 
 .badge-icon-for-shopping-cart { 
-  position: absolute;
+  /* position: absolute;
   left: 62.5em;
-  top: 12em;
+  top: 12em; */
+  position: absolute;
   background-color: red;
-  border-radius: 20%;
+  border-radius: 25%;
+  vertical-align: top;
+  margin-top: -8px;
+  margin-right: -12px;
+  padding: 2px;
 }
 
 
@@ -217,3 +290,24 @@
 .error-msg-search-modal-styles { 
   color: black;
 }
+
+
+
+
+/* media queries experiement for HEADER responsiveness, */ 
+
+@media (max-width: 680px) { 
+  .header-style-container h1 { 
+    /* font-size: 2rem;
+    text-align: center; */
+    text-align: center;
+    font-size: 4rem;
+  }  
+
+  .search-bar-exp-style { 
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+  }
+}
+

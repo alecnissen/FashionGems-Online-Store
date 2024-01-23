@@ -1,25 +1,25 @@
 import React from 'react'
 import axios from 'axios';
 import App from '../App';
-// import { useEffect, useState } from 'react';
+import ShoppingComponent from '../Components/ProductAndShopping/ShoppingComponent';
+import { useEffect, useState } from 'react';
 
-export default async function apiRequest(id) {
+export default async function ApiRequest(id) {
 
-  // let errorMessage = setError
   // const [error, setError] = useState(null);
   // const [loading, setLoading] = useState(false);
+  // let errorMessage = setError
 
   // setLoading(true);
     try {  
     const response = await axios.get(`https://fakestoreapi.com/products/${id ? id : ""}`);
     console.log(response.data); 
 
-    // if (id !== null) { 
-    //     // const response = await axios.get('https://fakestoreapi.com/products');
-    //     const response = await axios.get(`https://fakestoreapi.com/products/${id}`);
-    //     return response.data;
-    // }
+
     return response.data;
+
+
+
     } catch (error) { 
         console.log(error);
         if (error.response) {
@@ -42,17 +42,13 @@ export default async function apiRequest(id) {
         }
         console.log(error.config);
     } finally { 
-        console.log('yo');
         // setLoading(false);
     } 
 
+    // <ShoppingComponent error={error} loading={loading}></ShoppingComponent>
     // return id ? 
 
-  return (
-    <div>
-    {/* <App error={error} loading={loading}></App> */}
-    </div>
-  )
+
 }
 
 // console.log(apiRequest());

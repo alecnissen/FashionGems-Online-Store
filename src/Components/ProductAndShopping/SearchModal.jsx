@@ -3,7 +3,8 @@ import axios from 'axios';
 import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import apiRequest from '../../API-CALLS/apiRequest';
+// import apiRequest from '../../API-CALLS/ApiRequest';
+import ApiRequest from '../../API-CALLS/ApiRequest';
 
 const MODAL_STYLES = {
   position: 'fixed',
@@ -32,8 +33,8 @@ export default function Modal({ isOpen, setIsOpen, onClose }) {
   const [modalData, setModalData] = useState([]);
   const [query, setQuery] = useState('');
 
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
+  // const [error, setError] = useState(null);
+  // const [loading, setLoading] = useState(false);
 
   const filteredItems = modalData.filter((item) => {
     return item.title.toString().toLowerCase().includes(query.toLowerCase());
@@ -42,82 +43,13 @@ export default function Modal({ isOpen, setIsOpen, onClose }) {
   console.log(filteredItems);
 
   useEffect(() => {
-
-
-    apiRequest().then((data) => {
+    ApiRequest().then((data) => {
       //   console.log('LOGGING DATA FROM API CALL WITHIN apiRequest file WITHIN SEARCH MODAL', data);
       setModalData(data);
     });
 
-
-    // const getData = async () => {
-    //   setLoading(true);
-    //   try {
-    //     // const response = await axios.get('https://fakestoreapi.com/products')
-    //     // console.log(response.data);
-
-    //     // apiRequest().then((data) => {
-    //     //   console.log('LOGGING DATA FROM API CALL WITHIN apiRequest file', data);
-    //     //   setProductData(data);
-    //     // })
-
-    //     // apiRequest().then((data) => {
-    //     //   //   console.log('LOGGING DATA FROM API CALL WITHIN apiRequest file WITHIN SEARCH MODAL', data);
-    //     //   setModalData(data);
-    //     // });
-
-    //     // original setting modal data
-    //     // setModalData(response.data);
-    //   } catch (error) {
-    //     console.log(error);
-    //     if (error.response) {
-    //       // The request was made and the server responded with a status code
-    //       // that falls out of the range of 2xx
-    //       console.log(error.response.data);
-    //       console.log(error.response.status);
-    //       console.log(error.response.headers);
-    //       setError('Server responded with ' + ' ' + error.response.status + ' ' + 'error');
-    //     } else if (error.request) {
-    //       // The request was made but no response was received
-    //       // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-    //       // http.ClientRequest in node.js
-    //       console.log(error.request);
-    //       setError(error.request);
-    //     } else {
-    //       // Something happened in setting up the request that triggered an Error
-    //       console.log('Error', error.message);
-    //       setError(error.message);
-    //     }
-    //     console.log(error.config);
-    //   } finally {
-    //     setLoading(false);
-    //   }
-    // };
-    // getData();
   }, []);
 
-  //   useEffect(() => {
-  //   const closeModal = (e) => {
-  //     setIsOpen(false);
-  //   }
-
-  //   document.body.addEventListener('click', closeModal);
-  // }, [])
-
-  // const ref = useRef()
-  // useEffect(() => {
-  //   const checkIfClickedOutside = e => {
-  //     if (ref.current && !ref.current.contains(e.target)) {
-  //       onClose
-  //     }
-  //   }
-  //   document.addEventListener("click", checkIfClickedOutside)
-  //   return () => {
-  //     document.removeEventListener("click", checkIfClickedOutside)
-  //   }
-  // }, [onClose])
-
-  // document.body.addEventListener('click', onClose);
 
   console.log('logging data within Modal component', modalData);
 
@@ -129,8 +61,8 @@ export default function Modal({ isOpen, setIsOpen, onClose }) {
       <div style={MODAL_STYLES}>
         {/* <h1 className='error-msg-search-modal-styles'>{error}</h1> */}
 
-        {error && <h1 className="error-msg-search-modal-styles">{error}</h1>}
-        {loading && <h1 className="error-msg-search-modal-styles">Loading...</h1>}
+        {/* {error && <h1 className="error-msg-search-modal-styles">{error}</h1>}
+        {loading && <h1 className="error-msg-search-modal-styles">Loading...</h1>} */}
 
         <h6 className="modal-header-styles">Search for Items</h6>
         <input

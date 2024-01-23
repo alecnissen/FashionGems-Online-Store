@@ -6,7 +6,8 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import CheckoutComponent from '../ProductAndShopping/CheckoutComponent';
 import ImageCarouselComponent from './ImageCarouselComponent';
-import apiRequest from '../../API-CALLS/apiRequest';
+// import apiRequest from '../../API-CALLS/ApiRequest';
+import ApiRequest from '../../API-CALLS/ApiRequest';
 
 export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
   const [productData, setProductData] = useState([]);
@@ -17,21 +18,15 @@ export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
   const [img5, setImg5] = useState('');
 
   useEffect(() => {
-
-    apiRequest().then((data) => {
+    ApiRequest().then((data) => {
       setProductData(data);
-
 
       setImg1(data[0].image);
       setImg2(data[1].image);
       setImg3(data[2].image);
       setImg4(data[3].image);
       setImg5(data[4].image);
-
-
     });
-
-
 
     // const getData = async () => {
     //   try {

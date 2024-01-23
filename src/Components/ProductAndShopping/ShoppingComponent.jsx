@@ -14,7 +14,8 @@ import Select from 'react-select';
 
 import ErrorComponent from '../LoadingAndError/ErrorComponent';
 import LoadingComponent from '../LoadingAndError/LoadingComponent';
-import apiRequest from '../../API-CALLS/apiRequest';
+// import apiRequest from '../../API-CALLS/ApiRequest';
+import ApiRequest from '../../API-CALLS/ApiRequest';
 
 export default function ShoppingComponent({
   cartItems,
@@ -26,6 +27,8 @@ export default function ShoppingComponent({
   setIsOpen,
   category,
   setCategory,
+  error,
+  loading,
 }) {
   console.log('typeof itemQuantity from shopping component', typeof itemQuantity);
   // console.log('array check for itemQuantity in shopping', Array.isArray(itemQuantity));
@@ -34,9 +37,9 @@ export default function ShoppingComponent({
 
   const [sortedData, setSortedData] = useState(productData);
 
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
 
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   const getInitialState = () => {
     const value = 'All Products';
@@ -47,11 +50,9 @@ export default function ShoppingComponent({
 
   console.log(itemQuantity);
 
-  useEffect(() => { 
-
-
-    apiRequest().then((data) => {
-        // setLoading(true);
+  useEffect(() => {
+    ApiRequest().then((data) => {
+      // setLoading(true);
       console.log('LOGGING DATA FROM API CALL WITHIN apiRequest file', data);
       setProductData(data);
       // setLoading(false);

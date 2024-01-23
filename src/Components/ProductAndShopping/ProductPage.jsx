@@ -9,7 +9,8 @@ import Footer from '../HomePage/Footer';
 import ErrorComponent from '../LoadingAndError/ErrorComponent';
 import LoadingComponent from '../LoadingAndError/LoadingComponent';
 import PropTypes from 'prop-types';
-import apiRequest from '../../API-CALLS/apiRequest';
+// import apiRequest from '../../API-CALLS/ApiRequest';
+import ApiRequest from '../../API-CALLS/ApiRequest';
 
 let count = 0;
 
@@ -40,12 +41,9 @@ export default function ProductPage({
   // console.log('array check for itemQuantity in product', Array.isArray(itemQuantity));
 
   useEffect(() => {
-
-
-    apiRequest(id).then((data) => {
+    ApiRequest(id).then((data) => {
       setSingleProductData(data);
     });
-
 
     // const getData = async () => {
     //   setLoading(true);
@@ -58,8 +56,8 @@ export default function ProductPage({
     //     // });
 
     //     // setSingleProductData(response.data);
-    //   } 
-      
+    //   }
+
     //   catch (error) {
     //     console.log(error);
     //     if (error.response) {
@@ -137,8 +135,8 @@ export default function ProductPage({
         <input type="number" min="0" max="10" placeholder="10"></input>
         <Button variant="primary">Add to Cart</Button> */}
 
-      {error && <ErrorComponent error={error}></ErrorComponent>}
-      {loading && <LoadingComponent></LoadingComponent>}
+      {/* {error && <ErrorComponent error={error}></ErrorComponent>}
+      {loading && <LoadingComponent></LoadingComponent>} */}
 
       {!error && (
         <div className="product-page-item-container" key={singleProductData.id}>

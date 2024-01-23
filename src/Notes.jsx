@@ -390,3 +390,31 @@
 
 // I need to set the state within apiRequest both loading and error states since now the api requests are being made in one file, then somehow pass to the correct components for rendering, 
  // pass to components without rendering them,  
+
+
+ // *** STYLING 
+
+  // first thing that stands out is is the buttons, is there a way we can remove the link and blue color
+
+  // bringing the search bar and checkout icon/btn to the top right, 
+
+  // lets look over structure of the header 
+
+  // it will be a flexcontainer, in a row, 
+
+
+  // I want to start styling up header, 
+
+  // can I make the icons a link? 
+
+  // got the links working, 
+
+
+// now can I put the badge right next to the cart icon? Try to move it within its container 
+
+// feeling good about the icons for now, 
+
+// can I make the h1, title shrink to account for smaller screens 
+
+// can we begin to make the header responsive? 
+

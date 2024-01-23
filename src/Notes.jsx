@@ -418,3 +418,6 @@
 
 // can we begin to make the header responsive? 
 
+// *** 
+
+// I will make the home page responsive, I will find a better img for the main section and make all images responsive. 

@@ -14,9 +14,7 @@ export default function Header({ numberOfCartItems, isOpen, setIsOpen }) {
   return (
     <>
       <div className="header-style-container">
-
-        <div className='search-bar-exp-style'>
-      {/* <button className='search-experiment-styles'> Search </button> */}
+        <div className='search-bar-cart-items-icons'>
 
       <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16" onClick={() => {
               console.log('modal test');
@@ -24,24 +22,7 @@ export default function Header({ numberOfCartItems, isOpen, setIsOpen }) {
             }} >
       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
 
-    </svg>
-
-
-      {/* <button
-            onClick={() => {
-              console.log('modal test');
-              setIsOpen(true);
-            }} 
-
-          >
-            Search
-          </button> */}
-          
-          {/* <Button variant="primary">  */}
-
-            {/* <Link to="/CheckoutComponent">Checkout</Link> */}
-
-           {/* </Button> */}
+      </svg>
 
            <Link to="/CheckoutComponent">
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" className="bi bi-bag" viewBox="0 0 16 16">
@@ -51,23 +32,19 @@ export default function Header({ numberOfCartItems, isOpen, setIsOpen }) {
 </Link>    
 
 <div className="badge-icon-for-shopping-cart">{numberOfCartItems}</div>
-      </div> 
 
-
+    </div> 
 
         <div className='flex-container-h1'>
         <h1>Shopping Cart</h1>
         </div>
 
-        <nav className="header-navbar-styles">
+        <nav className="header-button-styles-container">
         <br></br>
 
-        
           <Button variant="primary" className='home-btn-styles'>
             <Link to="/" className='home-link-styles'>Home</Link>
           </Button>
-
-
           <Button variant="primary">
             <Link to="/ShoppingComponent">Shop Now</Link>
           </Button>
@@ -75,48 +52,8 @@ export default function Header({ numberOfCartItems, isOpen, setIsOpen }) {
             <Link to="/About">About Us</Link>
           </Button>
         </nav>
-
         <br></br>
-
-        <div className="header-icon-container">
-          {/* <img src={searchIcon} className="search-icon-header"> 
-
-
-</img> */}
-
-          {/* <button
-            onClick={() => {
-              console.log('modal test');
-              setIsOpen(true);
-            }}
-          >
-            Search
-          </button> */}
-
           <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}></Modal>
-
-          {/* <div className="badge-icon-for-shopping-cart">{numberOfCartItems}</div> */}
-          
-          
-          
-          {/* <img src={cartIcon} className="cart-icon-header" onClick={(e) => { 
-    <Link to="/CheckoutComponent"></Link>
-}} >
-
-</img> */}
-
-          {/* <Link to="/CheckoutComponent">Checkout</Link> */}
-
-          {/* <a href="/CheckoutComponent">Checkout</a> */}
-
-          {/* <Button variant="primary">
-            <Link to="/CheckoutComponent">Checkout</Link>
-          </Button> */}
-        </div>
-
-
-
-        
       </div>
     </>
   );

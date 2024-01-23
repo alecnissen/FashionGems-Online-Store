@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
 // import storeImg from "../Images/nguyen-dang-hoang-nhu-Nne2TxFHPyQ-unsplash.jpg";
 import storeImg from "../../../Images/nguyen-dang-hoang-nhu-Nne2TxFHPyQ-unsplash.jpg";
+import insideStoreImg from "../../../Images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg"
 
 export default function ImageCarouselComponent({ img1, img2, img3 }) { 
 
@@ -16,7 +17,17 @@ export default function ImageCarouselComponent({ img1, img2, img3 }) {
             
 
             <div className="store-img-container"> 
-            <img src={storeImg} className="store-img-main" alt="inside a clothing store"></img>
+            {/* <img src={storeImg} className="store-img-main" alt="inside a clothing store"></img> */}
+            
+            <img
+sizes="(max-width: 640px) 100vw, 640px"
+
+  // srcSet={`${imageSmall} 320w, ${imageMedium} 680w, ${imageLarge}   960w, ${imageXLarge} 1980w`}
+srcSet={`${insideStoreImg} 200w, ${insideStoreImg} 471w, ${insideStoreImg} 640w` }
+src={`${insideStoreImg} 640w`}
+alt=""></img>
+
+
             </div>
         
         <h4 className="featured-items-main-header">Featured Items</h4>
@@ -58,10 +69,10 @@ export default function ImageCarouselComponent({ img1, img2, img3 }) {
     </Carousel>
 
         <br></br>
-    <div className="main-btn-container">
+    {/* <div className="main-btn-container">
     <Button variant="primary">Shop Now</Button>{' '}
     <Button variant="primary">About Us</Button>{' '}
-    </div>
+    </div> */}
         
         
     </div>

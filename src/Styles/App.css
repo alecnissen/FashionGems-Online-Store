@@ -11,6 +11,7 @@
   justify-content: space-between;
   padding: 15px;
   flex-wrap: wrap;
+  border-bottom: 2px solid rgb(46, 41, 41);
 } 
 
 .header-button-container { 
@@ -86,6 +87,63 @@
   text-decoration: none;
   color: black;
 }
+
+
+/* header styles end  */  
+
+
+
+
+
+
+/* main component styles start here */ 
+
+
+.main-section-wrapper { 
+  background-color: black;
+  padding: 10em;
+}
+
+.main-title-subtitle-search-bar { 
+  color: white;
+}
+
+.main-title-subtitle-search-bar h6 { 
+  color: gray;
+} 
+
+.main-title-subtitle-search-bar input { 
+  background-color: black;
+  color: white;
+} 
+
+.main-title-subtitle-search-bar input::placeholder { 
+  color: white;
+}
+
+.main-title-subtitle-search-bar button { 
+  background-color: black;
+  color: white;
+} 
+
+/* .diamond-img-main { 
+  margin-left: 5px;
+} */
+
+
+ .main-diamond-img-container { 
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: -190px;
+  /* margin-left: 110px; */
+} 
+
+
+
+
+
+
 
 
 /* */ 

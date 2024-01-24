@@ -6,3 +6,6 @@ About Component Photo 2
 
 Photo by MART  PRODUCTION: https://www.pexels.com/photo/a-woman-looking-at-clothes-hanging-in-the-rack-7679453/
 
+ruby img 
+
+<a target="_blank" href="https://icons8.com/icon/69Vi9LB091UQ/jewel">Gem</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

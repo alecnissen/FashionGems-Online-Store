@@ -421,3 +421,13 @@
 // *** 
 
 // I will make the home page responsive, I will find a better img for the main section and make all images responsive. 
+
+
+
+// **** NEW DESIGN PATTERN 
+
+// starting with header, it will use flexbox 
+
+// basically two flex containers, 
+// one that holds buttons, and links, 
+// the other holds the icons, search, and user profile

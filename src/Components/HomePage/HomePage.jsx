@@ -5,9 +5,11 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import CheckoutComponent from '../ProductAndShopping/CheckoutComponent';
-import ImageCarouselComponent from './ImageCarouselComponent';
+import ImageCarouselComponent from './TitleComponent';
 // import apiRequest from '../../API-CALLS/ApiRequest';
 import ApiRequest from '../../API-CALLS/ApiRequest';
+import TitleComponent from './TitleComponent';
+import CategoryListComponent from './CategoryListComponent';
 
 export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
   const [productData, setProductData] = useState([]);
@@ -48,14 +50,16 @@ export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
   return (
     <>
       <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
-      <ImageCarouselComponent
+      {/* <ImageCarouselComponent
         productData={productData}
         img1={img1}
         img2={img2}
         img3={img3}
         img4={img4}
         img5={img5}
-      ></ImageCarouselComponent>
+      ></ImageCarouselComponent> */}
+      <TitleComponent></TitleComponent>
+      <CategoryListComponent></CategoryListComponent>
       <Footer></Footer>
     </>
   );

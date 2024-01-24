@@ -15,16 +15,16 @@ import diamondImg2 from "../../../Icons/gem-svgrepo-com.svg";
 
 import rubyImg from "../../../Icons/icons8-gem-80.png";
 
-export default function ImageCarouselComponent({ img1, img2, img3 }) { 
+export default function TitleComponent() { 
 
     return ( 
         <> 
-        <div className="main-section-wrapper">
+        <div className="main-title-section-wrapper">
 
 
-        <div className="main-title-subtitle-search-bar"> 
+        <div className="main-title-subtitle-container"> 
         <h3>Discover the finest Fashion Gems
-        <img src={diamondImg} className="diamond-img-main"></img>
+        {/* <img src={diamondImg} className="diamond-img-main"></img> */}
         </h3>
         <h6> Let us help you look and feel your best!</h6>
         <h6>We want you to shine like a diamond!</h6>
@@ -48,17 +48,16 @@ export default function ImageCarouselComponent({ img1, img2, img3 }) {
 
         </div>
 
-        <h3>Categories</h3>
 
         </>
     )
 }
 
-ImageCarouselComponent.propTypes = { 
-    img1: PropTypes.string,
-    img2: PropTypes.string,
-    img3: PropTypes.string,
-} 
+// TitleComponent.propTypes = { 
+//     img1: PropTypes.string,
+//     img2: PropTypes.string,
+//     img3: PropTypes.string,
+// } 
 
 
 

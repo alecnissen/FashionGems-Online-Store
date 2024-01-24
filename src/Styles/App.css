@@ -99,29 +99,29 @@
 /* main component styles start here */ 
 
 
-.main-section-wrapper { 
+.main-title-section-wrapper { 
   background-color: black;
   padding: 10em;
 }
 
-.main-title-subtitle-search-bar { 
+.main-title-subtitle-container { 
   color: white;
 }
 
-.main-title-subtitle-search-bar h6 { 
+.main-title-subtitle-container h6 { 
   color: gray;
 } 
 
-.main-title-subtitle-search-bar input { 
+.main-title-subtitle-container input { 
   background-color: black;
   color: white;
 } 
 
-.main-title-subtitle-search-bar input::placeholder { 
+.main-title-subtitle-container input::placeholder { 
   color: white;
 }
 
-.main-title-subtitle-search-bar button { 
+.main-title-subtitle-container button { 
   background-color: black;
   color: white;
 } 
@@ -142,6 +142,60 @@
 
 
 
+
+
+
+
+/* main styles end  */ 
+
+
+
+
+
+
+/* categories component */ 
+
+
+.categories-wrapper { 
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  gap: 1em;
+} 
+
+.category-main-title-component { 
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+} 
+
+.category-card-style-container-mens,
+.category-card-style-container-womens,
+.category-card-style-container-electronics,
+.category-card-style-container-jewelery { 
+  background-color: rgb(58, 53, 53);
+} 
+
+.category-card-style-container-mens h6, 
+.category-card-style-container-womens h6,
+.category-card-style-container-electronics h6,
+.category-card-style-container-jewelery h6 { 
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.mens-clothing-icon-container, 
+.womens-clothing-icon-container,
+.electronics-icon-container,
+.jewelery-icon-container { 
+  display: flex;
+  justify-content: center;
+}
 
 
 

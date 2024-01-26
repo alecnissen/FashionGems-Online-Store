@@ -12,6 +12,7 @@
   padding: 15px;
   flex-wrap: wrap;
   border-bottom: 2px solid rgb(46, 41, 41);
+  width: 100vw;
 } 
 
 .header-button-container { 
@@ -102,6 +103,7 @@
 .main-title-section-wrapper { 
   background-color: black;
   padding: 10em;
+  /* width: 100vw; */
 }
 
 .main-title-subtitle-container { 
@@ -136,11 +138,26 @@
   justify-content: flex-end;
   align-items: flex-end;
   margin-top: -190px;
-  /* margin-left: 110px; */
+  gap: 1em;
+} 
+
+.necklace-styles { 
+  width: 300px;
+}
+
+.portrait-photo-styles { 
+  width: 300px;
 } 
 
 
+.style { 
+  display: flex;
+  flex-direction: column;
+}
 
+/* .main-diamond-img-container { 
+  background-image: url("../../../Icons/women-dress-svgrepo-com.svg")
+} */
 
 
 
@@ -551,5 +568,23 @@
     gap: 0em;
     margin-bottom: 30px;
   }
+}
+
+/* media queries for main title and icon section */ 
+
+@media (max-width: 1278px) { 
+  .main-title-section-wrapper { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .main-diamond-img-container { 
+  position: relative;
+  top: 6em;
+  } */
+
+
 }
 

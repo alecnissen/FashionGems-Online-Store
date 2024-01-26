@@ -431,3 +431,15 @@
 // basically two flex containers, 
 // one that holds buttons, and links, 
 // the other holds the icons, search, and user profile
+
+
+// **** 1/25
+
+// Responsive main section/title section, 
+// can we make the imgs and title/subtitle into a column? 
+// dont forget vh units for header, main, footer, 
+
+// can we also put a diamond next to the text? 
+
+// can we grab a 3rd image to form a little image collage at the top of the file 
+// lets see if we can find a black and white one. 

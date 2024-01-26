@@ -15,6 +15,12 @@ import diamondImg2 from "../../../Icons/gem-svgrepo-com.svg";
 
 import rubyImg from "../../../Icons/icons8-gem-80.png";
 
+import necklacePhoto from "../../../Images/Image_4.jpeg"
+
+import portraitPhoto from "../../../Images/pexels-pixabay-219550.jpg" 
+
+import ringPhoto from "../../../Images/Image.png";
+
 export default function TitleComponent() { 
 
     return ( 
@@ -22,26 +28,63 @@ export default function TitleComponent() {
         <div className="main-title-section-wrapper">
 
 
+
         <div className="main-title-subtitle-container"> 
+
+        
         <h3>Discover the finest Fashion Gems
         {/* <img src={diamondImg} className="diamond-img-main"></img> */}
         </h3>
         <h6> Let us help you look and feel your best!</h6>
-        <h6>We want you to shine like a diamond!</h6>
+        <h6>We want you to shine like a diamond!
+
+          <img src={diamondImg}></img>
+        </h6>
+
   
        
      
       {/* <button>Search</button> */}
+{/* 
+       <div className="main-diamond-img-container" style={
+          { 
+            backgroundImage: `url("../../../Images/pexels-pixabay-219550.jpg")`,
+            width: "30em",
+            height: "30em",
+            objectFit: "contain",
+          }
+        }>
 
+          <div style={
+            { 
+              backgroundImage: `url("../../../Images/Image_4.jpeg")`,
+              width: "30em",
+              height: "30em",
+              objectFit: "contain",
+            }
+          }> 
+
+          </div>
+        </div>  */}
+
+        <br></br>
+        <br></br>
 
         <div className="main-diamond-img-container">
-        {/* <img src={diamondImg} className="diamond-img-main"></img> */}
-        <img src={diamondImg2}></img>
-        <img src={rubyImg}></img>
+        <img src={portraitPhoto} className="portrait-photo-styles"></img>
+        
+        <div className="style"> 
+        <img src={ringPhoto} className="ring-photo-styles"></img>
+        <img src={necklacePhoto} className="necklace-styles"></img> 
+        </div>
+        
         </div>
 
 
         </div>
+
+
+
 
 
 

@@ -442,4 +442,11 @@
 // can we also put a diamond next to the text? 
 
 // can we grab a 3rd image to form a little image collage at the top of the file 
-// lets see if we can find a black and white one. 
+// lets see if we can find a black and white one.  
+
+// figure out how to change the images. 
+
+// I can grab the images. 
+// how do I display them every few seconds, 
+
+// I will need to use a setInterval functiom

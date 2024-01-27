@@ -23,6 +23,41 @@ import ringPhoto from "../../../Images/Image.png";
 
 export default function TitleComponent() { 
 
+
+  // function that holds all images, loops through them, 
+  // then changes the src of the image to the new image, 
+
+  function imageGenerator() { 
+    // let necklacePhoto1 = necklacePhoto;
+    // let portraitPhoto2 = portraitPhoto;
+    // let ringPhoto3 = ringPhoto; 
+
+    let photoArray = [{ 
+      img: necklacePhoto,
+      id: crypto.randomUUID()
+    }, 
+    { 
+      img: portraitPhoto,
+      id: crypto.randomUUID(),
+    },
+    { 
+      img: ringPhoto,
+      id: crypto.randomUUID(),
+    }
+  ]
+
+  photoArray.map((photo) => { 
+    console.log(photo);
+  })
+   
+
+  } 
+
+  console.log(imageGenerator());
+
+
+
+
     return ( 
         <> 
         <div className="main-title-section-wrapper">
@@ -67,10 +102,8 @@ export default function TitleComponent() {
           </div>
         </div>  */}
 
-        <br></br>
-        <br></br>
 
-        <div className="main-diamond-img-container">
+        {/* <div className="main-diamond-img-container">
         <img src={portraitPhoto} className="portrait-photo-styles"></img>
         
         <div className="style"> 
@@ -78,7 +111,28 @@ export default function TitleComponent() {
         <img src={necklacePhoto} className="necklace-styles"></img> 
         </div>
         
+        </div> */}
+
+
+
+        <div className="images-container"> 
+
+          <div className="portrait-photo-container"> 
+          <img src={portraitPhoto} className="portrait-photo-styles"></img>
+          </div>
+
+          <div className="ring-photo-styles-container"> 
+          <img src={ringPhoto} className="ring-photo-styles"></img>
+          </div>
+
+          <div className="necklace-photo-styles-container"> 
+          <img src={necklacePhoto} className="necklace-styles"></img>
+          </div>
+
         </div>
+
+
+
 
 
         </div>

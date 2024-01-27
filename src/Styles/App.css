@@ -133,27 +133,64 @@
 } */
 
 
- .main-diamond-img-container { 
+ /* .main-diamond-img-container { 
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   margin-top: -190px;
   gap: 1em;
+}  */
+
+.portrait-photo-container { 
+  position: relative;
+  height: 100%;
+}
+
+.portrait-photo-styles {
+  position: absolute; 
+  top: -8em;
+  right: 1em;
+  width: 240px;
 } 
+
+.ring-photo-styles-container { 
+  position: relative;
+  height: 100%;
+}
+
+.ring-photo-styles { 
+  position: absolute;
+  top: -3em;
+  width: 240px;
+  
+}
+
+.necklace-photo-styles-container { 
+  position: relative;
+  height: 100%;
+}
+
 
 .necklace-styles { 
-  width: 300px;
+  width: 240px;
+  position: relative;
+  left: 16em;
+  top: 11em;
 }
 
-.portrait-photo-styles { 
-  width: 300px;
-} 
 
 
-.style { 
+.images-container { 
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  top: -15em;
+  right: 18em;
+  height: 100%;
+  /* gap: 1em; */
 }
+
 
 /* .main-diamond-img-container { 
   background-image: url("../../../Icons/women-dress-svgrepo-com.svg")

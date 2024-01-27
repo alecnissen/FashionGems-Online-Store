@@ -1,4 +1,4 @@
-import react from "react"
+import react, { useState } from "react"
 import { propTypes } from "react-bootstrap/esm/Image"
 import PropTypes from "prop-types"
 import Carousel from 'react-bootstrap/Carousel';
@@ -8,6 +8,8 @@ import Button from 'react-bootstrap/Button';
 import storeImg from "../../../Images/nguyen-dang-hoang-nhu-Nne2TxFHPyQ-unsplash.jpg";
 import insideStoreImg from "../../../Images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg"
 import Modal from "../ProductAndShopping/SearchModal";
+
+// import { useState } from "react";
 
 import diamondImg from "../../../Icons/icons8-diamond-80.png";
 
@@ -23,14 +25,18 @@ import ringPhoto from "../../../Images/Image.png";
 
 export default function TitleComponent() { 
 
+  const [image, setImage] = useState([])
+
 
   // function that holds all images, loops through them, 
   // then changes the src of the image to the new image, 
 
-  function imageGenerator() { 
-    // let necklacePhoto1 = necklacePhoto;
-    // let portraitPhoto2 = portraitPhoto;
-    // let ringPhoto3 = ringPhoto; 
+// setInterval(function imageGenerator(id) { 
+
+
+  function imageGenerator() {  
+
+    let selectedImg = {}
 
     let photoArray = [{ 
       img: necklacePhoto,
@@ -46,16 +52,71 @@ export default function TitleComponent() {
     }
   ]
 
-  photoArray.map((photo) => { 
-    console.log(photo);
-  })
+  // photoArray.map((photo) => { 
+  //   console.log(photo);
+  // })
    
+
+  // setInterval(() => { 
+
+ 
+
+  let rnd = Math.floor(Math.random() * photoArray.length);
+
+  console.log(rnd);
+
+  // setImage(selectedImg.src = photoArray[rnd]);
+
+  selectedImg.src = photoArray[rnd]
+
+  console.log(image);
+
+  return selectedImg;
+
+// }, 5000)
+
 
   } 
 
-  console.log(imageGenerator());
+// }, 3000);
 
 
+
+
+
+
+  // console.log(imageGenerator());
+
+  // let x = setInterval(() => { 
+  //   console.log('hi');
+
+  //   return () => { 
+  //     clearInterval(x);
+  //     console.log('cleanup');
+  //   }
+  // }, 1000)
+
+
+
+
+  // setInterval((id) => { 
+
+    
+    //   console.log(randomImage.src);
+    
+    //   return () => { 
+      //     clearInterval(id);
+      //   }
+      
+      
+      // }, 5000)
+
+
+      // setInterval(() => { 
+         let randomImage = imageGenerator();
+
+        console.log(randomImage);
+      // }, 5000)
 
 
     return ( 
@@ -113,20 +174,51 @@ export default function TitleComponent() {
         
         </div> */}
 
+        {/* {setInterval((id) => { 
+          console.log('hi')
+        })} 
 
+        {clearInterval(id)} */}
+
+        {/* {setInterval(() => { 
+
+<div className="images-container"> 
+        
+
+<div className="portrait-photo-container"> 
+<img src={randomImage} className="portrait-photo-styles"></img>
+</div>
+
+<div className="ring-photo-styles-container"> 
+<img src={randomImage} className="ring-photo-styles"></img>
+</div>
+
+<div className="necklace-photo-styles-container"> 
+<img src={randomImage} className="necklace-styles"></img>
+</div>
+
+</div>
+
+
+
+
+
+
+        }, 1000)} */}
 
         <div className="images-container"> 
+        
 
           <div className="portrait-photo-container"> 
-          <img src={portraitPhoto} className="portrait-photo-styles"></img>
+          <img src={randomImage.src.img} className="portrait-photo-styles"></img>
           </div>
 
           <div className="ring-photo-styles-container"> 
-          <img src={ringPhoto} className="ring-photo-styles"></img>
+          <img src={randomImage.src.img} className="ring-photo-styles"></img>
           </div>
 
           <div className="necklace-photo-styles-container"> 
-          <img src={necklacePhoto} className="necklace-styles"></img>
+          <img src={randomImage.src.img} className="necklace-styles"></img>
           </div>
 
         </div>

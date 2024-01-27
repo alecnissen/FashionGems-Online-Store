@@ -450,3 +450,16 @@
 // how do I display them every few seconds, 
 
 // I will need to use a setInterval functiom
+
+// I can get a random image back, 
+
+// I can return an img from a function 
+
+// how do I replace an img every few seconds with a new random img ? 
+
+// I have to use a setInterval some how 
+
+// I have an interval that sets, 
+
+
+// I have a function which can return 

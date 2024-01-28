@@ -177,7 +177,9 @@ useEffect(() => {
 
           <div className="necklace-photo-styles-container"> 
           <img src={necklacePhoto} className="necklace-styles"></img>
-          </div> */}
+          </div>  */}
+
+
 
 
 
@@ -185,7 +187,7 @@ useEffect(() => {
           {images[index].map((img, i) => { 
             return ( 
             <> 
-            <img key={i} src={img} alt="img" />
+            <img key={i} src={img} alt="img" className="img-styles-title-component" />
             </>
             )
           })}

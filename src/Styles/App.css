@@ -153,6 +153,7 @@
   width: 240px;
 } 
 
+
 .ring-photo-styles-container { 
   position: relative;
   height: 100%;
@@ -185,10 +186,30 @@
   justify-content: flex-end;
   align-items: center;
   position: relative;
-  top: -15em;
-  right: 18em;
+  top: -16em;
+  right: 13em;
   height: 100%;
   /* gap: 1em; */
+} 
+
+.img-styles-title-component { 
+  width: 375px;
+  transition: all 0.1s ease-in-out;
+  animation: fadeInOut 4s infinite;
+}
+
+@keyframes fadeInOut { 
+  0% { 
+    opacity: 0;
+  } 
+
+  50% { 
+    opacity: 1;
+  } 
+
+  100% { 
+    opacity: 0;
+  }
 }
 
 

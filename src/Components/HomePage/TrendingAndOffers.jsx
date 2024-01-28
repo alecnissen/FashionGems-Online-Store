@@ -1,8 +1,14 @@
 import React from 'react'
+import earringImageSpecialOffers from "../../../Images/earring-img-special-offers.png"
+import earringImageNewArrivals from "../../../Images/img4.png";
+
 
 export default function TrendingAndOffers() {
   return (
     <div className='trending-offers-component-wrapper'>
+
+        <div className='special-offers-content-wrapper'>
+
         <div className='special-offers-container'>
             <div className='special-offers-header-container'>
 
@@ -14,6 +20,39 @@ export default function TrendingAndOffers() {
                 </h3>
             </div>
         </div>
+
+
+    <div className='earrings-card-container'>
+        <div className='earrings-title-container'> 
+            <h3>Earrings</h3>
+        </div> 
+
+            <img src={earringImageSpecialOffers} className="earrings-shop-now-btn"></img>
+
+            <div className='earrings-card-discount-div'>
+                50% Off!
+            </div>
+
+            <button>Shop Now</button>
+
+    </div>
+
+
+    <div className='new-arrivals-card-container'>
+        <div className='new-arrivals-title-container'> 
+            <h3>New Arrivals</h3>
+            <p>Discover out latest</p>
+        </div>
+
+        {/* <img src={earringImageNewArrivals}></img> */}
+
+        <button>Shop Now</button>
+    
+    </div>
+
+
+    </div>
+
     </div>
   )
 }

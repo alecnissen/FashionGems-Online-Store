@@ -463,3 +463,9 @@
 
 
 // I have a function which can return 
+
+// *** lets import all 9 of the photos we plan to use and put them into an array, 
+
+// we got the images, 
+
+// now put them into an array, 

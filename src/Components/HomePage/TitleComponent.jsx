@@ -1,4 +1,4 @@
-import react, { useState } from "react"
+import react, { useEffect, useState } from "react"
 import { propTypes } from "react-bootstrap/esm/Image"
 import PropTypes from "prop-types"
 import Carousel from 'react-bootstrap/Carousel';
@@ -21,102 +21,46 @@ import necklacePhoto from "../../../Images/Image_4.jpeg"
 
 import portraitPhoto from "../../../Images/pexels-pixabay-219550.jpg" 
 
-import ringPhoto from "../../../Images/Image.png";
+import ringPhoto from "../../../Images/Image.png"
+
+import earringPhoto from "../../../Images/img4.png"
+
+import typesOfJewelry from "../../../Images/img5.png"
+
+import portraitOfWoman2 from "../../../Images/img6.png"
+
+import goldEarringPhoto from "../../../Images/img7.png"
+
+import jeanJacketPhoto from "../../../Images/jean-jacket-img.png"
+
+import earringPhoto2 from "../../../Images/img9.png"
+
+const images = [
+  [necklacePhoto], [portraitPhoto], [ringPhoto], [earringPhoto], [typesOfJewelry], [portraitOfWoman2], [goldEarringPhoto], [jeanJacketPhoto], [earringPhoto2]
+];
 
 export default function TitleComponent() { 
 
-  const [image, setImage] = useState([])
+  const [index, setIndex] = useState(0);
 
 
-  // function that holds all images, loops through them, 
-  // then changes the src of the image to the new image, 
-
-// setInterval(function imageGenerator(id) { 
-
-
-  function imageGenerator() {  
-
-    let selectedImg = {}
-
-    let photoArray = [{ 
-      img: necklacePhoto,
-      id: crypto.randomUUID()
-    }, 
-    { 
-      img: portraitPhoto,
-      id: crypto.randomUUID(),
-    },
-    { 
-      img: ringPhoto,
-      id: crypto.randomUUID(),
-    }
-  ]
-
-  // photoArray.map((photo) => { 
-  //   console.log(photo);
-  // })
-   
-
-  // setInterval(() => { 
-
- 
-
-  let rnd = Math.floor(Math.random() * photoArray.length);
-
-  console.log(rnd);
-
-  // setImage(selectedImg.src = photoArray[rnd]);
-
-  selectedImg.src = photoArray[rnd]
-
-  console.log(image);
-
-  return selectedImg;
-
-// }, 5000)
+const handleNext = (currentValue) => { 
+  if (currentValue === images.length - 1) { 
+    return 0;
+  } else { 
+    return currentValue + 1;
+  }
+};
 
 
-  } 
+useEffect(() => { 
+  const interval = setInterval(() => { 
+    setIndex((index) => handleNext(index));
+  }, 4000);
 
-// }, 3000);
+  return () => clearInterval(interval);
+}, []); 
 
-
-
-
-
-
-  // console.log(imageGenerator());
-
-  // let x = setInterval(() => { 
-  //   console.log('hi');
-
-  //   return () => { 
-  //     clearInterval(x);
-  //     console.log('cleanup');
-  //   }
-  // }, 1000)
-
-
-
-
-  // setInterval((id) => { 
-
-    
-    //   console.log(randomImage.src);
-    
-    //   return () => { 
-      //     clearInterval(id);
-      //   }
-      
-      
-      // }, 5000)
-
-
-      // setInterval(() => { 
-         let randomImage = imageGenerator();
-
-        console.log(randomImage);
-      // }, 5000)
 
 
     return ( 
@@ -209,17 +153,44 @@ export default function TitleComponent() {
         <div className="images-container"> 
         
 
-          <div className="portrait-photo-container"> 
-          <img src={randomImage.src.img} className="portrait-photo-styles"></img>
+          {/* <div className="portrait-photo-container"> 
+          <img src={portraitPhoto} className="portrait-photo-styles"></img>
           </div>
 
           <div className="ring-photo-styles-container"> 
-          <img src={randomImage.src.img} className="ring-photo-styles"></img>
+          <img src={ringPhoto} className="ring-photo-styles"></img>
           </div>
 
           <div className="necklace-photo-styles-container"> 
-          <img src={randomImage.src.img} className="necklace-styles"></img>
+          <img src={necklacePhoto} className="necklace-styles"></img>
+          </div> */}
+
+
+
+                 {/* <div className="portrait-photo-container"> 
+          <img src={images[index][0]} className="portrait-photo-styles"></img>
           </div>
+
+          <div className="ring-photo-styles-container"> 
+          <img src={ringPhoto} className="ring-photo-styles"></img>
+          </div>
+
+          <div className="necklace-photo-styles-container"> 
+          <img src={necklacePhoto} className="necklace-styles"></img>
+          </div> */}
+
+
+
+          
+          {images[index].map((img, i) => { 
+            return ( 
+            <> 
+            <img key={i} src={img} alt="img" />
+            </>
+            )
+          })}
+
+
 
         </div>
 

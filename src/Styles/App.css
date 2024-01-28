@@ -630,7 +630,7 @@
 
 /* media queries for main title and icon section */ 
 
-@media (max-width: 1278px) { 
+@media (max-width: 1380px) { 
   .main-title-section-wrapper { 
     display: flex;
     flex-direction: column;
@@ -642,6 +642,16 @@
   position: relative;
   top: 6em;
   } */
+
+  .images-container { 
+    position: relative;
+    top: 5em;
+    left: -1em;
+  }
+
+  .images-container img { 
+    width: 270px;
+  }
 
 
 }

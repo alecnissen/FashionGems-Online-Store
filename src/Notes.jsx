@@ -469,3 +469,8 @@
 // we got the images, 
 
 // now put them into an array, 
+
+
+// next I can begin to play around with responsiveness for that section, 
+
+// can I set the img as a background img???

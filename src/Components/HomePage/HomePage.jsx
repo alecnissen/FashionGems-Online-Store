@@ -10,6 +10,7 @@ import ImageCarouselComponent from './TitleComponent';
 import ApiRequest from '../../API-CALLS/ApiRequest';
 import TitleComponent from './TitleComponent';
 import CategoryListComponent from './CategoryListComponent';
+import TrendingAndOffers from './TrendingAndOffers';
 
 export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
   const [productData, setProductData] = useState([]);
@@ -60,7 +61,8 @@ export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
       ></ImageCarouselComponent> */}
       <TitleComponent></TitleComponent>
       <CategoryListComponent></CategoryListComponent>
-      <Footer></Footer>
+      <TrendingAndOffers></TrendingAndOffers>
+      {/* <Footer></Footer> */}
     </>
   );
 }

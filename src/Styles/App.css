@@ -104,6 +104,10 @@
   background-color: black;
   padding: 10em;
   /* width: 100vw; */
+} 
+
+.title-component-header-text-styles { 
+  font-size: 2rem;
 }
 
 .main-title-subtitle-container { 
@@ -234,6 +238,7 @@
 .categories-wrapper { 
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: black;
   color: white;
   padding: 15px;
@@ -275,11 +280,44 @@
 
 
 
-/* */ 
+/* category comp ends */ 
 
 
 
 
+/* trending and offers comp styles begin */
+
+.trending-offers-component-wrapper { 
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+} 
+
+/* .special-offers-container { 
+  background-color: rgb(58, 53, 53);
+  height: 86vh;
+  width: 30vw;
+} */
+
+.special-offers-header-container { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  /* text-align: center; */
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 12px;
+  background-color: rgb(58, 53, 53);
+  border-radius: 10%;
+  margin: 12px;
+}
+
+
+
+/* trending and comp styles end */
 
 
 
@@ -630,7 +668,7 @@
 
 /* media queries for main title and icon section */ 
 
-@media (max-width: 1380px) { 
+@media (max-width: 1456px) { 
   .main-title-section-wrapper { 
     display: flex;
     flex-direction: column;

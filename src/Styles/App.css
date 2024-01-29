@@ -171,8 +171,12 @@
   background-color: black;
   color: white;
   padding: 15px;
-  gap: 1em;
+  /* gap: 1em; */
 } 
+
+.category-header-text-styles { 
+  font-size: 3rem;
+}
 
 .category-main-title-component { 
   display: flex;
@@ -180,6 +184,8 @@
   background-color: black;
   color: white;
 } 
+
+
 
 .category-card-style-container-mens,
 .category-card-style-container-womens,
@@ -204,6 +210,14 @@
 .jewelery-icon-container { 
   display: flex;
   justify-content: center;
+}
+
+.category-card-container-mens-and-womens-clothes,
+.category-card-electronics-jewelry-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 

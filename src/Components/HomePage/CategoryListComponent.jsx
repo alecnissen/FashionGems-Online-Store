@@ -30,14 +30,14 @@ function CategoryListComponent() {
     <> 
 
     <div className='category-main-title-component'>
-      <h3>Categories</h3>
+      <h3 className='category-header-text-styles'>Categories</h3>
       </div>
 
     <div className="categories-wrapper">
 
     
     
-    
+      <div className='category-card-container-mens-and-womens-clothes'>
       <Card style={{ width: '18rem', border: "2px solid black" }}>
       {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
       <Card.Body className='category-card-style-container-mens'>
@@ -69,6 +69,12 @@ function CategoryListComponent() {
       </Card.Body>
     </Card> 
 
+    </div>
+
+
+
+
+    <div className='category-card-electronics-jewelry-container'>
     <Card style={{ width: '18rem', border: "2px solid black" }}>
       {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
       <Card.Body className='category-card-style-container-electronics'>
@@ -98,6 +104,7 @@ function CategoryListComponent() {
 
       </Card.Body>
     </Card>
+    </div>
    
     
     

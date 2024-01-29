@@ -496,3 +496,14 @@
 // the responsiveness is looking good, the only thing is the one image being slighlty larger than the rest, 
 
 // commiting and saving then moving on. 
+
+
+
+// *** 
+
+// category section, make header text larger, 
+// make sure 2 items can stay on a row, 
+
+// prevent 3 items on a row, then one on the bottom, 
+
+// wrap both of them in a container, and apply flex properties to them, and try flex wrap 

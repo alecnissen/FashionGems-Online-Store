@@ -474,3 +474,25 @@
 // next I can begin to play around with responsiveness for that section, 
 
 // can I set the img as a background img???
+
+
+
+
+// *** 
+
+// img containers are position relative, 
+// img (child) will be position absolute. 
+
+// make them staggered like before, then try to keep that style 
+
+// and make it responsive. 
+
+// it is looking much much better, just figure out a way to only allow 3 items in a row, then when it is hits a certain breakpoint that will go into column, 
+
+// only fit a certain number of items per row, do not have 2 in one row then 1 img in the bottom row, 
+
+// figure out a way to put 3 images in a row that stay then when screen shrinks put them into a column. 
+
+// the responsiveness is looking good, the only thing is the one image being slighlty larger than the rest, 
+
+// commiting and saving then moving on. 

@@ -35,8 +35,10 @@ import jeanJacketPhoto from "../../../Images/jean-jacket-img.png"
 
 import earringPhoto2 from "../../../Images/img9.png"
 
+import rubyPhoto from "../../../Images/ruby-img.png"
+
 const images = [
-  [necklacePhoto], [portraitPhoto], [ringPhoto], [earringPhoto], [typesOfJewelry], [portraitOfWoman2], [goldEarringPhoto], [jeanJacketPhoto], [earringPhoto2]
+  [necklacePhoto, portraitPhoto, ringPhoto], [earringPhoto, typesOfJewelry, portraitOfWoman2], [goldEarringPhoto, rubyPhoto, earringPhoto2]
 ];
 
 export default function TitleComponent() { 

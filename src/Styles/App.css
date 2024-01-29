@@ -102,8 +102,11 @@
 
 .main-title-section-wrapper { 
   background-color: black;
+  /* padding: 10em; */
   padding: 10em;
-  /* width: 100vw; */
+  width: 100vw;
+  /* height: 96vh; */
+  /* margin-bottom: -3em; */
 } 
 
 .title-component-header-text-styles { 
@@ -118,86 +121,20 @@
   color: gray;
 } 
 
-.main-title-subtitle-container input { 
-  background-color: black;
-  color: white;
-} 
-
-.main-title-subtitle-container input::placeholder { 
-  color: white;
-}
-
-.main-title-subtitle-container button { 
-  background-color: black;
-  color: white;
-} 
-
-/* .diamond-img-main { 
-  margin-left: 5px;
-} */
-
-
- /* .main-diamond-img-container { 
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-top: -190px;
-  gap: 1em;
-}  */
-
-.portrait-photo-container { 
-  position: relative;
-  height: 100%;
-}
-
-.portrait-photo-styles {
-  position: absolute; 
-  top: -8em;
-  right: 1em;
-  width: 240px;
-} 
-
-
-.ring-photo-styles-container { 
-  position: relative;
-  height: 100%;
-}
-
-.ring-photo-styles { 
-  position: absolute;
-  top: -3em;
-  width: 240px;
-  
-}
-
-.necklace-photo-styles-container { 
-  position: relative;
-  height: 100%;
-}
-
-
-.necklace-styles { 
-  width: 240px;
-  position: relative;
-  left: 16em;
-  top: 11em;
-}
-
-
-
 .images-container { 
   display: flex;
   justify-content: flex-end;
   align-items: center;
   position: relative;
   top: -16em;
-  right: 13em;
+  right: -8em;
   height: 100%;
-  /* gap: 1em; */
+  gap: 1em;
 } 
 
+
 .img-styles-title-component { 
-  width: 375px;
+  width: 335px;
   transition: all 0.1s ease-in-out;
   animation: fadeInOut 4s infinite;
 }
@@ -215,14 +152,6 @@
     opacity: 0;
   }
 }
-
-
-/* .main-diamond-img-container { 
-  background-image: url("../../../Icons/women-dress-svgrepo-com.svg")
-} */
-
-
-
 
 
 /* main styles end  */ 
@@ -701,7 +630,7 @@
 
 /* media queries for main title and icon section */ 
 
-@media (max-width: 1456px) { 
+@media (max-width: 1750px) { 
   .main-title-section-wrapper { 
     display: flex;
     flex-direction: column;
@@ -715,15 +644,24 @@
   } */
 
   .images-container { 
+    display: flex;
+    /* flex-wrap: wrap; */
     position: relative;
     top: 5em;
     left: -1em;
   }
 
-  .images-container img { 
-    width: 270px;
+   .images-container img { 
+    width: 200px;
+  } 
+
+
+}
+
+@media (max-width: 680px) { 
+  .images-container { 
+    display: flex;
+    flex-wrap: wrap;
   }
-
-
 }
 

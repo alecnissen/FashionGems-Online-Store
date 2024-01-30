@@ -266,7 +266,8 @@
 } 
 
 .earrings-card-container, 
-.new-arrivals-card-container { 
+.new-arrivals-card-container,
+.special-offers-timer-countdown-container { 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -276,7 +277,8 @@
   border-radius: 10%;
 } 
 
-.earrings-shop-now-btn { 
+.earring-img-styles,
+.new-arrivals-img-styles { 
   margin-bottom: 40px;
 } 
 
@@ -291,6 +293,31 @@
   text-align: center;
   /* line-height: 500px; */
 }
+
+
+
+/* import Spline from '@splinetool/react-spline';
+
+export default function App() {
+  return (
+    <Spline scene="https://prod.spline.design/nrvDIkIbp5gSH3iR/scene.splinecode" />
+  );
+} */
+
+
+
+
+
+
+.new-arrivals-img-styles { 
+  height: 120px;
+  width: 120px;
+}
+
+.special-offers-title-text { 
+  text-align: center;
+}
+
 
 
 /* trending and comp styles end */

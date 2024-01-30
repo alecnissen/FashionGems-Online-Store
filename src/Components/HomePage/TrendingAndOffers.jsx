@@ -27,7 +27,7 @@ export default function TrendingAndOffers() {
             <h3>Earrings</h3>
         </div> 
 
-            <img src={earringImageSpecialOffers} className="earrings-shop-now-btn"></img>
+            <img src={earringImageSpecialOffers} className="earring-img-styles"></img>
 
             <div className='earrings-card-discount-div'>
                 50% Off!
@@ -44,10 +44,18 @@ export default function TrendingAndOffers() {
             <p>Discover out latest</p>
         </div>
 
-        {/* <img src={earringImageNewArrivals}></img> */}
+        <img src={earringImageNewArrivals} className='new-arrivals-img-styles'></img>
 
         <button>Shop Now</button>
     
+    </div>
+
+    <div className="special-offers-timer-countdown-container">
+        <div className='special-offers-title-text'> 
+            <h3>Special Offers</h3>
+            <p>Ending Soon</p>
+        </div>
+
     </div>
 
 

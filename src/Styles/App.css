@@ -103,7 +103,8 @@
 .main-title-section-wrapper { 
   background-color: black;
   /* padding: 10em; */
-  padding: 10em;
+  /* padding: 10em; */
+  padding: 5em;
   width: 100vw;
   /* height: 96vh; */
   /* margin-bottom: -3em; */
@@ -126,12 +127,16 @@
   justify-content: flex-end;
   align-items: center;
   position: relative;
-  top: -16em;
-  right: -8em;
+  top: -9em;
+  right: -1em;
   height: 100%;
   gap: 1em;
 } 
 
+
+.portrait-of-women-styles { 
+  width: 100px;
+}
 
 
 
@@ -701,10 +706,13 @@ export default function App() {
 
 }
 
-@media (max-width: 680px) { 
+@media (max-width: 705px) { 
   .images-container { 
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2em;
   }
+
 }
 

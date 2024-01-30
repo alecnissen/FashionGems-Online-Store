@@ -42,6 +42,7 @@ const images = [
   [necklacePhoto, portraitPhoto, ringPhoto], [earringPhoto, typesOfJewelry, portraitOfWoman2], [goldEarringPhoto, rubyPhoto, earringPhoto2]
 ];
 
+
 export default function TitleComponent() { 
 
   const [index, setIndex] = useState(0);

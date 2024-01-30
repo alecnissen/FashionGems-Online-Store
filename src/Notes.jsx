@@ -523,3 +523,10 @@
 // this would be a good feature to add to the site 
 
 // spline does not work, performacne too bad, find alternative, 
+
+
+/// continue on with the current design, 
+
+// fix the padding issue, and put the title further up and then the images slightly below, make sure category section is not too far down the page, 
+
+// user should almost be able to see the category section, 

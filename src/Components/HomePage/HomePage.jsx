@@ -50,7 +50,8 @@ export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
 
   return (
     <>
-      <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
+
+
       {/* <ImageCarouselComponent
         productData={productData}
         img1={img1}
@@ -59,9 +60,14 @@ export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
         img4={img4}
         img5={img5}
       ></ImageCarouselComponent> */}
+
+
+      <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
       <TitleComponent></TitleComponent>
       <CategoryListComponent></CategoryListComponent>
       <TrendingAndOffers></TrendingAndOffers>
+
+
       {/* <Footer></Footer> */}
     </>
   );

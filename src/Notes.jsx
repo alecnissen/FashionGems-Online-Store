@@ -507,3 +507,19 @@
 // prevent 3 items on a row, then one on the bottom, 
 
 // wrap both of them in a container, and apply flex properties to them, and try flex wrap 
+
+
+
+// *** create a small 3d design that goes behind the main title section, 
+
+// make it as small as possible 
+
+// and I would create a small diamond img, 
+
+// I dont think spline will work, 
+
+// I have to find another way to possibly use a 3D image or a background, I must explore other options, 
+
+// this would be a good feature to add to the site 
+
+// spline does not work, performacne too bad, find alternative, 

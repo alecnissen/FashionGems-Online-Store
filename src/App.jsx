@@ -16,6 +16,9 @@ import Modal from './Components/ProductAndShopping/SearchModal';
 import ImageCarouselComponent from './Components/HomePage/TitleComponent';
 import apiRequest from './API-CALLS/ApiRequest';
 
+
+
+
 function App() {
   const [cartItems, setCartItems] = useState([]);
   const [itemQuantity, setItemQuantity] = useState([]);
@@ -46,6 +49,7 @@ function App() {
 
   return (
     <>
+
       <Routes>
         <Route
           path="/"

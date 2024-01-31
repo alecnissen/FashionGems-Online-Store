@@ -250,8 +250,27 @@ export default function TrendingAndOffers() {
     </div>
 
 
+    <div className='trending-categories-text-over-cards'>Jewelry
+    <br></br>
+    <button>Shop Now</button>
+    
+    </div> 
 
 
+    <div className='trending-categories-text-over-cards-card2'>Men's Clothing
+    <br></br>
+    <button>Shop Now</button>
+    
+    </div>
+
+    <div className='trending-categories-text-over-cards-card3'>Electronics
+      <br></br>
+      <button>Shop Now</button>
+    </div>
+
+
+
+  
   </div>
 
 

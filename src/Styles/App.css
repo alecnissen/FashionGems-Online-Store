@@ -272,6 +272,11 @@
   /* margin: 12px; */
 } 
 
+.special-offers-header-container h3 { 
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
 .earrings-card-container, 
 .new-arrivals-card-container,
 .special-offers-timer-countdown-container { 
@@ -388,13 +393,65 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 12px;
+  gap: 1em;
 }
 
 .trending-offers-header { 
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ gap: 1em;
  background-color: rgb(58, 53, 53);
  text-align: center;
+ /* font-size: 2rem;
+ font-weight: bolder; */
+ padding: 10px;
+ border-radius: 8%;
+ width: 56em;
+
 } 
 
+.trending-offers-header h3 { 
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.card-container-trending-offers { 
+  display: flex;
+  gap: 1em;
+  /* background-color: rgb(58, 53, 53); */
+} 
+
+.card-container-trending-offers-body { 
+  background-color: rgb(58, 53, 53);
+  border: none;
+} 
+
+.card-1-title-styles,
+.card-2-title-styles,
+.card-3-title-styles,
+.card-4-title-styles { 
+  text-align: center;
+  font-weight: bolder;
+} 
+
+.card-1-price-display,
+.card-2-price-display,
+.card-3-price-display,
+.card-4-price-display { 
+  text-align: center;
+} 
+
+
+
+.card-set-2 { 
+  display: flex;
+  flex-direction: row;
+  /* width: calc(33.33% - 10px) */
+  gap: 1em;
+}
 
 
 /* trending offers styles end */ 
@@ -406,3 +463,117 @@
 
 /* trending and comp styles end */
 
+
+
+/* media queries experiement for HEADER responsiveness, */ 
+
+
+
+@media (max-width: 888px) { 
+
+  .header-button-container { 
+    margin-bottom: 30px;
+  }
+
+  .header-wrapper { 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-icon-container { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+ .trending-offers-container { 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+} 
+
+@media (max-width: 730px) { 
+
+  .header-wrapper { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-button-container { 
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 1em;
+    text-align: center;
+    /* padding: 5px; */
+    /* font-size: 1rem; */
+    flex-wrap: wrap;
+    margin-left: 20px;
+  } 
+
+  .header-icon-container { 
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+}
+.trending-offers-header { 
+ background-color: rgb(58, 53, 53);
+ text-align: center;
+} 
+
+@media (max-width: 550px) { 
+  .header-button-container { 
+    font-size: 1.1rem;
+    text-align: center;
+    gap: 0em;
+    margin-bottom: 30px;
+  }
+}
+
+/* media queries for main title and icon section */ 
+
+@media (max-width: 1750px) { 
+  .main-title-section-wrapper { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+/* trending offers styles end */ 
+
+  /* .main-diamond-img-container { 
+  position: relative;
+  top: 6em;
+  } */
+
+  .images-container { 
+    display: flex;
+    /* flex-wrap: wrap; */
+    position: relative;
+    top: 5em;
+    left: -1em;
+  }
+
+   .images-container img { 
+    width: 200px;
+  } 
+
+
+}
+
+@media (max-width: 705px) { 
+  .images-container { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2em;
+  }
+
+}
+/* trending and comp styles end */

@@ -2,7 +2,13 @@ import React from 'react'
 import earringImageSpecialOffers from "../../../Images/earring-img-special-offers.png"
 import earringImageNewArrivals from "../../../Images/img4.png";
 import Timer from './Timer';
-
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import diamondNecklace from "../../../Images/trending-offers-diamond-necklace.jpg"
+import heartIcon  from "../../../Icons/heart-icon-trending-items.png"
+import ringImg from "../../../Images/ring-img-trending-items.png"
+import chicBraclet from "../../../Images/chic-braclet-img.png"
+import goldenNecklace from "../../../Images/golden-necklace-card-img.png"
 
 export default function TrendingAndOffers() {
   return (
@@ -81,25 +87,115 @@ export default function TrendingAndOffers() {
 
     <div className='trending-offers-container'> 
         <div className='trending-offers-header'> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="header-gem-icon" viewBox="0 0 16 16">
+  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z"/>
+</svg>
             <h3>Trending Offers</h3>
         </div>
 
-            
-        <div className='new-arrivals-card-container'>
-        <div className='new-arrivals-title-container'> 
-            <h3>New Arrivals</h3>
-            <p>Discover out latest</p>
-        </div>
 
-        <img src={earringImageNewArrivals} className='new-arrivals-img-styles'></img>
+        <div className='card-container-trending-offers'>
+        <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white'}}>
+      <Card.Img variant="top" src={diamondNecklace} />
+      <Card.Body>
+        <Card.Title className='card-1-title-styles'>Elegant Necklace</Card.Title>
+        {/* <Card.Text>
+          Elegant necklace
+        </Card.Text> */}
+        <Card.Text className='card-1-price-display'> 
+            $19.99
+        </Card.Text>
+        <img src={heartIcon}></img>
+        {/* <Button variant="primary">Go somewhere</Button> */}
+      </Card.Body>
+    </Card>
 
-        <div className='new-arrivals-discount-circle'> 
-            <p>35% Off!</p>
-        </div>
+    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
+      <Card.Img variant="top" src={ringImg} />
+      <Card.Body>
+        <Card.Title className='card-2-title-styles'>Stunning Ring</Card.Title>
+        <Card.Text className='card-2-price-display'>
+          $49.99
+        </Card.Text>
+        {/* <img src={ringImg}></img> */}
+        {/* <Button variant="primary">Go somewhere</Button> */}
+        <img src={heartIcon}></img>
+      </Card.Body>
+    </Card>
 
-        <button>Shop Now</button>
+    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
+      <Card.Img variant="top" src={chicBraclet} />
+      <Card.Body>
+        <Card.Title className='card-3-title-styles'>Chic Braclet</Card.Title>
+        <Card.Text className='card-3-price-display'>
+          $39.99
+        </Card.Text>
+        {/* <img src={ringImg}></img> */}
+        {/* <Button variant="primary">Go somewhere</Button> */}
+        <img src={heartIcon}></img>
+      </Card.Body>
+    </Card> 
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<div className='card-set-2'>
+    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
+      <Card.Img variant="top" src={goldenNecklace} />
+      <Card.Body>
+        <Card.Title className='card-4-title-styles'>Chic Braclet</Card.Title>
+        <Card.Text className='card-4-price-display'>
+          $120.00
+        </Card.Text>
+        {/* <img src={ringImg}></img> */}
+        {/* <Button variant="primary">Go somewhere</Button> */}
+        <img src={heartIcon}></img>
+      </Card.Body>
+    </Card> 
+
+    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
+      <Card.Img variant="top" src={chicBraclet} />
+      <Card.Body>
+        <Card.Title className='card-5-title-styles'>Chic Braclet</Card.Title>
+        <Card.Text className='card-5-price-display'>
+          $49.99
+        </Card.Text>
+        {/* <img src={ringImg}></img> */}
+        {/* <Button variant="primary">Go somewhere</Button> */}
+        <img src={heartIcon}></img>
+      </Card.Body>
+    </Card>
+
+
+    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
+      <Card.Img variant="top" src={chicBraclet} />
+      <Card.Body>
+        <Card.Title className='card-6-title-styles'>Chic Braclet</Card.Title>
+        <Card.Text className='card-6-price-display'>
+          $49.99
+        </Card.Text>
+        {/* <img src={ringImg}></img> */}
+        {/* <Button variant="primary">Go somewhere</Button> */}
+        <img src={heartIcon}></img>
+      </Card.Body>
+    </Card>
+
+
     
     </div>
+
+
+
+
 
 
     </div>

@@ -535,3 +535,8 @@
 // build out the last section, the special offers card, 
 
 /// 
+
+
+// finish the last of the cards, then position the section, 
+
+// 

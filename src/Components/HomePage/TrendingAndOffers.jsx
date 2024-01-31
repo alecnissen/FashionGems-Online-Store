@@ -9,6 +9,8 @@ import heartIcon  from "../../../Icons/heart-icon-trending-items.png"
 import ringImg from "../../../Images/ring-img-trending-items.png"
 import chicBraclet from "../../../Images/chic-braclet-img.png"
 import goldenNecklace from "../../../Images/golden-necklace-card-img.png"
+import greenNecklace from "../../../Images/green-diamond-necklace.png"
+import luxuriousGoldImg from "../../../Images/luxurious-gold-img.png"
 
 export default function TrendingAndOffers() {
   return (
@@ -148,11 +150,11 @@ export default function TrendingAndOffers() {
 
 
 
-<div className='card-set-2'>
+<div className='card-container-trending-offers-set2'>
     <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
       <Card.Img variant="top" src={goldenNecklace} />
       <Card.Body>
-        <Card.Title className='card-4-title-styles'>Chic Braclet</Card.Title>
+        <Card.Title className='card-4-title-styles'>Elegant Jewelry</Card.Title>
         <Card.Text className='card-4-price-display'>
           $120.00
         </Card.Text>
@@ -163,11 +165,11 @@ export default function TrendingAndOffers() {
     </Card> 
 
     <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
-      <Card.Img variant="top" src={chicBraclet} />
+      <Card.Img variant="top" src={greenNecklace} />
       <Card.Body>
-        <Card.Title className='card-5-title-styles'>Chic Braclet</Card.Title>
+        <Card.Title className='card-5-title-styles'>Sparkling Gemstone</Card.Title>
         <Card.Text className='card-5-price-display'>
-          $49.99
+          $300.00
         </Card.Text>
         {/* <img src={ringImg}></img> */}
         {/* <Button variant="primary">Go somewhere</Button> */}
@@ -177,9 +179,9 @@ export default function TrendingAndOffers() {
 
 
     <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
-      <Card.Img variant="top" src={chicBraclet} />
+      <Card.Img variant="top" src={luxuriousGoldImg} />
       <Card.Body>
-        <Card.Title className='card-6-title-styles'>Chic Braclet</Card.Title>
+        <Card.Title className='card-6-title-styles'>Luxurious Gold</Card.Title>
         <Card.Text className='card-6-price-display'>
           $49.99
         </Card.Text>

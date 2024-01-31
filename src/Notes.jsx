@@ -539,4 +539,6 @@
 
 // finish the last of the cards, then position the section, 
 
-// 
+// so make the last two items/cards, 
+
+// they are a little wider so, just create a div first, and then give it a width 

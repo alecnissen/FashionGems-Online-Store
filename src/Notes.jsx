@@ -530,3 +530,8 @@
 // fix the padding issue, and put the title further up and then the images slightly below, make sure category section is not too far down the page, 
 
 // user should almost be able to see the category section, 
+
+
+// build out the last section, the special offers card, 
+
+/// 

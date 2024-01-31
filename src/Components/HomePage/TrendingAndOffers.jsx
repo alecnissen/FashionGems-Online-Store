@@ -1,6 +1,7 @@
 import React from 'react'
 import earringImageSpecialOffers from "../../../Images/earring-img-special-offers.png"
 import earringImageNewArrivals from "../../../Images/img4.png";
+import Timer from './Timer';
 
 
 export default function TrendingAndOffers() {
@@ -25,12 +26,15 @@ export default function TrendingAndOffers() {
     <div className='earrings-card-container'>
         <div className='earrings-title-container'> 
             <h3>Earrings</h3>
+            <p>By</p>
         </div> 
-
+            
+            <div className='img-container-earrings'>
             <img src={earringImageSpecialOffers} className="earring-img-styles"></img>
+            </div>
 
             <div className='earrings-card-discount-div'>
-                50% Off!
+                <p>50% Off!</p>
             </div>
 
             <button>Shop Now</button>
@@ -46,6 +50,10 @@ export default function TrendingAndOffers() {
 
         <img src={earringImageNewArrivals} className='new-arrivals-img-styles'></img>
 
+        <div className='new-arrivals-discount-circle'> 
+            <p>35% Off!</p>
+        </div>
+
         <button>Shop Now</button>
     
     </div>
@@ -54,12 +62,52 @@ export default function TrendingAndOffers() {
         <div className='special-offers-title-text'> 
             <h3>Special Offers</h3>
             <p>Ending Soon</p>
+            
+            <Timer duration={60 * 60 * 1000}></Timer>
+        
         </div>
 
     </div>
 
 
+
+
+
+
+
+
     </div>
+
+
+    <div className='trending-offers-container'> 
+        <div className='trending-offers-header'> 
+            <h3>Trending Offers</h3>
+        </div>
+
+            
+        <div className='new-arrivals-card-container'>
+        <div className='new-arrivals-title-container'> 
+            <h3>New Arrivals</h3>
+            <p>Discover out latest</p>
+        </div>
+
+        <img src={earringImageNewArrivals} className='new-arrivals-img-styles'></img>
+
+        <div className='new-arrivals-discount-circle'> 
+            <p>35% Off!</p>
+        </div>
+
+        <button>Shop Now</button>
+    
+    </div>
+
+
+    </div>
+
+
+
+
+
 
     </div>
   )

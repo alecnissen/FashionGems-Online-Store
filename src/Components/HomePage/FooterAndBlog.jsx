@@ -5,6 +5,9 @@ import footerCardImg1 from "../../../Images/footer-card-img-1.png"
 import footerCardImg2 from "../../../Images/footer-card-img-2.png"
 import footerCardImg3 from "../../../Images/footer-card-img-3.png"
 import fashionGemsIcon from "../../../Icons/fashion-gems-icon-img.png"
+import instaLogo from "../../../Icons/insta-logo-footer.png"
+import fbLogo from "../../../Icons/footer-facebook-icon.png"
+import twitterLogo from "../../../Icons/footer-icon-twitter.png"
 
 function FooterAndBlog() {
   return (
@@ -73,6 +76,20 @@ function FooterAndBlog() {
 
 
     </div>
+
+
+    <div className='footer-container'> 
+        <h6>FashionGems</h6>
+        <p>Shine like a diamond!</p>
+
+        <div className='social-media-container-footer-container'> 
+        <img src={instaLogo}></img>
+        <img src={fbLogo}></img>
+        <img src={twitterLogo}></img>
+        </div>
+
+    </div>
+
 
     </div>
   )

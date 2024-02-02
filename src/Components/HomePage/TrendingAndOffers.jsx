@@ -23,9 +23,17 @@ export default function TrendingAndOffers() {
   return (
     <div className='trending-offers-component-wrapper'>
 
+
+
+
+
+
+
+
+
+
+
         <div className='special-offers-content-wrapper'>
-
-
 
             <div className='special-offers-header-container'>
 
@@ -36,6 +44,8 @@ export default function TrendingAndOffers() {
                 <h3>Special Offers
                 </h3>
             </div>
+
+
 
 
 

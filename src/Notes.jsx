@@ -584,3 +584,10 @@
 // then I want to start to build out the footer component, 
 
 // commit and save changes, double check for no errors
+
+
+/// *** 
+
+// moved the header text container for speial offers out of the container, 
+
+// I Notice when switching to column the width gets messed up, 

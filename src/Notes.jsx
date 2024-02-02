@@ -542,3 +542,15 @@
 // so make the last two items/cards, 
 
 // they are a little wider so, just create a div first, and then give it a width 
+
+
+
+// *** 
+
+// Got the base responsiveness down on the home page, 
+
+// I need to figure out a couple of more things, 
+
+// 1. why the whitespace on the right hand side? 
+
+// 2. make sure the header does stay the same width. the headers can adapt to smaller screens 

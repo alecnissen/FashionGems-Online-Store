@@ -493,11 +493,10 @@
 /* trending categories styles */ 
 
 .trending-categories-container { 
-  /* background-color: rgb(58, 53, 53); */
-  /* border-radius: 8%; */
   display: flex;
   flex-direction: column;
   gap: 1em;
+  position: relative;
 }
 
 /* .trending-categories-container h3 { 
@@ -514,6 +513,7 @@
 .trending-categories-header-container { 
   background-color: rgb(58, 53, 53);
   display: flex;
+  align-items: center;
   /* justify-content: center;
   align-items: center; */
   /* width: 56em; */
@@ -521,8 +521,8 @@
 } 
 
 .header-gem-icon-trending-categories { 
-  width: 55px; 
-  height: 55px;
+  width: 25px; 
+  height: 25px;
 } 
 
 .card-container-trending-categories { 
@@ -540,8 +540,8 @@
 
 
 .trending-categories-text-over-cards { 
-  position: relative;
-  bottom: 7em;
+  position: absolute;
+  top: 5em;
   left: 2em;
   font-size: 2.3rem;
   font-weight: bolder;
@@ -560,11 +560,12 @@
 } 
 
 .trending-categories-text-over-cards-card2 { 
-  position: relative;
-  top: -12em;
-  left: 10em;
+  position: absolute;
+  top: 6em;
+  left: 10.5em;
   font-size: 2rem;
   font-weight: bolder;
+  z-index: 200;
 }
 
 .trending-categories-text-over-cards-card2 button {
@@ -580,12 +581,12 @@
 
 
 .trending-categories-text-over-cards-card3 { 
-  position: relative;
+  position: absolute;
   font-size: 2rem;
   font-weight: bolder;
-  top: -15.6em;
+  top: 6em;
   left: 21em;
-
+  z-index: 300;
 }
 
 .trending-categories-text-over-cards-card3 button { 
@@ -596,6 +597,43 @@
   border: none;
   border-radius: 6%;
 }
+
+/* footer and blog styles */ 
+
+
+
+
+.footer-blog-content-wrapper { 
+  background-color: rgb(58, 53, 53);
+}
+
+
+
+.footer-header-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+} 
+
+.footer-header-container h3 { 
+  font-weight: bolder;
+}
+
+
+
+.footer-card-container { 
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+
+/* footer and blog styles end */ 
+
+
+
 
 
 

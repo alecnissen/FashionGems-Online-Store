@@ -582,3 +582,5 @@
 // I am going to redo the media queries for that section for a bit, 
 
 // then I want to start to build out the footer component, 
+
+// commit and save changes, double check for no errors

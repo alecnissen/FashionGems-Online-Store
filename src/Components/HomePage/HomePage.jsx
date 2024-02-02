@@ -11,6 +11,7 @@ import ApiRequest from '../../API-CALLS/ApiRequest';
 import TitleComponent from './TitleComponent';
 import CategoryListComponent from './CategoryListComponent';
 import TrendingAndOffers from './TrendingAndOffers';
+import FooterAndBlog from './FooterAndBlog';
 
 export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
   const [productData, setProductData] = useState([]);
@@ -66,6 +67,7 @@ export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
       <TitleComponent></TitleComponent>
       <CategoryListComponent></CategoryListComponent>
       <TrendingAndOffers></TrendingAndOffers>
+      <FooterAndBlog></FooterAndBlog>
 
 
       {/* <Footer></Footer> */}

@@ -16,6 +16,8 @@ import gemIcon from "../../../Icons/icons8-diamond-80.png"
 import jewelryCollection from "../../../Images/img5.png"
 import jeanJacket from "../../../Images/jean-jacket-img.png"
 import electronicsPhoto from "../../../Images/electronics-img.png"
+import fashionGemsIcon from "../../../Icons/fashion-gems-icon-img.png"
+import pawIcon from "../../../Icons/paw-icon-categories.png"
 
 export default function TrendingAndOffers() {
   return (
@@ -209,9 +211,13 @@ export default function TrendingAndOffers() {
 <div className='trending-categories-header-container'>
         {/* <img src={gemIcon}></img> */}
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="header-gem-icon-trending-categories" viewBox="0 0 16 16">
+        {/* <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="header-gem-icon-trending-categories" viewBox="0 0 16 16">
   <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z"/>
-</svg>
+</svg> */}
+
+<img src={pawIcon} className="header-gem-icon-trending-categories"></img>
+
+{/* <img src={fashionGemsIcon}></img> */}
 
 
         <h3 className='trending-categories-header'>Trending Categories</h3>
@@ -250,7 +256,7 @@ export default function TrendingAndOffers() {
     {/* <p>Hello world!</p> */}
     </div>
 
-{/* 
+
     <div className='trending-categories-text-over-cards'>Jewelry
     <br></br>
     <button>Shop Now</button>
@@ -258,7 +264,7 @@ export default function TrendingAndOffers() {
     </div> 
 
 
-    <div className='trending-categories-text-over-cards-card2'>Men's Clothing
+    {/* <div className='trending-categories-text-over-cards-card2'>Men's Clothing
     <br></br>
     <button>Shop Now</button>
     

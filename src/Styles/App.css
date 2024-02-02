@@ -9,7 +9,7 @@
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 } */
 
 
@@ -191,7 +191,8 @@
 } 
 
 .category-header-text-styles { 
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: clamp(2rem, 2.5vw, 3rem);
 }
 
 .category-main-title-component { 
@@ -267,7 +268,7 @@
   flex-direction: column;
   margin: 12px;
   gap: 1em;
-  margin-left: 4em;
+  /* margin-left: 4em; */
 }
 
 .special-offers-header-container { 
@@ -286,7 +287,8 @@
 } 
 
 .special-offers-header-container h3 { 
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
   font-weight: bolder;
 }
 
@@ -423,13 +425,15 @@
  font-weight: bolder; */
  padding: 10px;
  border-radius: 8%;
- width: 56em;
+ /* font-size: clamp(1.2rem, 2.5vw, 1.7rem); */
+ /* width: 56em; */
 
 } 
 
 .trending-offers-header h3,
 .trending-categories-header { 
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
   font-weight: bolder;
 }
 
@@ -510,9 +514,9 @@
 .trending-categories-header-container { 
   background-color: rgb(58, 53, 53);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 56em;
+  /* justify-content: center;
+  align-items: center; */
+  /* width: 56em; */
   border-radius: 8%;
 } 
 
@@ -709,37 +713,62 @@
 }
 
 
+/* media queries for special offers and trending section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1454px) { 
 
   .trending-offers-component-wrapper { 
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-right: 1em;
+    align-items: center;
   }
 
   .special-offers-content-wrapper { 
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    align-items: center;
     flex-wrap: wrap;
    
   }
 
   .special-offers-header-container { 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 12px;
+  }
+
+  .trending-offers-header,
+  .trending-categories-header-container { 
+    display: flex;
+    justify-content: center;
   }
 }
 
+
 @media (max-width: 1000px) { 
-  /* .trending-offers-component-wrapper { 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  } */
 
   .trending-offers-header { 
     display: flex;
@@ -764,13 +793,12 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* justify-content: flex-start; */
+    
   }
 
   .trending-categories-header { 
     display: flex;
     justify-content: center;
-    /* align-items: center; */
   } 
 
   .card-container-trending-categories { 

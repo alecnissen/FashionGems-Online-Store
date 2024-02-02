@@ -554,3 +554,31 @@
 // 1. why the whitespace on the right hand side? 
 
 // 2. make sure the header does stay the same width. the headers can adapt to smaller screens 
+
+// going to check again but seems like I found a way to remove the white space, 
+
+// and seems like removing the set width of the header removed the whitespace and overflow issue, 
+
+// double check that, commit and save, 
+
+// then make sure the trending categories section, text and shop now btn stay within the same place at smaller screen sizes,
+
+// ***
+
+// before we do that, lets make sure that there is not two columns next to eachother, 
+
+// use dev tools, and make sure that those two columns do not go next to eachother, 
+
+// it starts at 1000 then breaks at 815px 
+
+
+// now I feel like the home page responsiveness, is off, the special offers should switch to row, then at 1000px we will all switch to columns, 
+
+
+// try to make the special offers section fit nicely into a row 
+
+// how can I make the header go on top when its in a row, 
+
+// I am going to redo the media queries for that section for a bit, 
+
+// then I want to start to build out the footer component, 

@@ -23,7 +23,8 @@ export default function TrendingAndOffers() {
 
         <div className='special-offers-content-wrapper'>
 
-        <div className='special-offers-container'>
+
+
             <div className='special-offers-header-container'>
 
 
@@ -33,7 +34,7 @@ export default function TrendingAndOffers() {
                 <h3>Special Offers
                 </h3>
             </div>
-        </div>
+
 
 
     <div className='earrings-card-container'>
@@ -249,7 +250,7 @@ export default function TrendingAndOffers() {
     {/* <p>Hello world!</p> */}
     </div>
 
-
+{/* 
     <div className='trending-categories-text-over-cards'>Jewelry
     <br></br>
     <button>Shop Now</button>
@@ -266,7 +267,7 @@ export default function TrendingAndOffers() {
     <div className='trending-categories-text-over-cards-card3'>Electronics
       <br></br>
       <button>Shop Now</button>
-    </div>
+    </div> */}
 
 
 

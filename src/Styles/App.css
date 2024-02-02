@@ -627,7 +627,12 @@
   display: flex;
   justify-content: center;
   gap: 1em;
-}
+} 
+
+/* .card-1-header-styles { 
+  font-weight: bolder;
+  color: red;
+} */
 
 
 /* footer and blog styles end */ 

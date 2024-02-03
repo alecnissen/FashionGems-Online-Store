@@ -591,3 +591,15 @@
 // moved the header text container for speial offers out of the container, 
 
 // I Notice when switching to column the width gets messed up, 
+
+// begin to make footer section responsive, 
+
+// then go back and fix and polish each section, 
+
+
+
+// *** I want to accomplish two things with the home page before moving on 
+
+// I want to make sure that there are two cards per row at certain screen sizes 
+
+// I want to make sure the footer is responsive. 

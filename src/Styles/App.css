@@ -639,6 +639,7 @@
   display: flex;
   justify-content: center;
   gap: 1em;
+  /* flex-wrap: wrap; */
 } 
 
 /* .card-1-header-styles { 
@@ -666,15 +667,16 @@
 }
 
 .fashion-gems-title-icon-container h3 { 
-  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+  font-size: clamp(2.2rem, 2.5vw, 2.7rem);
   font-weight: bolder;
 }
 
 
 .footer-social-media-container { 
   color: white;
-  padding: 5em;
-  font-size: 1.5rem;
+  /* padding: 5em; */
+  padding: 1em;
+  /* font-size: 2.5rem; */
 } 
 
 .footer-social-media-container p { 
@@ -690,10 +692,32 @@
   width: 30px;
 }
 
+
+
+
+
 .footer-assistance-container { 
   color: white;
-  font-weight: bolder;
+  /* font-weight: bolder; */
 }
+
+/* .footer-assistance-container p { 
+  color: gray;
+} */
+
+.footer-assistance-container h3{ 
+  /* font-size: clamp(2rem, 2.5vw, 2.5rem); */
+  font-size: 2rem;
+  font-weight: bolder;
+} 
+
+.phone-icon-container, 
+.email-container { 
+  display: flex;
+  gap: 1em;
+  /* font-size: 1.5rem; */
+}
+
 
 
 
@@ -909,6 +933,15 @@
 
   /* .card-container-trending-offers { 
     display: flex;
+    flex-wrap: wrap;
+  } */
+
+  .trending-offers-container { 
+    flex-basis: 50%;
+  }
+
+  /* .card-container-trending-offers { 
+    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
@@ -964,7 +997,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+    flex-basis: 50%;
   }
 
   .trending-categories-header { 
@@ -973,6 +1006,32 @@
   } 
 
   .card-container-trending-categories { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+} 
+
+
+
+
+
+
+
+
+
+/* footer media queries */ 
+
+@media (max-width: 724px) { 
+  .footer-card-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom-footer-content-container { 
     display: flex;
     flex-direction: column;
     justify-content: center;

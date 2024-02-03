@@ -609,7 +609,11 @@
 /* footer and blog styles */ 
 
 
-
+.bottom-footer-content-container { 
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
 
 .footer-blog-content-wrapper { 
   background-color: rgb(58, 53, 53);
@@ -642,11 +646,53 @@
   color: red;
 } */
 
+.bottom-footer-content-container { 
+  display: flex;
+  align-items: center;
+  /* font-size: clamp(1.2rem, 2.5vw, 1.7rem); */
+  /* justify-content: center; */
+}
+
+/* .footer-social-media-container h3 { 
+  font-size: 2rem;
+  font-weight: bolder;
+} */
+
+.fashion-gems-title-icon-container { 
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  font-size: 1.2rem;
+}
+
+.fashion-gems-title-icon-container h3 { 
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+  font-weight: bolder;
+}
 
 
-.footer-container { 
+.footer-social-media-container { 
   color: white;
   padding: 5em;
+  font-size: 1.5rem;
+} 
+
+.footer-social-media-container p { 
+  font-style: italic;
+}
+
+.social-media-container-footer-container { 
+  display: flex;
+  gap: 1em;
+}
+
+.social-media-container-footer-container img { 
+  width: 30px;
+}
+
+.footer-assistance-container { 
+  color: white;
+  font-weight: bolder;
 }
 
 
@@ -856,18 +902,59 @@
 
   .special-offers-card-wrapper { 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
+  /* .card-container-trending-offers { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card-container-trending-offers-set2 { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .trending-offers-container { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .trending-categories-header { 
+    display: flex;
+    justify-content: center;
+  } 
+
+  .card-container-trending-categories { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
+}
+
+@media (max-width: 950px) { 
   .card-container-trending-offers { 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
   .card-container-trending-offers-set2 { 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
   }
   

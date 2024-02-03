@@ -47,8 +47,8 @@ export default function TrendingAndOffers() {
 
 
 
-
-
+    <div className='special-offers-card-wrapper'>
+  
     <div className='earrings-card-container'>
         <div className='earrings-title-container'> 
             <h3>Earrings</h3>
@@ -95,6 +95,10 @@ export default function TrendingAndOffers() {
 
     </div>
 
+
+
+
+    </div>
 
 
 

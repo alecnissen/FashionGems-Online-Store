@@ -251,7 +251,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: center;
+  /* margin-right: 1em; */
   gap: 10em;
   background-color: black;
   color: white;
@@ -429,6 +430,13 @@
  /* width: 56em; */
 
 } 
+
+.special-offers-card-wrapper { 
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 
 .trending-offers-header h3,
 .trending-categories-header { 
@@ -784,7 +792,11 @@
 
 
 
-
+/* .special-offers-card-wrapper { 
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+} */
 
 
 
@@ -805,17 +817,25 @@
     align-items: center;
   }
 
-  .special-offers-content-wrapper { 
+  /* .special-offers-content-wrapper { 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
    
+  }  */
+
+  .special-offers-card-wrapper { 
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
   }
 
   .special-offers-header-container { 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin: 12px;
   }
 
@@ -832,6 +852,11 @@
   .trending-offers-header { 
     display: flex;
     justify-content: center;
+  } 
+
+  .special-offers-card-wrapper { 
+    display: flex;
+    flex-direction: column;
   }
 
   .card-container-trending-offers { 

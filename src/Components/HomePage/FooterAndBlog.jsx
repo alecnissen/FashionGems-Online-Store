@@ -33,13 +33,13 @@ function FooterAndBlog() {
     </Card> */}
 
 
-    <Card style={{ width: '25rem', backgroundColor: 'black', color: 'white'}}>
+    <Card className="footer-card-1">
     <Card.Img src={footerCardImg1}></Card.Img>
     <Card.Body> 
-        <Card.Title style={{ fontWeight: 'bolder'}} className='card-1-header-styles'>5 Fashion Tips For a Stylish Look</Card.Title>
+        <Card.Title className='card-1-header-styles'>5 Fashion Tips For a Stylish Look</Card.Title>
         <Card.Text>Get our fashion tips so you can look and feel your best!</Card.Text>
         <Card.Text>
-        <img src={fashionGemsIcon} style={{padding:'5px'}}></img>
+        <img src={fashionGemsIcon}></img>
         Fashion Gems
         </Card.Text>
         {/* <img src={fashionGemsIcon}></img> */}
@@ -49,13 +49,13 @@ function FooterAndBlog() {
 
 
 
-    <Card style={{ width: '25rem', backgroundColor: 'black', color: 'white'}}>
+    <Card className="footer-card-2">
     <Card.Img src={footerCardImg2}></Card.Img>
     <Card.Body> 
-        <Card.Title style={{ fontWeight: 'bolder'}}>Latest Trends in Fashion</Card.Title>
+        <Card.Title>Latest Trends in Fashion</Card.Title>
         <Card.Text>Discover the latest fashion trends here! Determine what is currently in style!</Card.Text>
         <Card.Text>
-        <img src={fashionGemsIcon} style={{padding:'5px'}}></img>
+        <img src={fashionGemsIcon}></img>
         Fashion Gems
         </Card.Text>
     </Card.Body>
@@ -64,7 +64,7 @@ function FooterAndBlog() {
 
 
 
-    <Card style={{ width: '25rem', backgroundColor: 'black', color: 'white'}}>
+    <Card className="footer-card-3">
     <Card.Img src={footerCardImg3}></Card.Img>
     <Card.Body> 
         <Card.Title style={{ fontWeight: 'bolder'}}>Our Top Picks for this Spring</Card.Title>

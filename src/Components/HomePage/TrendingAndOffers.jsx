@@ -119,10 +119,10 @@ export default function TrendingAndOffers() {
 
 
 
-        <div className='card-wrapper-trending'>
+        {/* <div className='card-wrapper-trending'> */}
 
         
-        {/* <div className='card-container-trending-offers-set-1'> */}
+        <div className='card-container-trending-offers-set-1'>
 
         {/* <div className='card-container-set-1'> */}
 
@@ -174,7 +174,7 @@ export default function TrendingAndOffers() {
     </Card> 
 
 
-{/* </div> */}
+</div>
 
 {/* </div> */}
 
@@ -186,7 +186,7 @@ export default function TrendingAndOffers() {
 
 
 
-{/* <div className='card-container-trending-offers-set2'> */}
+<div className='card-container-trending-offers-set2'>
 
 
     <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }} id='trending-card-4'>
@@ -235,21 +235,21 @@ export default function TrendingAndOffers() {
       </Card.Body>
     </Card>
 
-    {/* </div> */}
-
-
-    {/* </div> */}
-
-
-
-
-
-
-
-
-
-
     </div>
+
+
+    {/* </div> */}
+
+
+
+
+
+
+
+
+
+
+    {/* </div> */}
 
 
 

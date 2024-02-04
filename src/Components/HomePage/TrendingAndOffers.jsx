@@ -118,8 +118,15 @@ export default function TrendingAndOffers() {
         </div>
 
 
-        <div className='card-container-trending-offers'>
-        <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white'}}>
+
+        <div className='card-wrapper-trending'>
+
+        
+        {/* <div className='card-container-trending-offers-set-1'> */}
+
+        {/* <div className='card-container-set-1'> */}
+
+        <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white'}} id="trending-card-1">
       <Card.Img variant="top" src={diamondNecklace} />
       <Card.Body>
         <Card.Title className='card-1-title-styles'>Elegant Necklace</Card.Title>
@@ -134,7 +141,7 @@ export default function TrendingAndOffers() {
       </Card.Body>
     </Card>
 
-    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
+    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }} id="trending-card-2">
       <Card.Img variant="top" src={ringImg} />
       <Card.Body>
         <Card.Title className='card-2-title-styles'>Stunning Ring</Card.Title>
@@ -145,9 +152,15 @@ export default function TrendingAndOffers() {
         {/* <Button variant="primary">Go somewhere</Button> */}
         <img src={heartIcon}></img>
       </Card.Body>
-    </Card>
+    </Card> 
 
-    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
+
+    {/* </div>  */}
+
+
+    {/* <div className='card-container-set-2'> */}
+
+    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }} id="trending-card-3">
       <Card.Img variant="top" src={chicBraclet} />
       <Card.Body>
         <Card.Title className='card-3-title-styles'>Chic Braclet</Card.Title>
@@ -161,6 +174,9 @@ export default function TrendingAndOffers() {
     </Card> 
 
 
+{/* </div> */}
+
+{/* </div> */}
 
 
 
@@ -168,12 +184,12 @@ export default function TrendingAndOffers() {
 
 
 
-</div>
 
 
+{/* <div className='card-container-trending-offers-set2'> */}
 
-<div className='card-container-trending-offers-set2'>
-    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
+
+    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }} id='trending-card-4'>
       <Card.Img variant="top" src={goldenNecklace} />
       <Card.Body>
         <Card.Title className='card-4-title-styles'>Elegant Jewelry</Card.Title>
@@ -186,7 +202,13 @@ export default function TrendingAndOffers() {
       </Card.Body>
     </Card> 
 
-    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
+
+    {/* </div> */}
+
+
+    {/* <div className='card-container-set-3'> */}
+
+    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }} id='trending-card-5'>
       <Card.Img variant="top" src={greenNecklace} />
       <Card.Body>
         <Card.Title className='card-5-title-styles'>Sparkling Gemstone</Card.Title>
@@ -200,7 +222,7 @@ export default function TrendingAndOffers() {
     </Card>
 
 
-    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
+    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }} id='trending-card-6'>
       <Card.Img variant="top" src={luxuriousGoldImg} />
       <Card.Body>
         <Card.Title className='card-6-title-styles'>Luxurious Gold</Card.Title>
@@ -213,8 +235,20 @@ export default function TrendingAndOffers() {
       </Card.Body>
     </Card>
 
+    {/* </div> */}
 
-    
+
+    {/* </div> */}
+
+
+
+
+
+
+
+
+
+
     </div>
 
 
@@ -306,7 +340,7 @@ export default function TrendingAndOffers() {
 
 
 
-    </div>
+   </div>
   )
 }
 

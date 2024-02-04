@@ -603,3 +603,9 @@
 // I want to make sure that there are two cards per row at certain screen sizes 
 
 // I want to make sure the footer is responsive. 
+
+
+
+
+// The goal is making two cards in a row when screen size changes, 
+// 

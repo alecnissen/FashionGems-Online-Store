@@ -445,16 +445,16 @@
   font-weight: bolder;
 }
 
-.card-container-trending-offers { 
+.card-container-trending-offers-set-1 { 
   display: flex;
   gap: 1em;
   /* background-color: rgb(58, 53, 53); */
 } 
 
-.card-container-trending-offers-body { 
+/* .card-container-trending-offers-body { 
   background-color: rgb(58, 53, 53);
   border: none;
-} 
+}  */
 
 .card-1-title-styles,
 .card-2-title-styles,
@@ -477,11 +477,37 @@
 
 
 
+
+.card-container-trending-offers-set-1 { 
+  display: flex;
+  gap: 1em;
+  /* flex-basis: 50%; */
+}
+
+
 .card-container-trending-offers-set2 { 
   display: flex;
   flex-direction: row;
   /* width: calc(33.33% - 10px) */
   gap: 1em;
+  /* flex-basis: 50%; */
+} 
+
+
+
+.card-wrapper-trending { 
+  display: flex;
+  width: 30%;
+}
+
+
+.trending-card-1, 
+.trending-card-2,
+.trending-card-3,
+.trending-card-4,
+.trending-card-5,
+.trending-card-6 { 
+  width: 50%;
 }
 
 
@@ -936,9 +962,9 @@
     flex-wrap: wrap;
   } */
 
-  .trending-offers-container { 
+  /* .trending-offers-container { 
     flex-basis: 50%;
-  }
+  } */
 
   /* .card-container-trending-offers { 
     display: flex;
@@ -976,12 +1002,18 @@
   } */
 }
 
+
+
+
 @media (max-width: 950px) { 
-  .card-container-trending-offers { 
+
+
+  .card-container-trending-offers-set-1 { 
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    /* flex-basis: 50%; */
   }
 
   .card-container-trending-offers-set2 { 
@@ -989,7 +1021,19 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    /* flex-basis: 50%; */
+  } 
+
+  .card-container-set-1, 
+  .card-container-set-2, 
+  .card-container-set-3 { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 50%;
   }
+
   
   .trending-offers-container { 
     display: flex;
@@ -997,7 +1041,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-basis: 50%;
+    /* flex-basis: 50%; */
   }
 
   .trending-categories-header { 
@@ -1010,7 +1054,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+  } 
+
 } 
 
 

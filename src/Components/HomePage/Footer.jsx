@@ -1,14 +1,148 @@
 import react from "react"
+import fashionGemsIcon from "../../../Icons/fashion-gems-icon-img.png"
+import instaLogo from "../../../Icons/insta-logo-footer.png"
+import fbLogo from "../../../Icons/footer-facebook-icon.png"
+import twitterLogo from "../../../Icons/footer-icon-twitter.png"
+import phoneIcon from "../../../Icons/phone-icon-footer.png"
+import emailIcon from "../../../Icons/email-icon-footer.png"
 
-export default function Footer() { 
+// export default function Footer() { 
+//     return ( 
+//         <> 
+        
+// <div className='footer-content-container-fc'>
+
+
+
+
+
+
+// <div className='footer-component-social-media-container'> 
+//     <div className='fashion-gems-title-icon-container-footer-component'>
+//     <img src={fashionGemsIcon}></img>
+//     <h3>FashionGems</h3>
+//     </div>
+
+//     <p>Shine like a diamond!</p>
+
+//     <div className='social-media-container-footer-fc'> 
+//     <img src={instaLogo}></img>
+//     <img src={fbLogo}></img>
+//     <img src={twitterLogo}></img>
+//     </div>
+// </div>
+
+
+// <div className='footer-assistance-container-fc'> 
+//   <p>Need assistance?</p>
+//   <h3>Our support team is available for you!</h3>
+
+//   <div className='phone-icon-container'>
+//   <img src={phoneIcon}></img>
+//   +31 045 456 3345
+
+//   </div>
+
+//   <div className='email-container-fc'> 
+//   <img src={emailIcon}></img>
+//   fashiongems@gmail.com
+//   </div>
+
+// </div>
+
+
+// </div>
+
+//         </>
+//     )
+// } 
+
+
+
+
+
+
+export default function Footer () { 
     return ( 
         <> 
-        
-        
+            <div className='footer-blog-content-wrapper'>
+        <div className='footer-header-container'> 
+            
+        </div>
 
+    <div className='footer-card-container'> 
+    
+
+
+
+
+    </div>
+
+
+    <div className='bottom-footer-content-container'>
+
+
+
+
+
+
+    <div className='footer-social-media-container'> 
+        <div className='fashion-gems-title-icon-container'>
+        <img src={fashionGemsIcon}></img>
+        <h3>FashionGems</h3>
+        </div>
+
+        <p>Shine like a diamond!</p>
+
+        <div className='social-media-container-footer-container'> 
+        <img src={instaLogo}></img>
+        <img src={fbLogo}></img>
+        <img src={twitterLogo}></img>
+        </div>
+    </div>
+
+
+    <div className='footer-assistance-container'> 
+      <p>Need assistance?</p>
+      <h3>Our support team is available for you!</h3>
+
+      <div className='phone-icon-container'>
+      <img src={phoneIcon}></img>
+      +31 045 456 3345
+
+      </div>
+
+      <div className='email-container'> 
+      <img src={emailIcon}></img>
+      fashiongems@gmail.com
+      </div>
+
+    </div>
+    
+    
+    </div>
+
+
+    </div>
+        
         </>
+
+
     )
-} 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

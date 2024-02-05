@@ -1005,7 +1005,6 @@
 .checkout-component-backtoshop-checkout-title-container { 
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 
 .checkout-component-backtoshop-checkout-title-container h3 { 
@@ -1018,14 +1017,40 @@
 } 
 
 
-.contact-information-container { 
+.contact-information-content-wrapper { 
   display: flex;
   flex-direction: column;
 }
 
-.first-last-name-content-container { 
+.contact-information-container { 
   display: flex;
-} 
+  flex-direction: row;
+}
+
+
+.first-last-name-container { 
+  display: flex;
+  flex-direction: row;
+}
+
+.input-label-pair-first-name,
+.input-label-pair-last-name { 
+  display: flex;
+  flex-direction: column;
+  margin-right: 2em;
+}
+
+
+
+
+/* .first-last-name-content-container { 
+  display: flex;
+  flex-direction: column;
+}  */
+
+
+
+
 
 /* .phone-email-content-container { 
   display: flex;

@@ -50,36 +50,26 @@ export default function CheckoutComponent({
             </div>
 
             <h3>Checkout</h3>
-          
+
           </div> 
 
 
+          <div className='first-last-name-container'> 
+            <div className='input-label-pair-first-name'> 
+              <label>First Name:</label>
+              <input type="text"></input>
+            </div>
 
-          <div className='contact-information-container'> 
-            
-            {/* <div className='contact-information-content-container'>  */}
-              <h3>Contact Information</h3>
-
-
-
-                <div className='first-last-name-content-container'>
-                <label>First Name:</label>
-                <br></br>
-                <input type='text'></input> 
-
-                <label>Last Name:</label>
-                <br></br>
-                <input type='text'></input> 
-                </div> 
-
-             
+            <div className='input-label-pair-last-name'> 
+            <label>Last Name:</label>
+            <input type="text"></input>
+            </div>
 
 
-
-
-            {/* </div> */}
           
           </div>
+
+
 
 
 

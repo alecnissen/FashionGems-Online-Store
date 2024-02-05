@@ -16,6 +16,9 @@ import ErrorComponent from '../LoadingAndError/ErrorComponent';
 import LoadingComponent from '../LoadingAndError/LoadingComponent';
 // import apiRequest from '../../API-CALLS/ApiRequest';
 import ApiRequest from '../../API-CALLS/ApiRequest';
+import FooterAndBlog from '../HomePage/FooterAndBlog';
+
+import necklaceImgHeader from "../../../Images/necklace-img-shopping-component-header.png"
 
 export default function ShoppingComponent({
   cartItems,
@@ -182,7 +185,17 @@ export default function ShoppingComponent({
   return (
     <>
       <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
-      <h1 className="shopping-component-header-text">Our Collection</h1>
+
+      <div className='shopping-component-product-wrapper'>
+
+      <div className='shopping-component-header-img-container'>
+
+      <h1>Our Collection</h1>
+      <br></br>
+      <img src={necklaceImgHeader}></img>
+
+
+      </div>
 
       <div className="sort-by-div">
         Sort By:
@@ -200,46 +213,29 @@ export default function ShoppingComponent({
       {error && <ErrorComponent error={error}></ErrorComponent>}
       {loading && <LoadingComponent></LoadingComponent>}
 
+
+
       <div className="shopping-component-products-container">
         {sortedData.map((item) => {
           return (
             <div className="shopping-component-card-container" key={item.id}>
               <Card
-                style={{ width: '18rem' }}
-                onClick={(e) => {
-                  // console.log(item);
-                }}
+                // style={{ width: '23em', height: '23em', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}
+                className="shopping-component-card-styles"
               >
                 <Link to={`/ProductPage/${item.id}`}>
-                  <Card.Img
+                  {/* <Card.Img
                     variant="top"
                     src={item.image}
-                    style={{ width: '10em' }}
+                    // style={{ width: '17em', height: '15em' }}
                     className="shopping-component-card-img"
-                  />
+                  /> */}
+                  <img src={item.image} className="shopping-component-card-img"></img>
                 </Link>
-                <Card.Body>
-                  <Card.Title>{item.title}</Card.Title>
-                  <p>Select Quanity</p>
-                  <input
-                    type="number"
-                    min="0"
-                    max="10"
-                    placeholder="0"
-                    onChange={(e) => {
-                      setItemQuantity(e.target.value);
-                      console.log(itemQuantity);
-                    }}
-                  ></input>
-                  <p>${item.price}</p>
-                  <Button
-                    variant="primary"
-                    onClick={(e) => {
-                      changeAmount(item, itemQuantity);
-                    }}
-                  >
-                    Add to Cart
-                  </Button>
+                <Card.Body className="shopping-component-card-styles-card-body">
+                  <Card.Title className='shopping-component-card-styles-title'>{item.title}</Card.Title>
+                 
+                  <p className='shopping-component-card-styles-price'>${item.price}</p>
                 </Card.Body>
               </Card>
             </div>
@@ -247,7 +243,13 @@ export default function ShoppingComponent({
         })}
       </div>
 
-      <Footer></Footer>
+      </div>
+
+
+
+
+      {/* <Footer></Footer> */}
+      <FooterAndBlog></FooterAndBlog>
     </>
   );
 }

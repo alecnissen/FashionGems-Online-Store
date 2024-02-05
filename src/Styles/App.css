@@ -777,14 +777,112 @@
 
 
 
-
-
-
-
-
-
-
 /* footer and blog styles end */ 
+
+/* HOME PAGE STYLES END */
+
+
+
+/* Shopping Component styles */ 
+
+.shopping-component-header-img-container { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopping-component-header-img-container h1 { 
+  color: white; 
+}
+
+.shopping-component-header-img-container img { 
+  width: 15em;
+}
+
+.sort-by-div { 
+  color: white;
+  padding: 20px;
+}
+
+.shopping-component-products-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.shopping-component-product-wrapper { 
+  background-color: black;
+  padding: 20px;
+}
+
+/* .shopping-component-card-styles { 
+  background-color: black;
+  color: white;
+} */
+
+
+/* .shopping-component-card-styles-card-body { 
+  color: white;
+} */
+
+
+
+
+
+.shopping-component-card-styles { 
+  width: 25em;
+  height: 25em;
+  background-color: black;
+}  
+
+.shopping-component-card-img { 
+  width: 15em;
+  height: 15em;
+} 
+
+.shopping-component-card-styles-card-body { 
+  background-color: black;
+}
+
+.shopping-component-card-styles-title,
+.shopping-component-card-styles-price { 
+  color: white !important;
+}
+
+
+/* @media (max-width: 1000px) { 
+
+.shopping-component-card-styles { 
+  width: 15em;
+  height: 15em;
+}  
+
+.shopping-component-card-img { 
+  width: 18em;
+  height: 18em;
+} 
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1162,11 +1260,46 @@
 }
 
 
+/* media queries for shopping component */
+
+@media (max-width: 1000px) { 
+
+  .shopping-component-card-styles { 
+    width: 15em;
+    height: 15em;
+  }  
+  
+  .shopping-component-card-img { 
+    width: 11em;
+    height: 11em;
+  } 
+  }
 
 
 
 
 
+
+
+
+
+/* .style={{ width: '23em', height: '23em', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }} */
+
+/* .shopping-component-card-styles { 
+  width: 23em;
+  height: 23em;
+  background-color: rgb(58, 53, 53);
+  color: white;
+} */
+
+
+
+/* @media (max-width: 1000px) { 
+  .shopping-component-card-styles { 
+    width: 10em;
+    height: 10em;
+  }
+} */
 
 
 

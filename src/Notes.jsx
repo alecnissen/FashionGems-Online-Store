@@ -609,3 +609,19 @@
 
 // The goal is making two cards in a row when screen size changes, 
 // 
+
+
+
+// **** Shopping component, 
+
+// responsive cards, cards will have to shrink at smaller screens, 
+
+// color of the cards, 
+
+// for some reason inline styles only work for bootstrap 
+
+// so in order to make it responsive I have to use minmax or clamp to adjust size of img, 
+
+// I want to not use inline styles, how can I style these cards w/o inline styles? 
+
+// 

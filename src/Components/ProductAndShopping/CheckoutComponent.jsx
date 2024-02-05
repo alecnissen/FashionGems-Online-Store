@@ -6,6 +6,7 @@ import Header from '../HomePage/Header';
 // import { useEffect } from "react";
 import crypto from 'crypto';
 import PropTypes from 'prop-types';
+import backToShoppingArrow from "../../../Images/checkout-component-back-arrow.png"
 
 export default function CheckoutComponent({
   cartItems,
@@ -33,46 +34,77 @@ export default function CheckoutComponent({
   return (
     <>
       <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
-      {cartItems.map((item) => {
-        let productPrice = item.price * item.quantity;
-        total += productPrice;
+      
 
-        return (
-          <div key={item.id}>
-            <h5>{item.title}</h5>
-            <img src={item.image} alt="view of the selected product" />
-            <h5>{item.quantity}</h5>
-            <h5>${item.price}</h5>
-            <button
-              onClick={() => {
-                console.log(itemQuantity);
-                changeQuantityIncrement(item);
-              }}
-            >
-              +
-            </button>
-            <input type="number" min="0" max="10" placeholder="0" value={item.quantity} onChange={() => {}}></input>
-            <button
-              onClick={() => {
-                changeQuantityDecrement(item);
-              }}
-            >
-              -
-            </button>
-            <button
-              onClick={() => {
-                handleDelete(item);
-              }}
-            >
-              Remove
-            </button>
-            <p>product price</p>
-            <h1>{productPrice}</h1>
+      <div className='checkout-component-wrapper'> 
+        
+
+
+        <div className='checkout-component-container'> 
+
+          <div className='checkout-component-backtoshop-checkout-title-container'> 
+
+            <div className='container-for-img-and-title'>
+            <img src={backToShoppingArrow}></img>
+            <h6>Back to shopping</h6>
+            </div>
+
+            <h3>Checkout</h3>
+          
+          </div> 
+
+
+
+          <div className='contact-information-container'> 
+            
+            {/* <div className='contact-information-content-container'>  */}
+              <h3>Contact Information</h3>
+
+
+
+                <div className='first-last-name-content-container'>
+                <label>First Name:</label>
+                <br></br>
+                <input type='text'></input> 
+
+                <label>Last Name:</label>
+                <br></br>
+                <input type='text'></input> 
+                </div> 
+
+             
+
+
+
+
+            {/* </div> */}
+          
           </div>
-        );
-      })}
-      <p>total price</p>
-      <h1>{total}</h1>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
     </>
   );
 }
@@ -86,6 +118,118 @@ CheckoutComponent.propTypes = {
   isOpen: PropTypes.bool,
   setIsOpen: PropTypes.func,
 };
+
+
+
+
+
+
+
+
+
+
+
+// export default function CheckoutComponent({
+//   cartItems,
+//   setCartItems,
+//   numberOfCartItems,
+//   itemQuantity,
+//   setItemQuantity,
+//   isOpen,
+//   setIsOpen,
+// }) {
+//   let total = 0;
+
+//   function handleDelete(item) {
+//     setCartItems(cartItems.filter((selectedItem) => selectedItem.title !== item.title));
+//   }
+
+//   function changeQuantityIncrement(item) {
+//     setItemQuantity(++item.quantity);
+//   }
+
+//   function changeQuantityDecrement(item) {
+//     setItemQuantity(--item.quantity);
+//   }
+
+//   return (
+//     <>
+//       <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
+//       {cartItems.map((item) => {
+//         let productPrice = item.price * item.quantity;
+//         total += productPrice;
+
+//         return (
+//           <div key={item.id}>
+//             <h5>{item.title}</h5>
+//             <img src={item.image} alt="view of the selected product" />
+//             <h5>{item.quantity}</h5>
+//             <h5>${item.price}</h5>
+//             <button
+//               onClick={() => {
+//                 console.log(itemQuantity);
+//                 changeQuantityIncrement(item);
+//               }}
+//             >
+//               +
+//             </button>
+//             <input type="number" min="0" max="10" placeholder="0" value={item.quantity} onChange={() => {}}></input>
+//             <button
+//               onClick={() => {
+//                 changeQuantityDecrement(item);
+//               }}
+//             >
+//               -
+//             </button>
+//             <button
+//               onClick={() => {
+//                 handleDelete(item);
+//               }}
+//             >
+//               Remove
+//             </button>
+//             <p>product price</p>
+//             <h1>{productPrice}</h1>
+//           </div>
+//         );
+//       })}
+//       <p>total price</p>
+//       <h1>{total}</h1>
+//     </>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // old checkout component
 // export default function CheckoutComponent( { cartItems, setCartItems, newCartItems, itemQuantity, setItemQuantity, isOpen, setIsOpen }) {

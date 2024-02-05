@@ -978,24 +978,68 @@
 
 /* footer content for product page styles here */ 
 
-.footer-content-container-fc { 
-  display: flex;
-  justify-content: space-between;
-  background-color:  rgb(58, 53, 53);
-  color: white;
-} 
 
-.fashion-gems-title-icon-container-footer-component { 
-  display: flex;
-  gap: 1em;
-  padding: 10px;
+
+/* product page styles end here */ 
+
+
+
+
+
+/* checkout component styles here */ 
+
+
+.checkout-component-wrapper { 
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 100vh;
 }
 
+.checkout-component-container { 
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+}
+
+.checkout-component-backtoshop-checkout-title-container { 
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.checkout-component-backtoshop-checkout-title-container h3 { 
+  font-size: 2.3rem;
+}
+
+.container-for-img-and-title { 
+  display: flex;
+  align-items: center;
+} 
 
 
+.contact-information-container { 
+  display: flex;
+  flex-direction: column;
+}
 
+.first-last-name-content-container { 
+  display: flex;
+} 
 
+/* .phone-email-content-container { 
+  display: flex;
+} */
 
+/* 
+.first-name-content-container { 
+  display: flex;
+  flex-direction: column;
+}
+
+.first-name-content-container input { 
+  width: 15em;
+} */
 
 
 

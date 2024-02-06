@@ -64,6 +64,10 @@
   color: white;
 }
 
+/* .header-gem-icon { 
+  width: 5px;
+} */
+
 /* .header-button-container a:hover { 
   background-color: white;
   color: black;
@@ -145,6 +149,10 @@
   height: 100%;
   gap: 1em;
 } 
+
+.diamond-img-title-component { 
+  width: 40px;
+}
 
 
 .portrait-of-women-styles { 
@@ -1286,6 +1294,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2em;
   }
 
   /* .special-offers-content-wrapper { 
@@ -1408,6 +1417,9 @@
     flex-wrap: wrap;
   } 
 
+  .trending-categories-container { 
+    margin: 40px;
+  }
 
   /* media queries for layout 2 */
 

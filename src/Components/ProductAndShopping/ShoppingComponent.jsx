@@ -248,8 +248,8 @@ export default function ShoppingComponent({
 
 
 
-      {/* <Footer></Footer> */}
-      <FooterAndBlog></FooterAndBlog>
+      <Footer></Footer>
+      {/* <FooterAndBlog></FooterAndBlog> */}
     </>
   );
 }

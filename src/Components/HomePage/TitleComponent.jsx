@@ -84,7 +84,7 @@ useEffect(() => {
         <h6> Let us help you look and feel your best!</h6>
         <h6>We want you to shine like a diamond!
 
-          <img src={diamondImg}></img>
+          <img src={diamondImg} className='diamond-img-title-component'></img>
         </h6>
 
   

@@ -13,7 +13,7 @@ import emailIcon from "../../../Icons/email-icon-footer.png"
 
 function FooterAndBlog() {
   return (
-    <div className='footer-blog-content-wrapper'>
+    <div className='footer-blog-content-wrapper' id='blog-btn-element-target'>
         <div className='footer-header-container'> 
             <h3>Read Our Blog</h3>
         </div>

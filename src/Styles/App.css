@@ -12,6 +12,10 @@
     overflow-x: hidden;
 } */
 
+.html {  
+  scroll-behavior: smooth;  
+}
+
 
 .header-wrapper { 
   display: flex;

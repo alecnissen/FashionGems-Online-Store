@@ -51,9 +51,10 @@ export default function Header({ numberOfCartItems, isOpen, setIsOpen }) {
           </button>
 
           <button>
+          <a id="link" href="#blog-btn-element-target">
             Blog
+          </a>
           </button>
-
       
       </div>
 

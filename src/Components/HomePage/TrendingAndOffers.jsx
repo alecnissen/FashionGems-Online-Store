@@ -41,7 +41,7 @@ export default function TrendingAndOffers() {
 
 
 
-    <div className='special-offers-card-wrapper'>
+    <div className='special-offers-card-wrapper' id='down-btn-element-target'>
   
     <div className='earrings-card-container'>
         <div className='earrings-title-container'> 

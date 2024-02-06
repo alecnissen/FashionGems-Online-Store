@@ -190,6 +190,13 @@
   /* gap: 1em; */
 } 
 
+.down-btn-container { 
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 20px;
+}
+
 .category-header-text-styles { 
   /* font-size: 3rem; */
   font-size: clamp(2rem, 2.5vw, 3rem);
@@ -257,6 +264,17 @@
   background-color: black;
   color: white;
 } 
+
+.down-btn-container { 
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+/* .down-btn-container img { 
+  width: 25px;
+  height: 25px;
+} */
 
 /* .special-offers-container { 
   background-color: rgb(58, 53, 53);
@@ -992,8 +1010,8 @@
 .checkout-component-wrapper { 
   background-color: black;
   color: white;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
 }
 
 .checkout-component-container { 
@@ -1016,8 +1034,18 @@
   align-items: center;
 } 
 
+.payment-method-container button { 
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+} 
 
-.contact-information-content-wrapper { 
+.place-order-btn-container { 
+  padding: 25px;
+}
+
+
+/* .contact-information-content-wrapper { 
   display: flex;
   flex-direction: column;
 }
@@ -1025,19 +1053,55 @@
 .contact-information-container { 
   display: flex;
   flex-direction: row;
+  
+} */
+
+.contact-info-container,
+.delivery-container,
+.receive-order-container,
+.payment-method-container { 
+  padding: 20px;
 }
 
 
-.first-last-name-container { 
+.first-last-name-container,
+.phone-email-container { 
   display: flex;
   flex-direction: row;
 }
 
 .input-label-pair-first-name,
-.input-label-pair-last-name { 
+.input-label-pair-last-name,
+.input-label-pair-first-email,
+.input-label-pair-last-phone,
+.input-label-pair-address,
+.input-label-pair-delivery-instructions { 
   display: flex;
   flex-direction: column;
   margin-right: 2em;
+}
+
+
+.input-label-pair-address input,
+.input-label-pair-delivery-instructions input { 
+  width: 35em;
+}
+
+
+
+.input-label-pair-delivery-instructions { 
+  display: flex;
+  flex-direction: column;
+}
+
+
+.input-label-pair-receive-asap,
+.input-label-pair-receive-scheduled,
+.input-label-pair-credit-card,
+.input-label-pair-cash-on-delivery,
+.input-label-pair-apple-google-pay { 
+  display: flex;
+  gap: 1em;
 }
 
 

@@ -54,6 +54,10 @@ export default function CheckoutComponent({
           </div> 
 
 
+          <div className='contact-info-container'>
+
+          <h5>Contact Information</h5>
+
           <div className='first-last-name-container'> 
             <div className='input-label-pair-first-name'> 
               <label>First Name:</label>
@@ -70,6 +74,88 @@ export default function CheckoutComponent({
           </div>
 
 
+          <div className='phone-email-container'> 
+          <div className='input-label-pair-first-email'> 
+              <label>Email:</label>
+              <input type="text"></input>
+            </div>
+
+            <div className='input-label-pair-last-phone'> 
+            <label>Phone:</label>
+            <input type="text"></input>
+            </div>
+          
+          </div>
+
+
+          </div>
+
+
+      <div className='delivery-container'> 
+      <h5>Where should we deliever your order?</h5>
+      <div className='input-label-pair-address'> 
+              <label>Address:</label>
+              <input type="text"></input>
+            </div>
+
+
+        <div className='input-label-pair-delivery-instructions'>
+          <label>Delivery Instructions</label>
+          <input type="text"></input>
+        </div>
+      
+      </div>
+
+
+
+      <div className='receive-order-container'> 
+        <h5>When would you like to receive your order?</h5>
+
+        <div className='input-label-pair-receive-asap'>
+        <input type="radio"></input>
+        <label>ASAP</label>
+        </div>
+
+        <div className='input-label-pair-receive-scheduled'> 
+        <input type="radio"></input>
+        <label>Scheduled Delivery</label>
+        
+        </div>
+      
+      
+      
+      </div>
+
+      <div className='payment-method-container'> 
+      <h5>Payment Method</h5>
+
+      <div className='input-label-pair-credit-card'> 
+      <input type="radio"></input>
+      <label>Credit Card</label>
+
+      </div>
+
+
+
+      <div className='input-label-pair-cash-on-delivery'> 
+      <input type="radio"></input>
+      <label>Cash on Delivery</label>
+      </div>
+
+
+      <div className='input-label-pair-apple-google-pay'> 
+      <input type="radio"></input>
+      <label>Apple/Google Pay</label>
+
+      </div>
+
+      <div className='place-order-btn-container'>
+      <button>Place Order</button>
+      </div>
+
+
+
+      </div>
 
 
 

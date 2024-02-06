@@ -37,6 +37,8 @@ import earringPhoto2 from "../../../Images/img9.png"
 
 import rubyPhoto from "../../../Images/ruby-img.png"
 
+import downIcon from "../../../Icons/down-arrow-icon-dark-bg.png"
+
 
 const images = [
   [necklacePhoto, portraitPhoto, ringPhoto], [earringPhoto, typesOfJewelry, portraitOfWoman2], [goldEarringPhoto, rubyPhoto, earringPhoto2]
@@ -107,8 +109,16 @@ useEffect(() => {
         </div>
 
 
+
+
+
+
         </div>
 
+
+      {/* <div className="down-btn-container">
+       <img src={downIcon}></img>
+       </div> */}
 
 
         </div>

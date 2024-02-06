@@ -14,3 +14,8 @@ Photo by Pixabay: https://www.pexels.com/photo/grayscale-photo-of-a-woman-219550
 
 diamond necklace in trending items section, box #1 
 Photo by Taisuke usui: https://www.pexels.com/photo/close-up-photo-of-necklace-2697616/
+
+
+down icon used on main title/homepage, 
+
+<a target="_blank" href="https://icons8.com/icon/JjF66Oep57ku/expand-arrow">Down Arrow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

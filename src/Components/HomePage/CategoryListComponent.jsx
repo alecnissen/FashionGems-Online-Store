@@ -5,6 +5,7 @@ import mensClothingIcon from "../../../Icons/man-in-suit-and-tie-svgrepo-com.svg
 import womensClothingIcon from "../../../Icons/women-dress-svgrepo-com.svg"
 import electronicsIcon from "../../../Icons/laptop-alt-1-svgrepo-com.svg"
 import jewelryIcon from "../../../Icons/jewelry-svgrepo-com.svg"
+import downIcon from "../../../Icons/down-arrow-icon-dark-bg.png"
 
 function CategoryListComponent() {
 
@@ -28,6 +29,14 @@ function CategoryListComponent() {
   return (
 
     <> 
+
+<div className="down-btn-container">
+
+      <a id="link" href="#down-btn-element-target">
+       <img src={downIcon}></img>
+      </a>
+
+       </div>
 
     <div className='category-main-title-component'>
       <h3 className='category-header-text-styles'>Categories</h3>

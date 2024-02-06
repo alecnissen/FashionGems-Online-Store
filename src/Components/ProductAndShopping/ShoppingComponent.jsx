@@ -223,7 +223,7 @@ export default function ShoppingComponent({
                 // style={{ width: '23em', height: '23em', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}
                 className="shopping-component-card-styles"
               >
-                <Link to={`/ProductPage/${item.id}`}>
+                <Link to={`/ProductPage/${item.id}`} className="shopping-component-product-img-container">
                   {/* <Card.Img
                     variant="top"
                     src={item.image}
@@ -235,7 +235,7 @@ export default function ShoppingComponent({
                 <Card.Body className="shopping-component-card-styles-card-body">
                   <Card.Title className='shopping-component-card-styles-title'>{item.title}</Card.Title>
                  
-                  <p className='shopping-component-card-styles-price'>${item.price}</p>
+                  <p className='shopping-component-card-styles-price'>${item.price.toFixed(2)}</p>
                 </Card.Body>
               </Card>
             </div>

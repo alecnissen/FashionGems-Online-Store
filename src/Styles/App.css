@@ -832,8 +832,15 @@
 }
 
 .sort-by-div { 
+  display: flex;
+  gap: 0.5em;
   color: white;
   padding: 20px;
+} 
+
+.shopping-component-product-img-container { 
+  display: flex;
+  justify-content: center;
 }
 
 .shopping-component-products-container { 
@@ -848,16 +855,6 @@
   background-color: black;
   padding: 20px;
 }
-
-/* .shopping-component-card-styles { 
-  background-color: black;
-  color: white;
-} */
-
-
-/* .shopping-component-card-styles-card-body { 
-  color: white;
-} */
 
 
 

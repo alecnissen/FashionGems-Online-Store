@@ -31,6 +31,8 @@ export default function ProductPage({
   const { id } = useParams();
   const [singleProductData, setSingleProductData] = useState([]);
 
+  console.log('logging singleProductData status, initial page load', singleProductData);
+
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -195,7 +197,10 @@ export default function ProductPage({
 
 
       <div className='product-price-container'>
-    <h5>${singleProductData.price}</h5>
+     {/* <h5>${singleProductData.price}</h5> */}
+     {singleProductData.price !== undefined && (
+  <h5>${singleProductData.price.toFixed(2)}</h5>
+)}
       </div>
     </div>
 

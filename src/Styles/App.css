@@ -1453,6 +1453,7 @@
 
   .footer-social-media-container, 
   .footer-assistance-container { 
+    /* text-align: center; */
     font-size: 0.8rem;
   }
 
@@ -1520,8 +1521,81 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+  }
+
+  .social-media-container-footer-container { 
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-assistance-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } 
+
+  .phone-icon-container,
+  .email-container { 
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+}
+
+
+/* tablet media queries footer component */
+
+@media (max-width: 1050px) { 
+
+  .footer-card-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  } 
+
+  /* .bottom-footer-content-container { 
+    display: flex;
+    flex-direction: column;
+  } */
+
+  
+  .bottom-footer-content-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-media-container-footer-container { 
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-assistance-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 10px double white;
+    padding-top: 1rem
+  } 
+
+  .footer-assistance-container p { 
+    margin-top: 2em;
+  }
+
+  .phone-icon-container,
+  .email-container { 
+    display: flex;
+    justify-content: center;
+    padding: 10px;
   }
 }
+
 
 
 /* media queries for shopping component */

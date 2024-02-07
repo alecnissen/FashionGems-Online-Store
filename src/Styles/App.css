@@ -246,12 +246,11 @@
 
 /* trending and offers comp styles begin */
 
-.trending-offers-component-wrapper { 
+/* .trending-offers-component-wrapper { 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /* margin-right: 1em; */
   gap: 10em;
   background-color: black;
   color: white;
@@ -263,23 +262,11 @@
   background-color: black;
 }
 
-/* .down-btn-container img { 
-  width: 25px;
-  height: 25px;
-} */
-
-/* .special-offers-container { 
-  background-color: rgb(58, 53, 53);
-  height: 86vh;
-  width: 30vw;
-} */
-
 .special-offers-content-wrapper { 
   display: flex;
   flex-direction: column;
   margin: 12px;
   gap: 1em;
-  /* margin-left: 4em; */
 }
 
 .special-offers-header-container { 
@@ -288,17 +275,14 @@
   justify-content: center;
   align-items: center;
   gap: 0.5em;
-  /* text-align: center; */
   font-size: 2rem;
   font-weight: bolder;
   padding: 10px;
   background-color: rgb(58, 53, 53);
   border-radius: 8%;
-  /* margin: 12px; */
 } 
 
 .special-offers-header-container h3 { 
-  /* font-size: 2rem; */
   font-size: clamp(1.2rem, 2.5vw, 1.7rem);
   font-weight: bolder;
 }
@@ -332,7 +316,6 @@
   border: none;
   width: 12em;
   padding: 1em;
-  /* font-size: 1rem; */
   border-radius: 10%;
   font-weight: bolder;
 }
@@ -353,7 +336,6 @@
   width: 80px;
   height: 80px;
   text-align: center;
-  /* line-height: 500px; */
 } 
 
 .earrings-card-discount-div p { 
@@ -376,7 +358,6 @@
 .new-arrivals-img-styles { 
   height: 120px;
   width: 120px;
-  /* margin-bottom: 2em; */
 }
 
 
@@ -414,12 +395,11 @@
 
 
 
-
+/* 
  .trending-offers-container { 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* flex-wrap: wrap; */
   margin: 12px;
   gap: 1em;
 }
@@ -432,13 +412,8 @@
  gap: 1em;
  background-color: rgb(58, 53, 53);
  text-align: center;
- /* font-size: 2rem;
- font-weight: bolder; */
  padding: 10px;
  border-radius: 8%;
- /* font-size: clamp(1.2rem, 2.5vw, 1.7rem); */
- /* width: 56em; */
-
 } 
 
 .special-offers-card-wrapper { 
@@ -450,7 +425,6 @@
 
 .trending-offers-header h3,
 .trending-categories-header { 
-  /* font-size: 2rem; */
   font-size: clamp(1.2rem, 2.5vw, 1.7rem);
   font-weight: bolder;
 }
@@ -458,13 +432,8 @@
 .card-container-trending-offers-set-1 { 
   display: flex;
   gap: 1em;
-  /* background-color: rgb(58, 53, 53); */
 } 
 
-/* .card-container-trending-offers-body { 
-  background-color: rgb(58, 53, 53);
-  border: none;
-}  */
 
 .card-1-title-styles,
 .card-2-title-styles,
@@ -491,18 +460,14 @@
 .card-container-trending-offers-set-1 { 
   display: flex;
   gap: 1em;
-  /* flex-basis: 50%; */
 }
 
 
 .card-container-trending-offers-set2 { 
   display: flex;
   flex-direction: row;
-  /* width: calc(33.33% - 10px) */
   gap: 1em;
-  /* flex-basis: 50%; */
 } 
-
 
 
 .card-wrapper-trending { 
@@ -518,7 +483,7 @@
 .trending-card-5,
 .trending-card-6 { 
   width: 50%;
-} 
+}   */
 
 
 /* trending offers styles end */ 

@@ -1,0 +1,83 @@
+.checkout-component-wrapper { 
+    background-color: black;
+    color: white;
+  }
+  
+  .checkout-component-container { 
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+  }
+  
+  .checkout-component-backtoshop-checkout-title-container { 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkout-component-backtoshop-checkout-title-container h3 { 
+    font-size: 2.3rem;
+  }
+  
+  .container-for-img-and-title { 
+    display: flex;
+    align-items: center;
+  } 
+  
+  .payment-method-container button { 
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+  } 
+  
+  .place-order-btn-container { 
+    padding: 25px;
+  }
+  
+  
+  .contact-info-container,
+  .delivery-container,
+  .receive-order-container,
+  .payment-method-container { 
+    padding: 20px;
+  }
+  
+  
+  .first-last-name-container,
+  .phone-email-container { 
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .input-label-pair-first-name,
+  .input-label-pair-last-name,
+  .input-label-pair-first-email,
+  .input-label-pair-last-phone,
+  .input-label-pair-address,
+  .input-label-pair-delivery-instructions { 
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+  }
+  
+  
+  .input-label-pair-address input,
+  .input-label-pair-delivery-instructions input { 
+    width: 35em;
+  }
+  
+  
+  
+  .input-label-pair-delivery-instructions { 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .input-label-pair-receive-asap,
+  .input-label-pair-receive-scheduled,
+  .input-label-pair-credit-card,
+  .input-label-pair-cash-on-delivery,
+  .input-label-pair-apple-google-pay { 
+    display: flex;
+    gap: 1em;
+  }

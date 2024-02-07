@@ -670,7 +670,7 @@
 
 /* Shopping Component styles */ 
 
-.shopping-component-header-img-container { 
+/* .shopping-component-header-img-container { 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -732,7 +732,7 @@
 .shopping-component-card-styles-title,
 .shopping-component-card-styles-price { 
   color: white !important;
-}
+} */
 
 
 /* @media (max-width: 1000px) { 
@@ -753,7 +753,7 @@
 /* product page styles */ 
 
 
-.product-page-image-container { 
+/* .product-page-image-container { 
   display: flex;
   padding: 20px;
 }
@@ -782,11 +782,6 @@
   gap: 0.5em;
 }
 
-/* .product-page-review-number-contaner { 
-  display: flex;
-  flex-direction: column;
-} */
-
 
 .product-page-review-container img { 
   width: 15px;
@@ -803,7 +798,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 5em; */
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
 }
@@ -813,10 +807,6 @@
   gap: 1em;
 } 
 
-/* .product-page-quantity-description-text { 
-  display: flex;
-  flex-direction: column;
-} */
 
 .product-price-container h5 { 
   font-size: 3rem;
@@ -853,7 +843,7 @@
 .product-page-add-to-cart-btn-container button:hover { 
   background-color: white;
   color: black;
-}
+} */
 
 
 
@@ -870,11 +860,9 @@
 /* checkout component styles here */ 
 
 
-.checkout-component-wrapper { 
+/* .checkout-component-wrapper { 
   background-color: black;
   color: white;
-  /* width: 100vw;
-  height: 100vh; */
 }
 
 .checkout-component-container { 
@@ -907,17 +895,6 @@
   padding: 25px;
 }
 
-
-/* .contact-information-content-wrapper { 
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-information-container { 
-  display: flex;
-  flex-direction: row;
-  
-} */
 
 .contact-info-container,
 .delivery-container,
@@ -965,7 +942,7 @@
 .input-label-pair-apple-google-pay { 
   display: flex;
   gap: 1em;
-}
+} */
 
 
 

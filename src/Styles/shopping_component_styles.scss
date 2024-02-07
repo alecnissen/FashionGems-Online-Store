@@ -1,0 +1,63 @@
+.shopping-component-header-img-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .shopping-component-header-img-container h1 { 
+    color: white; 
+  }
+  
+  .shopping-component-header-img-container img { 
+    width: 15em;
+  }
+  
+  .sort-by-div { 
+    display: flex;
+    gap: 0.5em;
+    color: white;
+    padding: 20px;
+  } 
+  
+  .shopping-component-product-img-container { 
+    display: flex;
+    justify-content: center;
+  }
+  
+  .shopping-component-products-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  
+  .shopping-component-product-wrapper { 
+    background-color: black;
+    padding: 20px;
+  }
+  
+  
+  
+  
+  
+  .shopping-component-card-styles { 
+    width: 25em;
+    height: 25em;
+    background-color: black;
+  }  
+  
+  .shopping-component-card-img { 
+    width: 15em;
+    height: 15em;
+  } 
+  
+  .shopping-component-card-styles-card-body { 
+    background-color: black;
+  }
+  
+  .shopping-component-card-styles-title,
+  .shopping-component-card-styles-price { 
+    color: white !important;
+  }

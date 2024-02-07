@@ -7,6 +7,7 @@ import Header from '../HomePage/Header';
 import crypto from 'crypto';
 import PropTypes from 'prop-types';
 import backToShoppingArrow from "../../../Images/checkout-component-back-arrow.png"
+import Footer from '../HomePage/Footer';
 
 export default function CheckoutComponent({
   cartItems,
@@ -180,6 +181,7 @@ export default function CheckoutComponent({
       </div>
 
 
+    <Footer></Footer>
 
     </>
   );

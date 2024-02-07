@@ -1,0 +1,61 @@
+.trending-categories-container { 
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  .trending-categories-header-container { 
+    background-color: rgb(58, 53, 53);
+    display: flex;
+    align-items: center;
+    border-radius: 8%;
+  } 
+  
+  .header-gem-icon-trending-categories { 
+    width: 25px; 
+    height: 25px;
+  } 
+  
+  .card-container-trending-categories { 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1em;
+  }
+  
+  .trending-categories-card-1,
+  .trending-categories-card-2,
+  .trending-categories-card-3 { 
+    height: 100%;
+    opacity: 0.4;
+  }
+  
+  .trending-categories-text-over-cards { 
+    position: absolute;
+    top: 55em;
+    left: 2em;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    z-index: 100;
+    color: white;
+  } 
+  
+  .trending-categories-text-over-cards button { 
+    background-color: black;
+    color: white;
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 6%;
+  } 
+  
+  
+  .trending-categories-text-over-cards-card2 { 
+    position: absolute;
+    top: 5em;
+    left: 8.4em;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: white;
+  }

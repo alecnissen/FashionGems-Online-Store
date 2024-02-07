@@ -1,0 +1,59 @@
+.main-title-section-wrapper { 
+    background-color: black;
+    padding: 5em;
+    width: 100vw;
+  } 
+  
+  .title-component-header-text-styles { 
+    font-size: 2rem;
+  }
+  
+  .main-title-subtitle-container { 
+    color: white;
+  }
+  
+  .main-title-subtitle-container h6 { 
+    color: gray;
+  } 
+  
+  .images-container { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: -9em;
+    right: -1em;
+    height: 100%;
+    gap: 1em;
+  } 
+  
+  .diamond-img-title-component { 
+    width: 40px;
+  }
+  
+  
+  .portrait-of-women-styles { 
+    width: 100px;
+  }
+  
+  
+  
+  .img-styles-title-component { 
+    width: 335px;
+    transition: all 0.1s ease-in-out;
+    animation: fadeInOut 4s infinite;
+  }
+  
+  @keyframes fadeInOut { 
+    0% { 
+      opacity: 0;
+    } 
+  
+    50% { 
+      opacity: 1;
+    } 
+  
+    100% { 
+      opacity: 0;
+    }
+  }

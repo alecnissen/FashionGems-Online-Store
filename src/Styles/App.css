@@ -15,7 +15,7 @@
 .html {  
   scroll-behavior: smooth;  
 }
-
+/* 
 
 .header-wrapper { 
   display: flex;
@@ -64,18 +64,8 @@
   color: white;
 }
 
-/* .header-gem-icon { 
-  width: 5px;
-} */
-
-/* .header-button-container a:hover { 
-  background-color: white;
-  color: black;
-} */
-
 .header-icon-container { 
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   gap: 2em;
   flex-wrap: wrap;
@@ -88,15 +78,11 @@
 
 
 .badge-icon-for-shopping-cart { 
-  /* position: absolute;
-  left: 62.5em;
-  top: 12em; */
   position: absolute;
   background-color: white;
   border-radius: 25%;
   vertical-align: top;
   margin-top: -6px;
-  /* margin-right: -20px; */
   margin-left: 22px;
   padding: 2px;
 }
@@ -104,7 +90,7 @@
 .header-icon-container a { 
   text-decoration: none;
   color: black;
-}
+} */
 
 
 /* header styles end  */  
@@ -117,14 +103,10 @@
 /* main component styles start here */ 
 
 
-.main-title-section-wrapper { 
+/* .main-title-section-wrapper { 
   background-color: black;
-  /* padding: 10em; */
-  /* padding: 10em; */
   padding: 5em;
   width: 100vw;
-  /* height: 96vh; */
-  /* margin-bottom: -3em; */
 } 
 
 .title-component-header-text-styles { 
@@ -179,7 +161,7 @@
   100% { 
     opacity: 0;
   }
-}
+} */
 
 
 /* main styles end  */ 
@@ -192,14 +174,13 @@
 /* categories component */ 
 
 
-.categories-wrapper { 
+/* .categories-wrapper { 
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   background-color: black;
   color: white;
   padding: 15px;
-  /* gap: 1em; */
 } 
 
 .down-btn-container { 
@@ -210,7 +191,6 @@
 }
 
 .category-header-text-styles { 
-  /* font-size: 3rem; */
   font-size: clamp(2rem, 2.5vw, 3rem);
 }
 
@@ -254,7 +234,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
+} */
 
 
 

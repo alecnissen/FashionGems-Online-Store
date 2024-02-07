@@ -15,6 +15,7 @@ import CheckoutComponent from './Components/ProductAndShopping/CheckoutComponent
 import Modal from './Components/ProductAndShopping/SearchModal';
 import ImageCarouselComponent from './Components/HomePage/TitleComponent';
 import apiRequest from './API-CALLS/ApiRequest';
+import "./Styles/index.scss"
 
 
 

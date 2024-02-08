@@ -1,4 +1,6 @@
 .checkout-component-wrapper { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     background-color: black;
     color: white;
   }
@@ -81,3 +83,131 @@
     display: flex;
     gap: 1em;
   }
+
+
+
+
+
+  /* right side checkout component styles here */ 
+
+
+.checkout-component-right-side-wrapper { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+  .checkout-component-right-side-icon-container { 
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    margin-top: 4em;
+    // gap: 1em;
+    // background-color: rgb(58, 53, 53);
+    // width: 31em;
+    // margin-left: 10em;
+    // padding: 20px;
+    border-radius: 8%;
+  }
+
+//   .checkout-component-right-side-icon-container h1 { 
+//     font-size: 3rem;
+//   }
+
+
+// .black-circle-gem-icon { 
+//     position: relative;
+//     background-color: black;
+//     bottom: 3em;
+//     right: 4em;
+//     border-radius: 50%;
+//     width: 70px;
+//     height: 70px;
+// }
+
+.gem-icon { 
+    position: relative;
+    right: 3em;
+    bottom: 2.5em;
+}
+
+
+
+/* right side checkout styles here */ 
+
+.checkout-component-cart-items-container { 
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-component-cart-items-container { 
+    display: flex;
+}
+
+// .my-cart-items-container h6 { 
+//     font-size: 2rem;
+// } 
+
+.my-cart-header-text-styles { 
+  font-size: 2rem;
+}
+
+.number-of-cart-items-text-styles { 
+  font-size: 1.3rem;
+}
+
+.product-img-styles { 
+    width: 10em;
+} 
+
+.product-container-styles { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // gap: 1em;
+    padding: 20px;
+    background-color: rgb(58, 53, 53);
+}
+
+.product-container-styles h4 { 
+  font-size: 1rem;
+}
+
+.my-cart-items-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: rgb(58, 53, 53);
+} 
+
+
+
+
+
+
+/* example styles on how to make the black circle, 
+
+put the black circle down and the gem icon in the center of it. */ 
+
+//   .earrings-card-discount-div { 
+//     position: relative;
+//     bottom: 10em;
+//     left: 5em;
+//     background-color: black;
+//     border-radius: 50%;
+//     width: 80px;
+//     height: 80px;
+//     text-align: center;
+//   } 
+  
+//   .earrings-card-discount-div p { 
+//     position: relative;
+//     top: 1.5em;
+//   }
+  

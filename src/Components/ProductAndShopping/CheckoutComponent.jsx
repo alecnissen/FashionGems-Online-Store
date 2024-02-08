@@ -8,6 +8,8 @@ import crypto from 'crypto';
 import PropTypes from 'prop-types';
 import backToShoppingArrow from "../../../Images/checkout-component-back-arrow.png"
 import Footer from '../HomePage/Footer';
+import blackCircleGemIcon from "../../../Icons/black-circle-gem-checkout.png"
+import gemIcon from "../../../Icons/gem-icon-checkout-component.png"
 
 export default function CheckoutComponent({
   cartItems,
@@ -157,6 +159,7 @@ export default function CheckoutComponent({
 
 
       </div>
+      
 
 
 
@@ -166,7 +169,62 @@ export default function CheckoutComponent({
 
 
 
+      <div className='checkout-component-right-side-wrapper'> 
+       
+        <div className='checkout-component-right-side-icon-container'> 
+          <h1>Fashion Gems </h1>
+        <div className='black-circle-gem-icon'> 
+            <img src={gemIcon} className='gem-icon'></img>
+        </div>
+        </div>
 
+        <div className='checkout-component-cart-items-container'> 
+
+          <div className='my-cart-items-container'>
+            <h6 className='my-cart-header-text-styles'>My Cart</h6>
+            <h6 className='number-of-cart-items-text-styles'>{cartItems.length} items</h6>
+          </div>
+
+
+            <div className='product-container-styles'>
+            {cartItems.map((item) => { 
+               let productPrice = item.price * item.quantity;
+                total += productPrice;
+
+                return ( 
+                  <> 
+                  <img src={item.image} className='product-img-styles'></img>
+                  <h4>Quantity: {item.quantity}</h4>
+                  <button
+              onClick={() => {
+                console.log(itemQuantity);
+                changeQuantityIncrement(item);
+              }}
+            >
+              +
+            </button>
+                  <h4>Item Price: ${item.price}</h4>
+                  <h4>Total: ${productPrice}</h4>
+
+              
+                  </>
+
+                )
+            })}
+            <h3>Grand-Total: ${total}</h3>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+      
+
+      </div>
 
 
 

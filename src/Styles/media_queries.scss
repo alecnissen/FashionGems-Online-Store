@@ -331,6 +331,66 @@
   
   
   /* media queries for shopping component */
+
+
+
+  @media (max-width: 1080px) { 
+
+
+  // .contact-info-container,
+  // .first-last-name-container { 
+  //     display: flex;
+  //     flex-direction: column;
+  //   }
+
+    //  .receive-order-container { 
+    //   display: flex;
+    //   flex-direction: column;
+    //  }
+
+    // .contact-info-container { 
+    //   display: flex;
+    //   flex-direction: column;d
+    // }
+
+    // .checkout-component-container { 
+    //   display: block;
+    // }
+
+      .first-last-name-container { 
+        display: flex;
+        flex-direction: column;
+      }
+
+      .phone-email-container { 
+        display: flex;
+        flex-direction: column;
+      }
+
+      .checkout-component-right-side-wrapper { 
+        display: grid;
+        grid-column-start: 1;
+      } 
+
+
+      .input-label-pair-first-name input,
+      .input-label-pair-last-name input,
+      .input-label-pair-first-email input,
+      .input-label-pair-last-phone input { 
+        width: 10em;
+      }
+      
+      // .input-label-pair-address input,
+      // .input-label-pair-delivery-instructions input { 
+      //   width: 15em;
+      // }
+
+
+
+  }
+
+
+
   
   @media (max-width: 1000px) { 
   
@@ -347,6 +407,8 @@
 
    
   
+    
+
   
   
   

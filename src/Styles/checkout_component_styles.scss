@@ -6,8 +6,8 @@
   }
   
   .checkout-component-container { 
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     padding: 60px;
   }
   
@@ -34,7 +34,7 @@
   .place-order-btn-container { 
     padding: 25px;
   }
-  
+
   
   .contact-info-container,
   .delivery-container,
@@ -42,13 +42,18 @@
   .payment-method-container { 
     padding: 20px;
   }
+
+  .contact-info-container { 
+    display: flex;
+    flex-direction: column;
+  }
   
   
   .first-last-name-container,
   .phone-email-container { 
     display: flex;
-    flex-direction: row;
-  }
+    // flex-direction: row;
+  } 
   
   .input-label-pair-first-name,
   .input-label-pair-last-name,
@@ -59,13 +64,26 @@
     display: flex;
     flex-direction: column;
     margin-right: 2em;
+    // min-width: 100px;
+  } 
+
+
+  .input-label-pair-first-name input,
+  .input-label-pair-last-name input,
+  .input-label-pair-first-email input,
+  .input-label-pair-last-phone input { 
+    width: 15em;
   }
-  
   
   .input-label-pair-address input,
   .input-label-pair-delivery-instructions input { 
-    width: 35em;
+    width: 18em;
   }
+  
+  // .input-label-pair-address input,
+  // .input-label-pair-delivery-instructions input { 
+  //   width: 35em;
+  // }
   
   
   

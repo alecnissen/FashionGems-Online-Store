@@ -57,7 +57,7 @@ export default function CheckoutComponent({
 
           </div> 
 
-
+          
           <div className='contact-info-container'>
 
           <h5>Contact Information</h5>
@@ -93,6 +93,7 @@ export default function CheckoutComponent({
 
 
           </div>
+
 
 
       <div className='delivery-container'> 

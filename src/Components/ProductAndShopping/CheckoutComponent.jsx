@@ -184,13 +184,13 @@ export default function CheckoutComponent({
 
 
 
+
+
+            <div className='product-container-styles'>
           <div className='my-cart-items-container'>
             <h6 className='my-cart-header-text-styles'>My Cart</h6>
             <h6 className='number-of-cart-items-text-styles'>{cartItems.length} items</h6>
           </div>
-
-
-            <div className='product-container-styles'>
             {cartItems.map((item) => { 
                let productPrice = item.price * item.quantity;
                 total += productPrice;
@@ -213,7 +213,8 @@ export default function CheckoutComponent({
                     >
                     +
               </button>
-                  <input type="number" min="0" max="10" placeholder="0" value={item.quantity} onChange={() => {}}></input>
+                  {/* <input type="number" min="0" max="10" placeholder="0" value={item.quantity}></input> */}
+                  <div className='item-quantity-div-styles'>{item.quantity}</div>
                   <button
                     onClick={() => {
                       changeQuantityDecrement(item);
@@ -231,6 +232,8 @@ export default function CheckoutComponent({
                     onClick={() => {
                       handleDelete(item);
                   }}
+
+                  className='remove-btn-styles'
                 >
                     Remove
                     </button>

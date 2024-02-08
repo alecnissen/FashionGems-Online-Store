@@ -136,16 +136,11 @@
 
 
 
-/* right side checkout styles here */ 
-
 .checkout-component-cart-items-container { 
     display: flex;
     flex-direction: column;
 }
 
-.checkout-component-cart-items-container { 
-    display: flex;
-}
 
 // .my-cart-items-container h6 { 
 //     font-size: 2rem;
@@ -186,7 +181,34 @@
     background-color: rgb(58, 53, 53);
 } 
 
+.remove-btn-container { 
+  display: flex;
+  flex-direction: column;
+}
 
+
+.increment-decrement-remove-btn-wrapper-style { 
+  display: flex;
+  flex-direction: column;
+}
+
+.increment-decrement-remove-btn-content-container { 
+  display: flex;
+}
+
+.wrapper { 
+  display: flex;
+  flex-direction: column;
+}
+
+// .grand-total-container { 
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   width: 20em;
+//   background-color: gray;
+// }
 
 
 

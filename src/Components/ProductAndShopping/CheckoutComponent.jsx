@@ -168,9 +168,11 @@ export default function CheckoutComponent({
 
 
 
-
       <div className='checkout-component-right-side-wrapper'> 
        
+
+        <div className='checkout-component-cart-items-container'> 
+
         <div className='checkout-component-right-side-icon-container'> 
           <h1>Fashion Gems </h1>
         <div className='black-circle-gem-icon'> 
@@ -178,7 +180,8 @@ export default function CheckoutComponent({
         </div>
         </div>
 
-        <div className='checkout-component-cart-items-container'> 
+
+
 
           <div className='my-cart-items-container'>
             <h6 className='my-cart-header-text-styles'>My Cart</h6>
@@ -195,14 +198,50 @@ export default function CheckoutComponent({
                   <> 
                   <img src={item.image} className='product-img-styles'></img>
                   <h4>Quantity: {item.quantity}</h4>
+             
+
+                {/* <div className='wrapper'> */}
+
+                  <div className='increment-decrement-remove-btn-content-container'>
+
                   <button
-              onClick={() => {
-                console.log(itemQuantity);
-                changeQuantityIncrement(item);
-              }}
-            >
-              +
-            </button>
+                    onClick={() => {
+                      console.log(itemQuantity);
+                      changeQuantityIncrement(item);
+                }}
+                    >
+                    +
+              </button>
+                  <input type="number" min="0" max="10" placeholder="0" value={item.quantity} onChange={() => {}}></input>
+                  <button
+                    onClick={() => {
+                      changeQuantityDecrement(item);
+                  }}
+                   >
+                        -
+                  </button>
+
+                  <div className='remove-btn-container'>
+                    </div>
+
+                  </div>
+                
+                 <button
+                    onClick={() => {
+                      handleDelete(item);
+                  }}
+                >
+                    Remove
+                    </button>
+
+
+
+                  {/* </div> */}
+
+
+
+
+
                   <h4>Item Price: ${item.price}</h4>
                   <h4>Total: ${productPrice}</h4>
 
@@ -211,7 +250,6 @@ export default function CheckoutComponent({
 
                 )
             })}
-            <h3>Grand-Total: ${total}</h3>
             </div>
 
 
@@ -221,15 +259,14 @@ export default function CheckoutComponent({
 
         </div>
 
+            <div className='grand-total-container'> 
 
+            <h3>Grand-Total: ${total.toFixed(2)}</h3>
+
+            </div>
       
 
       </div>
-
-
-
-
-
 
 
 

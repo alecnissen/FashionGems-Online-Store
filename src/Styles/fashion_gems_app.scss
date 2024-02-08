@@ -1,0 +1,65 @@
+.fashion-gems-app-wrapper { 
+    display: flex;
+    background-color: rgb(58, 53, 53);
+    color: white;
+    justify-content: space-around;
+    padding: 40px;
+
+}
+
+.download-app-and-icons-container h3 { 
+    font-weight: bolder;
+}
+
+.download-app-and-icons-container { 
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+
+.apple-icon-and-description-container,
+.download-google-play-container,
+.download-from-fashion-gems-container { 
+    display: flex;
+    background-color: black;
+    width: 200px;
+    height: 90px;
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.apple-icon-and-description-container img,
+.download-google-play-container img,
+.download-from-fashion-gems-container img { 
+    position: relative;
+    top: 0.5em;
+    width: 40px;
+    height: 40px;
+}
+
+.app-card-container { 
+    display: flex;
+    gap: 1em;
+}
+
+
+
+.download-from-app-store-container { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+} 
+
+.download-from-fashion-gems-text-content-container { 
+    text-align: center;
+}
+
+.download-from-app-store-container h6,
+.download-from-google-play-container h6,
+.download-from-fashion-gems-container h6 { 
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+

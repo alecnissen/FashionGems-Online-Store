@@ -10,6 +10,7 @@ import backToShoppingArrow from "../../../Images/checkout-component-back-arrow.p
 import Footer from '../HomePage/Footer';
 import blackCircleGemIcon from "../../../Icons/black-circle-gem-checkout.png"
 import gemIcon from "../../../Icons/gem-icon-checkout-component.png"
+import FashionGemsAppComponent from './FashionGemsAppComponent';
 
 export default function CheckoutComponent({
   cartItems,
@@ -275,7 +276,7 @@ export default function CheckoutComponent({
 
       </div>
 
-
+    <FashionGemsAppComponent></FashionGemsAppComponent>
     <Footer></Footer>
 
     </>

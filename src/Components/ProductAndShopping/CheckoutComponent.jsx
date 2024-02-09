@@ -101,12 +101,14 @@ export default function CheckoutComponent({
       <div className='input-label-pair-address'> 
               <label>Address:</label>
               <input type="text"></input>
+              {/* <textarea></textarea> */}
             </div>
 
 
         <div className='input-label-pair-delivery-instructions'>
           <label>Delivery Instructions</label>
-          <input type="text"></input>
+          {/* <input type="text"></input> */}
+          <textarea></textarea>
         </div>
       
       </div>

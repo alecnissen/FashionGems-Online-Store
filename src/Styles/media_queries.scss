@@ -336,27 +336,6 @@
 
   @media (max-width: 1080px) { 
 
-
-  // .contact-info-container,
-  // .first-last-name-container { 
-  //     display: flex;
-  //     flex-direction: column;
-  //   }
-
-    //  .receive-order-container { 
-    //   display: flex;
-    //   flex-direction: column;
-    //  }
-
-    // .contact-info-container { 
-    //   display: flex;
-    //   flex-direction: column;d
-    // }
-
-    // .checkout-component-container { 
-    //   display: block;
-    // }
-
       .first-last-name-container { 
         display: flex;
         flex-direction: column;
@@ -380,11 +359,26 @@
         width: 10em;
       }
       
-      // .input-label-pair-address input,
-      // .input-label-pair-delivery-instructions input { 
-      //   width: 15em;
+      .input-label-pair-address input { 
+        width: 5em;
+      }
+      
+      // .checkout-component-container { 
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: center;
+      //   align-items: center;
       // }
 
+      .contact-info-container,
+      .delivery-container,
+      .receive-order-container,
+      .payment-method-container { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
 
   }

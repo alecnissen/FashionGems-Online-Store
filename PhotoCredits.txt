@@ -19,3 +19,14 @@ Photo by Taisuke usui: https://www.pexels.com/photo/close-up-photo-of-necklace-2
 down icon used on main title/homepage, 
 
 <a target="_blank" href="https://icons8.com/icon/JjF66Oep57ku/expand-arrow">Down Arrow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+
+diamond photo about page, 
+
+Photo by <a href="https://unsplash.com/@sabrinnaringquist?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sabrianna</a> on <a href="https://unsplash.com/photos/silver-diamond-studded-ring-on-black-textile-9poB8SBFveA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+
+Amsterdam photo 
+
+Photo by <a href="https://unsplash.com/@leifniem?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Leif Niemczik</a> on <a href="https://unsplash.com/photos/purple-bike-leaning-on-black-metal-fence-xQQShnDWY-Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  

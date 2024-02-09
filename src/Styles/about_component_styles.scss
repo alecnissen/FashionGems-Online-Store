@@ -1,0 +1,42 @@
+.about-component-wrapper { 
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+// .about-component-wrapper { 
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+.about-component-wrapper h1,
+.about-component-wrapper p { 
+    text-align: center;
+}
+
+// .about-component-wrapper ul { 
+//     text-align: center;
+// }
+
+.core-values-container { 
+    display: flex;
+    justify-content: center;
+}
+
+
+.about-component-img-container,
+.amsterdam-photo-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amsterdam-photo-container img,
+.about-component-img-container img  { 
+    border-radius: 5%;
+}
+
+.about-component-img-container img { 
+    width: 300px;
+} 

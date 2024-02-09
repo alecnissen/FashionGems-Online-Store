@@ -11,12 +11,15 @@ const MODAL_STYLES = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  backgroundColor: '#FFF',
+  // backgroundColor: '#FFF',
+  backgroundColor: 'rgb(58, 53, 53)',
   padding: '50px',
   zIndex: 1000,
   height: '720px',
   width: '700px',
   overflow: 'scroll',
+  color: 'white',
+  fontWeight: 'bolder',
 };
 
 const OVERLAY_STYLES = {
@@ -74,6 +77,8 @@ export default function Modal({ isOpen, setIsOpen, onClose }) {
           }}
         ></input>
         <button>Go</button>
+
+        
         <button onClick={onClose}>X</button>
 
         {query !== '' &&

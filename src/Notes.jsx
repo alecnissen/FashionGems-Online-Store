@@ -625,3 +625,10 @@
 // I want to not use inline styles, how can I style these cards w/o inline styles? 
 
 // 
+
+
+// *** 
+
+// today I will finish and style the modal, then will begin to cleanup the site, 
+
+// starting at one section at a time. 

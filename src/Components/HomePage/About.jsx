@@ -5,33 +5,57 @@ import aboutPhoto1 from '../../../Images/clark-street-mercantile-P3pI6xzovu0-uns
 import aboutPhoto2 from '../../../Images/pexels-mart-production-7679453.jpg';
 import { propTypes } from 'react-bootstrap/esm/Image';
 import PropTypes from 'prop-types';
+import diamondImg from '../../../Images/diamond-img.jpg';
+import amsterdamPhoto from "../../../Images/Amsterdam-photo.jpg"
+
 
 export default function About({ numberOfCartItems, isOpen, setIsOpen }) {
   return (
     <>
       <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
-      <div className="about-component-content-container">
-        <h1>Our Story</h1>
-        <h4>We Are Committed to Excellence!</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt illum fugit modi mollitia dignissimos enim
-          temporibus vel quidem, quasi neque nihil voluptatum id cumque necessitatibus iste quisquam iusto accusamus!
-          Non. Minima tempore unde cum nostrum in placeat a nesciunt vel quod aliquid amet excepturi eos necessitatibus,
-          illo soluta accusamus voluptatibus ducimus omnis facere velit esse! Incidunt assumenda corporis laboriosam
-          sint. Magni assumenda fugit autem velit. Illum ad accusamus vel beatae qui sequi eius aperiam nemo aut alias
-          molestias consequatur sint dignissimos omnis, vero repellendus delectus consectetur molestiae esse magni id.
-          A, voluptatum nesciunt. Nostrum natus totam ab assumenda, at labore fugiat saepe accusantium necessitatibus
-          veniam excepturi modi, consequuntur debitis asperiores iure laboriosam deserunt exercitationem pariatur. Iusto
-          quae quas obcaecati amet. Molestias inventore voluptate culpa doloribus ut veritatis voluptatem at consectetur
-          illo minima maiores, nesciunt odio natus itaque quia, nihil asperiores. Soluta voluptate in itaque atque
-          facere, aut dignissimos enim cumque. Expedita deserunt cumque repellendus enim obcaecati dolores dolorem
-          accusamus consequatur iusto, ab autem incidunt ex distinctio odio! Molestias earum aperiam eveniet eligendi,
-          reiciendis, consectetur aspernatur assumenda, quod sed quisquam minus.
-        </p>
-        <div className="about-photo-container">
-          <img src={aboutPhoto1} alt="inside of a clothing store" />
-          <img src={aboutPhoto2} alt="women looking through clothes" />
-        </div>
+      
+      
+      <div className="about-component-wrapper">
+      <h1>Our Story</h1>
+
+      <p>We started in 1968 in a small Dutch village in the Netherlands. Our grandpa, Jan worked very hard to provide the best Jewelry for the community. He wanted to create lasting memories and make an impact on every customer. 
+        Jan instilled in us the service and core values that make our business so unique. Excellent service, knowledge, passion, good humor, and to go above and beyond to serve you and make you smile! and to always respect the customer and community. 
+        We carry on the legacy today and Jan's passion and humor lives through all of us. 
+      </p>
+
+      <div className='amsterdam-photo-container'> 
+        <img src={amsterdamPhoto}></img>
+      </div>
+
+
+      {/* <p>We cannot wait to serve you and create wonderful memories. We want you to shine like a diamond!</p> */}
+
+      <h1>Our Core Values</h1>
+
+      <div className='core-values-container'>
+      <ul className='core-values-styles'>
+        <li>Excellence</li>
+        <li>Team work</li>
+        <li>Honesty</li>
+        <li>Integrity</li>
+        <li>Go the extra mile</li>
+        <li>Lead by example</li>
+        <li>Love and respect your community</li>
+      </ul>
+      </div>
+      
+
+      <div className='about-component-img-container'>
+      <img src={diamondImg}></img>
+      </div>
+
+      <h1>Why Choose Us?</h1>
+
+      <p>You will not find a better store that has the finest selection of Jewelry! We are commited to serving you and making you a happy Customer! Experience and feel the tradition! </p>
+
+
+      <h1>Let us Help You Shine Like A Diamond!!!</h1>
+
       </div>
       <Footer></Footer>
     </>

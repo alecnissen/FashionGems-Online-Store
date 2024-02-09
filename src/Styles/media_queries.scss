@@ -482,3 +482,14 @@
      }
   
     }
+
+
+    /* media queries for about component */ 
+
+    @media (max-width: 700px) { 
+
+    .amsterdam-photo-container img { 
+      width: 300px;
+    }
+
+  }

@@ -632,3 +632,24 @@
 // today I will finish and style the modal, then will begin to cleanup the site, 
 
 // starting at one section at a time. 
+
+
+// you may have to remove the inline styles for the modal due to media queries 
+
+// it may just default to the original, 
+
+// first fix up how the items are displayed. 
+
+
+// organize how the items are dispayed in the search modal 
+
+// put them like how you have it in product page, 
+
+// img on r then text in columns, title, and price will be in a column 
+
+
+// work on the responsiveness next for the modal, 
+
+// make sure it looks good on ipads, phones
+
+// make sure exit btn is working. 

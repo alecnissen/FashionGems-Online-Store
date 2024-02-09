@@ -2,5 +2,60 @@
     text-align: center;
     font-weight: bolder;
     font-size: 2rem;
+    text-decoration: underline;
     // padding: 10px;
 }
+
+.modal-content-styles { 
+    text-align: center;
+}
+
+.modal-content-styles input{ 
+    width: 14em;
+}
+
+.modal-search-btn-styles { 
+    // background-color: rgb(58, 53, 53);
+    margin-left: 1em;
+} 
+
+.modal-product-wrapper { 
+    margin: 1em;
+}
+
+.modal-exit-btn { 
+    position: relative;
+    top: -18.5%;
+    right: 92%;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+.modal-link-styles a { 
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.modal-item-price-styles { 
+    font-weight: bolder;
+}
+
+.modal-link-styles a:hover {
+    text-decoration: none !important; /* Remove underline */
+    color: inherit !important;; /* Use the same color as normal */
+  }
+
+
+  .modal-product-styles { 
+    display: flex;
+    gap: 1em;
+  }
+
+  .modal-product-price-title-container { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+  }

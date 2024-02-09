@@ -15,8 +15,8 @@ const MODAL_STYLES = {
   backgroundColor: 'rgb(58, 53, 53)',
   padding: '50px',
   zIndex: 1000,
-  height: '720px',
-  width: '700px',
+  height: '620px',
+  width: '600px',
   overflow: 'scroll',
   color: 'white',
   fontWeight: 'bolder',
@@ -61,12 +61,13 @@ export default function Modal({ isOpen, setIsOpen, onClose }) {
   return (
     <>
       <div style={OVERLAY_STYLES} onClick={onClose} />
-      <div style={MODAL_STYLES}>
+      <div style={MODAL_STYLES} className='modal-content-styles'>
         {/* <h1 className='error-msg-search-modal-styles'>{error}</h1> */}
 
         {/* {error && <h1 className="error-msg-search-modal-styles">{error}</h1>}
         {loading && <h1 className="error-msg-search-modal-styles">Loading...</h1>} */}
 
+        
         <h6 className="modal-header-styles">Search for Items</h6>
         <input
           value={query}
@@ -76,24 +77,28 @@ export default function Modal({ isOpen, setIsOpen, onClose }) {
             console.log(query);
           }}
         ></input>
-        <button>Go</button>
+        {/* <button className='modal-search-btn-styles'>Search</button> */}
 
-        
-        <button onClick={onClose}>X</button>
+
+        <button onClick={onClose} className='modal-exit-btn'>X</button>
 
         {query !== '' &&
           filteredItems.map((item) => {
             return (
               <>
-                <Link to={`/ProductPage/${item.id}`} onClick={onClose}>
-                  <div className="filteredItems-styles" key={item.key}>
+              <div className='modal-product-wrapper'>
+                <Link to={`/ProductPage/${item.id}`} onClick={onClose} className='modal-link-styles'>
+                  <div className="modal-product-styles" key={item.key}>
+                    <img src={item.image} style={{ width: '5em' }}></img>
+
+                    <div className='modal-product-price-title-container'>
                     {item.title}
+                    <div className='modal-item-price-styles'>${item.price.toFixed(2)}</div>
+                    </div>
 
-                    <img src={item.image} style={{ width: '4em' }}></img>
-
-                    <div>{item.price}</div>
                   </div>
                 </Link>
+                </div>
               </>
             );
           })}

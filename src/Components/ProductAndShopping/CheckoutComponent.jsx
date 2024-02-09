@@ -178,7 +178,7 @@ export default function CheckoutComponent({
         <div className='checkout-component-cart-items-container'> 
 
         <div className='checkout-component-right-side-icon-container'> 
-          <h1>Fashion Gems </h1>
+          <h1>FashionGems </h1>
         <div className='black-circle-gem-icon'> 
             <img src={gemIcon} className='gem-icon'></img>
         </div>

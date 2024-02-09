@@ -380,6 +380,19 @@
         align-items: center;
       }
 
+      .contact-info-container h5,
+      .delivery-container h5,
+      .receive-order-container h5 { 
+        text-align: center;
+      }
+
+      .checkout-component-cart-items-container { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
 
   }
 
@@ -397,11 +410,47 @@
       width: 11em;
       height: 11em;
     } 
-    } 
+    }
+
+
+
+    /* down app media query section, shopping component */ 
+
+    @media (max-width: 1270px) {
+      .app-card-container { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // padding: 10px;
+      }
+      .fashion-gems-app-wrapper { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      // .women-with-handbag-container { 
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: center;
+      // }
+
+      .women-with-handbag-container img { 
+        width: 400px;
+        margin-top: 20px;
+        // height: 350px;
+      }
+    }
 
    
   
-    
+    @media (max-width: 450px) { 
+      .women-with-handbag-container img { 
+        width: 300px;
+      }
+    }
 
   
   

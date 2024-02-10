@@ -653,3 +653,19 @@
 // make sure it looks good on ipads, phones
 
 // make sure exit btn is working. 
+
+// making the search modal responsive is getting very hard 
+
+// I think because it is initially set to a fixed position, it cannot move or its size cannot be changed, 
+
+// ok so I have the media query working for ipad, 
+
+// its looking better for phone, 
+
+// lets increase the img and the font
+
+// the text is not wrapping on the phones, 
+
+// getting overflowing text on within the modal and mobile views. 
+
+// Now we have to make sure the exit button is visable both on ipad and phone screens

@@ -6,21 +6,20 @@ import PropTypes from 'prop-types';
 // import apiRequest from '../../API-CALLS/ApiRequest';
 import ApiRequest from '../../API-CALLS/ApiRequest';
 
-const MODAL_STYLES = {
-  position: 'fixed',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  // backgroundColor: '#FFF',
-  backgroundColor: 'rgb(58, 53, 53)',
-  padding: '50px',
-  zIndex: 1000,
-  height: '620px',
-  width: '600px',
-  overflow: 'scroll',
-  color: 'white',
-  fontWeight: 'bolder',
-};
+// const MODAL_STYLES = {
+//   position: 'fixed',
+//   top: '50%',
+//   left: '50%',
+//   transform: 'translate(-50%, -50%)',
+//   backgroundColor: 'rgb(58, 53, 53)',
+//   padding: '50px',
+//   zIndex: 1000,
+//   height: '620px',
+//   width: '600px',
+//   overflow: 'scroll',
+//   color: 'white',
+//   fontWeight: 'bolder',
+// };
 
 const OVERLAY_STYLES = {
   position: 'fixed',
@@ -61,7 +60,10 @@ export default function Modal({ isOpen, setIsOpen, onClose }) {
   return (
     <>
       <div style={OVERLAY_STYLES} onClick={onClose} />
-      <div style={MODAL_STYLES} className='modal-content-styles'>
+
+    <div className='model-content-container'> 
+
+      <div className='modal-content-styles'>
         {/* <h1 className='error-msg-search-modal-styles'>{error}</h1> */}
 
         {/* {error && <h1 className="error-msg-search-modal-styles">{error}</h1>}
@@ -89,7 +91,7 @@ export default function Modal({ isOpen, setIsOpen, onClose }) {
               <div className='modal-product-wrapper'>
                 <Link to={`/ProductPage/${item.id}`} onClick={onClose} className='modal-link-styles'>
                   <div className="modal-product-styles" key={item.key}>
-                    <img src={item.image} style={{ width: '5em' }}></img>
+                    <img src={item.image} className='modal-product-img-styles'></img>
 
                     <div className='modal-product-price-title-container'>
                     {item.title}
@@ -103,6 +105,9 @@ export default function Modal({ isOpen, setIsOpen, onClose }) {
             );
           })}
       </div>
+
+      </div>
+
     </>
   );
 }

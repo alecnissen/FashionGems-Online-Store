@@ -6,6 +6,7 @@ import womensClothingIcon from "../../../Icons/women-dress-svgrepo-com.svg"
 import electronicsIcon from "../../../Icons/laptop-alt-1-svgrepo-com.svg"
 import jewelryIcon from "../../../Icons/jewelry-svgrepo-com.svg"
 import downIcon from "../../../Icons/down-arrow-icon-dark-bg.png"
+import { Link, Outlet, useSearchParams } from 'react-router-dom';
 
 function CategoryListComponent() {
 

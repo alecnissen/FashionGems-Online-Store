@@ -220,11 +220,11 @@ export default function TrendingAndOffers() {
 
     </div>
 
-    {/* <div className='trending-categories-text-over-cards'>Jewelry
+    <div className='trending-categories-text-over-cards'>Jewelry
     <br></br>
     <button>Shop Now</button>
     
-    </div>  */}
+    </div> 
     
 
   {/* <div className='trending-categories-text-over-cards-card2'> 

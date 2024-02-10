@@ -78,7 +78,7 @@ useEffect(() => {
         <div className="main-title-subtitle-container"> 
 
         
-        <h3 className="title-component-header-text-styles">Discover the finest Fashion Gems
+        <h3 className="title-component-header-text-styles">Discover the finest FashionGems
         {/* <img src={diamondImg} className="diamond-img-main"></img> */}
         </h3>
         <h6> Let us help you look and feel your best!</h6>

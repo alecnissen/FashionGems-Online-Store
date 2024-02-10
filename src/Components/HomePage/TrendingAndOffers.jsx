@@ -65,7 +65,7 @@ export default function TrendingAndOffers() {
     <div className='new-arrivals-card-container'>
         <div className='new-arrivals-title-container'> 
             <h3>New Arrivals</h3>
-            <p>Discover out latest</p>
+            <p>Discover our latest</p>
         </div>
 
         <img src={earringImageNewArrivals} className='new-arrivals-img-styles'></img>

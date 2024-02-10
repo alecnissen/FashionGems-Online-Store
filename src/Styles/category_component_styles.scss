@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Source+Sans+3:ital@0;1&family=Yeseva+One&display=swap');
+
+
 .categories-wrapper { 
     display: flex;
     justify-content: center;
@@ -5,6 +8,10 @@
     background-color: black;
     color: white;
     padding: 15px;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   } 
   
   .down-btn-container { 
@@ -15,7 +22,11 @@
   }
   
   .category-header-text-styles { 
-    font-size: clamp(2rem, 2.5vw, 3rem);
+    font-size: clamp(3rem, 2.5vw, 4rem);
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
   
   .category-main-title-component { 

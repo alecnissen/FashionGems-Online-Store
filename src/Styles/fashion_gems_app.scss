@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Source+Sans+3:ital@0;1&family=Yeseva+One&display=swap');
+
+
+
+
 .fashion-gems-app-wrapper { 
     display: flex;
     background-color: rgb(58, 53, 53);
     color: white;
     justify-content: space-around;
     padding: 40px;
-
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .download-app-and-icons-container h3 { 

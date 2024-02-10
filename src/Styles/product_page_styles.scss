@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Source+Sans+3:ital@0;1&family=Yeseva+One&display=swap');
+
 .product-page-image-container { 
     display: flex;
     padding: 20px;
@@ -11,6 +13,10 @@
     display: flex;
     background-color: black;
     color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
   
   .product-page-product-description-title-container { 

@@ -31,13 +31,13 @@ function CategoryListComponent() {
 
     <> 
 
-<div className="down-btn-container">
+{/* <div className="down-btn-container">
 
-      <a id="link" href="#down-btn-element-target">
+      <a id="link" href="#down-btn-element-target" className='down-arrow'>
        <img src={downIcon}></img>
       </a>
 
-       </div>
+       </div> */}
 
     <div className='category-main-title-component'>
       <h3 className='category-header-text-styles'>Categories</h3>

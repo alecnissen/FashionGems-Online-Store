@@ -17,9 +17,15 @@
   .down-btn-container { 
     display: flex;
     justify-content: center;
+    // align-items: flex-start;
+    // position: relative;
+    // bottom: 2em;
     background-color: black;
     padding: 20px;
+
   }
+
+ 
   
   .category-header-text-styles { 
     font-size: clamp(3rem, 2.5vw, 4rem);

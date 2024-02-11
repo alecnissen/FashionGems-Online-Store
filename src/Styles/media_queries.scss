@@ -110,6 +110,15 @@
       gap: 2em;
     }
   
+    .trending-offers-container { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .trending-offers-header {
+      width: 17em;
+     }
   
   
   
@@ -125,6 +134,15 @@
       justify-content: center;
       align-items: center;
     }
+
+    .special-offers-content-wrapper { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 12px;
+      gap: 1em;
+    }
   
     .special-offers-header-container { 
       display: flex;
@@ -132,17 +150,50 @@
       justify-content: center;
       align-items: center;
       margin: 12px;
+      width: 8em;
     }
   
     .trending-offers-header,
     .trending-categories-header-container { 
       display: flex;
       justify-content: center;
+      // align-items: center;
+    }
+
+    .trending-categories-header-container { 
+      width: 17em;
+    }
+
+    .trending-categories-container { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     // .trending-categories-card-2-styles { 
     //   width: 22em;
     // }
+
+    // .trending-categories-text-over-cards { 
+    //   position: relative;
+    //   top: -8em;
+    //   left: -8.3em;
+    // }
+    
+    // .trending-categories-text-over-cards-card2 { 
+    //   position: relative;
+    //   top: -11.4em;
+    //   left: 0em;
+    // }
+
+    // .trending-categories-text-over-cards-card3 { 
+    //   position: relative;
+    //   top: -14.8em;
+    //   left: 8.5em;
+    // }
+
+
+
   }
   
   

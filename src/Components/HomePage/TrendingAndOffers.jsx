@@ -36,7 +36,7 @@ export default function TrendingAndOffers() {
             <div className='special-offers-header-container'>
 
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="header-gem-icon" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="special-offers-header-gem-icon" viewBox="0 0 16 16">
   <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z"/>
 </svg>
                 <h3>Special Offers
@@ -101,7 +101,7 @@ export default function TrendingAndOffers() {
 
     <div className='trending-offers-container'> 
         <div className='trending-offers-header'> 
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="header-gem-icon" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="trending-offers-header-gem-icon" viewBox="0 0 16 16">
   <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z"/>
 </svg>
             <h3>Trending Offers</h3>
@@ -199,7 +199,11 @@ export default function TrendingAndOffers() {
 
 <div className='trending-categories-header-container'>
 
-<img src={pawIcon} className="header-gem-icon-trending-categories"></img>
+{/* <img src={pawIcon} className="header-gem-icon-trending-categories"></img> */}
+
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="special-offers-header-gem-icon" viewBox="0 0 16 16">
+  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z"/>
+</svg>
 
 
         <h3 className='trending-categories-header'>Trending Categories</h3>
@@ -208,23 +212,26 @@ export default function TrendingAndOffers() {
 
     <div className='card-container-trending-categories'> 
         <Card className='trending-categories-card-1-styles'>
-      <Card.Img variant="top" src={jewelryCollection} className="trending-categories-card-img-1" />
-    
+          {/* <Card.Title className='jewelry-header-styles-trending-category-card-1'>Jewelry</Card.Title> */}
+      <Card.Img variant="top" src={jewelryCollection} className="trending-categories-card-img-1" 
+      />
     </Card>
 
     <Card className='trending-categories-card-2-styles'>
+    {/* <Card.Title>Earrings</Card.Title> */}
       <Card.Img variant="top" src={goldenEarrings} className="trending-categories-card-img-2" />
     
     </Card>
 
     <Card className='trending-categories-card-3-styles'>
+    {/* <Card.Title>Necklaces</Card.Title> */}
       <Card.Img variant="top" src={braceletImg} className="trending-categories-card-img-3" />
     
     </Card>
 
     </div>
 
-    <div className='trending-categories-text-over-cards'>Jewelry
+    {/* <div className='trending-categories-text-over-cards'>Jewelry
     <br></br>
     <button>Shop Now</button>
     
@@ -241,7 +248,7 @@ export default function TrendingAndOffers() {
   Bracelets
   <br></br>
   <button>Shop Now</button>
-</div>
+</div> */}
 
 
 

@@ -39,11 +39,18 @@
     font-weight: bolder;
     padding: 10px;
     background-color: rgb(58, 53, 53);
-    border-radius: 8%;
+    border-radius: 5%;
   } 
+
+  .special-offers-header-gem-icon,
+  .trending-offers-header-gem-icon { 
+    width: 40px;
+    height: 40px;
+  }
   
   .special-offers-header-container h3 { 
-    font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+    // font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+    font-size: 1.5rem;
     font-weight: bolder;
   }
   
@@ -173,7 +180,7 @@
    background-color: rgb(58, 53, 53);
    text-align: center;
    padding: 10px;
-   border-radius: 8%;
+   border-radius: 5%;
   } 
   
   .special-offers-card-wrapper { 
@@ -185,7 +192,8 @@
   
   .trending-offers-header h3,
   .trending-categories-header { 
-    font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+    // font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+    font-size: 1.5rem;
     font-weight: bolder;
   }
   

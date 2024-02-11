@@ -680,6 +680,10 @@
 
 // make sure the black background for the icons in the footer is removed, use transparent background. 
 
+// *** trending categories cards completed. 
 
+// now will work on special offers header to make sure to decreases in size 
+
+// and stays the same width. 
 
 

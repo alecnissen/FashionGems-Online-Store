@@ -23,27 +23,43 @@
     gap: 1em;
   }
   
-  .trending-categories-card-1,
-  .trending-categories-card-2,
-  .trending-categories-card-3 { 
+  .trending-categories-card-img-1,
+  .trending-categories-card-img-2,
+  .trending-categories-card-img-3 { 
+    opacity: 0.6;
     height: 100%;
-    opacity: 0.4;
   }
+
+
+  // style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}
+
+.trending-categories-card-1-styles, 
+.trending-categories-card-2-styles,
+.trending-categories-card-3-styles { 
+  width: 18em;
+  background-color: rgb(58, 53, 53);
+  // color: white;
+}
+
+
+
   
   .trending-categories-text-over-cards { 
     position: relative;
     top: -8em;
-    left: 2.5em;
+    left: 2em;
     font-size: 2.3rem;
     font-weight: bolder;
     z-index: 100;
-    color: white;
+    color: black;
   } 
   
   .trending-categories-text-over-cards button { 
     background-color: black;
     color: white;
     position: relative;
+    bottom: 1em;
+    left: 0.3em;
     font-size: 1.4rem;
     font-weight: bolder;
     border: none;
@@ -52,10 +68,47 @@
   
   
   .trending-categories-text-over-cards-card2 { 
-    position: absolute;
-    top: 5em;
-    left: 8.4em;
+    position: relative;
+    top: -11.3em;
+    left: 10em;
     font-size: 2.3rem;
     font-weight: bolder;
-    color: white;
+    color: black;
   }
+
+  .trending-categories-text-over-cards-card2 button { 
+    background-color: black;
+    color: white;
+    position: relative;
+    top: -1em;
+    left: 0.5em;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 6%;
+  }
+
+
+  .trending-categories-text-over-cards-card3 { 
+    position: relative;
+    top: -14.7em;
+    left: 18.5em;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: black;
+  }
+
+  .trending-categories-text-over-cards-card3 button { 
+    background-color: black;
+    color: white;
+    position: relative;
+    left: 0.7em;
+    bottom: 1.1em;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 6%;
+  }
+
+
+  /* add styles for card 2 button here. */

@@ -18,6 +18,10 @@ import jeanJacket from "../../../Images/jean-jacket-img.png"
 import electronicsPhoto from "../../../Images/electronics-img.png"
 import fashionGemsIcon from "../../../Icons/fashion-gems-icon-img.png"
 import pawIcon from "../../../Icons/paw-icon-categories.png"
+import designerClothes from "../../../Images/designer-clothing-img.png"
+import goldenEarrings from "../../../Images/img7.png"
+import braceletImg from "../../../Images/bracelet-img.png"
+import diamondRingImg from "../../../Images/diamond-img.jpg"
 
 
 
@@ -203,18 +207,18 @@ export default function TrendingAndOffers() {
 
 
     <div className='card-container-trending-categories'> 
-        <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
-      <Card.Img variant="top" src={jewelryCollection} className="trending-categories-card-1" />
+        <Card className='trending-categories-card-1-styles'>
+      <Card.Img variant="top" src={jewelryCollection} className="trending-categories-card-img-1" />
     
     </Card>
 
-    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
-      <Card.Img variant="top" src={jeanJacket} className="trending-categories-card-2" />
+    <Card className='trending-categories-card-2-styles'>
+      <Card.Img variant="top" src={goldenEarrings} className="trending-categories-card-img-2" />
     
     </Card>
 
-    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}>
-      <Card.Img variant="top" src={electronicsPhoto} className="trending-categories-card-3" />
+    <Card className='trending-categories-card-3-styles'>
+      <Card.Img variant="top" src={braceletImg} className="trending-categories-card-img-3" />
     
     </Card>
 
@@ -227,10 +231,17 @@ export default function TrendingAndOffers() {
     </div> 
     
 
-  {/* <div className='trending-categories-text-over-cards-card2'> 
-    Men's Clothing
+  <div className='trending-categories-text-over-cards-card2'> 
+    Earrings
+    <br></br>
+    <button>Shop Now</button>
+</div>
 
-</div> */}
+<div className='trending-categories-text-over-cards-card3'> 
+  Bracelets
+  <br></br>
+  <button>Shop Now</button>
+</div>
 
 
 

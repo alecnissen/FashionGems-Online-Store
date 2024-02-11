@@ -669,3 +669,17 @@
 // getting overflowing text on within the modal and mobile views. 
 
 // Now we have to make sure the exit button is visable both on ipad and phone screens
+
+
+// ****  clean up of homepage
+
+
+// Get the text to appear on top of the cards and adjust the text with media query so it stays over top of the card 
+
+// make sure the second image in the trending categories section stays 100% of its height, and make sure it does not shrink. 
+
+// make sure the black background for the icons in the footer is removed, use transparent background. 
+
+
+
+

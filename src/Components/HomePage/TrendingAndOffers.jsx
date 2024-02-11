@@ -22,6 +22,7 @@ import designerClothes from "../../../Images/designer-clothing-img.png"
 import goldenEarrings from "../../../Images/img7.png"
 import braceletImg from "../../../Images/bracelet-img.png"
 import diamondRingImg from "../../../Images/diamond-img.jpg"
+import heartIconTransparentImg from "../../../Images/heart-icon-transparent-bg.png"
 
 
 
@@ -120,7 +121,7 @@ export default function TrendingAndOffers() {
         <Card.Text className='card-1-price-display'> 
             $19.99
         </Card.Text>
-        <img src={heartIcon}></img>
+        <img src={heartIconTransparentImg}></img>
       </Card.Body>
     </Card>
 
@@ -131,7 +132,7 @@ export default function TrendingAndOffers() {
         <Card.Text className='card-2-price-display'>
           $49.99
         </Card.Text>
-        <img src={heartIcon}></img>
+        <img src={heartIconTransparentImg}></img>
       </Card.Body>
     </Card> 
 
@@ -143,7 +144,7 @@ export default function TrendingAndOffers() {
         <Card.Text className='card-3-price-display'>
           $39.99
         </Card.Text>
-        <img src={heartIcon}></img>
+        <img src={heartIconTransparentImg}></img>
       </Card.Body>
     </Card> 
 
@@ -162,7 +163,7 @@ export default function TrendingAndOffers() {
         <Card.Text className='card-4-price-display'>
           $120.00
         </Card.Text>
-        <img src={heartIcon}></img>
+        <img src={heartIconTransparentImg}></img>
       </Card.Body>
     </Card> 
 
@@ -174,7 +175,7 @@ export default function TrendingAndOffers() {
         <Card.Text className='card-5-price-display'>
           $300.00
         </Card.Text>
-        <img src={heartIcon}></img>
+        <img src={heartIconTransparentImg}></img>
       </Card.Body>
     </Card>
 
@@ -186,7 +187,7 @@ export default function TrendingAndOffers() {
         <Card.Text className='card-6-price-display'>
           $500.00
         </Card.Text>
-        <img src={heartIcon}></img>
+        <img src={heartIconTransparentImg}></img>
       </Card.Body>
     </Card>
 

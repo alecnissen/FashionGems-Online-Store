@@ -687,3 +687,8 @@
 // and stays the same width. 
 
 
+// *** 
+
+// I noticed in the footer section that the cards can be slightly bigger, 
+
+// I will implement/change one of the images so the background does not show, then I will implement the suggestions from discord. 

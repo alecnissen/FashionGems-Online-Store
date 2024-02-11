@@ -32,7 +32,7 @@
   .special-offers-header-container { 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     gap: 0.5em;
     font-size: 2rem;
@@ -42,6 +42,7 @@
     border-radius: 5%;
   } 
 
+  .trending-categories-header-icon,
   .special-offers-header-gem-icon,
   .trending-offers-header-gem-icon,
   .header-gem-icon { 

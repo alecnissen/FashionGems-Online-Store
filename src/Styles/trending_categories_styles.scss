@@ -8,6 +8,7 @@
     background-color: rgb(58, 53, 53);
     display: flex;
     align-items: center;
+    // justify-content: flex-start;
     border-radius: 8%;
   } 
   
@@ -15,6 +16,10 @@
     width: 40px; 
     height: 40px;
   } 
+
+  .trending-categories-header-container > svg { 
+    margin-left: 12px;
+  }
   
   .card-container-trending-categories { 
     display: flex;

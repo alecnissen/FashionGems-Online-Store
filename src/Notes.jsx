@@ -692,3 +692,5 @@
 // I noticed in the footer section that the cards can be slightly bigger, 
 
 // I will implement/change one of the images so the background does not show, then I will implement the suggestions from discord. 
+
+// now I will work on making sure the title bars icons are centered and are universal between them. 

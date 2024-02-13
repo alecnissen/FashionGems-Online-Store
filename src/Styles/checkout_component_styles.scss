@@ -47,6 +47,11 @@
     width: 35px;
     height: 35px; 
   }
+
+  .back-to-shopping-link-btn img:hover {
+    cursor: pointer; /* Add pointer cursor */
+  }
+
   
   .payment-method-container button { 
     background-color: black;

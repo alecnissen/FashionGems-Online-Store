@@ -11,6 +11,7 @@ import Footer from '../HomePage/Footer';
 import blackCircleGemIcon from "../../../Icons/black-circle-gem-checkout.png"
 import gemIcon from "../../../Icons/gem-icon-checkout-component.png"
 import FashionGemsAppComponent from './FashionGemsAppComponent';
+import { Link, Outlet, useSearchParams } from 'react-router-dom';
 
 export default function CheckoutComponent({
   cartItems,
@@ -49,9 +50,19 @@ export default function CheckoutComponent({
           <div className='checkout-component-backtoshop-checkout-title-container'> 
 
             <div className='container-for-img-and-title'>
-            <img src={backToShoppingArrow}></img>
+            
+            <Link to="/ShoppingComponent" className='back-to-shopping-link-btn'>
+            <img src={backToShoppingArrow} />
+             </Link>
             <h6>Back to shopping</h6>
             </div>
+
+{/* <div className='container-for-img-and-title'>
+  <Link to="/ShoppingComponent">
+    <img src={backToShoppingArrow} alt="Back to shopping" />
+  </Link>
+  <h6>Back to shopping</h6>
+</div> */}
 
             <h3>Checkout</h3>
 

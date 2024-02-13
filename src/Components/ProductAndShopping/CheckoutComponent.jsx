@@ -187,10 +187,9 @@ export default function CheckoutComponent({
         <div className='checkout-component-cart-items-container'> 
 
         <div className='checkout-component-right-side-icon-container'> 
-          <h1>FashionGems </h1>
-        <div className='black-circle-gem-icon'> 
             <img src={gemIcon} className='gem-icon'></img>
-        </div>
+          <h1>FashionGems </h1>
+       
         </div>
 
 
@@ -277,7 +276,7 @@ export default function CheckoutComponent({
 
             <div className='grand-total-container'> 
 
-            <h3>Grand-Total: ${total.toFixed(2)}</h3>
+            <h3>Grand Total: ${total.toFixed(2)}</h3>
 
             </div>
       

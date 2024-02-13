@@ -10,6 +10,11 @@ import fbLogo from "../../../Icons/footer-facebook-icon.png"
 import twitterLogo from "../../../Icons/footer-icon-twitter.png"
 import phoneIcon from "../../../Icons/phone-icon-footer.png"
 import emailIcon from "../../../Icons/email-icon-footer.png"
+import gemIconTransparent from "../../../Images/gem-icon-transparent-background.png"
+import phoneIconTransparent from "../../../Images/phone-icon-transparent.png"
+import instagramIcon from "../../../Images/ig-image-transparent.png"
+import fbIcon from "../../../Images/fb-image-transparent.png"
+import twitterIcon from "../../../Images/twitter-logo-transparent.png"
 
 function FooterAndBlog() {
   return (
@@ -37,9 +42,9 @@ function FooterAndBlog() {
     <Card.Img src={footerCardImg1}></Card.Img>
     <Card.Body style={{backgroundColor: 'black', color: 'white'}}> 
         <Card.Title className='card-1-header-styles'>5 Fashion Tips For a Stylish Look</Card.Title>
-        <Card.Text>Get our fashion tips so you can look and feel your best!</Card.Text>
+        <Card.Text>Get our fashion tips from our expert stylists so you can look and feel your best!</Card.Text>
         <Card.Text>
-        <img src={fashionGemsIcon}></img>
+        <img src={gemIconTransparent}></img>
         Fashion Gems
         </Card.Text>
         {/* <img src={fashionGemsIcon}></img> */}
@@ -55,7 +60,7 @@ function FooterAndBlog() {
         <Card.Title>Latest Trends in Fashion</Card.Title>
         <Card.Text>Discover the latest fashion trends here! Determine what is currently in style!</Card.Text>
         <Card.Text>
-        <img src={fashionGemsIcon}></img>
+        <img src={gemIconTransparent}></img>
         Fashion Gems
         </Card.Text>
     </Card.Body>
@@ -70,7 +75,7 @@ function FooterAndBlog() {
         <Card.Title style={{ fontWeight: 'bolder'}}>Our Top Picks for this Spring</Card.Title>
         <Card.Text>With warmer weather fast approaching, learn about the top looks for spring! </Card.Text>
         <Card.Text>
-        <img src={fashionGemsIcon} style={{padding:'5px'}}></img>
+        <img src={gemIconTransparent}></img>
         Fashion Gems
         </Card.Text>
     </Card.Body>
@@ -89,16 +94,16 @@ function FooterAndBlog() {
 
     <div className='footer-social-media-container'> 
         <div className='fashion-gems-title-icon-container'>
-        <img src={fashionGemsIcon}></img>
+        <img src={gemIconTransparent}></img>
         <h3>FashionGems</h3>
         </div>
 
         <p>Shine like a diamond!</p>
 
         <div className='social-media-container-footer-container'> 
-        <img src={instaLogo}></img>
-        <img src={fbLogo}></img>
-        <img src={twitterLogo}></img>
+        <img src={instagramIcon}></img>
+        <img src={fbIcon}></img>
+        <img src={twitterIcon}></img>
         </div>
     </div>
 
@@ -108,7 +113,7 @@ function FooterAndBlog() {
       <h3>Our support team is available for you!</h3>
 
       <div className='phone-icon-container'>
-      <img src={phoneIcon}></img>
+      <img src={phoneIconTransparent}></img>
       +31 045 456 3345
 
       </div>

@@ -697,8 +697,10 @@
 
 // *** 
 
-// make the footer cards bigger at the 950 media query 
+// make the footer cards bigger at the 950 media query / 
 
-// make the background images transparent within the footer, 
+// make the background images transparent within the footer, /
 
-// re-check media queries, and cross off homepage!!!
+// try to put text over cards using fixed position. 
+
+// re-check media queries, and cross off homepage!!! /

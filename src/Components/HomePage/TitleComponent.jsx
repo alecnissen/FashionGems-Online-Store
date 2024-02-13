@@ -39,10 +39,17 @@ import rubyPhoto from "../../../Images/ruby-img.png"
 
 import downIcon from "../../../Icons/down-arrow-icon-dark-bg.png"
 
+import portraitPhotoSmaller from "../../../Images/portrait-photo-of-women-smaller-img.jpg"
+
+import diamondRingImage from "../../../Images/diamond-ring-img-image-slider.jpg"
+
+import portraitPhotoWomen3 from "../../../Images/portrait-photo-women-3.jpg"
+
 
 const images = [
   [necklacePhoto, portraitPhoto, ringPhoto], [earringPhoto, typesOfJewelry, portraitOfWoman2], [goldEarringPhoto, rubyPhoto, earringPhoto2]
 ];
+
 
 
 export default function TitleComponent() { 

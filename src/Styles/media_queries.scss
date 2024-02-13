@@ -287,10 +287,10 @@
       flex-direction: column;
     } 
 
-    .trending-categories-text-over-cards { 
-      position: relative;
-      top: -29.5em;
-    }
+    // .trending-categories-text-over-cards { 
+    //   position: relative;
+    //   top: -29.5em;
+    // }
     
     .trending-categories-text-over-cards-card2 { 
       position: relative;
@@ -311,7 +311,7 @@
      margin-left: -1em;
     }
 
-    
+
   }
   
   
@@ -446,7 +446,7 @@
       // .checkout-component-container { 
       //   display: flex;
       //   flex-direction: column;
-      //   justify-content: center;
+      //   justify-content: flex-end;
       //   align-items: center;
       // }
 

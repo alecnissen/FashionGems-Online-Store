@@ -57,9 +57,9 @@
 
   
   .trending-categories-text-over-cards { 
-    position: relative;
-    top: -8em;
-    left: 2em;
+    position: fixed;
+    top: 59%;
+    left: 42%;
     font-size: 2.3rem;
     font-weight: bolder;
     z-index: 100;

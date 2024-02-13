@@ -114,10 +114,10 @@ export default function CheckoutComponent({
       </div>
 
 
-
       <div className='receive-order-container'> 
         <h5>When would you like to receive your order?</h5>
 
+      <div className='radio-container'>
         <div className='input-label-pair-receive-asap'>
         <input type="radio"></input>
         <label>ASAP</label>
@@ -128,20 +128,18 @@ export default function CheckoutComponent({
         <label>Scheduled Delivery</label>
         
         </div>
-      
-      
-      
+      </div>
       </div>
 
       <div className='payment-method-container'> 
       <h5>Payment Method</h5>
 
+    <div className='radio-container-2'>
       <div className='input-label-pair-credit-card'> 
       <input type="radio"></input>
       <label>Credit Card</label>
 
       </div>
-
 
 
       <div className='input-label-pair-cash-on-delivery'> 
@@ -153,13 +151,13 @@ export default function CheckoutComponent({
       <div className='input-label-pair-apple-google-pay'> 
       <input type="radio"></input>
       <label>Apple/Google Pay</label>
-
       </div>
 
       <div className='place-order-btn-container'>
       <button>Place Order</button>
       </div>
 
+      </div>
 
 
       </div>

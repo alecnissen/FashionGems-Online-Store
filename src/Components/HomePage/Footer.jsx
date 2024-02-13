@@ -6,6 +6,12 @@ import twitterLogo from "../../../Icons/footer-icon-twitter.png"
 import phoneIcon from "../../../Icons/phone-icon-footer.png"
 import emailIcon from "../../../Icons/email-icon-footer.png"
 
+import gemIconTransparent from "../../../Images/gem-icon-transparent-background.png"
+import phoneIconTransparent from "../../../Images/phone-icon-transparent.png"
+import instagramIcon from "../../../Images/ig-image-transparent.png"
+import fbIcon from "../../../Images/fb-image-transparent.png"
+import twitterIcon from "../../../Images/twitter-logo-transparent.png"
+
 // export default function Footer() { 
 //     return ( 
 //         <> 
@@ -88,16 +94,16 @@ export default function Footer () {
 
     <div className='footer-social-media-container'> 
         <div className='fashion-gems-title-icon-container'>
-        <img src={fashionGemsIcon}></img>
+        <img src={gemIconTransparent}></img>
         <h3>FashionGems</h3>
         </div>
 
         <p>Shine like a diamond!</p>
 
         <div className='social-media-container-footer-container'> 
-        <img src={instaLogo}></img>
-        <img src={fbLogo}></img>
-        <img src={twitterLogo}></img>
+        <img src={instagramIcon}></img>
+        <img src={fbIcon}></img>
+        <img src={twitterIcon}></img>
         </div>
     </div>
 
@@ -107,7 +113,7 @@ export default function Footer () {
       <h3>Our support team is available for you!</h3>
 
       <div className='phone-icon-container'>
-      <img src={phoneIcon}></img>
+      <img src={phoneIconTransparent}></img>
       +31 045 456 3345
 
       </div>

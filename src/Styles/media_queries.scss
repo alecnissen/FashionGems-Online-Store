@@ -412,9 +412,9 @@
   
   /* media queries for shopping component */
 
+  // 1080
 
-
-  @media (max-width: 1080px) { 
+  @media (max-width: 1150px) { 
 
       .first-last-name-container { 
         display: flex;
@@ -449,6 +449,16 @@
       //   justify-content: flex-end;
       //   align-items: center;
       // }
+
+      // .checkout-component-container { 
+      //   position: relative;
+      //   top: 3em;
+      // }
+
+      .checkout-component-right-side-wrapper { 
+        position: relative;
+        bottom: 3em;
+      }
 
       .contact-info-container,
       .delivery-container,
@@ -664,4 +674,20 @@
 
 
 
+}
+
+
+/* media query for checkout component */ 
+
+@media (max-width: 585px) { 
+
+  .input-label-pair-address,
+  .input-label-pair-delivery-instructions { 
+    padding-left: 1.5em;
+  }
+
+  .input-label-pair-address input, 
+  .input-label-pair-delivery-instructions textarea { 
+    width: 20em !important;
+  }
 }

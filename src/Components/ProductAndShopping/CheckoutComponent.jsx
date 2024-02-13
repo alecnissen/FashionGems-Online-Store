@@ -76,12 +76,12 @@ export default function CheckoutComponent({
           <div className='first-last-name-container'> 
             <div className='input-label-pair-first-name'> 
               <label>First Name:</label>
-              <input type="text"></input>
+              <input type="text" placeholder='John'></input>
             </div>
 
             <div className='input-label-pair-last-name'> 
             <label>Last Name:</label>
-            <input type="text"></input>
+            <input type="text" placeholder='Smith'></input>
             </div>
 
 
@@ -92,12 +92,12 @@ export default function CheckoutComponent({
           <div className='phone-email-container'> 
           <div className='input-label-pair-first-email'> 
               <label>Email:</label>
-              <input type="text"></input>
+              <input type="text" placeholder='JohnSmith@gmail.com'></input>
             </div>
 
             <div className='input-label-pair-last-phone'> 
             <label>Phone:</label>
-            <input type="text"></input>
+            <input type="text" placeholder=' (___) -___-____'></input>
             </div>
           
           </div>
@@ -111,7 +111,7 @@ export default function CheckoutComponent({
       <h5>Where should we deliever your order?</h5>
       <div className='input-label-pair-address'> 
               <label>Address:</label>
-              <input type="text"></input>
+              <input type="text" placeholder='1234 Main Street, Philadelphia PA'></input>
               {/* <textarea></textarea> */}
             </div>
 
@@ -119,7 +119,7 @@ export default function CheckoutComponent({
         <div className='input-label-pair-delivery-instructions'>
           <label>Delivery Instructions</label>
           {/* <input type="text"></input> */}
-          <textarea></textarea>
+          <textarea placeholder='Anything special when delivering your order?'></textarea>
         </div>
       
       </div>

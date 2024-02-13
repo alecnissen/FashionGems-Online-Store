@@ -245,7 +245,7 @@
     .footer-card-1,
     .footer-card-2,
     .footer-card-3 { 
-      width: 16em;
+      width: 20em;
       background-color: black;
       color: white;
     }
@@ -305,6 +305,14 @@
     }
   
   } 
+
+  @media (max-width: 370px) { 
+    .trending-offers-component-wrapper { 
+     margin-left: -1em;
+    }
+
+    
+  }
   
   
   

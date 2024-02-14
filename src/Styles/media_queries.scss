@@ -621,13 +621,14 @@
 /*  */ 
 
 
-
+/* modal media queries */
 
 @media (max-width: 1030px) { 
   .modal-content-styles,
   .model-content-container { 
     position: fixed;
-    top: 28%;
+    // top: 28%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     // background-color: rgb(58, 53, 53);
@@ -676,7 +677,17 @@
     color: white;
     font-weight: bolder;  
     margin: 20px;
-  }
+  } 
+
+//   .back-arrow-img-container { 
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// } 
+
+// .back-arrow-img-container img { 
+//   width: 10px;
+// }
 
   .modal-product-styles { 
     display: flex;
@@ -696,13 +707,20 @@
     text-align: center;
   }
 
-  // .modal-product-styles img { 
-  //   display: flex;
-  //   justify-content: center;
-  // } 
+  .modal-product-price-title-container { 
+    padding: 30px;
+    font-size: 0.7rem;
+  }
+
+  .modal-product-styles img { 
+    width: 7em;
+  } 
+
+
 
   .modal-product-img-styles { 
-    width: 5em;
+    display: flex;
+    justify-content: center;
 }
 
 

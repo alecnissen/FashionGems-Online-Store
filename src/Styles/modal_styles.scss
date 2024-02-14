@@ -2,13 +2,11 @@
     text-align: center;
     font-weight: bolder;
     font-size: 2rem;
-    text-decoration: underline;
+    padding-right: 30px;
+    // text-decoration: underline;
     // padding: 10px;
 }
 
-.modal-content-styles { 
-    text-align: center;
-}
 
 .modal-content-styles { 
     // position: fixed;
@@ -24,11 +22,26 @@
     overflow: scroll;
     color: white;
     font-weight: bolder;  
+    text-align: center;
   }
 
 .modal-content-styles input{ 
     width: 14em;
 }
+
+// .back-arrow-img-container { 
+//     display: flex;
+//     justify-content: flex-start;
+// }
+
+// .back-arrow-img-container img { 
+//     width: 30px;
+// }
+
+.back-arrow-search-modal { 
+    width: 30px;
+}
+
 
 .modal-search-btn-styles { 
     // background-color: rgb(58, 53, 53);

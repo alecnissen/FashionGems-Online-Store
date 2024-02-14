@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 // import apiRequest from '../../API-CALLS/ApiRequest';
 import ApiRequest from '../../API-CALLS/ApiRequest';
+import backArrow from "../../../Images/checkout-component-back-arrow.png"
 
 // const MODAL_STYLES = {
 //   position: 'fixed',
@@ -64,13 +65,20 @@ export default function Modal({ isOpen, setIsOpen, onClose }) {
     <div className='model-content-container'> 
 
       <div className='modal-content-styles'>
+
+        {/* <div className='back-arrow-img-container'>
+        <img src={backArrow} onClick={onClose}></img>
+        </div> */}
+
         {/* <h1 className='error-msg-search-modal-styles'>{error}</h1> */}
 
         {/* {error && <h1 className="error-msg-search-modal-styles">{error}</h1>}
         {loading && <h1 className="error-msg-search-modal-styles">Loading...</h1>} */}
 
         
-        <h6 className="modal-header-styles">Search for Items</h6>
+        <h6 className="modal-header-styles">
+        <img src={backArrow} onClick={onClose} className='back-arrow-search-modal'></img>
+          Search for Items</h6>
         <input
           value={query}
           onChange={(e) => {
@@ -82,7 +90,7 @@ export default function Modal({ isOpen, setIsOpen, onClose }) {
         {/* <button className='modal-search-btn-styles'>Search</button> */}
 
 
-        <button onClick={onClose} className='modal-exit-btn'>X</button>
+        {/* <button onClick={onClose} className='modal-exit-btn'>X</button> */}
 
         {query !== '' &&
           filteredItems.map((item) => {

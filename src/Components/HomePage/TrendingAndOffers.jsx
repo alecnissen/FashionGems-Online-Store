@@ -23,6 +23,7 @@ import goldenEarrings from "../../../Images/img7.png"
 import braceletImg from "../../../Images/bracelet-img.png"
 import diamondRingImg from "../../../Images/diamond-img.jpg"
 import heartIconTransparentImg from "../../../Images/heart-icon-transparent-bg.png"
+import { Link, Outlet, useSearchParams } from 'react-router-dom';
 
 
 
@@ -62,7 +63,11 @@ export default function TrendingAndOffers() {
                 <p>50% Off!</p>
             </div>
 
-            <button>Shop Now</button>
+            <Link to="/ShoppingComponent">
+            <button>
+              Shop Now
+            </button>
+            </Link>
 
     </div>
 
@@ -79,7 +84,11 @@ export default function TrendingAndOffers() {
             <p>35% Off!</p>
         </div>
 
-        <button>Shop Now</button>
+        <Link to="/ShoppingComponent">
+        <button>
+          Shop Now
+        </button>
+        </Link>
     
     </div>
 

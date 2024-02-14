@@ -612,8 +612,16 @@
     @media (max-width: 700px) { 
 
     .amsterdam-photo-container img { 
-      width: 300px;
+      width: 340px;
     }
+
+    .diamond-img-about-page { 
+      width: 300px !important;
+  }
+
+  //   .about-component-img-container img { 
+  //     width: 20px
+  // } 
 
   } 
 

@@ -22,6 +22,14 @@
     text-align: center;
 }
 
+.about-component-wrapper p { 
+    font-size: 1.5rem;
+}
+
+.core-values-header-about-page { 
+    padding: 10px;
+}
+
 // .about-component-wrapper ul { 
 //     text-align: center;
 // }
@@ -29,6 +37,7 @@
 .core-values-container { 
     display: flex;
     justify-content: center;
+    font-size: 1.5rem;
 }
 
 
@@ -44,6 +53,14 @@
     border-radius: 5%;
 }
 
-.about-component-img-container img { 
-    width: 300px;
-} 
+// .about-component-img-container img { 
+//     width: 400px;
+// } 
+
+.amsterdam-photo { 
+    width: 700px;
+}
+
+.diamond-img-about-page { 
+    width: 400px;
+}

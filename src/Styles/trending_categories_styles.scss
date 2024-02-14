@@ -31,7 +31,7 @@
   .trending-categories-card-img-1,
   .trending-categories-card-img-2,
   .trending-categories-card-img-3 { 
-    opacity: 0.6;
+    opacity: 0.4;
     height: 100%;
   }
 
@@ -57,9 +57,9 @@
 
   
   .trending-categories-text-over-cards { 
-    position: fixed;
-    top: 59%;
-    left: 42%;
+    position: absolute;
+    top: 30%;
+    left: 28%;
     font-size: 2.3rem;
     font-weight: bolder;
     z-index: 100;
@@ -70,9 +70,11 @@
     background-color: black;
     color: white;
     position: relative;
-    bottom: 1em;
-    left: 0.3em;
-    font-size: 1.4rem;
+    top: 10%;
+    left: 3%;
+    // bottom: -2em;
+    // left: 0.2em;
+    font-size: 1.5rem;
     font-weight: bolder;
     border: none;
     border-radius: 6%;
@@ -80,9 +82,9 @@
   
   
   .trending-categories-text-over-cards-card2 { 
-    position: relative;
-    top: -11.3em;
-    left: 10em;
+    position: absolute;
+    top: 30%;
+    left: 24%;
     font-size: 2.3rem;
     font-weight: bolder;
     color: black;
@@ -92,9 +94,9 @@
     background-color: black;
     color: white;
     position: relative;
-    top: -1em;
-    left: 0.5em;
-    font-size: 1.4rem;
+    top: 10%;
+    left: 3%;
+    font-size: 1.5rem;
     font-weight: bolder;
     border: none;
     border-radius: 6%;
@@ -102,9 +104,9 @@
 
 
   .trending-categories-text-over-cards-card3 { 
-    position: relative;
-    top: -14.7em;
-    left: 18.5em;
+    position: absolute;
+    top: 30%;
+    left: 25%;
     font-size: 2.3rem;
     font-weight: bolder;
     color: black;
@@ -114,9 +116,9 @@
     background-color: black;
     color: white;
     position: relative;
-    left: 0.7em;
-    bottom: 1.1em;
-    font-size: 1.4rem;
+    top: 10%;
+    left: 1%;
+    font-size: 1.5rem;
     font-weight: bolder;
     border: none;
     border-radius: 6%;

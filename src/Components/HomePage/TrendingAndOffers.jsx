@@ -221,42 +221,48 @@ export default function TrendingAndOffers() {
     <div className='card-container-trending-categories'> 
         <Card className='trending-categories-card-1-styles'>
           {/* <Card.Title className='jewelry-header-styles-trending-category-card-1'>Jewelry</Card.Title> */}
-      <Card.Img variant="top" src={jewelryCollection} className="trending-categories-card-img-1" 
-      />
+      <Card.Img variant="top" src={jewelryCollection} className="trending-categories-card-img-1"/>
+    <div className='trending-categories-text-over-cards'>Jewelry
+    <br></br>
+    <Link to="/ShoppingComponent">
+    <button>Shop Now</button>
+    </Link>
+    
+    </div> 
     </Card>
 
     <Card className='trending-categories-card-2-styles'>
-    {/* <Card.Title>Earrings</Card.Title> */}
       <Card.Img variant="top" src={goldenEarrings} className="trending-categories-card-img-2" />
+   <div className='trending-categories-text-over-cards-card2'> 
+    Earrings
+    <br></br>
+    <Link to="/ShoppingComponent">
+    <button>Shop Now</button>
+    </Link>
+  </div>
     
     </Card>
 
     <Card className='trending-categories-card-3-styles'>
-    {/* <Card.Title>Necklaces</Card.Title> */}
       <Card.Img variant="top" src={braceletImg} className="trending-categories-card-img-3" />
+
+<div className='trending-categories-text-over-cards-card3'> 
+  Bracelets
+  <br></br>
+  <Link to="/ShoppingComponent">
+  <button>Shop Now</button>
+  </Link>
+</div>
+
+
     
     </Card>
 
     </div>
 
-    {/* <div className='trending-categories-text-over-cards'>Jewelry
-    <br></br>
-    <button>Shop Now</button>
-    
-    </div>  */}
     
 
-  {/* <div className='trending-categories-text-over-cards-card2'> 
-    Earrings
-    <br></br>
-    <button>Shop Now</button>
-</div>
 
-<div className='trending-categories-text-over-cards-card3'> 
-  Bracelets
-  <br></br>
-  <button>Shop Now</button>
-</div> */}
 
 
 

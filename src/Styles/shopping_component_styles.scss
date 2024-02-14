@@ -46,25 +46,57 @@
   }
   
   
+  /* used !important because when inspecting in dev tools, 
+  
+  bootstrap applies default styles to it including a height, 
+  
+  this important rule ensures that the card sizes stay the same 
+  
+  and overides default styles */
   
   
-  
-  .shopping-component-card-styles { 
-    width: 25em;
-    height: 25em;
+  // .shopping-component-card-styles { 
+  //   width: 24.5em !important;
+  //   height: 25em !important;
+  //   background-color: black;
+  // }  
+
+
+  .shopping-component-card-container .card { 
+    width: 23em;
+    height: 23em;
     background-color: black;
-  }  
+    border: 1px solid white;
+    padding: 5px;
+  }
+
+
+  // .shopping-component-card-styles { 
+  //   width: 22em !important;
+  //   height: 22em !important;
+  //   background-color: black;
+  // } 
+
+
+
+
   
   .shopping-component-card-img { 
-    width: 15em;
-    height: 15em;
+    width: 12em;
+    height: 12em;
   } 
   
   .shopping-component-card-styles-card-body { 
     background-color: black;
+    text-align: center;
   }
   
   .shopping-component-card-styles-title,
   .shopping-component-card-styles-price { 
     color: white !important;
+    font-size: 1.25rem;
+  } 
+
+  .shopping-component-card-styles-price { 
+    font-weight: bolder;
   }

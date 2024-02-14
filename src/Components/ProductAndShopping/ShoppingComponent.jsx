@@ -9,7 +9,6 @@ import { Link, Outlet, useSearchParams } from 'react-router-dom';
 // import Checkout from "./CheckoutComponent"
 import CheckoutComponent from './CheckoutComponent';
 import PropTypes from 'prop-types';
-
 import Select from 'react-select';
 
 import ErrorComponent from '../LoadingAndError/ErrorComponent';
@@ -17,8 +16,8 @@ import LoadingComponent from '../LoadingAndError/LoadingComponent';
 // import apiRequest from '../../API-CALLS/ApiRequest';
 import ApiRequest from '../../API-CALLS/ApiRequest';
 import FooterAndBlog from '../HomePage/FooterAndBlog';
-
 import necklaceImgHeader from "../../../Images/necklace-img-shopping-component-header.png"
+import diamondImg from "../../../Images/diamond-img.jpg"
 
 export default function ShoppingComponent({
   cartItems,

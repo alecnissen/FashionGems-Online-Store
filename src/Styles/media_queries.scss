@@ -414,6 +414,25 @@
 
   // 1080
 
+  // media query for product cards, using !important override default styles 
+
+  @media (max-width: 1200px) { 
+    
+    .shopping-component-card-container .card  { 
+      width: 19em !important;
+      height: 24em !important;
+      // padding: 10px !important;
+    }
+    
+    // .shopping-component-card-img { 
+    //   width: 9em;
+    //   height: 9em;
+    // } 
+    
+
+
+  }
+
   @media (max-width: 1150px) { 
 
       .first-last-name-container { 
@@ -484,23 +503,37 @@
       }
 
 
-  }
+  } 
 
-
-
+  /*  media query for shopping component card width and height 
+      mobile screens
   
-  @media (max-width: 1000px) { 
-  
-    .shopping-component-card-styles { 
-      width: 15em;
-      height: 15em;
-    }  
+  */
+
+
+  // @media (max-width: 500px) { 
     
-    .shopping-component-card-img { 
-      width: 11em;
-      height: 11em;
-    } 
-    }
+  //   .shopping-component-card-img { 
+  //     width: 11em !important;
+  //     height: 11em !important;
+  //   } 
+  // }
+
+  
+  // @media (max-width: 1000px) { 
+  
+  //   .shopping-component-card-styles { 
+  //     width: 15em;
+  //     height: 15em;
+  //   }  
+    
+  //   .shopping-component-card-img { 
+  //     width: 11em;
+  //     height: 11em;
+  //   } 
+  //   }
+
+
 
 
 

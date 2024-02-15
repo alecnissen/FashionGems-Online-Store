@@ -75,11 +75,16 @@
       position: relative;
       top: 5em;
       left: -1em;
+      // height: 19em;
     }
   
      .images-container img { 
       width: 200px;
     } 
+
+    // .image-container { 
+    //   height: 19em;
+    // }
   
   
   }
@@ -87,10 +92,17 @@
   @media (max-width: 705px) { 
     .images-container { 
       display: flex;
+      // justify-content: center;
+      // align-items: center;
       flex-wrap: wrap;
       flex-direction: column;
       padding: 2em;
+      // height: 66em;
     }
+
+    //  .image-container { 
+    //     height: 17em;
+    //   } 
   
   }
   

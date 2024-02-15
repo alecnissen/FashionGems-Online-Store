@@ -106,7 +106,9 @@ useEffect(() => {
           {images[index].map((img, i) => { 
             return ( 
             <> 
+            {/* <div key={i} className="image-container"> */}
             <img key={i} src={img} alt="img" className="img-styles-title-component" />
+            {/* </div> */}
             </>
             )
           })}

@@ -704,3 +704,14 @@
 // try to put text over cards using fixed position. 
 
 // re-check media queries, and cross off homepage!!! /
+
+
+
+// ***** 
+
+
+// find a way to add an item to the cart, 
+
+// call that function which sets the newItem within the cart, 
+
+// check if it got added to the cart. 

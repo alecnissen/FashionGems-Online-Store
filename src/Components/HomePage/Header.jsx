@@ -11,6 +11,8 @@ export default function Header({ numberOfCartItems, isOpen, setIsOpen }) {
   // console.log(typeof newCartCount);
   // console.log(typeof newItemQuantity);
 
+  console.log('# of cart items', numberOfCartItems);
+
   return (
     <>
      <div className='header-wrapper'> 

@@ -1,20 +1,20 @@
 import { describe, it, expect } from 'vitest';
 import * as ProductPage from '../Components/ProductAndShopping/ProductPage';
+import Header from '../Components/HomePage/Header';
+import { render, screen } from '@testing-library/react';
 
+describe('Checking the number of items in the cart', () => { 
 
-describe('able to add an item to the cart', () => { 
+  it('displays the correct number of items in the cart within Header component'), () => { 
+    const numberOfCartItems = 3;
 
-  it('should be able to add an item to the cart'), () => { 
-  const singleProductData = {
-    title: 'Sample Product',
-    description: 'Sample description',
-    price: 10.99,
-    image: 'sample_image.jpg',
-  };
+    render(<Header numberOfCartItems={numberOfCartItems}></Header>)
 
-}
+    const cartItemCountElement = screen.getByTestId('badge-icon-for-shopping-cart');
 
-  expect(singleProductData.title).toEqual('Sample Product');
+    expect(cartItemCountElement.textContent).toBe(3);
+  }
+
 }) 
 
 

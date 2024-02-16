@@ -715,3 +715,16 @@
 // call that function which sets the newItem within the cart, 
 
 // check if it got added to the cart. 
+
+
+// *** testing it see if the cart does display the correct number of items, 
+
+// header ok, 
+
+// checkout component, 
+
+// declare number of items 
+
+// render the component, 
+
+// 

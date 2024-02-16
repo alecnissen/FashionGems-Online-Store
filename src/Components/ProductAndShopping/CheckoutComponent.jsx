@@ -206,6 +206,8 @@ export default function CheckoutComponent({
                let productPrice = item.price * item.quantity;
                 total += productPrice;
 
+                console.log(typeof item.price);
+
                 return ( 
                   <> 
                   <img src={item.image} className='product-img-styles'></img>

@@ -51,8 +51,6 @@ export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
 
   return (
     <>
-
-
       {/* <ImageCarouselComponent
         productData={productData}
         img1={img1}
@@ -62,13 +60,11 @@ export default function HomePage({ numberOfCartItems, isOpen, setIsOpen }) {
         img5={img5}
       ></ImageCarouselComponent> */}
 
-
       <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
       <TitleComponent></TitleComponent>
       <CategoryListComponent></CategoryListComponent>
       <TrendingAndOffers></TrendingAndOffers>
       <FooterAndBlog></FooterAndBlog>
-
 
       {/* <Footer></Footer> */}
     </>

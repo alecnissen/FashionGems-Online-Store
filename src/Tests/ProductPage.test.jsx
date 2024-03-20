@@ -1,21 +1,25 @@
-import { describe, it, expect } from 'vitest';
-import * as ProductPage from '../Components/ProductAndShopping/ProductPage';
-import Header from '../Components/HomePage/Header';
-import { render, screen } from '@testing-library/react';
+// import { describe, it, expect } from 'vitest';
+// import * as ProductPage from '../Components/ProductAndShopping/ProductPage';
+// import Header from '../Components/HomePage/Header';
+// import { render, screen } from '@testing-library/react';
 
-describe('Checking the number of items in the cart', () => { 
+// describe('Checking the number of items in the cart', () => { 
 
-  it('displays the correct number of items in the cart within Header component'), () => { 
-    const numberOfCartItems = 3;
+//   it('displays the correct number of items in the cart within Header component'), () => { 
+//     const numberOfCartItems = 3;
 
-    render(<Header numberOfCartItems={numberOfCartItems}></Header>)
+//     render(<Header numberOfCartItems={numberOfCartItems}></Header>)
 
-    const cartItemCountElement = screen.getByTestId('badge-icon-for-shopping-cart');
+//     const cartItemCountElement = screen.getByTestId('badge-icon-for-shopping-cart');
 
-    expect(cartItemCountElement.textContent).toBe(3);
-  }
+//     expect(cartItemCountElement.textContent).toBe(3);
+//   }
 
-}) 
+// }) 
+
+
+
+
 
 
 

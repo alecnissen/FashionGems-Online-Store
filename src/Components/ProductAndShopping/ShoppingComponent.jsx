@@ -16,8 +16,8 @@ import LoadingComponent from '../LoadingAndError/LoadingComponent';
 // import apiRequest from '../../API-CALLS/ApiRequest';
 import ApiRequest from '../../API-CALLS/ApiRequest';
 import FooterAndBlog from '../HomePage/FooterAndBlog';
-import necklaceImgHeader from "../../../Images/necklace-img-shopping-component-header.png"
-import diamondImg from "../../../Images/diamond-img.jpg"
+import necklaceImgHeader from '../../../Images/necklace-img-shopping-component-header.png';
+import diamondImg from '../../../Images/diamond-img.jpg';
 
 export default function ShoppingComponent({
   cartItems,
@@ -185,67 +185,57 @@ export default function ShoppingComponent({
     <>
       <Header numberOfCartItems={numberOfCartItems} isOpen={isOpen} setIsOpen={setIsOpen}></Header>
 
-      <div className='shopping-component-product-wrapper'>
+      <div className="shopping-component-product-wrapper">
+        <div className="shopping-component-header-img-container">
+          <h1>Our Collection</h1>
+          <br></br>
+          <img src={necklaceImgHeader}></img>
+        </div>
 
-      <div className='shopping-component-header-img-container'>
+        <div className="sort-by-div">
+          Sort By:
+          <select value={value} onChange={handleChange}>
+            <option value={'All Products'}>All Products</option>
+            <option value={"Men's Clothing"}>Mens Clothing</option>
+            <option value={"Women's Clothing"}>Womens clothing</option>
+            <option value={'Electronics'}>Electronics</option>
+            <option value={'Jewelery'}>Jewelery</option>
+            <option value={'Price: High to Low'}>Price: High to Low</option>
+            <option value={'Price: Low to High'}>Price: Low to High</option>
+          </select>
+        </div>
 
-      <h1>Our Collection</h1>
-      <br></br>
-      <img src={necklaceImgHeader}></img>
+        {error && <ErrorComponent error={error}></ErrorComponent>}
+        {loading && <LoadingComponent></LoadingComponent>}
 
-
-      </div>
-
-      <div className="sort-by-div">
-        Sort By:
-        <select value={value} onChange={handleChange}>
-          <option value={'All Products'}>All Products</option>
-          <option value={"Men's Clothing"}>Mens Clothing</option>
-          <option value={"Women's Clothing"}>Womens clothing</option>
-          <option value={'Electronics'}>Electronics</option>
-          <option value={'Jewelery'}>Jewelery</option>
-          <option value={'Price: High to Low'}>Price: High to Low</option>
-          <option value={'Price: Low to High'}>Price: Low to High</option>
-        </select>
-      </div>
-
-      {error && <ErrorComponent error={error}></ErrorComponent>}
-      {loading && <LoadingComponent></LoadingComponent>}
-
-
-
-      <div className="shopping-component-products-container">
-        {sortedData.map((item) => {
-          return (
-            <div className="shopping-component-card-container" key={item.id}>
-              <Card
-                // style={{ width: '23em', height: '23em', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}
-                className="shopping-component-card-styles"
-              >
-                <Link to={`/ProductPage/${item.id}`} className="shopping-component-product-img-container">
-                  {/* <Card.Img
+        <div className="shopping-component-products-container">
+          {sortedData.map((item) => {
+            return (
+              <div className="shopping-component-card-container" key={item.id}>
+                <Card
+                  // style={{ width: '23em', height: '23em', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}
+                  className="shopping-component-card-styles"
+                >
+                  <Link to={`/ProductPage/${item.id}`} className="shopping-component-product-img-container">
+                    {/* <Card.Img
                     variant="top"
                     src={item.image}
                     // style={{ width: '17em', height: '15em' }}
                     className="shopping-component-card-img"
                   /> */}
-                  <img src={item.image} className="shopping-component-card-img"></img>
-                </Link>
-                <Card.Body className="shopping-component-card-styles-card-body">
-                  <Card.Title className='shopping-component-card-styles-title'>{item.title}</Card.Title>
-                 
-                  <p className='shopping-component-card-styles-price'>${item.price.toFixed(2)}</p>
-                </Card.Body>
-              </Card>
-            </div>
-          );
-        })}
+                    <img src={item.image} className="shopping-component-card-img"></img>
+                  </Link>
+                  <Card.Body className="shopping-component-card-styles-card-body">
+                    <Card.Title className="shopping-component-card-styles-title">{item.title}</Card.Title>
+
+                    <p className="shopping-component-card-styles-price">${item.price.toFixed(2)}</p>
+                  </Card.Body>
+                </Card>
+              </div>
+            );
+          })}
+        </div>
       </div>
-
-      </div>
-
-
-
 
       <Footer></Footer>
       {/* <FooterAndBlog></FooterAndBlog> */}

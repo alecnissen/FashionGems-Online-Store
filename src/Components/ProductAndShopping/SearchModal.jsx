@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 // import apiRequest from '../../API-CALLS/ApiRequest';
 import ApiRequest from '../../API-CALLS/ApiRequest';
-import backArrow from "../../../Images/checkout-component-back-arrow.png"
+import backArrow from '../../../Images/checkout-component-back-arrow.png';
 
 // const MODAL_STYLES = {
 //   position: 'fixed',
@@ -50,9 +50,7 @@ export default function Modal({ isOpen, setIsOpen, onClose }) {
       //   console.log('LOGGING DATA FROM API CALL WITHIN apiRequest file WITHIN SEARCH MODAL', data);
       setModalData(data);
     });
-
   }, []);
-
 
   console.log('logging data within Modal component', modalData);
 
@@ -62,60 +60,54 @@ export default function Modal({ isOpen, setIsOpen, onClose }) {
     <>
       <div style={OVERLAY_STYLES} onClick={onClose} />
 
-    <div className='model-content-container'> 
-
-      <div className='modal-content-styles'>
-
-        {/* <div className='back-arrow-img-container'>
+      <div className="model-content-container">
+        <div className="modal-content-styles">
+          {/* <div className='back-arrow-img-container'>
         <img src={backArrow} onClick={onClose}></img>
         </div> */}
 
-        {/* <h1 className='error-msg-search-modal-styles'>{error}</h1> */}
+          {/* <h1 className='error-msg-search-modal-styles'>{error}</h1> */}
 
-        {/* {error && <h1 className="error-msg-search-modal-styles">{error}</h1>}
+          {/* {error && <h1 className="error-msg-search-modal-styles">{error}</h1>}
         {loading && <h1 className="error-msg-search-modal-styles">Loading...</h1>} */}
 
-        
-        <h6 className="modal-header-styles">
-        <img src={backArrow} onClick={onClose} className='back-arrow-search-modal'></img>
-          Search for Items</h6>
-        <input
-          value={query}
-          onChange={(e) => {
-            // console.log(e.target.value);
-            setQuery(e.target.value);
-            console.log(query);
-          }}
-        ></input>
-        {/* <button className='modal-search-btn-styles'>Search</button> */}
+          <h6 className="modal-header-styles">
+            <img src={backArrow} onClick={onClose} className="back-arrow-search-modal"></img>
+            Search for Items
+          </h6>
+          <input
+            value={query}
+            onChange={(e) => {
+              // console.log(e.target.value);
+              setQuery(e.target.value);
+              console.log(query);
+            }}
+          ></input>
+          {/* <button className='modal-search-btn-styles'>Search</button> */}
 
+          {/* <button onClick={onClose} className='modal-exit-btn'>X</button> */}
 
-        {/* <button onClick={onClose} className='modal-exit-btn'>X</button> */}
+          {query !== '' &&
+            filteredItems.map((item) => {
+              return (
+                <>
+                  <div className="modal-product-wrapper">
+                    <Link to={`/ProductPage/${item.id}`} onClick={onClose} className="modal-link-styles">
+                      <div className="modal-product-styles" key={item.key}>
+                        <img src={item.image} className="modal-product-img-styles"></img>
 
-        {query !== '' &&
-          filteredItems.map((item) => {
-            return (
-              <>
-              <div className='modal-product-wrapper'>
-                <Link to={`/ProductPage/${item.id}`} onClick={onClose} className='modal-link-styles'>
-                  <div className="modal-product-styles" key={item.key}>
-                    <img src={item.image} className='modal-product-img-styles'></img>
-
-                    <div className='modal-product-price-title-container'>
-                    {item.title}
-                    <div className='modal-item-price-styles'>${item.price.toFixed(2)}</div>
-                    </div>
-
+                        <div className="modal-product-price-title-container">
+                          {item.title}
+                          <div className="modal-item-price-styles">${item.price.toFixed(2)}</div>
+                        </div>
+                      </div>
+                    </Link>
                   </div>
-                </Link>
-                </div>
-              </>
-            );
-          })}
+                </>
+              );
+            })}
+        </div>
       </div>
-
-      </div>
-
     </>
   );
 }

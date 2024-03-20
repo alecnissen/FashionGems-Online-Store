@@ -5,6 +5,11 @@ import womenWithHandBag from '../../../Images/women-with-handbag.png';
 import googlePlayIcon from '../../../Images/google-play-icon.png';
 import fashionGemsIcon from '../../../Icons/fashion-gems-icon-img.png';
 
+import fashionGemsIcon2 from '../../../Images/Icon gem.png';
+import googlePlayIcon2 from "../../../Images/Icon google play.png"
+
+
+
 export default function FashionGemsAppComponent() {
   return (
     <div className="fashion-gems-app-wrapper">
@@ -23,7 +28,7 @@ export default function FashionGemsAppComponent() {
           </div>
 
           <div className="download-google-play-container">
-            <img src={googlePlayIcon}></img>
+            <img src={googlePlayIcon2}></img>
             <div className="download-from-google-play-container">
               <p>Download from:</p>
               <h6>Google Play</h6>
@@ -31,7 +36,7 @@ export default function FashionGemsAppComponent() {
           </div>
 
           <div className="download-from-fashion-gems-container">
-            <img src={fashionGemsIcon}></img>
+            <img src={fashionGemsIcon2}></img>
 
             <div className="download-from-fashion-gems-text-content-container">
               <p>Download from:</p>

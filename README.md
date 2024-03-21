@@ -46,11 +46,11 @@ then ``` npm install ``` which will install all dependency's and packages.
 
 - Each product has its own page where users can add the product and choose a quantity. 
 
-<img src="Images/fg-item.png" style="width:400px">
+<img src="Images/fg-item.png" style="width:500px">
 
 - Checkout page which correctly calculates total price.
 
-<img src="Images/fg-checkout.png" style="width:400px">
+<img src="Images/fg-checkout.png" style="width:500px">
 
 - Search modal that allows user to search for specific products. 
 

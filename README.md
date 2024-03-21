@@ -36,21 +36,21 @@ then ``` npm install ``` which will install all dependency's and packages.
 - Fade in animation on home page that shuffles through a couple different sets of pictures which go along with the website theme. 
 
 <div>
-<img src="Images/fg-fadein1.png" style="width:300px">
-<img src="Images/fg-fadein-2.png" style="width:300px">
+<img src="Images/fg-updated-fadeIn.png" style="width:400px">
+<img src="Images/fg-fadein-2-updated.png" style="width:400px">
 <div>
 
 - Shopping cart component which fetches images from FakeStoreAPI while correctly displaying key information
 
-<img src="Images/fg-shopping-component.png" style="width:300px">
+<img src="Images/fg-shopping-component.png" style="width:400px">
 
 - Each product has its own page where users can add the product and choose a quantity. 
 
-<img src="Images/fg-item.png" style="width:300px">
+<img src="Images/fg-item.png" style="width:400px">
 
 - Checkout page which correctly calculates total price.
 
-<img src="Images/fg-checkout.png" style="width:300px">
+<img src="Images/fg-checkout.png" style="width:400px">
 
 - Search modal that allows user to search for specific products. 
 

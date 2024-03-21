@@ -1,5 +1,5 @@
 <h1>About This Project</h1> 
-This was the final project in the React section as part of The Odin Projects course. This was an extremely challenging project, between implementing core react concepts such as state, props and using components, to making sure the user can properly add items to their cart, deleting items, calculating total price. With that being said, I did walk away learning a lot about react and core web development technologies. The overall purpose of the project was to get used to using react router and to build an online shopping store.
+This project aimed to develop a fully operational online store, enabling users to manage their carts, explore product descriptions, and calculate total costs. It provided valuable experience with React Router and reinforced understanding of React concepts, including hooks such as state, effects, and refs. Despite its challenges, it significantly expanded my proficiency in React.
 
 <br> 
 
@@ -20,6 +20,7 @@ This was the final project in the React section as part of The Odin Projects cou
 
  
  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
+ ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) 
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) 
@@ -44,9 +45,9 @@ then ``` npm install ``` which will install all dependency's and packages.
 
 <img src="Images/fg-shopping-component.png" style="width:400px">
 
-- Each product has its own page where users can add the product and choose a quantity. 
+- Each product has its own page where users can add the product, read a description and choose a quantity. 
 
-<img src="Images/fg-item.png" style="width:500px">
+<img src="Images/fg-product-page.png" style="width:500px">
 
 - Checkout page which correctly calculates total price.
 

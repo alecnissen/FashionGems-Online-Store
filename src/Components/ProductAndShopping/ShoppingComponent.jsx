@@ -10,6 +10,7 @@ import { Link, Outlet, useSearchParams } from 'react-router-dom';
 import CheckoutComponent from './CheckoutComponent';
 import PropTypes from 'prop-types';
 import Select from 'react-select';
+import { useLocation } from 'react-router-dom';
 
 import ErrorComponent from '../LoadingAndError/ErrorComponent';
 import LoadingComponent from '../LoadingAndError/LoadingComponent';
@@ -39,14 +40,28 @@ export default function ShoppingComponent({
 
   const [sortedData, setSortedData] = useState(productData);
 
-  // const [error, setError] = useState(null);
+  // const location = useLocation();
+  // const queryParams = new URLSearchParams(location.search);
+  // const shoppingCategory = queryParams.get('category');
 
-  // const [loading, setLoading] = useState(false);
+ 
+
+
+  // useEffect(() => {
+  //   if (shoppingCategory === 'jewelery') {
+  //     setSortedData(productData.filter((item) => item.category === 'jewelery'));
+  //   } else {
+  //     setSortedData(productData);
+  //   }
+  // }, [shoppingCategory, productData]);
+
+
 
   const getInitialState = () => {
     const value = 'All Products';
     return value;
   };
+
 
   const [value, setValue] = useState(getInitialState);
 

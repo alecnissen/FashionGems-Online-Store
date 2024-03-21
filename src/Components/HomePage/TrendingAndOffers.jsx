@@ -108,7 +108,7 @@ export default function TrendingAndOffers() {
 
         <div className="card-container-trending-offers-set-1">
           <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }} id="trending-card-1">
-            <Card.Img variant="top" src={diamondNecklace} />
+            <Card.Img variant="top" src={diamondNecklace} id="elegant-necklace-styles" />
             <Card.Body>
               <Card.Title className="card-1-title-styles">Elegant Necklace</Card.Title>
 
@@ -118,7 +118,7 @@ export default function TrendingAndOffers() {
           </Card>
 
           <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }} id="trending-card-2">
-            <Card.Img variant="top" src={ringImg} />
+            <Card.Img variant="top" src={ringImg} id="stunning-ring-styles"/>
             <Card.Body>
               <Card.Title className="card-2-title-styles">Stunning Ring</Card.Title>
               <Card.Text className="card-2-price-display">$49.99</Card.Text>
@@ -147,7 +147,7 @@ export default function TrendingAndOffers() {
           </Card>
 
           <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }} id="trending-card-5">
-            <Card.Img variant="top" src={greenNecklace} />
+            <Card.Img variant="top" src={greenNecklace} id="sparkling-gemstone-styles" />
             <Card.Body>
               <Card.Title className="card-5-title-styles">Sparkling Gemstone</Card.Title>
               <Card.Text className="card-5-price-display">$300.00</Card.Text>
@@ -156,7 +156,7 @@ export default function TrendingAndOffers() {
           </Card>
 
           <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }} id="trending-card-6">
-            <Card.Img variant="top" src={luxuriousGoldImg} />
+            <Card.Img variant="top" src={luxuriousGoldImg} id="luxarious-gold-styles" />
             <Card.Body>
               <Card.Title className="card-6-title-styles">Luxurious Gold</Card.Title>
               <Card.Text className="card-6-price-display">$500.00</Card.Text>

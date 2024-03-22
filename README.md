@@ -1,5 +1,5 @@
 <h1>About This Project</h1> 
-This project aimed to develop a fully operational online store, enabling users to manage their carts, explore product descriptions, and calculate total costs. It provided valuable experience with React Router and reinforced understanding of React concepts, including hooks such as state, effects, and refs. Despite its challenges, it significantly expanded my proficiency in React.
+I created an online e-commerce website where customers could browse items, view item descriptions, add items to their cart, and view computed totals for their purchases. This project uses React Router, state management, a third-party API, and a responsive design that looks great on any device. 
 
 <br> 
 

@@ -28,7 +28,7 @@ This project aimed to develop a fully operational online store, enabling users t
 
 <h1>Getting Started</h1>
 
-To get project cloned locally: git clone git@github.com:alecnissen/Memory-Card.git
+To get project cloned locally: git clone git@github.com:alecnissen/Shopping-Cart.git
 
 then ``` npm install ``` which will install all dependency's and packages.
 
@@ -37,13 +37,13 @@ then ``` npm install ``` which will install all dependency's and packages.
 - Fade in animation on home page that shuffles through a couple different sets of pictures which go along with the website theme. 
 
 <div>
-<img src="Images/fg-updated-fadeIn.png" style="width:400px">
-<img src="Images/fg-fadein-2-updated.png" style="width:400px">
+<img src="Images/fg-updated-fadeIn.png" style="width:500px">
+<img src="Images/fg-fadein-2-updated.png" style="width:500px">
 <div>
 
 - Shopping cart component which fetches images from FakeStoreAPI while correctly displaying key information
 
-<img src="Images/fg-shopping-component.png" style="width:400px">
+<img src="Images/fg-shopping-component.png" style="width:500px">
 
 - Each product has its own page where users can add the product, read a description and choose a quantity. 
 
@@ -69,8 +69,6 @@ then ``` npm install ``` which will install all dependency's and packages.
 
 
 
-
-
 <h1>Acknowledgments</h1> Thank you to everyone within The Odin Project Curriculum from the bottom of my heart! Thank you to anyone who helped me in the discord channels. I promise to help others throughout this journey. 
 
 <h1>Contact</h1>
@@ -79,6 +77,6 @@ Creator: Alec J Nissen
 <br>
 E-Mail: alecnissen@yahoo.com
 <br>
-GitHub: https://github.com/alecnissen/Memory-Card
+GitHub: https://github.com/alecnissen/Shopping-Cart
 <br>
-Live Link: https://memory-card-game-top.netlify.app/
+Live Link: https://fashiongems.netlify.app

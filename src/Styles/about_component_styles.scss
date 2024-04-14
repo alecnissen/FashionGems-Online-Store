@@ -2,6 +2,10 @@
 
 
 .about-component-wrapper { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     color: white;
     padding: 20px;
@@ -23,6 +27,7 @@
 }
 
 .about-component-wrapper p { 
+    max-width: 40em;
     font-size: 1.5rem;
 }
 

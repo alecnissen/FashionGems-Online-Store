@@ -66,20 +66,32 @@ export default function ProductPage({
     console.log(cartItems);
   }
 
-  function changeQuantityIncrement(count) {
-    console.log(singleProductData.quantity);
+  // function changeQuantityIncrement(count) {
+  //   console.log(singleProductData.quantity);
 
-    console.log(count);
+  //   console.log(count);
 
-    setItemQuantity(count);
+  //   setItemQuantity(count);
 
-    console.log(itemQuantity);
+  //   console.log(itemQuantity);
 
-    // console.log('item after incrementing', data);
+  // }
+
+  function changeQuantityIncrement() {
+    setItemQuantity(prevQuantity => prevQuantity + 1);
   }
 
-  function changeQuantityDecrement(count) {
-    setItemQuantity(count);
+  // function changeQuantityDecrement(count) {
+  //   // setItemQuantity(count);
+  //   if (count > 0) {
+  //     setItemQuantity(count);
+  //   }
+  // }
+
+  function changeQuantityDecrement() {
+    if (itemQuantity > 0) {
+      setItemQuantity(prevQuantity => prevQuantity - 1);
+    }
   }
 
   console.log('typeof itemQuantity check in product component, before return', typeof itemQuantity);
@@ -120,19 +132,34 @@ export default function ProductPage({
             <div className="product-page-btn-container">
               <button
                 onClick={(e) => {
-                  count -= 1;
-                  changeQuantityDecrement(count);
+
+                  // if (count = 0) { 
+                  //   return
+                  // }
+
+                  // count -= 1;
+                  // changeQuantityDecrement(count);
+
+                  changeQuantityDecrement();
                 }}
               >
                 -
               </button>
 
-              <div>{count}</div>
+              {/* <div>{count}</div> */}
+              <div>{itemQuantity}</div>
 
               <button
                 onClick={(e) => {
-                  count += 1;
-                  changeQuantityIncrement(count);
+
+                  // if (count = 0) { 
+                  //   return
+                  // }
+
+                  // count += 1;
+                  // changeQuantityIncrement(count);
+
+                  changeQuantityIncrement();
                 }}
               >
                 +
@@ -149,7 +176,9 @@ export default function ProductPage({
             <button
               onClick={(e) => {
                 changeAmount(singleProductData, itemQuantity);
-                count = 0;
+                setItemQuantity(0);
+                // itemQuantity => itemQuantity = 0;
+                // count = 0;
               }}
             >
               Add to Cart
@@ -158,62 +187,6 @@ export default function ProductPage({
         </div>
       </div>
 
-      {/* 
-      {!error && (
-        <div className="product-page-item-container" key={singleProductData.id}>
-          <Card style={{ width: '18rem' }}>
-            <h4>{singleProductData.title}</h4>
-            <Card.Img
-              variant="top"
-              src={singleProductData.image}
-              style={{ width: '10em' }}
-              className="shopping-component-card-img"
-            />
-            <Card.Body>
-              <Card.Title>{singleProductData.title}</Card.Title>
-              <Card.Text>{singleProductData.description}</Card.Text>
-              <p>Select Quanity</p>
-              <button
-                onClick={(e) => {
-                  count += 1;
-                  changeQuantityIncrement(count);
-                }}
-              >
-                +
-              </button>
-              <input
-                type="number"
-                min="0"
-                max="10"
-                value={count}
-                onChange={(e) => {
-                  
-                }}
-              ></input>
-
-              <button
-                onClick={(e) => {
-                  count -= 1;
-                  changeQuantityDecrement(count);
-                }}
-              >
-                -
-              </button>
-
-              <p>${singleProductData.price}</p>
-              <Button
-                variant="primary"
-                onClick={(e) => {
-                  changeAmount(singleProductData, itemQuantity);
-                  count = 0;
-                }}
-              >
-                Add to Cart
-              </Button>
-            </Card.Body>
-          </Card>
-        </div>
-      )} */}
 
       <Footer></Footer>
     </>

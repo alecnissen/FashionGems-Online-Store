@@ -22,7 +22,8 @@ import "./Styles/index.scss"
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
-  const [itemQuantity, setItemQuantity] = useState([]);
+  // const [itemQuantity, setItemQuantity] = useState([]);
+  const [itemQuantity, setItemQuantity] = useState(0);
   const storedItems = JSON.parse(localStorage.getItem('items'));
   const [localStorageItems, setLocalStorageItems] = useState(storedItems || []);
   const [category, setCategory] = useState(null);

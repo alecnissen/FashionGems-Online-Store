@@ -48,6 +48,11 @@ export default function ProductPage({
     });
   }, [id]);
 
+  useEffect(() => {
+    // Reset item quantity to 0 when navigating to another product page
+    setItemQuantity(0);
+  }, [id]);
+
   function changeAmount(singleProductData, itemQuantity) {
     const newItem = {
       title: singleProductData.title,
@@ -175,8 +180,16 @@ export default function ProductPage({
           <div className="product-page-add-to-cart-btn-container">
             <button
               onClick={(e) => {
-                changeAmount(singleProductData, itemQuantity);
+
+
+                if (itemQuantity === 0) { 
+                  alert('Please select a quantity greater than 0.')
+                } else { 
+
+                 changeAmount(singleProductData, itemQuantity);
                 setItemQuantity(0);
+                } 
+
                 // itemQuantity => itemQuantity = 0;
                 // count = 0;
               }}

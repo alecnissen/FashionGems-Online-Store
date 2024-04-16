@@ -156,12 +156,12 @@ export default function CheckoutComponent({
 
             <div className="radio-container">
               <div className="input-label-pair-receive-asap">
-                <input type="radio"></input>
+                <input type="radio" name="delivery"></input>
                 <label>ASAP</label>
               </div>
 
               <div className="input-label-pair-receive-scheduled">
-                <input type="radio"></input>
+                <input type="radio" name="delivery"></input>
                 <label>Scheduled Delivery</label>
               </div>
             </div>
@@ -172,17 +172,17 @@ export default function CheckoutComponent({
 
             <div className="radio-container-2">
               <div className="input-label-pair-credit-card">
-                <input type="radio"></input>
+                <input type="radio" name="payment"></input>
                 <label>Credit Card</label>
               </div>
 
               <div className="input-label-pair-cash-on-delivery">
-                <input type="radio"></input>
+                <input type="radio" name="payment"></input>
                 <label>Cash on Delivery</label>
               </div>
 
               <div className="input-label-pair-apple-google-pay">
-                <input type="radio"></input>
+                <input type="radio" name="payment"></input>
                 <label>Apple/Google Pay</label>
               </div>
 

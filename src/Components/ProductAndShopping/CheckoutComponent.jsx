@@ -29,12 +29,22 @@ export default function CheckoutComponent({
     setCartItems(cartItems.filter((selectedItem) => selectedItem.title !== item.title));
   }
 
+  // function changeQuantityIncrement(item) {
+  //   setItemQuantity(++item.quantity);
+  // }
+
   function changeQuantityIncrement(item) {
     setItemQuantity(++item.quantity);
   }
 
+  // function changeQuantityDecrement(item) {
+  //   setItemQuantity(--item.quantity);
+  // }
+
   function changeQuantityDecrement(item) {
-    setItemQuantity(--item.quantity);
+    if (itemQuantity > 0) {
+      setItemQuantity(--item.quantity);
+    }
   }
 
   return (
@@ -176,6 +186,7 @@ export default function CheckoutComponent({
                         data-testid="increment-btn-checkout"
                         onClick={() => {
                           console.log(itemQuantity);
+                          // changeQuantityIncrement(item);
                           changeQuantityIncrement(item);
                         }}
                       >
@@ -185,6 +196,7 @@ export default function CheckoutComponent({
                       <div className="item-quantity-div-styles">{item.quantity}</div>
                       <button
                         onClick={() => {
+                          // changeQuantityDecrement(item);
                           changeQuantityDecrement(item);
                         }}
                       >

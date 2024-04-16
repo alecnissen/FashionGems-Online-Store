@@ -156,13 +156,36 @@ export default function CheckoutComponent({
 
             <div className="radio-container">
               <div className="input-label-pair-receive-asap">
+                <input type="radio" name="delivery" id="ASAP"></input>
+                <label for="ASAP">ASAP</label>
+
+
+
+                {/* <label>ASAP
                 <input type="radio" name="delivery"></input>
-                <label>ASAP</label>
+                </label> */}
+
+
+
+
               </div>
 
               <div className="input-label-pair-receive-scheduled">
+
+
+                <input type="radio" name="delivery" id="schedule"></input>
+                <label for="schedule">Scheduled Delivery</label>
+
+
+
+
+                {/* <label> Scheduled Delivery
                 <input type="radio" name="delivery"></input>
-                <label>Scheduled Delivery</label>
+                </label> */}
+
+
+
+
               </div>
             </div>
           </div>
@@ -172,18 +195,18 @@ export default function CheckoutComponent({
 
             <div className="radio-container-2">
               <div className="input-label-pair-credit-card">
-                <input type="radio" name="payment"></input>
-                <label>Credit Card</label>
+                <input type="radio" name="payment" id="credit"></input>
+                <label for="credit">Credit Card</label>
               </div>
 
               <div className="input-label-pair-cash-on-delivery">
-                <input type="radio" name="payment"></input>
-                <label>Cash on Delivery</label>
+                <input type="radio" name="payment" id="cash"></input>
+                <label for="cash">Cash on Delivery</label>
               </div>
 
               <div className="input-label-pair-apple-google-pay">
-                <input type="radio" name="payment"></input>
-                <label>Apple/Google Pay</label>
+                <input type="radio" name="payment" id="pay"></input>
+                <label for="pay">Apple/Google Pay</label>
               </div>
 
               <div className="place-order-btn-container">

@@ -33,19 +33,56 @@ export default function CheckoutComponent({
   //   setItemQuantity(++item.quantity);
   // }
 
-  function changeQuantityIncrement(item) {
-    setItemQuantity(++item.quantity);
-  }
+
+  // og increment
+
+  // function changeQuantityIncrement(item) {
+  //   setItemQuantity(++item.quantity);
+  // }
 
   // function changeQuantityDecrement(item) {
   //   setItemQuantity(--item.quantity);
   // }
 
-  function changeQuantityDecrement(item) {
-    if (itemQuantity > 0) {
-      setItemQuantity(--item.quantity);
-    }
+  // function changeQuantityDecrement(item) {
+  //   if (itemQuantity > 0) {
+  //     setItemQuantity(--item.quantity);
+  //   }
+  // }
+
+
+  // og decrement 
+
+  // function changeQuantityDecrement(item) {
+  //   setItemQuantity(prevQuantity => {
+  //     if (prevQuantity > 0) {
+  //       return prevQuantity - 1;
+  //     }
+  //     return prevQuantity; // Prevent decrementing below 0
+  //   });
+  // }
+
+
+  function changeQuantityIncrement(item) {
+    const updatedCartItems = cartItems.map(cartItem => {
+      if (cartItem.title === item.title) {
+        return { ...cartItem, quantity: cartItem.quantity + 1 };
+      }
+      return cartItem;
+    });
+    setCartItems(updatedCartItems);
   }
+  
+  function changeQuantityDecrement(item) {
+    const updatedCartItems = cartItems.map(cartItem => {
+      if (cartItem.title === item.title && cartItem.quantity > 0) {
+        return { ...cartItem, quantity: cartItem.quantity - 1 };
+      }
+      return cartItem;
+    });
+    setCartItems(updatedCartItems);
+  }
+  
 
   return (
     <>

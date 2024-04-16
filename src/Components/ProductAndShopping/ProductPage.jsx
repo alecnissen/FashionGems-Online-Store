@@ -16,6 +16,7 @@ import ApiRequest from '../../API-CALLS/ApiRequest';
 import addToBagBtn from '../../../Images/product-page-add-to-bag.png';
 
 import reviewStar from '../../../Images/review-star.png';
+import ProductQuantityAlert from '../../ProductQuantityAlert';
 
 let count = 0;
 
@@ -30,6 +31,7 @@ export default function ProductPage({
 }) {
   const { id } = useParams();
   const [singleProductData, setSingleProductData] = useState([]);
+  const [showError, setShowError] = useState(false);
 
   console.log('logging singleProductData status, initial page load', singleProductData);
 
@@ -183,11 +185,14 @@ export default function ProductPage({
 
 
                 if (itemQuantity === 0) { 
-                  alert('Please select a quantity greater than 0.')
+                  setShowError(true);
+                  // alert('Please select a quantity greater than 0.')
+                  return;
                 } else { 
 
                  changeAmount(singleProductData, itemQuantity);
                 setItemQuantity(0);
+                setShowError(false);
                 } 
 
                 // itemQuantity => itemQuantity = 0;
@@ -196,7 +201,26 @@ export default function ProductPage({
             >
               Add to Cart
             </button>
+
+            
+
           </div>
+
+
+            {/* I want the component displayed here  */}
+
+            {/* {itemQuantity === 0 && (
+    <span style={{ color: 'red', textAlign: 'center', fontSize: '1.2rem' }}>Please select a quantity greater than 0.</span>
+  )} */}
+
+          {showError && itemQuantity === 0 && (
+            <span style={{ color: 'red', textAlign: 'center', fontSize: '1.2rem' }}>
+              Please select a quantity greater than 0.
+            </span>
+          )}
+
+
+
         </div>
       </div>
 

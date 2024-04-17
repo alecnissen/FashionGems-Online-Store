@@ -95,7 +95,13 @@ export default function CheckoutComponent({
               <Link to="/ShoppingComponent" className="back-to-shopping-link-btn">
                 <img src={backToShoppingArrow} />
               </Link>
+
+
+              <Link to="/ShoppingComponent" className="back-to-shopping-link-btn">
               <h6>Back to shopping</h6>
+              </Link>
+
+
             </div>
 
             {/* <div className='container-for-img-and-title'>

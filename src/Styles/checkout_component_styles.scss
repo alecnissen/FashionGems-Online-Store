@@ -46,6 +46,11 @@
     height: 35px; 
   }
 
+  .back-to-shopping-link-btn { 
+    color: inherit;
+    text-decoration: none;
+  }
+
   .back-to-shopping-link-btn img:hover {
     cursor: pointer; /* Add pointer cursor */
   }

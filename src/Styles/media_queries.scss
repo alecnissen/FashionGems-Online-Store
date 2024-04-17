@@ -135,7 +135,11 @@
       // align-items: center;
       flex-wrap: wrap;
       flex-direction: column;
-      padding: 2em;
+      // padding: 2em;
+
+
+      margin-left: 2.3em;
+
       // height: 66em;
     }
 
@@ -144,6 +148,22 @@
     //   } 
   
   }
+
+
+
+  @media (max-width: 560px) { 
+    .title-component-header-text-styles { 
+      font-size: 2.5rem;
+    }
+
+    .main-title-subtitle-container h6 { 
+      font-size: 1.2rem;
+    }
+  }
+
+
+
+
   
   
   /* media queries for special offers and trending section */

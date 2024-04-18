@@ -1,7 +1,10 @@
 .modal-header-styles { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-right: 30px;
     // text-decoration: underline;
     // padding: 10px;
@@ -26,7 +29,8 @@
   }
 
 .modal-content-styles input{ 
-    width: 14em;
+    width: 11em;
+    margin-right: 1em;
 }
 
 // .back-arrow-img-container { 
@@ -92,6 +96,9 @@
 
   .modal-product-styles { 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
   }
 

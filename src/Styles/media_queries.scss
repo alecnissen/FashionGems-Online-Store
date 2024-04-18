@@ -535,7 +535,7 @@
       .input-label-pair-last-name input,
       .input-label-pair-first-email input,
       .input-label-pair-last-phone input { 
-        width: 10em;
+        width: 18em;
       }
       
       .input-label-pair-address input { 
@@ -654,6 +654,12 @@
         width: 300px;
       }
     }
+
+    // @media (max-width: 350px) { 
+    //   .input-label-pair-address input { 
+    //     width: 1em;
+    //   }
+    // }
 
   
   
@@ -796,6 +802,9 @@
 @media (max-width: 500px) { 
     .modal-content-styles,
   .model-content-container { 
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     position: fixed;
     top: 50%;
     left: 45%;
@@ -807,7 +816,7 @@
     overflow: scroll;
     color: white;
     font-weight: bolder;  
-    margin: 20px;
+    // margin: 20px;
   } 
 }
 
@@ -833,6 +842,19 @@
 
 /* media query for checkout component */ 
 
+
+
+@media (max-width: 770px) { 
+  .contact-info-container { 
+    margin-left: 1em;
+  }
+}
+
+
+
+
+
+
 @media (max-width: 585px) { 
 
   .input-label-pair-address,
@@ -845,3 +867,48 @@
     width: 20em !important;
   }
 }
+
+
+
+@media (max-width: 400px) { 
+  .contact-info-container h5, .delivery-container h5, .receive-order-container h5,
+  .payment-method-container h5 { 
+    font-size: 1.3rem !important;
+    text-align: center;
+  }
+
+
+
+  .input-label-pair-address input, 
+  .input-label-pair-delivery-instructions textarea { 
+    width: 17em !important;
+  }
+
+  .payment-method-container button { 
+    font-size: 1.2rem !important;
+  }
+
+
+  .product-img-styles { 
+    width: 12em !important;
+  }
+
+  .increment-decrement-remove-btn-content-container button { 
+    font-size: 1.5rem !important;
+    width: 2em !important; 
+  }
+
+  .remove-btn-styles { 
+    font-size: 1.3rem !important;
+  }
+
+
+}
+
+
+
+// @media (max-width: 360px) { 
+//   .input-label-pair-address input { 
+//     width: 10em !important;
+//   }
+// }

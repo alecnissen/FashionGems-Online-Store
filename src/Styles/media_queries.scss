@@ -316,7 +316,8 @@
     .footer-card-1,
     .footer-card-2,
     .footer-card-3 { 
-      width: 20em;
+      // width: 20em;
+      width: 18em;
       background-color: black;
       color: white;
     }
@@ -377,16 +378,24 @@
   
   } 
 
-  @media (max-width: 370px) { 
+  @media (max-width: 380px) { 
     .trending-offers-component-wrapper { 
-     margin-left: -1em;
+     margin-left: -0.7em;
     }
 
 
   }
+
+  @media (max-width: 340px) { 
+    .trending-offers-component-wrapper { 
+      margin-left: -2.3em;
+     }
+  }
+
+
   
   
-  
+  /* trending offers media queries end */
   
   
   

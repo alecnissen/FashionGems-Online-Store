@@ -8,6 +8,8 @@ import Header from '../HomePage/Header';
 import Footer from '../HomePage/Footer';
 import ErrorComponent from '../LoadingAndError/ErrorComponent';
 import LoadingComponent from '../LoadingAndError/LoadingComponent';
+import { v4 as uuidv4 } from 'uuid';
+
 
 import PropTypes from 'prop-types';
 // import apiRequest from '../../API-CALLS/ApiRequest';
@@ -57,6 +59,7 @@ export default function ProductPage({
 
   function changeAmount(singleProductData, itemQuantity) {
     const newItem = {
+      id: uuidv4(),
       title: singleProductData.title,
       description: singleProductData.description,
       price: singleProductData.price,

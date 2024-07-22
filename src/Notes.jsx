@@ -728,3 +728,11 @@
 // render the component, 
 
 // 
+
+// try to get the delete functionality working a little bit better 
+
+// once you press delete just delete that item that was selected 
+
+// not all items with that same title 
+
+// 

@@ -1,81 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Source+Sans+3:ital@0;1&family=Yeseva+One&display=swap');
 
+.categories-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  gap: 1em;
+}
 
-.categories-wrapper { 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: black;
-    color: white;
-    padding: 15px;
-    font-family: "Source Sans 3", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    gap: 1em;
-  } 
-  
-  .down-btn-container { 
-    display: flex;
-    justify-content: center;
-    // align-items: flex-start;
-    // position: relative;
-    // bottom: 2em;
-    background-color: black;
-    padding: 20px;
+.down-btn-container {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 20px;
+}
 
-  }
+.category-header-text-styles {
+  font-size: clamp(3rem, 2.5vw, 4rem);
+  font-family: 'Source Sans 3', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 2em;
+}
 
- 
-  
-  .category-header-text-styles { 
-    font-size: clamp(3rem, 2.5vw, 4rem);
-    font-family: "Source Sans 3", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    padding-top: 2em;
-  }
-  
-  .category-main-title-component { 
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    color: white;
-  } 
-  
-  
-  
-  .category-card-style-container-mens,
-  .category-card-style-container-womens,
-  .category-card-style-container-electronics,
-  .category-card-style-container-jewelery { 
-    background-color: rgb(58, 53, 53);
-  } 
-  
-  .category-card-style-container-mens h6, 
-  .category-card-style-container-womens h6,
-  .category-card-style-container-electronics h6,
-  .category-card-style-container-jewelery h6 { 
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bolder;
-  }
-  
-  .mens-clothing-icon-container, 
-  .womens-clothing-icon-container,
-  .electronics-icon-container,
-  .jewelery-icon-container { 
-    display: flex;
-    justify-content: center;
-  }
-  
-  .category-card-container-mens-and-womens-clothes,
-  .category-card-electronics-jewelry-container { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1em;
-  }
+.category-main-title-component {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.category-card-style-container-mens,
+.category-card-style-container-womens,
+.category-card-style-container-electronics,
+.category-card-style-container-jewelery {
+  background-color: rgb(58, 53, 53);
+}
+
+.category-card-style-container-mens h6,
+.category-card-style-container-womens h6,
+.category-card-style-container-electronics h6,
+.category-card-style-container-jewelery h6 {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.mens-clothing-icon-container,
+.womens-clothing-icon-container,
+.electronics-icon-container,
+.jewelery-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.category-card-container-mens-and-womens-clothes,
+.category-card-electronics-jewelry-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}

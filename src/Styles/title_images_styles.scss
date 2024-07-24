@@ -1,71 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Source+Sans+3:ital@0;1&family=Yeseva+One&display=swap');
 
+.main-title-section-wrapper {
+  background-color: black;
+  padding: 5em;
+  font-family: 'Source Sans 3', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
-.main-title-section-wrapper { 
-    background-color: black;
-    padding: 5em;
-    // width: 100vw;
-    font-family: "Source Sans 3", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  } 
-  
-  .title-component-header-text-styles { 
-    font-size: 3rem;
+.title-component-header-text-styles {
+  font-size: 3rem;
+}
+
+.main-title-subtitle-container {
+  color: white;
+}
+
+.main-title-subtitle-container h6 {
+  color: gray;
+  font-size: 1.5rem;
+}
+
+.images-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  top: -9em;
+  right: -1em;
+  gap: 1em;
+}
+
+.diamond-img-title-component {
+  width: 40px;
+}
+
+.portrait-of-women-styles {
+  width: 100px;
+}
+
+.img-styles-title-component {
+  width: 335px;
+  transition: all 0.1s ease-in-out;
+  animation: fadeInOut 4s infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
   }
-  
-  .main-title-subtitle-container { 
-    color: white;
+
+  50% {
+    opacity: 1;
   }
-  
-  .main-title-subtitle-container h6 { 
-    color: gray;
-    font-size: 1.5rem;
-  } 
-  
-  .images-container { 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    top: -9em;
-    right: -1em;
-    // height: 100%;
-    // height: 25em;
-    gap: 1em;
-  } 
-  
-  .diamond-img-title-component { 
-    width: 40px;
+
+  100% {
+    opacity: 0;
   }
-  
-  
-  .portrait-of-women-styles { 
-    width: 100px;
-  }
-  
-  // .image-container { 
-  //   height: 20em;
-  // }
-  
-  
-  .img-styles-title-component { 
-    width: 335px;
-    transition: all 0.1s ease-in-out;
-    animation: fadeInOut 4s infinite;
-  }
-  
-  @keyframes fadeInOut { 
-    0% { 
-      opacity: 0;
-    } 
-  
-    50% { 
-      opacity: 1;
-    } 
-  
-    100% { 
-      opacity: 0;
-    }
-  }
+}

@@ -1,101 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Source+Sans+3:ital@0;1&family=Yeseva+One&display=swap');
 
-.bottom-footer-content-container { 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px;
-    gap: 2em;
-    font-family: "Source Sans 3", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .footer-blog-content-wrapper { 
-    background-color: rgb(58, 53, 53);
-    font-family: "Source Sans 3", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  
-  
-  .footer-header-container { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    padding: 20px;
-  } 
-  
-  .footer-header-container h3 { 
-    font-weight: bolder;
-  }
-  
-  
-  
-  .footer-card-container { 
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-  } 
-  
-  .footer-card-1, 
-  .footer-card-2,
-  .footer-card-3 {
-    width: 25em;
-    background-color: black;
-    color: white; 
-    font-weight: bolder;
-  }
-  
-  
-  .fashion-gems-title-icon-container { 
-    display: flex;
-    align-items: center;
-    gap: 0.6em;
-    font-size: 1.2rem;
-  }
-  
-  .fashion-gems-title-icon-container h3 { 
-    font-size: clamp(2.2rem, 2.5vw, 2.7rem);
-    font-weight: bolder;
-  }
-  
-  
-  .footer-social-media-container { 
-    color: white;
-    padding: 1em;
-  } 
-  
-  .footer-social-media-container p { 
-    font-style: italic;
-  }
-  
-  .social-media-container-footer-container { 
-    display: flex;
-    gap: 1em;
-  }
-  
-  .social-media-container-footer-container img { 
-    width: 30px;
-  }
-  
-  
-  .footer-assistance-container { 
-    color: white;
-  }
-  
-  .footer-assistance-container h3{ 
-    font-size: 2rem;
-    font-weight: bolder;
-  } 
-  
-  .phone-icon-container, 
-  .email-container { 
-    display: flex;
-    gap: 1em;
-    padding: 10px;
-  }
+.bottom-footer-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 2em;
+  font-family: 'Source Sans 3', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-blog-content-wrapper {
+  background-color: rgb(58, 53, 53);
+  font-family: 'Source Sans 3', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+
+.footer-header-container h3 {
+  font-weight: bolder;
+}
+
+.footer-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.footer-card-1,
+.footer-card-2,
+.footer-card-3 {
+  width: 25em;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+}
+
+.fashion-gems-title-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  font-size: 1.2rem;
+}
+
+.fashion-gems-title-icon-container h3 {
+  font-size: clamp(2.2rem, 2.5vw, 2.7rem);
+  font-weight: bolder;
+}
+
+.footer-social-media-container {
+  color: white;
+  padding: 1em;
+}
+
+.footer-social-media-container p {
+  font-style: italic;
+}
+
+.social-media-container-footer-container {
+  display: flex;
+  gap: 1em;
+}
+
+.social-media-container-footer-container img {
+  width: 30px;
+}
+
+.footer-assistance-container {
+  color: white;
+}
+
+.footer-assistance-container h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.phone-icon-container,
+.email-container {
+  display: flex;
+  gap: 1em;
+  padding: 10px;
+}

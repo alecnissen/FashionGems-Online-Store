@@ -1,4 +1,3 @@
-// import './App.css';
 import './Styles/App.css';
 import { useEffect, useState } from 'react';
 import ShoppingComponent from './Components/ProductAndShopping/ShoppingComponent';

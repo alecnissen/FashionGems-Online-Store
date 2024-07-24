@@ -1,102 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Source+Sans+3:ital@0;1&family=Yeseva+One&display=swap');
 
+.shopping-component-header-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.shopping-component-header-img-container { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .shopping-component-header-img-container h1 { 
-    color: white; 
-  }
-  
-  .shopping-component-header-img-container img { 
-    width: 15em;
-  }
-  
-  .sort-by-div { 
-    display: flex;
-    gap: 0.5em;
-    color: white;
-    padding: 20px;
-  } 
-  
-  .shopping-component-product-img-container { 
-    display: flex;
-    justify-content: center;
-  }
-  
-  .shopping-component-products-container { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1em;
-  }
-  
-  .shopping-component-product-wrapper { 
-    background-color: black;
-    padding: 20px;
-    font-family: "Source Sans 3", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  
-  /* used !important because when inspecting in dev tools, 
-  
-  bootstrap applies default styles to it including a height, 
-  
-  this important rule ensures that the card sizes stay the same 
-  
-  and overides default styles */
-  
-  
-  // .shopping-component-card-styles { 
-  //   width: 24.5em !important;
-  //   height: 25em !important;
-  //   background-color: black;
-  // }  
+.shopping-component-header-img-container h1 {
+  color: white;
+}
 
+.shopping-component-header-img-container img {
+  width: 15em;
+}
 
-  .shopping-component-card-container .card { 
-    width: 23em;
-    height: 23em;
-    background-color: black;
-    border: 1px solid white;
-    padding: 5px;
-  }
+.sort-by-div {
+  display: flex;
+  gap: 0.5em;
+  color: white;
+  padding: 20px;
+}
 
+.shopping-component-product-img-container {
+  display: flex;
+  justify-content: center;
+}
 
-  // .shopping-component-card-styles { 
-  //   width: 22em !important;
-  //   height: 22em !important;
-  //   background-color: black;
-  // } 
+.shopping-component-products-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
 
+.shopping-component-product-wrapper {
+  background-color: black;
+  padding: 20px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.shopping-component-card-container .card {
+  width: 23em;
+  height: 23em;
+  background-color: black;
+  border: 1px solid white;
+  padding: 5px;
+}
 
+.shopping-component-card-img {
+  width: 12em;
+  height: 12em;
+}
 
-  
-  .shopping-component-card-img { 
-    width: 12em;
-    height: 12em;
-  } 
-  
-  .shopping-component-card-styles-card-body { 
-    background-color: black;
-    text-align: center;
-  }
-  
-  .shopping-component-card-styles-title,
-  .shopping-component-card-styles-price { 
-    color: white !important;
-    font-size: 1.25rem;
-  } 
+.shopping-component-card-styles-card-body {
+  background-color: black;
+  text-align: center;
+}
 
-  .shopping-component-card-styles-price { 
-    font-weight: bolder;
-  }
+.shopping-component-card-styles-title,
+.shopping-component-card-styles-price {
+  color: white !important;
+  font-size: 1.25rem;
+}
+
+.shopping-component-card-styles-price {
+  font-weight: bolder;
+}

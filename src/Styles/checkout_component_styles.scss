@@ -1,292 +1,227 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Source+Sans+3:ital@0;1&family=Yeseva+One&display=swap');
 
-
-.checkout-component-wrapper { 
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    background-color: black;
-    color: white;
-    font-family: "Source Sans 3", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .checkout-component-container { 
-    padding: 60px;
-  }
-
-  .contact-info-container h5,
-  .delivery-container h5,
-  .receive-order-container h5 { 
-    font-size: 2rem;
-    // text-align: center;
-  }
-
-
-  
-  .checkout-component-backtoshop-checkout-title-container { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .checkout-component-backtoshop-checkout-title-container h3 { 
-    font-size: 2.3rem;
-  }
-  
-  .container-for-img-and-title { 
-    display: flex;
-    align-items: flex-end;
-  } 
-
-  .container-for-img-and-title img { 
-    width: 35px;
-    height: 35px; 
-  }
-
-  .back-to-shopping-link-btn { 
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .back-to-shopping-link-btn img:hover {
-    cursor: pointer; /* Add pointer cursor */
-  }
-
-  
-  .payment-method-container button { 
-    background-color: black;
-    color: white;
-    font-size: 1.5rem;
-    border: 2px solid white;
-    border-radius: 10%;
-    padding: 0.3em;
-  } 
-  
-  .place-order-btn-container { 
-    padding: 25px;
-  }
-
-  .delivery-container,
-  .receive-order-container { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  
-  .contact-info-container,
-  .delivery-container,
-  .receive-order-container,
-  .payment-method-container { 
-    padding: 20px;
-  }
-
-  .contact-info-container { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  .first-last-name-container,
-  .phone-email-container { 
-    display: flex;
-    // flex-direction: row;
-  } 
-  
-  .input-label-pair-first-name,
-  .input-label-pair-last-name,
-  .input-label-pair-first-email,
-  .input-label-pair-last-phone,
-  .input-label-pair-address,
-  .input-label-pair-delivery-instructions { 
-    display: flex;
-    flex-direction: column;
-    margin-right: 2em;
-    // min-width: 100px;
-  } 
-
-
-  .input-label-pair-first-name input,
-  .input-label-pair-last-name input,
-  .input-label-pair-first-email input,
-  .input-label-pair-last-phone input { 
-    width: 15em;
-  }
-  
-  .input-label-pair-address input,
-  .input-label-pair-delivery-instructions textarea { 
-    width: 33em;
-  }
-
-  
-  // .input-label-pair-address input,
-  // .input-label-pair-delivery-instructions input { 
-  //   width: 35em;
-  // }
-  
-  
-  
-  .input-label-pair-delivery-instructions { 
-    display: flex;
-    flex-direction: column;
-  }
-
-  .payment-method-container { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .payment-method-container h5 { 
-    font-size: 1.7rem;
-  }
-  
-  
-  .input-label-pair-receive-asap,
-  .input-label-pair-receive-scheduled,
-  .input-label-pair-credit-card,
-  .input-label-pair-cash-on-delivery,
-  .input-label-pair-apple-google-pay { 
-    display: flex;
-    gap: 1em;
-  }
-
-  .place-order-btn-container button:hover,
-  .remove-btn-styles:hover { 
-    background-color: white;
-    color: black;
-  }
-
-
-
-
-
-
-
-  /* right side checkout component styles here */ 
-
-
-.checkout-component-right-side-wrapper { 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+.checkout-component-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-color: black;
+  color: white;
+  font-family: 'Source Sans 3', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-
-
-  .checkout-component-right-side-icon-container { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4em;
-    gap: 1em;
-    // background-color: rgb(58, 53, 53);
-    // width: 31em;
-    // margin-left: 10em;
-    // padding: 20px;
-    border-radius: 8%;
-  }
-
-  // .checkout-component-right-side-icon-container h1 { 
-  //   text-decoration: underline;
-  // }
-
-
-// .black-circle-gem-icon { 
-//     position: relative;
-//     background-color: black;
-//     bottom: 3em;
-//     right: 4em;
-//     border-radius: 50%;
-//     width: 70px;
-//     height: 70px;
-// }
-
-// .gem-icon { 
-//     position: relative;
-//     right: 3em;
-//     bottom: 2.5em;
-// }
-
-
-
-.checkout-component-cart-items-container { 
-    display: flex;
-    flex-direction: column;
+.checkout-component-container {
+  padding: 60px;
 }
 
-
-// .my-cart-items-container h6 { 
-//     font-size: 2rem;
-// } 
-
-.my-cart-header-text-styles { 
+.contact-info-container h5,
+.delivery-container h5,
+.receive-order-container h5 {
   font-size: 2rem;
 }
 
-.number-of-cart-items-text-styles { 
+.checkout-component-backtoshop-checkout-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-component-backtoshop-checkout-title-container h3 {
+  font-size: 2.3rem;
+}
+
+.container-for-img-and-title {
+  display: flex;
+  align-items: flex-end;
+}
+
+.container-for-img-and-title img {
+  width: 35px;
+  height: 35px;
+}
+
+.back-to-shopping-link-btn {
+  color: inherit;
+  text-decoration: none;
+}
+
+.back-to-shopping-link-btn img:hover {
+  cursor: pointer;
+}
+
+.payment-method-container button {
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  border: 2px solid white;
+  border-radius: 10%;
+  padding: 0.3em;
+}
+
+.place-order-btn-container {
+  padding: 25px;
+}
+
+.delivery-container,
+.receive-order-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info-container,
+.delivery-container,
+.receive-order-container,
+.payment-method-container {
+  padding: 20px;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-last-name-container,
+.phone-email-container {
+  display: flex;
+}
+
+.input-label-pair-first-name,
+.input-label-pair-last-name,
+.input-label-pair-first-email,
+.input-label-pair-last-phone,
+.input-label-pair-address,
+.input-label-pair-delivery-instructions {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2em;
+}
+
+.input-label-pair-first-name input,
+.input-label-pair-last-name input,
+.input-label-pair-first-email input,
+.input-label-pair-last-phone input {
+  width: 15em;
+}
+
+.input-label-pair-address input,
+.input-label-pair-delivery-instructions textarea {
+  width: 33em;
+}
+
+.input-label-pair-delivery-instructions {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-method-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-method-container h5 {
+  font-size: 1.7rem;
+}
+
+.input-label-pair-receive-asap,
+.input-label-pair-receive-scheduled,
+.input-label-pair-credit-card,
+.input-label-pair-cash-on-delivery,
+.input-label-pair-apple-google-pay {
+  display: flex;
+  gap: 1em;
+}
+
+.place-order-btn-container button:hover,
+.remove-btn-styles:hover {
+  background-color: white;
+  color: black;
+}
+
+/* right side checkout component styles here */
+
+.checkout-component-right-side-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkout-component-right-side-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+  gap: 1em;
+  border-radius: 8%;
+}
+
+.checkout-component-cart-items-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-cart-header-text-styles {
+  font-size: 2rem;
+}
+
+.number-of-cart-items-text-styles {
   font-size: 1.3rem;
 }
 
-.product-img-styles { 
-    width: 14em;
-    border-radius: 3%;
-} 
-
-.product-container-styles { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // gap: 1em;
-    padding: 20px;
-    background-color: rgb(58, 53, 53);
-    border-radius: 3%;
+.product-img-styles {
+  width: 14em;
+  border-radius: 3%;
 }
 
-.product-container-styles h4 { 
+.product-container-styles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(58, 53, 53);
+  border-radius: 3%;
+}
+
+.product-container-styles h4 {
   font-size: 1.5rem;
   padding: 5px;
 }
 
-.my-cart-items-container { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    background-color: rgb(58, 53, 53);
-} 
+.my-cart-items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background-color: rgb(58, 53, 53);
+}
 
-
-
-.remove-btn-container { 
+.remove-btn-container {
   display: flex;
   flex-direction: column;
 }
 
-
-.increment-decrement-remove-btn-wrapper-style { 
+.increment-decrement-remove-btn-wrapper-style {
   display: flex;
   flex-direction: column;
 }
 
-.increment-decrement-remove-btn-content-container { 
+.increment-decrement-remove-btn-content-container {
   display: flex;
   gap: 0.5em;
   padding: 20px;
 }
 
-.increment-decrement-remove-btn-content-container button { 
-  // background-color: black;
+.increment-decrement-remove-btn-content-container button {
   color: white;
   background-color: black;
   border: none;
@@ -295,11 +230,11 @@
   border-radius: 12%;
 }
 
-.item-quantity-div-styles { 
+.item-quantity-div-styles {
   font-size: 2rem;
 }
 
-.remove-btn-styles { 
+.remove-btn-styles {
   background-color: black;
   color: white;
   border: none;
@@ -308,7 +243,7 @@
   padding: 10px;
 }
 
-.grand-total-container { 
+.grand-total-container {
   display: flex;
   gap: 2em;
   background-color: rgb(58, 53, 53);
@@ -318,98 +253,6 @@
   border-radius: 3%;
 }
 
-.grand-total-container h3 { 
+.grand-total-container h3 {
   font-weight: bolder;
-  // text-decoration: underline;
 }
-
-
-
-
-
-/* trying to get the radio buttons to line up 
-
- recently added the logic so user can click the label tag and it 
-
- checks the radio button */ 
-
-
-
-
-
-
-
-
-
-// .radio-container { 
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   // align-items: center;
-// }
-
-
-
-
-// .input-label-pair-receive-asap,
-// .input-label-pair-receive-scheduled {
-//   display: flex;
-//   align-items: center;
-//   margin-right: 20px; /* Adjust the margin as needed for spacing */
-// }
-
-// .input-label-pair-receive-asap label,
-// .input-label-pair-receive-scheduled label {
-//   // display: flex;
-//   // align-items: center;
-// }
-
-// .input-label-pair-receive-asap input[type="radio"],
-// .input-label-pair-receive-scheduled input[type="radio"] {
-//   margin-right: 5px; /* Adjust the margin as needed for spacing */
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* example styles on how to make the black circle, 
-
-put the black circle down and the gem icon in the center of it. */ 
-
-//   .earrings-card-discount-div { 
-//     position: relative;
-//     bottom: 10em;
-//     left: 5em;
-//     background-color: black;
-//     border-radius: 50%;
-//     width: 80px;
-//     height: 80px;
-//     text-align: center;
-//   } 
-  
-//   .earrings-card-discount-div p { 
-//     position: relative;
-//     top: 1.5em;
-//   }
-  

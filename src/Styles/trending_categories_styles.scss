@@ -1,129 +1,107 @@
-.trending-categories-container { 
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
-  
-  .trending-categories-header-container { 
-    background-color: rgb(58, 53, 53);
-    display: flex;
-    align-items: center;
-    // justify-content: flex-start;
-    border-radius: 5%;
-    // border: 2px solid white;
-  } 
-  
-  .header-gem-icon-trending-categories { 
-    width: 40px; 
-    height: 40px;
-  } 
+.trending-categories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
 
-  .trending-categories-header-container > svg { 
-    margin-left: 12px;
-  }
-  
-  .card-container-trending-categories { 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 1em;
-  }
-  
-  .trending-categories-card-img-1,
-  .trending-categories-card-img-2,
-  .trending-categories-card-img-3 { 
-    opacity: 0.4;
-    height: 100%;
-  }
+.trending-categories-header-container {
+  background-color: rgb(58, 53, 53);
+  display: flex;
+  align-items: center;
+  border-radius: 5%;
+}
 
-  // .jewelry-header-styles-trending-category-card-1 { 
-  
-  // }
+.header-gem-icon-trending-categories {
+  width: 40px;
+  height: 40px;
+}
 
+.trending-categories-header-container > svg {
+  margin-left: 12px;
+}
 
+.card-container-trending-categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1em;
+}
 
+.trending-categories-card-img-1,
+.trending-categories-card-img-2,
+.trending-categories-card-img-3 {
+  opacity: 0.4;
+  height: 100%;
+}
 
-  // style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white' }}
-
-.trending-categories-card-1-styles, 
+.trending-categories-card-1-styles,
 .trending-categories-card-2-styles,
-.trending-categories-card-3-styles { 
+.trending-categories-card-3-styles {
   width: 18em;
   background-color: rgb(58, 53, 53);
   text-align: center;
-  // color: white;
 }
 
+.trending-categories-text-over-cards {
+  position: absolute;
+  top: 30%;
+  left: 28%;
+  font-size: 2.3rem;
+  font-weight: bolder;
+  z-index: 100;
+  color: black;
+}
 
+.trending-categories-text-over-cards button {
+  background-color: black;
+  color: white;
+  position: relative;
+  top: 10%;
+  left: 3%;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border: none;
+  border-radius: 6%;
+}
 
-  
-  .trending-categories-text-over-cards { 
-    position: absolute;
-    top: 30%;
-    left: 28%;
-    font-size: 2.3rem;
-    font-weight: bolder;
-    z-index: 100;
-    color: black;
-  } 
-  
-  .trending-categories-text-over-cards button { 
-    background-color: black;
-    color: white;
-    position: relative;
-    top: 10%;
-    left: 3%;
-    // bottom: -2em;
-    // left: 0.2em;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    border: none;
-    border-radius: 6%;
-  } 
-  
-  
-  .trending-categories-text-over-cards-card2 { 
-    position: absolute;
-    top: 30%;
-    left: 24%;
-    font-size: 2.3rem;
-    font-weight: bolder;
-    color: black;
-  }
+.trending-categories-text-over-cards-card2 {
+  position: absolute;
+  top: 30%;
+  left: 24%;
+  font-size: 2.3rem;
+  font-weight: bolder;
+  color: black;
+}
 
-  .trending-categories-text-over-cards-card2 button { 
-    background-color: black;
-    color: white;
-    position: relative;
-    top: 10%;
-    left: 3%;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    border: none;
-    border-radius: 6%;
-  }
+.trending-categories-text-over-cards-card2 button {
+  background-color: black;
+  color: white;
+  position: relative;
+  top: 10%;
+  left: 3%;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border: none;
+  border-radius: 6%;
+}
 
+.trending-categories-text-over-cards-card3 {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  font-size: 2.3rem;
+  font-weight: bolder;
+  color: black;
+}
 
-  .trending-categories-text-over-cards-card3 { 
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    font-size: 2.3rem;
-    font-weight: bolder;
-    color: black;
-  }
-
-  .trending-categories-text-over-cards-card3 button { 
-    background-color: black;
-    color: white;
-    position: relative;
-    top: 10%;
-    left: 1%;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    border: none;
-    border-radius: 6%;
-  }
-
-
-  /* add styles for card 2 button here. */
+.trending-categories-text-over-cards-card3 button {
+  background-color: black;
+  color: white;
+  position: relative;
+  top: 10%;
+  left: 1%;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border: none;
+  border-radius: 6%;
+}

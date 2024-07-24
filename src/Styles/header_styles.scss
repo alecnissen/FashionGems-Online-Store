@@ -1,84 +1,71 @@
-// @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-
-// @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Yeseva+One&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Italiana&family=Source+Sans+3:ital@0;1&family=Yeseva+One&display=swap');
 
-.header-wrapper { 
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    justify-content: space-between;
-    padding: 15px;
-    flex-wrap: wrap;
-    border-bottom: 2px solid rgb(46, 41, 41);
-    // width: 100vw;
-    font-family: "Source Sans 3", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  } 
-  
-  .header-button-container { 
-    display: flex;
-    align-items: center;
-    gap: 3em;
-    margin-left: 3em;
-    font-size: 1.5rem;
-  } 
-  
-  .header-button-container > button { 
-    background-color: black;
-    color: white;
-    border: none;
-  } 
-  
-  .header-button-container a:hover { 
-    background-color: white;
-    color: black;
-  } 
-  
-  // .header-button-container button:hover { 
-  //   background-color: white;
-  //   color: black;
-  // }
-  
-  .header-button-container a { 
-    text-decoration: none;
-    color: white;
-  }
-  
-  
-  .header-cart-icon, 
-  .trending-categories-header-icon,
-  .header-search-icon { 
-    color: white;
-  }
-  
-  .header-icon-container { 
-    display: flex;
-    align-items: center;
-    gap: 2em;
-    flex-wrap: wrap;
-  } 
-  
-  .header-profile-icon { 
-    color: white;
-  }
-  
-  
-  
-  .badge-icon-for-shopping-cart { 
-    position: absolute;
-    background-color: white;
-    border-radius: 25%;
-    vertical-align: top;
-    margin-top: -6px;
-    margin-left: 22px;
-    padding: 2px;
-  }
-  
-  .header-icon-container a { 
-    text-decoration: none;
-    color: black;
-  }
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between;
+  padding: 15px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid rgb(46, 41, 41);
+  font-family: 'Source Sans 3', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header-button-container {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  margin-left: 3em;
+  font-size: 1.5rem;
+}
+
+.header-button-container > button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.header-button-container a:hover {
+  background-color: white;
+  color: black;
+}
+
+.header-button-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-cart-icon,
+.trending-categories-header-icon,
+.header-search-icon {
+  color: white;
+}
+
+.header-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.header-profile-icon {
+  color: white;
+}
+
+.badge-icon-for-shopping-cart {
+  position: absolute;
+  background-color: white;
+  border-radius: 25%;
+  vertical-align: top;
+  margin-top: -6px;
+  margin-left: 22px;
+  padding: 2px;
+}
+
+.header-icon-container a {
+  text-decoration: none;
+  color: black;
+}

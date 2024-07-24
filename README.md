@@ -57,7 +57,7 @@ then ``` npm install ``` which will install all dependency's and packages.
 
 <img src="Images/fg-checkout.png" style="width:500px">
 
-- When checkout form is completed it will be stored in a database using mongoDB. Checkout form is also handled with Node.js and Express.js for form validation and asynchronous operations
+- When checkout form is completed it will be stored in a database using MongoDB. Checkout form data is also handled with Node.js and Express.js for form validation and asynchronous operations
 
 <img src="Images/fashionGems-contact-form.png" style="width:500px">
 

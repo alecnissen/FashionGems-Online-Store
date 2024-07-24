@@ -1,5 +1,5 @@
 <h1>About This Project</h1> 
-I created a full stack online e-commerce website where customers could browse items, view item descriptions, add items to their cart, fill out a delivery and checkout form which is stored in a database and view computed totals for their purchases. This project uses MongoDB, Express.js, React.js, Node.js, React Router, state management, a third-party API, and a responsive design that looks great on any device. 
+I created a full stack online E-Commerce website where customers could browse items, view item descriptions, add items to their cart, fill out a delivery and checkout form which is stored in a database and view computed totals for their purchases. This project uses MongoDB, Express.js, React.js, Node.js, React Router, state management, a third-party API, and a responsive design that looks great on any device. 
 
 <br> 
 

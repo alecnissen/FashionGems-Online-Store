@@ -7,7 +7,7 @@ I created a full stack online E-Commerce website where customers could browse it
     <ul>
     <li>Using react router to link to different parts of the webpage</li>
     <li>Gained experience with MongoDB and storing form data in the database</li>
-    <li>Using express middleware</li>
+    <li>Built a backend API using Node.js, Express.js, and JavaScript.</li>
     <li>Implementing Bootstrap components such as cards</li>
     <li>Further increasing knowledge of responsive design and best practices</li>
     <li>Practice with state to keep track of total price, number of items in shopping cart</li>

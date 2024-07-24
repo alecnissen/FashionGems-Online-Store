@@ -1,14 +1,8 @@
 import React from 'react';
-import blackCard from '../../../Images/card-for-fashion-gem-app-section.png';
 import appleIcon from '../../../Images/apple-icon.png';
 import womenWithHandBag from '../../../Images/women-with-handbag.png';
-import googlePlayIcon from '../../../Images/google-play-icon.png';
-import fashionGemsIcon from '../../../Icons/fashion-gems-icon-img.png';
-
 import fashionGemsIcon2 from '../../../Images/Icon gem.png';
-import googlePlayIcon2 from "../../../Images/Icon google play.png"
-
-
+import googlePlayIcon2 from '../../../Images/Icon google play.png';
 
 export default function FashionGemsAppComponent() {
   return (

@@ -1,14 +1,8 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import footerCardImg1 from '../../../Images/footer-card-img-1.png';
 import footerCardImg2 from '../../../Images/footer-card-img-2.png';
 import footerCardImg3 from '../../../Images/footer-card-img-3.png';
-import fashionGemsIcon from '../../../Icons/fashion-gems-icon-img.png';
-import instaLogo from '../../../Icons/insta-logo-footer.png';
-import fbLogo from '../../../Icons/footer-facebook-icon.png';
-import twitterLogo from '../../../Icons/footer-icon-twitter.png';
-import phoneIcon from '../../../Icons/phone-icon-footer.png';
 import emailIcon from '../../../Icons/email-icon-footer.png';
 import gemIconTransparent from '../../../Images/gem-icon-transparent-background.png';
 import phoneIconTransparent from '../../../Images/phone-icon-transparent.png';
@@ -24,18 +18,6 @@ function FooterAndBlog() {
       </div>
 
       <div className="footer-card-container">
-        {/* 
-    <Card style={{ width: '18rem', backgroundColor: 'rgb(58, 53, 53)', color: 'white'}}>
-      <Card.Img variant="top" src={diamondNecklace} />
-      <Card.Body>
-        <Card.Title className='card-1-title-styles'>Elegant Necklace</Card.Title>
-        <Card.Text className='card-1-price-display'> 
-            $19.99
-        </Card.Text>
-        <img src={heartIcon}></img>
-      </Card.Body>
-    </Card> */}
-
         <Card className="footer-card-1">
           <Card.Img src={footerCardImg1}></Card.Img>
           <Card.Body style={{ backgroundColor: 'black', color: 'white' }}>
@@ -45,7 +27,6 @@ function FooterAndBlog() {
               <img src={gemIconTransparent}></img>
               Fashion Gems
             </Card.Text>
-            {/* <img src={fashionGemsIcon}></img> */}
           </Card.Body>
         </Card>
 

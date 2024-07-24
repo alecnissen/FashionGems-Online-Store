@@ -1,10 +1,6 @@
 // import './App.css';
 import './Styles/App.css';
-import react from 'react';
-import Header from './Components/HomePage/Header';
-import axios from 'axios';
 import { useEffect, useState } from 'react';
-import Footer from './Components/HomePage/Footer';
 import ShoppingComponent from './Components/ProductAndShopping/ShoppingComponent';
 import NotFound from './Components/LoadingAndError/NotFound';
 import HomePage from './Components/HomePage/HomePage';
@@ -12,23 +8,15 @@ import { Route, Routes } from 'react-router-dom';
 import ProductPage from './Components/ProductAndShopping/ProductPage';
 import About from './Components/HomePage/About';
 import CheckoutComponent from './Components/ProductAndShopping/CheckoutComponent';
-import Modal from './Components/ProductAndShopping/SearchModal';
-import ImageCarouselComponent from './Components/HomePage/TitleComponent';
-import apiRequest from './API-CALLS/ApiRequest';
-import "./Styles/index.scss"
-
-
-
+import './Styles/index.scss';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
-  // const [itemQuantity, setItemQuantity] = useState([]);
   const [itemQuantity, setItemQuantity] = useState(0);
   const storedItems = JSON.parse(localStorage.getItem('items'));
   const [localStorageItems, setLocalStorageItems] = useState(storedItems || []);
   const [category, setCategory] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
-  // pass these to header component as props
 
   useEffect(() => {
     if (cartItems !== null) {
@@ -43,15 +31,10 @@ function App() {
     }
   }, []);
 
-  console.log(storedItems);
-
-  // const newCartItems = cartItems.length;
-
   const numberOfCartItems = cartItems.length;
 
   return (
     <>
-
       <Routes>
         <Route
           path="/"

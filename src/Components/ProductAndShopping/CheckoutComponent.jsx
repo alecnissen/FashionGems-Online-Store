@@ -1,5 +1,4 @@
 import Header from '../HomePage/Header';
-import PropTypes from 'prop-types';
 import Footer from '../HomePage/Footer';
 import gemIcon from '../../../Icons/gem-icon-checkout-component.png';
 import FashionGemsAppComponent from './FashionGemsAppComponent';
@@ -61,8 +60,6 @@ export default function CheckoutComponent({
               {cartItems.map((item) => {
                 let productPrice = item.price * item.quantity;
                 total += productPrice;
-
-                console.log(typeof item.price);
 
                 return (
                   <>

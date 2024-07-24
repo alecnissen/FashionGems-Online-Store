@@ -39,7 +39,8 @@ export default function CheckoutForm() {
     setFormData(formDataInfo);
 
     axios
-      .post('http://localhost:3000/checkout', formDataInfo)
+      // .post('http://localhost:3000/checkout', formDataInfo)
+      .post('https://fashion-gems-api.fly.dev/checkout', formDataInfo)
       .then((response) => {
         console.log(response.status, response.data);
 

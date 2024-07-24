@@ -1,10 +1,6 @@
 import react from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import aboutPhoto1 from '../../../Images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg';
-import aboutPhoto2 from '../../../Images/pexels-mart-production-7679453.jpg';
-import { propTypes } from 'react-bootstrap/esm/Image';
-import PropTypes from 'prop-types';
 import diamondImg from '../../../Images/diamond-img.jpg';
 import amsterdamPhoto from '../../../Images/Amsterdam-photo.jpg';
 
@@ -27,8 +23,6 @@ export default function About({ numberOfCartItems, isOpen, setIsOpen }) {
         <div className="amsterdam-photo-container">
           <img src={amsterdamPhoto} className="amsterdam-photo"></img>
         </div>
-
-        {/* <p>We cannot wait to serve you and create wonderful memories. We want you to shine like a diamond!</p> */}
 
         <h1 className="core-values-header-about-page">Our Core Values</h1>
 
@@ -62,8 +56,3 @@ export default function About({ numberOfCartItems, isOpen, setIsOpen }) {
   );
 }
 
-About.propTypes = {
-  numberOfCartItems: PropTypes.number,
-  isOpen: PropTypes.bool,
-  setIsOpen: PropTypes.func,
-};

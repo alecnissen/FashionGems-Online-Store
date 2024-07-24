@@ -1,11 +1,13 @@
 <h1>About This Project</h1> 
-I created an online e-commerce website where customers could browse items, view item descriptions, add items to their cart, and view computed totals for their purchases. This project uses React Router, state management, a third-party API, and a responsive design that looks great on any device. 
+I created an online e-commerce website where customers could browse items, view item descriptions, add items to their cart, fill out a delivery and checkout form which is stored in a database and view computed totals for their purchases. This project uses MongoDB, Express.js, React.js, Node.js, React Router, state management, a third-party API, and a responsive design that looks great on any device. 
 
 <br> 
 
 <h1>What I learned</h1>
     <ul>
     <li>Using react router to link to different parts of the webpage</li>
+    <li>Gained experience with MongoDB and storing form data in the database</li>
+    <li>Using express middleware</li>
     <li>Implementing Bootstrap components such as cards</li>
     <li>Further increasing knowledge of responsive design and best practices</li>
     <li>Practice with state to keep track of total price, number of items in shopping cart</li>
@@ -18,8 +20,10 @@ I created an online e-commerce website where customers could browse items, view 
 
  <h1>Build With</h1>
 
- 
+ ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+ ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
+ ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
  ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) 
@@ -52,6 +56,10 @@ then ``` npm install ``` which will install all dependency's and packages.
 - Checkout page which correctly calculates total price.
 
 <img src="Images/fg-checkout.png" style="width:500px">
+
+- When checkout form is completed it will be stored in a database using mongoDB. Checkout form is also handled with Node.js and Express.js for form validation and asynchronus operations
+
+<img src="Images/fashionGems-contact-form.png" style="width:500px">
 
 - Search modal that allows user to search for specific products. 
 

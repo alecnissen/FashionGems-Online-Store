@@ -33,11 +33,11 @@ export default function Header({ numberOfCartItems, isOpen, setIsOpen }) {
             <Link to="/About">About</Link>
           </button>
 
-          <button>
+          {/* <button>
             <a id="link" href="#blog-btn-element-target">
               Blog
             </a>
-          </button>
+          </button> */}
         </div>
 
         <div className="header-icon-container">

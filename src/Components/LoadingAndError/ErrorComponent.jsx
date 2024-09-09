@@ -15,12 +15,3 @@ ErrorComponent.propTypes = {
 }
 
 
-// CheckoutComponent.propTypes = { 
-//   cartItems: PropTypes.array,
-//   setCartItems: PropTypes.func,
-//   newCartItems: PropTypes.number,
-//   itemQuantity: PropTypes.array,
-//   setItemQuantity: PropTypes.func,
-//   isOpen: PropTypes.bool,
-//   setIsOpen: PropTypes.func,
-// }
